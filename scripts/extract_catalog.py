@@ -49,13 +49,16 @@ def slugify(value: str) -> str:
 
 
 def normalize_date(value: Any, raw_value: str) -> str:
-    """Keep true Excel dates, while preserving standalone year values like 2026."""
+    """Keep true Excel dates and text years, never the workbook's shared-string index."""
     raw_value = clean_text(raw_value)
     if re.fullmatch(r"20\d{2}", raw_value):
         return raw_value
+    displayed_value = clean_text(value)
+    if re.fullmatch(r"20\d{2}", displayed_value):
+        return displayed_value
     if isinstance(value, (datetime, date)):
         return value.strftime("%Y-%m-%d")
-    return raw_value or clean_text(value)
+    return displayed_value
 
 
 def normalize_event(value: Any) -> str:
@@ -186,6 +189,9 @@ def raw_cells(archive: ZipFile, sheet_index: int) -> dict[str, tuple[str, int | 
             continue
         value_node = child_by_name(cell, "v")
         raw_value = value_node.text if value_node is not None and value_node.text else ""
+        # Shared-string values are indexes such as "67", not the value displayed in Excel.
+        if cell.attrib.get("t") == "s":
+            raw_value = ""
         metadata_index = int(cell.attrib["vm"]) if "vm" in cell.attrib else None
         values[coordinate] = (raw_value, metadata_index)
     return values
