@@ -1,0 +1,3707 @@
+[
+  {
+    "id": "to-identify-02",
+    "name": "Unidentified prototype #1",
+    "brand": "TO IDENTIFY",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/to-identify-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "to-identify-03",
+    "name": "Unidentified prototype #2",
+    "brand": "TO IDENTIFY",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/to-identify-03-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "to-identify-04",
+    "name": "Nascar prototype #1",
+    "brand": "TO IDENTIFY",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/to-identify-04-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "to-identify-05",
+    "name": "Nascar prototype #2",
+    "brand": "TO IDENTIFY",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/to-identify-05-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "to-identify-06",
+    "name": "Nascar prototype #3",
+    "brand": "TO IDENTIFY",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/to-identify-06-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "to-identify-07",
+    "name": "Unidentified prototype #3",
+    "brand": "TO IDENTIFY",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/to-identify-07-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "to-identify-08",
+    "name": "Unidentified prototype #4",
+    "brand": "TO IDENTIFY",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/to-identify-08-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "to-identify-09",
+    "name": "Unidentified prototype #5",
+    "brand": "TO IDENTIFY",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/to-identify-09-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "to-identify-10",
+    "name": "Unidentified prototype #6",
+    "brand": "TO IDENTIFY",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/to-identify-10-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "to-identify-11",
+    "name": "Unidentified prototype #7",
+    "brand": "TO IDENTIFY",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/to-identify-11-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "to-identify-12",
+    "name": "Unidentified prototype #8",
+    "brand": "TO IDENTIFY",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/to-identify-12-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "alfa-romeo-02",
+    "name": "Alfa Romeo 33 Stradale",
+    "brand": "ALFA ROMEO",
+    "event": "MDX 2026",
+    "date": "2026-05-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/alfa-romeo-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "amc-02",
+    "name": "AMC Hornet",
+    "brand": "AMC",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/amc-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "aston-martin-02",
+    "name": "Aston Martin Vulcan",
+    "brand": "ASTON MARTIN",
+    "event": "Shizouka Hobby Show 2018",
+    "date": "2018-05-01",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/aston-martin-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "aston-martin-03",
+    "name": "Aston Martin Valhalla Green",
+    "brand": "ASTON MARTIN",
+    "event": "Dongguan Flagship Store",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/aston-martin-03-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "aston-martin-04",
+    "name": "Aston Martin DBS 2008 Green",
+    "brand": "ASTON MARTIN",
+    "event": "Shizouka Hobby Show 2026",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/aston-martin-04-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "aston-martin-05",
+    "name": "Aston Martin DBS Vantage 1968 \"On Her Majesty's Secret Service\" (Bond 007 Collection)",
+    "brand": "ASTON MARTIN",
+    "event": "MDX 2026",
+    "date": "2026",
+    "collections": [
+      "Bond 007 Collection"
+    ],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/aston-martin-05-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "aston-martin-06",
+    "name": "Aston Martin V12 Vanquish \"Die Another Day\" (Bond 007 Collection)",
+    "brand": "ASTON MARTIN",
+    "event": "MDX 2026",
+    "date": "2026",
+    "collections": [
+      "Bond 007 Collection"
+    ],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/aston-martin-06-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "aston-martin-07",
+    "name": "Aston Martin Valkyrie White",
+    "brand": "ASTON MARTIN",
+    "event": "Shizouka Hobby Show 2026",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/aston-martin-07-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "aston-martin-08",
+    "name": "Aston Martin Valkyrie Blue",
+    "brand": "ASTON MARTIN",
+    "event": "Shizouka Hobby Show 2026",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/aston-martin-08-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "aston-martin-09",
+    "name": "Aston Martin AMR25 #18 Lance Stroll 2025 Bahrain Grand Prix",
+    "brand": "ASTON MARTIN",
+    "event": "MDX 2026",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/aston-martin-09-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "aston-martin-10",
+    "name": "Aston Martin AMR25 #14 Fernando Alonso 2025 Bahrain Grand Prix",
+    "brand": "ASTON MARTIN",
+    "event": "MDX 2026",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/aston-martin-10-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "aston-martin-11",
+    "name": "Aston Martin AMR25 #18 Lance Stroll 2025 Australian Grand Prix",
+    "brand": "ASTON MARTIN",
+    "event": "MDX 2026",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/aston-martin-11-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "aston-martin-12",
+    "name": "Aston Martin AMR25 #14 Fernando Alonso 2025 Australian Grand Prix",
+    "brand": "ASTON MARTIN",
+    "event": "MDX 2026",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/aston-martin-12-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "bentley-02",
+    "name": "Bentley 1929 Blower",
+    "brand": "BENTLEY",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/bentley-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "bmw-02",
+    "name": "BMW M8 GTE",
+    "brand": "BMW",
+    "event": "Shizouka Hobby Show 2018",
+    "date": "2018-05-01",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/bmw-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      },
+      {
+        "src": "assets/images/bmw-02-detail.png",
+        "role": "additional",
+        "label": "Дополнительное фото"
+      }
+    ]
+  },
+  {
+    "id": "bmw-03",
+    "name": "BMW M3 E30 Diamond Black Metallic",
+    "brand": "BMW",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/bmw-03-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      },
+      {
+        "src": "assets/images/bmw-03-detail.png",
+        "role": "additional",
+        "label": "Дополнительное фото"
+      }
+    ]
+  },
+  {
+    "id": "bmw-04",
+    "name": "BMW M4 GT3 Super GT Series",
+    "brand": "BMW",
+    "event": "TAS 2025",
+    "date": "",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/bmw-04-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "bmw-05",
+    "name": "BMW M4 GT3",
+    "brand": "BMW",
+    "event": "Dongguan Flagship Store",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/bmw-05-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "bmw-06",
+    "name": "BMW M4 GT3",
+    "brand": "BMW",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/bmw-06-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "bmw-07",
+    "name": "BMW Z8",
+    "brand": "BMW",
+    "event": "Alloy Shanghai Car Club",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/bmw-07-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "bmw-08",
+    "name": "BMW Z8",
+    "brand": "BMW",
+    "event": "Alloy Shanghai Car Club",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/bmw-08-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "bmw-09",
+    "name": "BMW M Hybrid V8",
+    "brand": "BMW",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/bmw-09-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "bmw-10",
+    "name": "BMW M3 (E30) GR. A Rally #10 Motul",
+    "brand": "BMW",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/bmw-10-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "bmw-11",
+    "name": "BMW M3 (E30) GR. A Rally #14 Motul",
+    "brand": "BMW",
+    "event": "MDX 2026",
+    "date": "2026-05-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/bmw-11-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "bmw-12",
+    "name": "BMW Z3",
+    "brand": "BMW",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/bmw-12-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "bmw-13",
+    "name": "BMW M Hybrid V8 2026",
+    "brand": "BMW",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/bmw-13-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "bmw-14",
+    "name": "BMW M5 G90 Purple",
+    "brand": "BMW",
+    "event": "MDX 2026",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/bmw-14-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "bugatti-02",
+    "name": "Bugatti W16 Mistral White",
+    "brand": "BUGATTI",
+    "event": "Dongguan Flagship Store",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/bugatti-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "bugatti-03",
+    "name": "Bugatti W16 Mistral Silver",
+    "brand": "BUGATTI",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/bugatti-03-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "bugatti-04",
+    "name": "Bugatti Bolide White",
+    "brand": "BUGATTI",
+    "event": "HEC 2026",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/bugatti-04-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "bugatti-05",
+    "name": "Bugatti Tourbillon",
+    "brand": "BUGATTI",
+    "event": "HEC 2026",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/bugatti-05-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "cadillac-02",
+    "name": "Cadillac V-Series.R",
+    "brand": "CADILLAC",
+    "event": "Alloy Shanghai Car Club",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/cadillac-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "cadillac-03",
+    "name": "Cadillac V-Series.R",
+    "brand": "CADILLAC",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/cadillac-03-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "chevrolet-02",
+    "name": "Chevrolet Corvette C3 Greenwood",
+    "brand": "CHEVROLET",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/chevrolet-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "chevrolet-03",
+    "name": "Chevrolet Corvette ZR1 Grey",
+    "brand": "CHEVROLET",
+    "event": "Diecast Con Madrid 2026",
+    "date": "2026-03-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/chevrolet-03-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "chevrolet-04",
+    "name": "Chevrolet Corvette ZR1 Red",
+    "brand": "CHEVROLET",
+    "event": "Diecast Con Madrid 2026",
+    "date": "2026-03-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/chevrolet-04-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "citroen-02",
+    "name": "Citroen DS 19",
+    "brand": "CITROEN",
+    "event": "Dongguan Flagship Store",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/citroen-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "citroen-03",
+    "name": "Citroen DS 19",
+    "brand": "CITROEN",
+    "event": "Dongguan Flagship Store",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/citroen-03-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "citroen-04",
+    "name": "Citroen DS 19",
+    "brand": "CITROEN",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/citroen-04-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "datsun-02",
+    "name": "Datsun Sunny Truck Mini GT RS-02X Kagami",
+    "brand": "DATSUN",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/datsun-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "dodge-02",
+    "name": "Dodge Charger R/T 1970 (Fast & Furious Collection)",
+    "brand": "DODGE",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [
+      "Fast & Furious Collection"
+    ],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/dodge-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "dodge-03",
+    "name": "Dodge Charger 1970 (Fast & Furious Collection)",
+    "brand": "DODGE",
+    "event": "MDX 2026",
+    "date": "2026-05-01",
+    "collections": [
+      "Fast & Furious Collection"
+    ],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/dodge-03-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "dodge-04",
+    "name": "Dodge Carger 1970 (Fast & Furious Collection)",
+    "brand": "DODGE",
+    "event": "MDX 2026",
+    "date": "2026-05-01",
+    "collections": [
+      "Fast & Furious Collection"
+    ],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/dodge-04-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ferrari-bbr-02",
+    "name": "Ferrari F40 (Open Headlights)",
+    "brand": "FERRARI (BBR)",
+    "event": "Dongguan Flagship Store",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ferrari-bbr-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ferrari-bbr-03",
+    "name": "Ferrari F40 (Closed Headlights)",
+    "brand": "FERRARI (BBR)",
+    "event": "",
+    "date": "2025",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ferrari-bbr-03-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ferrari-bbr-04",
+    "name": "Ferrari F50 Spider Rosso Corsa",
+    "brand": "FERRARI (BBR)",
+    "event": "",
+    "date": "2025",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ferrari-bbr-04-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ferrari-bbr-05",
+    "name": "Ferrari F50 Coupe Rosso Corsa",
+    "brand": "FERRARI (BBR)",
+    "event": "",
+    "date": "2025",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ferrari-bbr-05-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ferrari-bbr-06",
+    "name": "Ferrari SF90 XX Black",
+    "brand": "FERRARI (BBR)",
+    "event": "MDX 2026",
+    "date": "59",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ferrari-bbr-06-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ferrari-bbr-07",
+    "name": "Ferrari SF90 XX Yellow",
+    "brand": "FERRARI (BBR)",
+    "event": "MDX 2026",
+    "date": "59",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ferrari-bbr-07-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ferrari-bbr-08",
+    "name": "Ferrari Testarossa Spider (Open Headlights)",
+    "brand": "FERRARI (BBR)",
+    "event": "",
+    "date": "2025",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ferrari-bbr-08-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ferrari-bbr-09",
+    "name": "Ferrari Testarossa Spider White",
+    "brand": "FERRARI (BBR)",
+    "event": "",
+    "date": "2025",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ferrari-bbr-09-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ferrari-bbr-10",
+    "name": "Ferrari Testarossa (Open Headlights)",
+    "brand": "FERRARI (BBR)",
+    "event": "",
+    "date": "2025",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ferrari-bbr-10-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ferrari-bbr-11",
+    "name": "Ferrari F80 Yellow (Active Rear Wing)",
+    "brand": "FERRARI (BBR)",
+    "event": "MDX 2026",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ferrari-bbr-11-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ferrari-bbr-12",
+    "name": "Ferrari F80 (Active Rear Wing)",
+    "brand": "FERRARI (BBR)",
+    "event": "MDX 2026",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ferrari-bbr-12-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ferrari-bbr-13",
+    "name": "Ferrari F80 (Inactive Rear Wing)",
+    "brand": "FERRARI (BBR)",
+    "event": "MDX 2026",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ferrari-bbr-13-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ferrari-bbr-14",
+    "name": "Ferrari FXX-K Evo",
+    "brand": "FERRARI (BBR)",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ferrari-bbr-14-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ferrari-bbr-15",
+    "name": "Ferrari SF-23 2023 Las Vegas Grand Prix #16 Charles Leclerc",
+    "brand": "FERRARI (BBR)",
+    "event": "MDX 2026",
+    "date": "59",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ferrari-bbr-15-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ferrari-bbr-16",
+    "name": "Ferrari SF-23 2023 Las Vegas Grand Prix #55 Carlos Sainz",
+    "brand": "FERRARI (BBR)",
+    "event": "MDX 2026",
+    "date": "59",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ferrari-bbr-16-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ferrari-bbr-17",
+    "name": "Ferrari 599XX EVO Yellow",
+    "brand": "FERRARI (BBR)",
+    "event": "MDX 2026",
+    "date": "59",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ferrari-bbr-17-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ferrari-bbr-18",
+    "name": "Ferrari 599XX EVO Blue",
+    "brand": "FERRARI (BBR)",
+    "event": "MDX 2026",
+    "date": "59",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ferrari-bbr-18-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ferrari-bbr-19",
+    "name": "Ferrari 296 Speciale",
+    "brand": "FERRARI (BBR)",
+    "event": "MDX 2026",
+    "date": "59",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ferrari-bbr-19-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ferrari-bbr-20",
+    "name": "Ferrari 296 Speciale",
+    "brand": "FERRARI (BBR)",
+    "event": "MDX 2026",
+    "date": "59",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ferrari-bbr-20-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ford-02",
+    "name": "Ford Mustang Shelby GT500 Silver",
+    "brand": "FORD",
+    "event": "IDE 2023",
+    "date": "2023",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/ford-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ford-03",
+    "name": "Ford Mustang GTD Black",
+    "brand": "FORD",
+    "event": "HEC 2025",
+    "date": "2025",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/ford-03-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ford-04",
+    "name": "Ford Mustang GTD Black with red stripe",
+    "brand": "FORD",
+    "event": "Dongguan Flagship Store",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ford-04-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ford-05",
+    "name": "LB★WORKS Ford Mustang",
+    "brand": "FORD",
+    "event": "Dongguan Flagship Store",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ford-05-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ford-06",
+    "name": "Ford Puma Rally1",
+    "brand": "FORD",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ford-06-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ford-07",
+    "name": "Ford Mustang Fastback \"Anvil Auto\" 1969 (Fast & Furious Collection)",
+    "brand": "FORD",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [
+      "Fast & Furious Collection"
+    ],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ford-07-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ford-08",
+    "name": "Ford Mustang Fastback The \"RB26 Mustang\" 1967 (Fast & Furious Collection)",
+    "brand": "FORD",
+    "event": "MDX 2026",
+    "date": "2026-05-01",
+    "collections": [
+      "Fast & Furious Collection"
+    ],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ford-08-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ford-09",
+    "name": "Ford Mustang Boss 302 1969",
+    "brand": "FORD",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ford-09-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ford-10",
+    "name": "Ford Mustang Convertible 1965 (No Roof)",
+    "brand": "FORD",
+    "event": "Spielwarenmesse 2026",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ford-10-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ford-11",
+    "name": "Ford Mustang Convertible (Bond 007 Collection)",
+    "brand": "FORD",
+    "event": "MDX 2026",
+    "date": "2026",
+    "collections": [
+      "Bond 007 Collection"
+    ],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ford-11-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ford-12",
+    "name": "Ford Mustang Dark Horse Candy Red",
+    "brand": "FORD",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ford-12-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ford-13",
+    "name": "Ford Falcon XC Hardtop #1 Allan Moffat / John Fitzpatrick 1979 Bathurst 1000",
+    "brand": "FORD",
+    "event": "Mini GT Pop Up Store Taipei 2025",
+    "date": "2025",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ford-13-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "fiat-02",
+    "name": "Fiat Tempra (Senna Collection)",
+    "brand": "FIAT",
+    "event": "",
+    "date": "2026",
+    "collections": [
+      "Senna Collection"
+    ],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/fiat-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "fiat-03",
+    "name": "Fiat Tempra",
+    "brand": "FIAT",
+    "event": "APAXpo 2025",
+    "date": "2025-09-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/fiat-03-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "harley-davidson-02",
+    "name": "Harley Davidson Prototype #1",
+    "brand": "HARLEY DAVIDSON",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/harley-davidson-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "harley-davidson-03",
+    "name": "Harley Davidson Prototype #2",
+    "brand": "HARLEY DAVIDSON",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/harley-davidson-03-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "harley-davidson-04",
+    "name": "Harley Davidson Prototype #3",
+    "brand": "HARLEY DAVIDSON",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/harley-davidson-04-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "honda-02",
+    "name": "Honda Civic Type R (FK8) HKS White",
+    "brand": "HONDA",
+    "event": "Shizuoka Hobby Show 2019",
+    "date": "2019-05-01",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/honda-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "honda-03",
+    "name": "Honda Civic Type R TCR",
+    "brand": "HONDA",
+    "event": "Shizuoka Hobby Show 2019",
+    "date": "2019-05-01",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/honda-03-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "honda-04",
+    "name": "Honda Civic Type R GT500",
+    "brand": "HONDA",
+    "event": "TAS 2024",
+    "date": "2024",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/honda-04-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "honda-05",
+    "name": "Honda Civic Type R-GT #8 (2024 Super GT Series)",
+    "brand": "HONDA",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/honda-05-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "honda-06",
+    "name": "Honda NSX GT3 #43 Realtime Racing",
+    "brand": "HONDA",
+    "event": "Shizuoka Hobby Show 2019",
+    "date": "2019-05-01",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/honda-06-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "honda-07",
+    "name": "Honda Super-One",
+    "brand": "HONDA",
+    "event": "Dongguan Flagship Store",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/honda-07-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "honda-08",
+    "name": "LB-WORKS HONDA NSX (NA1)",
+    "brand": "HONDA",
+    "event": "Alloy Shanghai Car Club",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/honda-08-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "honda-09",
+    "name": "LB-WORKS HONDA NSX (NA1)",
+    "brand": "HONDA",
+    "event": "Alloy Shanghai Car Club",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/honda-09-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "honda-10",
+    "name": "Honda Prelude Silver",
+    "brand": "HONDA",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/honda-10-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "honda-11",
+    "name": "Honda S2000 Veilside Millenium (Fast & Furious Collection)",
+    "brand": "HONDA",
+    "event": "MDX 2026",
+    "date": "2026",
+    "collections": [
+      "Fast & Furious Collection"
+    ],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/honda-11-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "honda-12",
+    "name": "Honda S2000 (Fast & Furious Collection)",
+    "brand": "HONDA",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [
+      "Fast & Furious Collection"
+    ],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/honda-12-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "hyundai-02",
+    "name": "Hyundai Ioniq 5N Black",
+    "brand": "HYUNDAI",
+    "event": "MDX 2026",
+    "date": "2026-05-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/hyundai-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "land-rover-02",
+    "name": "2020 Land Rover Defender 110",
+    "brand": "LAND ROVER",
+    "event": "",
+    "date": "2022",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/land-rover-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "land-rover-03",
+    "name": "2020 Land Rover Defender 90",
+    "brand": "LAND ROVER",
+    "event": "",
+    "date": "2022",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/land-rover-03-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "land-rover-04",
+    "name": "Land Rover Defender 110 SVX \"Spectre\" (Bond 007 Collection)",
+    "brand": "LAND ROVER",
+    "event": "MDX 2026",
+    "date": "2026-05-01",
+    "collections": [
+      "Bond 007 Collection"
+    ],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/land-rover-04-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "land-rover-05",
+    "name": "Land Rover Defender 110 1998 Camel Trophy Tierra del Fuego CT.24 Italy",
+    "brand": "LAND ROVER",
+    "event": "Australian Diecast Expo 2026",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/land-rover-05-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "lamborghini-02",
+    "name": "LB★WORKS Lamborghini Huracan GT",
+    "brand": "LAMBORGHINI",
+    "event": "HK Toy Fair 2020",
+    "date": "2020",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/lamborghini-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "lamborghini-03",
+    "name": "Lamborghini Urus Red",
+    "brand": "LAMBORGHINI",
+    "event": "HK Toy Fair 2020",
+    "date": "2020",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/lamborghini-03-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "lamborghini-04",
+    "name": "LB★WORKS Lamborghini Huracan GT Purple",
+    "brand": "LAMBORGHINI",
+    "event": "Dongguan Flagship Store",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/lamborghini-04-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "lamborghini-05",
+    "name": "LB★WORKS Lamborghini Huracan GT Yellow",
+    "brand": "LAMBORGHINI",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/lamborghini-05-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "lamborghini-06",
+    "name": "Lamborghini Countach LB★WORKS",
+    "brand": "LAMBORGHINI",
+    "event": "Dongguan Flagship Store",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/lamborghini-06-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "lamborghini-07",
+    "name": "Lamborghini Countach LB★WORKS",
+    "brand": "LAMBORGHINI",
+    "event": "Australian Diecast Expo 2026",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/lamborghini-07-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "lamborghini-08",
+    "name": "Lamborghini Urus Performante",
+    "brand": "LAMBORGHINI",
+    "event": "Alloy Shanghai Car Club",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/lamborghini-08-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "lamborghini-09",
+    "name": "Lamborghini Temerario GT3",
+    "brand": "LAMBORGHINI",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/lamborghini-09-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "lamborghini-10",
+    "name": "Lamborghini Huracan GT3",
+    "brand": "LAMBORGHINI",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/lamborghini-10-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "lamborghini-11",
+    "name": "Lamborghini Temerario Purple",
+    "brand": "LAMBORGHINI",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/lamborghini-11-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "lamborghini-12",
+    "name": "Lamborghini Temerario Lime",
+    "brand": "LAMBORGHINI",
+    "event": "MDX 2026",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/lamborghini-12-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "lamborghini-13",
+    "name": "Lamborghini Countach Black",
+    "brand": "LAMBORGHINI",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/lamborghini-13-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "lamborghini-14",
+    "name": "Lamborghini LM002 (Fast & Furious Collection)",
+    "brand": "LAMBORGHINI",
+    "event": "MDX 2026",
+    "date": "2026",
+    "collections": [
+      "Fast & Furious Collection"
+    ],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/lamborghini-14-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "lamborghini-15",
+    "name": "Lamborghini Urus Performante Purple",
+    "brand": "LAMBORGHINI",
+    "event": "Australian Diecast Expo 2026",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/lamborghini-15-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "lamborghini-16",
+    "name": "Lamborghini Revuelto Green",
+    "brand": "LAMBORGHINI",
+    "event": "Australian Diecast Expo 2026",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/lamborghini-16-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "lexus-02",
+    "name": "Lexus LBX Morizo RR Drift",
+    "brand": "LEXUS",
+    "event": "Australian Diecast Expo 2026",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/lexus-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      },
+      {
+        "src": "assets/images/lexus-02-real-car.png",
+        "role": "realCar",
+        "label": "Настоящий автомобиль"
+      }
+    ]
+  },
+  {
+    "id": "lincoln-02",
+    "name": "Lincoln Continental MK.III Convertible 1958",
+    "brand": "LINCOLN",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/lincoln-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "lotus-02",
+    "name": "Lotus Espirit Turbo Blue",
+    "brand": "LOTUS",
+    "event": "Mini GT Pop Up Store Taipei",
+    "date": "2025-05-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/lotus-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "lotus-03",
+    "name": "Lotus 78 #5 Mario Andretti John Player Team Lotus 1978 Formula 1",
+    "brand": "LOTUS",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/lotus-03-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "lotus-04",
+    "name": "Lotus 78 #6 Ronnie Peterson John Player Team Lotus 1978 Formula 1",
+    "brand": "LOTUS",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/lotus-04-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "maserati-02",
+    "name": "Maserati Levante Trofeo",
+    "brand": "MASERATI",
+    "event": "Shizouka Hobby Show 2018",
+    "date": "2018-05-01",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/maserati-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "maserati-03",
+    "name": "Maserati GranTurismo",
+    "brand": "MASERATI",
+    "event": "Shizouka Hobby Show 2018",
+    "date": "2018-05-01",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/maserati-03-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "maserati-04",
+    "name": "Maserati MC20 Silver",
+    "brand": "MASERATI",
+    "event": "HK Toycar Salon 2020",
+    "date": "2020",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/maserati-04-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "maserati-05",
+    "name": "Maserati MC20 Blue",
+    "brand": "MASERATI",
+    "event": "HK Toycar Salon 2020",
+    "date": "2020",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/maserati-05-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mazda-02",
+    "name": "Matsukiyo MINI GT Mazda NA-7 RE-Amemiya",
+    "brand": "MAZDA",
+    "event": "Dongguan Flagship Store",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mazda-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mazda-03",
+    "name": "Mazda RX-7 VeilSide Red",
+    "brand": "MAZDA",
+    "event": "Dongguan Flagship Store",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mazda-03-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mazda-04",
+    "name": "RE-AMEMIYA Mazda X Power Craft NA7 2023",
+    "brand": "MAZDA",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mazda-04-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      },
+      {
+        "src": "assets/images/mazda-04-real-car.png",
+        "role": "realCar",
+        "label": "Настоящий автомобиль"
+      }
+    ]
+  },
+  {
+    "id": "mazda-05",
+    "name": "RE-AMEMIYA Mazda NA7",
+    "brand": "MAZDA",
+    "event": "Australian Diecast Expo 2026",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mazda-05-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mazda-06",
+    "name": "Mazda RX-7 (FD3S) Silver",
+    "brand": "MAZDA",
+    "event": "MDX 2025",
+    "date": "2025-05-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mazda-06-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mazda-07",
+    "name": "Unidentified prototype #9",
+    "brand": "MAZDA",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mazda-07-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mazda-08",
+    "name": "Mazda MX-5 Pandem Red",
+    "brand": "MAZDA",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mazda-08-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mazda-09",
+    "name": "Mazda RX-7 LB-Super Silhouette ATHLETE / COLLET",
+    "brand": "MAZDA",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mazda-09-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mclaren-02",
+    "name": "McLaren P1 GTR",
+    "brand": "MCLAREN",
+    "event": "Shizouka Hobby Show 2018",
+    "date": "2018-05-01",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/mclaren-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mclaren-03",
+    "name": "McLaren F1 GTR Longtail",
+    "brand": "MCLAREN",
+    "event": "MDX 2026",
+    "date": "2026-05-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mclaren-03-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mclaren-04",
+    "name": "McLaren MCL60 2023 British Grand Prix #4 Lando Norris 2nd Place",
+    "brand": "MCLAREN",
+    "event": "HEC 2026",
+    "date": "2026-04-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mclaren-04-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mclaren-05",
+    "name": "McLaren MCL60 2023 British Grand Prix #81 Oscar Piastri",
+    "brand": "MCLAREN",
+    "event": "HEC 2026",
+    "date": "2026-04-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mclaren-05-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mclaren-06",
+    "name": "McLaren F1 GTR Marlboro #2",
+    "brand": "MCLAREN",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mclaren-06-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mclaren-07",
+    "name": "McLaren F1 GTR Marlboro #8",
+    "brand": "MCLAREN",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mclaren-07-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mclaren-08",
+    "name": "McLaren M23",
+    "brand": "MCLAREN",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mclaren-08-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mclaren-09",
+    "name": "McLaren W1",
+    "brand": "MCLAREN",
+    "event": "Mini GT Pop Up Store Taipei 2025",
+    "date": "2025-11-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mclaren-09-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mercedes-02",
+    "name": "Mercedes G Wagon W460",
+    "brand": "MERCEDES",
+    "event": "",
+    "date": "2022",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/mercedes-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mercedes-03",
+    "name": "Mercedes G Wagon Silver",
+    "brand": "MERCEDES",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mercedes-03-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mercedes-04",
+    "name": "Unidentified prototype #10",
+    "brand": "MERCEDES",
+    "event": "Spielwarenmesse 2026",
+    "date": "2026-01-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mercedes-04-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mercedes-05",
+    "name": "Unidentified prototype #11",
+    "brand": "MERCEDES",
+    "event": "Spielwarenmesse 2026",
+    "date": "2026-01-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mercedes-05-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mercedes-06",
+    "name": "Unidentified prototype #12",
+    "brand": "MERCEDES",
+    "event": "Spielwarenmesse 2026",
+    "date": "2026-01-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mercedes-06-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mercedes-07",
+    "name": "Mercedes Benz Actros Transporter Taxi",
+    "brand": "MERCEDES",
+    "event": "Spielwarenmesse 2026",
+    "date": "2026-01-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mercedes-07-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mercedes-08",
+    "name": "Unidentified prototype #13",
+    "brand": "MERCEDES",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mercedes-08-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mercedes-09",
+    "name": "Unidentified prototype #14",
+    "brand": "MERCEDES",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mercedes-09-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mercedes-10",
+    "name": "Mercedes Benz 560 SEC",
+    "brand": "MERCEDES",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mercedes-10-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mercedes-11",
+    "name": "Unidentified prototype #15",
+    "brand": "MERCEDES",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mercedes-11-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mercedes-12",
+    "name": "Mercedes AMG ONE",
+    "brand": "MERCEDES",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mercedes-12-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mercedes-13",
+    "name": "Unidentified prototype #16",
+    "brand": "MERCEDES",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mercedes-13-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mercedes-14",
+    "name": "Mercedes AMG GT63 PRO",
+    "brand": "MERCEDES",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mercedes-14-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mercedes-15",
+    "name": "Mercedes AMG Concept GT XX",
+    "brand": "MERCEDES",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mercedes-15-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      },
+      {
+        "src": "assets/images/mercedes-15-real-car.png",
+        "role": "realCar",
+        "label": "Настоящий автомобиль"
+      }
+    ]
+  },
+  {
+    "id": "mercedes-16",
+    "name": "Unidentified prototype #17",
+    "brand": "MERCEDES",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mercedes-16-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mercedes-17",
+    "name": "Unidentified prototype #18",
+    "brand": "MERCEDES",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mercedes-17-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mercedes-18",
+    "name": "Mercedes Benz Patent Motorwagen",
+    "brand": "MERCEDES",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mercedes-18-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "mercedes-19",
+    "name": "Mercedes-Benz 190E 2.5-16 Evolution II #99",
+    "brand": "MERCEDES",
+    "event": "MDX 2026",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mercedes-19-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "nissan-02",
+    "name": "LB★WORKS Nissan GT-R (R35) Type I, Rear Wing ver.II",
+    "brand": "NISSAN",
+    "event": "Nürnberg Toy Fair 2018",
+    "date": "2018-02-01",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/nissan-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      },
+      {
+        "src": "assets/images/nissan-02-detail.png",
+        "role": "additional",
+        "label": "Дополнительное фото"
+      }
+    ]
+  },
+  {
+    "id": "nissan-03",
+    "name": "Pandem Nissan GT-R (R35) GT Wing Pearl White Japan Exclusive",
+    "brand": "NISSAN",
+    "event": "59th All Japan Model & Hobby Show",
+    "date": "2019-10-01",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/nissan-03-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "nissan-04",
+    "name": "Nissan GT-R (R32) Gr. A #1 Reebok 1990 Group A (Initially MGT #105)",
+    "brand": "NISSAN",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/nissan-04-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      },
+      {
+        "src": "assets/images/nissan-04-detail.png",
+        "role": "additional",
+        "label": "Дополнительное фото"
+      }
+    ]
+  },
+  {
+    "id": "nissan-05",
+    "name": "Nissan GT-R NISMO GT3 #48 Shokumou K's Frontier GT-R\" NILZZ Racing 2023 SUPER GT Series",
+    "brand": "NISSAN",
+    "event": "TAS 2024",
+    "date": "",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/nissan-05-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "nissan-06",
+    "name": "Nissan Skyline GT-R (R32) VeilSide Combat C-I Black with Gold",
+    "brand": "NISSAN",
+    "event": "MDX 2025",
+    "date": "2025-05-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/nissan-06-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      },
+      {
+        "src": "assets/images/nissan-06-detail.png",
+        "role": "additional",
+        "label": "Дополнительное фото"
+      }
+    ]
+  },
+  {
+    "id": "nissan-07",
+    "name": "Nissan Skyline GT-R (R32) VeilSide Combat C-I Ver.1",
+    "brand": "NISSAN",
+    "event": "TAS 2026",
+    "date": "2026-01-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/nissan-07-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "nissan-08",
+    "name": "Nissan Skyline GT-R (R32) VeilSide Combat C-I Ver.2",
+    "brand": "NISSAN",
+    "event": "TAS 2026",
+    "date": "2026-01-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/nissan-08-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "nissan-09",
+    "name": "Nissan Skyline GT-R (R32) VeilSide Combat C-I Ver.3",
+    "brand": "NISSAN",
+    "event": "TAS 2026",
+    "date": "2026-01-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/nissan-09-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "nissan-10",
+    "name": "LB-Silhouette WORKS GT Nissan 35GT-RR ver.1 ADVAN",
+    "brand": "NISSAN",
+    "event": "Alloy Shanghai Car Club",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/nissan-10-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "nissan-11",
+    "name": "Nissan Skyline GT-R (R34) C-West (Fast & Furious Collection)",
+    "brand": "NISSAN",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [
+      "Fast & Furious Collection"
+    ],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/nissan-11-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "nissan-12",
+    "name": "Nissan GT-R32 Kaido Works ATHLETE / COLLET",
+    "brand": "NISSAN",
+    "event": "Mini GT Pop Up Store Taipei",
+    "date": "2025-11-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/nissan-12-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "nissan-13",
+    "name": "Nissan Silvia S15 LB-Super Silhouette",
+    "brand": "NISSAN",
+    "event": "Mini GT Pop Up Store Taipei",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/nissan-13-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "nissan-14",
+    "name": "KUHL Nissan GT-R (R35) MY24",
+    "brand": "NISSAN",
+    "event": "MDX 2026",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/nissan-14-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      },
+      {
+        "src": "assets/images/nissan-14-detail.png",
+        "role": "additional",
+        "label": "Дополнительное фото"
+      }
+    ]
+  },
+  {
+    "id": "nissan-15",
+    "name": "Nissan Z Nismo 2026",
+    "brand": "NISSAN",
+    "event": "MDX 2026",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/nissan-15-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "nissan-16",
+    "name": "Nissan Skyline GT-R R34 C-West Bodykit 2002",
+    "brand": "NISSAN",
+    "event": "MDX 2026",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/nissan-16-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "nissan-17",
+    "name": "Nissan Silvia (S15) C-West GT Bodykit \"Mona Lisa\" (Fast & Furious Collection)",
+    "brand": "NISSAN",
+    "event": "MDX 2026",
+    "date": "2026",
+    "collections": [
+      "Fast & Furious Collection"
+    ],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/nissan-17-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "nissan-18",
+    "name": "Nissan 180SX RPS13 VeilSide C-III",
+    "brand": "NISSAN",
+    "event": "TAS 2026",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/nissan-18-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "nissan-19",
+    "name": "Nissan Skyline GT-R R33",
+    "brand": "NISSAN",
+    "event": "TAS 2026",
+    "date": "2026-01-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/nissan-19-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "nissan-20",
+    "name": "LB-Super Silhouette Nissan S15 SILVIA #555 Team MINI GT Liberty Walk 2025 Formula Drift W/ Trophy",
+    "brand": "NISSAN",
+    "event": "MDX 2026",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/nissan-20-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "nissan-21",
+    "name": "Nissan Skyline R32 TOP SECRET",
+    "brand": "NISSAN",
+    "event": "Mini GT Pop Up Store Taipei",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/nissan-21-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "nissan-22",
+    "name": "Nissan Skyline R32 TOP SECRET",
+    "brand": "NISSAN",
+    "event": "Mini GT Pop Up Store Taipei",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/nissan-22-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "nissan-23",
+    "name": "Nissan Skyline GT-R (R34) White With Carbon Hood",
+    "brand": "NISSAN",
+    "event": "Mini GT Pop Up Store Taipei",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/nissan-23-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "nissan-24",
+    "name": "Nissan Skyline GT-R (R34) Red With Carbon Hood",
+    "brand": "NISSAN",
+    "event": "Mini GT Pop Up Store Taipei",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/nissan-24-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "pagani-02",
+    "name": "Pagani Huayra BC",
+    "brand": "PAGANI",
+    "event": "Shizouka Hobby Show 2018",
+    "date": "2018-05-01",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/pagani-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "porsche-02",
+    "name": "LB WORKS Porsche 997",
+    "brand": "PORSCHE",
+    "event": "Nürnberg Toy Fair 2018",
+    "date": "2018-02-01",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/porsche-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      },
+      {
+        "src": "assets/images/porsche-02-detail.png",
+        "role": "additional",
+        "label": "Дополнительное фото"
+      }
+    ]
+  },
+  {
+    "id": "porsche-03",
+    "name": "Porsche 911 GT3 R",
+    "brand": "PORSCHE",
+    "event": "HEC 2026",
+    "date": "2026-04-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/porsche-03-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "porsche-04",
+    "name": "Porsche 911 Carrera Turbo 2.1 1974",
+    "brand": "PORSCHE",
+    "event": "Dongguan Flagship Store",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/porsche-04-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "porsche-05",
+    "name": "Porsche 911 GT3 R \"The Boring Concept\" #288",
+    "brand": "PORSCHE",
+    "event": "Dongguan Flagship Store",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/porsche-05-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "porsche-06",
+    "name": "Porsche 911 GT3 R \"The Boring Concept\" #288",
+    "brand": "PORSCHE",
+    "event": "Dongguan Flagship Store",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/porsche-06-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "porsche-07",
+    "name": "Porsche 911 GT3 R EVO 2026",
+    "brand": "PORSCHE",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/porsche-07-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "porsche-08",
+    "name": "Porsche 911 GT3 RS 2026",
+    "brand": "PORSCHE",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/porsche-08-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "porsche-09",
+    "name": "Porsche 962",
+    "brand": "PORSCHE",
+    "event": "Shizouka Hobby Show 2026",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/porsche-09-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "porsche-10",
+    "name": "Porsche 956",
+    "brand": "PORSCHE",
+    "event": "Shizouka Hobby Show 2026",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/porsche-10-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "porsche-11",
+    "name": "Porsche 901",
+    "brand": "PORSCHE",
+    "event": "Shizouka Hobby Show 2026",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/porsche-11-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "porsche-12",
+    "name": "Porsche Carrera GT Red",
+    "brand": "PORSCHE",
+    "event": "SD7",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/porsche-12-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "piaggio-02",
+    "name": "Piaggio Ape Calessino (Bond 007 Series)",
+    "brand": "Piaggio",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [
+      "Bond 007 Collection"
+    ],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/piaggio-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "ruf-02",
+    "name": "RUF Rodeo White",
+    "brand": "RUF",
+    "event": "Shizuoka Hobby Show 2019",
+    "date": "2019-05-01",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/ruf-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "scania-02",
+    "name": "Scania 770S Car Carrier",
+    "brand": "SCANIA",
+    "event": "Mini GT Pop Up Store Taipei 2025",
+    "date": "2025-11-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/scania-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "scania-03",
+    "name": "Scania 770S Hooklift with Detachable Container",
+    "brand": "SCANIA",
+    "event": "Spielwarenmesse 2026",
+    "date": "2026-01-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/scania-03-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "scania-04",
+    "name": "Scania 770S Transporter",
+    "brand": "SCANIA",
+    "event": "Australian Diecast Expo 2026",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/scania-04-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "toyota-02",
+    "name": "Toyota Supra (JZA80) Silver",
+    "brand": "TOYOTA",
+    "event": "Shizouka Hobby Show 2018",
+    "date": "2018-05-01",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/toyota-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "toyota-03",
+    "name": "Toyota Supra GR Red",
+    "brand": "TOYOTA",
+    "event": "2024 All in Tuning",
+    "date": "2024-09-01",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/toyota-03-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "toyota-04",
+    "name": "Toyota Supra (A80) Top Secret GT-300 Top Secret Red (Most likely replaced with Red Chrome)",
+    "brand": "TOYOTA",
+    "event": "MDX 2025",
+    "date": "2025-05-01",
+    "collections": [],
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/toyota-04-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "toyota-05",
+    "name": "Toyota GR86 KUHL Outroad",
+    "brand": "TOYOTA",
+    "event": "Alloy Shanghai Car Club",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/toyota-05-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "toyota-06",
+    "name": "Toyota GR Yaris Rally1 Hybrid",
+    "brand": "TOYOTA",
+    "event": "Alloy Shanghai Car Club",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/toyota-06-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "toyota-07",
+    "name": "Toyota Sprinter Trueno (AE86) \"Drifter LOLA2\"",
+    "brand": "TOYOTA",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/toyota-07-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "toyota-08",
+    "name": "Toyota Sprinter Trueno (AE86) \"Drifter LOLA1\"",
+    "brand": "TOYOTA",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/toyota-08-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "toyota-09",
+    "name": "TEC ART's Toyota Sprinter Trueno (AE86) - Keiichi Tsuchiya (Open Headlights)",
+    "brand": "TOYOTA",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/toyota-09-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "toyota-10",
+    "name": "TEC ART's Toyota Sprinter Trueno (AE86) - Keiichi Tsuchiya (Closed Headlights)",
+    "brand": "TOYOTA",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/toyota-10-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "toyota-11",
+    "name": "Toyota GR010 Hybrid 2025",
+    "brand": "TOYOTA",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/toyota-11-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "toyota-12",
+    "name": "Toyota 2000GT (Open Headlights) (Most likely Bond Collection)",
+    "brand": "TOYOTA",
+    "event": "",
+    "date": "2026",
+    "collections": [
+      "Bond 007 Collection"
+    ],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/toyota-12-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "toyota-13",
+    "name": "Toyota Supra (A80) Top Secret",
+    "brand": "TOYOTA",
+    "event": "Mini GT Pop Up Store",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/toyota-13-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "toyota-14",
+    "name": "Toyota Supra (A80) Top Secret",
+    "brand": "TOYOTA",
+    "event": "Mini GT Pop Up Store",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/toyota-14-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "toyota-15",
+    "name": "Toyota Supra (A80) Top Secret",
+    "brand": "TOYOTA",
+    "event": "Mini GT Pop Up Store",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/toyota-15-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "racing-bulls-02",
+    "name": "Racing Bulls VCARB03",
+    "brand": "RACING BULLS",
+    "event": "MDX 2026",
+    "date": "2026-05-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/racing-bulls-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      },
+      {
+        "src": "assets/images/racing-bulls-02-real-car.png",
+        "role": "realCar",
+        "label": "Настоящий автомобиль"
+      }
+    ]
+  },
+  {
+    "id": "volkswagen-02",
+    "name": "Volkswagen ID.Buzz DHL",
+    "brand": "VOLKSWAGEN",
+    "event": "Alloy Shanghai Car Club",
+    "date": "2026-08-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/volkswagen-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "volkswagen-03",
+    "name": "Volkswagen Type 2 (T1b)",
+    "brand": "VOLKSWAGEN",
+    "event": "SD7",
+    "date": "2026-07-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/volkswagen-03-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "volkswagen-04",
+    "name": "Volkswagen T1 Crowcab Pickup",
+    "brand": "VOLKSWAGEN",
+    "event": "HEC 2025",
+    "date": "2025-04-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/volkswagen-04-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "volkswagen-05",
+    "name": "Volkswagen T1 Microbus",
+    "brand": "VOLKSWAGEN",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/volkswagen-05-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "western-star-02",
+    "name": "Western Star 49X Red",
+    "brand": "WESTERN STAR",
+    "event": "2024 Spielwarenmesse",
+    "date": "2024-01-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/western-star-02-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "western-star-03",
+    "name": "Western Star 49X Red/Black",
+    "brand": "WESTERN STAR",
+    "event": "MINI GT Pop Up Store Taipei 2025",
+    "date": "2025-11-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/western-star-03-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  },
+  {
+    "id": "western-star-04",
+    "name": "Western Star 49X Black/White",
+    "brand": "WESTERN STAR",
+    "event": "MINI GT Pop Up Store Taipei 2025",
+    "date": "2025-11-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/western-star-04-model.png",
+        "role": "model",
+        "label": "Модель MINI GT"
+      }
+    ]
+  }
+]

@@ -304,7 +304,12 @@ document.addEventListener("keydown", (event) => {
 
 fetch(sourceUrl)
   .then((response) => {
-    if (!response.ok) throw new Error("Не удалось загрузить каталог.");
+    if (!response.ok) {
+      const message = response.status === 404
+        ? "В публикации отсутствует папка assets. Загрузите проект целиком, включая assets/data и assets/images."
+        : "Не удалось загрузить каталог.";
+      throw new Error(message);
+    }
     return response.json();
   })
   .then((models) => {
