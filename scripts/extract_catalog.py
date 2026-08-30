@@ -36,6 +36,12 @@ def clean_text(value: Any) -> str:
     return re.sub(r"\s+", " ", str(value)).strip()
 
 
+def display_brand(value: Any) -> str:
+    """Apply display names that are consistent across every future export."""
+    brand = clean_text(value)
+    return "FERRARI" if brand.upper() == "FERRARI (BBR)" else brand
+
+
 def slugify(value: str) -> str:
     normalized = value.lower().replace("★", "star")
     normalized = re.sub(r"[^a-z0-9]+", "-", normalized)
@@ -195,7 +201,7 @@ def main(source_arg: str) -> None:
                 column: clean_text(sheet.cell(1, column).value)
                 for column in range(1, sheet.max_column + 1)
             }
-            brand = clean_text(sheet.title)
+            brand = display_brand(sheet.title)
 
             for row_index in range(2, sheet.max_row + 1):
                 raw_model = clean_text(sheet.cell(row_index, 1).value)
@@ -251,9 +257,9 @@ def main(source_arg: str) -> None:
                     filename = f"{model_id}-{suffix}.png"
                     copy_image(archive, image_ref["package_path"], IMAGE_DIR / filename)
                     label = {
-                        "model": "Модель MINI GT",
-                        "additional": "Дополнительное фото",
-                        "realCar": "Настоящий автомобиль",
+                        "model": "MINI GT model",
+                        "additional": "Additional photo",
+                        "realCar": "Real car",
                     }[role]
                     photos.append(
                         {
