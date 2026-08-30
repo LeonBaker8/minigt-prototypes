@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Каталог прототипов MINI GT, показанных на выставках до предзаказа или релиза."
+    />
+    <meta name="theme-color" content="#101010" />
+    <title>MINI GT PROTOTYPES</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <button class="mobile-filter-button" id="openFilters" type="button" aria-controls="sidebar">
+        Фильтры
+      </button>
+      <a class="wordmark" href="#all" aria-label="Все прототипы MINI GT">MINI GT PROTOTYPES</a>
+      <span class="header-note" aria-hidden="true">CATALOGUE</span>
+    </header>
+
+    <div class="backdrop" id="backdrop" hidden></div>
+    <main class="app-shell">
+      <aside class="sidebar" id="sidebar" aria-label="Фильтры каталога">
+        <div class="sidebar-heading">
+          <span>Каталог</span>
+          <button class="close-filters" id="closeFilters" type="button" aria-label="Закрыть фильтры">×</button>
+        </div>
+        <nav id="sidebarNav"></nav>
+        <p class="sidebar-footnote">В каталоге — модели, показанные до предзаказа или релиза.</p>
+      </aside>
+
+      <section class="catalogue" aria-labelledby="catalogueTitle">
+        <div class="catalogue-top">
+          <div>
+            <p class="eyebrow" id="selectionEyebrow">MINI GT / PROTOTYPES</p>
+            <h1 id="catalogueTitle">Все модели</h1>
+            <p class="result-count" id="resultCount" aria-live="polite"></p>
+          </div>
+          <label class="search-box">
+            <span class="visually-hidden">Поиск по каталогу</span>
+            <input id="searchInput" type="search" placeholder="Поиск модели или выставки" autocomplete="off" />
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m20.3 19-4.1-4.1a7.5 7.5 0 1 0-1.2 1.2l4.1 4.1 1.2-1.2ZM5.8 10.5a4.7 4.7 0 1 1 9.4 0 4.7 4.7 0 0 1-9.4 0Z" /></svg>
+          </label>
+        </div>
+
+        <section class="filter-board" aria-label="Быстрый выбор">
+          <div class="filter-board-intro">
+            <span class="section-label">Быстрый выбор</span>
+            <p>Выберите все модели, марку или коллекцию.</p>
+          </div>
+          <div class="quick-filter-grid" id="quickFilters"></div>
+        </section>
+
+        <div class="active-filter-line" id="activeFilterLine"></div>
+        <div class="model-grid" id="modelGrid" aria-live="polite"></div>
+        <div class="empty-state" id="emptyState" hidden>
+          <p>Ничего не найдено.</p>
+          <button id="clearFilters" type="button">Сбросить фильтры</button>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Просмотр фотографии">
+      <button class="lightbox-close" id="closeLightbox" type="button" aria-label="Закрыть просмотр">×</button>
+      <button class="lightbox-arrow previous" id="previousPhoto" type="button" aria-label="Предыдущее фото">‹</button>
+      <figure>
+        <img id="lightboxImage" src="" alt="" />
+        <figcaption id="lightboxCaption"></figcaption>
+      </figure>
+      <button class="lightbox-arrow next" id="nextPhoto" type="button" aria-label="Следующее фото">›</button>
+    </dialog>
+
+    <template id="photoMissingTemplate">
+      <div class="photo-missing">Фото пока не добавлено</div>
+    </template>
+    <script src="app.js" defer></script>
+  </body>
+</html>
