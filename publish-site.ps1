@@ -31,7 +31,7 @@ $publishFolder = Join-Path $workspaceRoot "minigt-prototypes-publish"
 if ($WorkbookPath) {
     Write-Host "1/6 Extracting data and photos from Excel..." -ForegroundColor Cyan
     $pythonPath = (Get-Command python -ErrorAction Stop).Source
-    & $pythonPath -c "import openpyxl" 2>$null
+    & $pythonPath -c "import importlib.util, sys; sys.exit(0 if importlib.util.find_spec('openpyxl') else 1)"
     if ($LASTEXITCODE -ne 0) {
         Write-Host "Installing the Excel reader for the first run..." -ForegroundColor Cyan
         & $pythonPath -m pip install --user openpyxl

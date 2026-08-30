@@ -1653,7 +1653,9 @@
     "brand": "HYUNDAI",
     "event": "Hyundai Motorstudio Seoul",
     "date": "120",
-    "collections": [],
+    "collections": [
+      "Korean Collection"
+    ],
     "cancelled": false,
     "photos": [
       {
@@ -1669,7 +1671,9 @@
     "brand": "HYUNDAI",
     "event": "Hyundai Motorstudio Seoul",
     "date": "120",
-    "collections": [],
+    "collections": [
+      "Korean Collection"
+    ],
     "cancelled": false,
     "photos": [
       {
@@ -1681,11 +1685,13 @@
   },
   {
     "id": "hyundai-04",
-    "name": "Hyundai Ioniq 5N Renndienst (Kaido House)",
+    "name": "Hyundai Ioniq 5N Renndienst Kaido",
     "brand": "HYUNDAI",
     "event": "Hyundai Motorstudio Seoul",
     "date": "120",
-    "collections": [],
+    "collections": [
+      "Korean Collection"
+    ],
     "cancelled": false,
     "photos": [
       {
@@ -1701,7 +1707,9 @@
     "brand": "HYUNDAI",
     "event": "Hyundai Motorstudio Seoul",
     "date": "120",
-    "collections": [],
+    "collections": [
+      "Korean Collection"
+    ],
     "cancelled": false,
     "photos": [
       {
@@ -1717,7 +1725,9 @@
     "brand": "HYUNDAI",
     "event": "Hyundai Motorstudio Seoul",
     "date": "120",
-    "collections": [],
+    "collections": [
+      "Korean Collection"
+    ],
     "cancelled": false,
     "photos": [
       {
@@ -1733,7 +1743,9 @@
     "brand": "HYUNDAI",
     "event": "Hyundai Motorstudio Seoul",
     "date": "120",
-    "collections": [],
+    "collections": [
+      "Korean Collection"
+    ],
     "cancelled": false,
     "photos": [
       {
@@ -1749,7 +1761,9 @@
     "brand": "HYUNDAI",
     "event": "Hyundai Motorstudio Seoul",
     "date": "120",
-    "collections": [],
+    "collections": [
+      "Korean Collection"
+    ],
     "cancelled": false,
     "photos": [
       {
@@ -1765,7 +1779,9 @@
     "brand": "HYUNDAI",
     "event": "Hyundai Motorstudio Seoul",
     "date": "120",
-    "collections": [],
+    "collections": [
+      "Korean Collection"
+    ],
     "cancelled": false,
     "photos": [
       {
@@ -1921,11 +1937,13 @@
   },
   {
     "id": "hyundai-18",
-    "name": "Hyundai Porter II Open-bed / canvas top",
+    "name": "Hyundai Porter II Open-bed",
     "brand": "HYUNDAI",
     "event": "Hyundai Motorstudio Seoul",
     "date": "120",
-    "collections": [],
+    "collections": [
+      "Korean Collection"
+    ],
     "cancelled": false,
     "photos": [
       {
@@ -1941,7 +1959,9 @@
     "brand": "HYUNDAI",
     "event": "Hyundai Motorstudio Seoul",
     "date": "120",
-    "collections": [],
+    "collections": [
+      "Korean Collection"
+    ],
     "cancelled": false,
     "photos": [
       {
@@ -1957,7 +1977,9 @@
     "brand": "HYUNDAI",
     "event": "Hyundai Motorstudio Seoul",
     "date": "120",
-    "collections": [],
+    "collections": [
+      "Korean Collection"
+    ],
     "cancelled": false,
     "photos": [
       {
@@ -2906,12 +2928,12 @@
   },
   {
     "id": "mercedes-03",
-    "name": "Mercedes G Wagon Silver",
+    "name": "Mercedes-Benz Actros “WOLF” 2018 Grand Prix Camions du Castellet",
     "brand": "MERCEDES",
-    "event": "Salao Diecast Brazil 7",
-    "date": "2026-07-01",
+    "event": "",
+    "date": "200",
     "collections": [],
-    "cancelled": false,
+    "cancelled": true,
     "photos": [
       {
         "src": "assets/images/mercedes-03-model.png",
@@ -2922,12 +2944,12 @@
   },
   {
     "id": "mercedes-04",
-    "name": "Mercedes Benz 560 SEC Silver",
+    "name": "Mercedes-Benz Actros “POLAR BEAR” 2018 24 Heures du Mans Camions",
     "brand": "MERCEDES",
-    "event": "Spielwarenmesse",
-    "date": "2026-01-01",
+    "event": "",
+    "date": "200",
     "collections": [],
-    "cancelled": false,
+    "cancelled": true,
     "photos": [
       {
         "src": "assets/images/mercedes-04-model.png",
@@ -2938,10 +2960,10 @@
   },
   {
     "id": "mercedes-05",
-    "name": "Mercedes Benz 560 SEC Black",
+    "name": "Mercedes G Wagon Silver",
     "brand": "MERCEDES",
-    "event": "Spielwarenmesse",
-    "date": "2026-01-01",
+    "event": "Salao Diecast Brazil 7",
+    "date": "2026-07-01",
     "collections": [],
     "cancelled": false,
     "photos": [
@@ -2954,7 +2976,7 @@
   },
   {
     "id": "mercedes-06",
-    "name": "Mercedes-AMG EQS 53 Blue",
+    "name": "Mercedes Benz 560 SEC Silver",
     "brand": "MERCEDES",
     "event": "Spielwarenmesse",
     "date": "2026-01-01",
@@ -2970,7 +2992,7 @@
   },
   {
     "id": "mercedes-07",
-    "name": "Mercedes Benz Actros Transporter Taxi",
+    "name": "Mercedes Benz 560 SEC Black",
     "brand": "MERCEDES",
     "event": "Spielwarenmesse",
     "date": "2026-01-01",
@@ -2986,10 +3008,10 @@
   },
   {
     "id": "mercedes-08",
-    "name": "Mercedes 300CE (W124)",
+    "name": "Mercedes-AMG EQS 53 Blue",
     "brand": "MERCEDES",
-    "event": "",
-    "date": "2026",
+    "event": "Spielwarenmesse",
+    "date": "2026-01-01",
     "collections": [],
     "cancelled": false,
     "photos": [
@@ -2997,20 +3019,15 @@
         "src": "assets/images/mercedes-08-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/mercedes-08-real-car.png",
-        "role": "realCar",
-        "label": "Real car"
       }
     ]
   },
   {
     "id": "mercedes-09",
-    "name": "Mercedes 300CE 6.0 AMG \"HAMMER\"",
+    "name": "Mercedes Benz Actros Transporter Taxi",
     "brand": "MERCEDES",
-    "event": "",
-    "date": "2026",
+    "event": "Spielwarenmesse",
+    "date": "2026-01-01",
     "collections": [],
     "cancelled": false,
     "photos": [
@@ -3018,17 +3035,12 @@
         "src": "assets/images/mercedes-09-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/mercedes-09-real-car.png",
-        "role": "realCar",
-        "label": "Real car"
       }
     ]
   },
   {
     "id": "mercedes-10",
-    "name": "Mercedes Benz 500 SEC Koenig Specials",
+    "name": "Mercedes 300CE (W124)",
     "brand": "MERCEDES",
     "event": "",
     "date": "2026",
@@ -3039,12 +3051,17 @@
         "src": "assets/images/mercedes-10-model.png",
         "role": "model",
         "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/mercedes-10-real-car.png",
+        "role": "realCar",
+        "label": "Real car"
       }
     ]
   },
   {
     "id": "mercedes-11",
-    "name": "Mercedes SLS AMG Black Series",
+    "name": "Mercedes 300CE 6.0 AMG \"HAMMER\"",
     "brand": "MERCEDES",
     "event": "",
     "date": "2026",
@@ -3065,7 +3082,7 @@
   },
   {
     "id": "mercedes-12",
-    "name": "Mercedes AMG ONE",
+    "name": "Mercedes Benz 500 SEC Koenig Specials",
     "brand": "MERCEDES",
     "event": "",
     "date": "2026",
@@ -3076,17 +3093,12 @@
         "src": "assets/images/mercedes-12-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/mercedes-12-real-car.png",
-        "role": "realCar",
-        "label": "Real car"
       }
     ]
   },
   {
     "id": "mercedes-13",
-    "name": "Mercedes AMG CLE 53 Coupe",
+    "name": "Mercedes SLS AMG Black Series",
     "brand": "MERCEDES",
     "event": "",
     "date": "2026",
@@ -3107,7 +3119,7 @@
   },
   {
     "id": "mercedes-14",
-    "name": "Mercedes AMG GT63 PRO 2025",
+    "name": "Mercedes AMG ONE",
     "brand": "MERCEDES",
     "event": "",
     "date": "2026",
@@ -3128,7 +3140,7 @@
   },
   {
     "id": "mercedes-15",
-    "name": "Mercedes AMG Concept GT XX",
+    "name": "Mercedes AMG CLE 53 Coupe",
     "brand": "MERCEDES",
     "event": "",
     "date": "2026",
@@ -3149,7 +3161,7 @@
   },
   {
     "id": "mercedes-16",
-    "name": "Mercedes SL65 AMG Black Series Ver. 1",
+    "name": "Mercedes AMG GT63 PRO 2025",
     "brand": "MERCEDES",
     "event": "",
     "date": "2026",
@@ -3160,12 +3172,17 @@
         "src": "assets/images/mercedes-16-model.png",
         "role": "model",
         "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/mercedes-16-real-car.png",
+        "role": "realCar",
+        "label": "Real car"
       }
     ]
   },
   {
     "id": "mercedes-17",
-    "name": "Mercedes SL65 AMG Black Series Ver. 2",
+    "name": "Mercedes AMG Concept GT XX",
     "brand": "MERCEDES",
     "event": "",
     "date": "2026",
@@ -3186,7 +3203,7 @@
   },
   {
     "id": "mercedes-18",
-    "name": "Mercedes Benz Patent Motorwagen",
+    "name": "Mercedes SL65 AMG Black Series Ver. 1",
     "brand": "MERCEDES",
     "event": "",
     "date": "2026",
@@ -3202,6 +3219,43 @@
   },
   {
     "id": "mercedes-19",
+    "name": "Mercedes SL65 AMG Black Series Ver. 2",
+    "brand": "MERCEDES",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mercedes-19-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/mercedes-19-real-car.png",
+        "role": "realCar",
+        "label": "Real car"
+      }
+    ]
+  },
+  {
+    "id": "mercedes-20",
+    "name": "Mercedes Benz Patent Motorwagen",
+    "brand": "MERCEDES",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mercedes-20-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "mercedes-21",
     "name": "Mercedes-Benz 190E 2.5-16 Evolution II #99",
     "brand": "MERCEDES",
     "event": "Malaysia Diecast Expo",
@@ -3210,7 +3264,7 @@
     "cancelled": false,
     "photos": [
       {
-        "src": "assets/images/mercedes-19-model.png",
+        "src": "assets/images/mercedes-21-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
