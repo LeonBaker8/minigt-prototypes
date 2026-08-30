@@ -58,27 +58,67 @@ def normalize_date(value: Any, raw_value: str) -> str:
     return raw_value or clean_text(value)
 
 
-def collection_names(model: str) -> list[str]:
-    lowered = model.lower()
-    names: list[str] = []
-    if "fast & furious" in lowered:
-        names.append("Fast & Furious Collection")
-    if "bond 007" in lowered or "bond 007 series" in lowered or "bond collection" in lowered:
-        names.append("Bond 007 Collection")
-    if "korean collection" in lowered:
-        names.append("Korean Collection")
+def normalize_event(value: Any) -> str:
+    """Expand event abbreviations and keep the year exclusively in the date field."""
+    event = clean_text(value)
+    if not event:
+        return ""
+    event = re.sub(r"\b(?:19|20)\d{2}\b", "", event)
+    event = re.sub(r"\s+", " ", event).strip(" -–")
+    aliases = {
+        "SD7": "Salao Diecast Brazil 7",
+        "SD 7": "Salao Diecast Brazil 7",
+        "SALAO DIECAST BRAZIL 7": "Salao Diecast Brazil 7",
+        "HEC": "Hobby Expo China",
+        "HEC - HOBBY EXPO CHINA": "Hobby Expo China",
+        "TAS": "Tokyo Auto Salon",
+        "TAS - TOKYO AUTO SALON": "Tokyo Auto Salon",
+        "MDX": "Malaysia Diecast Expo",
+        "MDX - MALAYSIA DIECAST EXPO": "Malaysia Diecast Expo",
+    }
+    return aliases.get(event.upper(), event)
 
-    for match in re.findall(r"\(([^)]*?collection)\)", model, flags=re.IGNORECASE):
-        name = clean_text(match)
-        if name.lower() in {"bond 007 collection", "bond 007 series", "most likely bond collection"}:
-            name = "Bond 007 Collection"
-        elif name.lower() == "fast & furious collection":
-            name = "Fast & Furious Collection"
-        elif name.lower() == "korean collection":
-            name = "Korean Collection"
-        if name and name not in names:
-            names.append(name)
-    return names
+
+def normalize_collection_name(value: str) -> str:
+    name = clean_text(value)
+    lowered = name.lower()
+    if "bond" in lowered and ("007" in lowered or "collection" in lowered or "series" in lowered):
+        return "Bond 007 Collection"
+    if "fast" in lowered and "furious" in lowered:
+        return "Fast & Furious Collection"
+    if "korean" in lowered and "collection" in lowered:
+        return "Korean Collection"
+    return name
+
+
+def collection_data(model: str) -> tuple[str, list[str]]:
+    """Read collection notes in brackets and remove those notes from the public model name."""
+    names: list[str] = []
+
+    def remove_collection_note(match: re.Match[str]) -> str:
+        note = clean_text(match.group(1))
+        lowered = note.lower()
+        is_collection = (
+            "collection" in lowered
+            or "bond 007" in lowered
+            or "bond collection" in lowered
+            or ("fast" in lowered and "furious" in lowered)
+        )
+        if not is_collection:
+            return match.group(0)
+        collection = normalize_collection_name(note)
+        if collection and collection not in names:
+            names.append(collection)
+        return ""
+
+    public_name = re.sub(r"\(([^()]*)\)", remove_collection_note, model)
+    lowered = model.lower()
+    for known_collection in ("Fast & Furious Collection", "Bond 007 Collection", "Korean Collection"):
+        marker = known_collection.lower().replace(" collection", "")
+        if marker in lowered and known_collection not in names:
+            names.append(known_collection)
+    public_name = clean_text(re.sub(r"\s+", " ", public_name)).strip(" -–")
+    return public_name, names
 
 
 def child_by_name(element: ET.Element, name: str) -> ET.Element | None:
@@ -190,8 +230,6 @@ def main(source_arg: str) -> None:
 
     models: list[dict[str, Any]] = []
     missing_images = 0
-    unknown_counter = 0
-
     with ZipFile(source) as archive:
         metadata_to_rich_value, image_paths = xml_cell_metadata(archive)
 
@@ -202,10 +240,12 @@ def main(source_arg: str) -> None:
                 for column in range(1, sheet.max_column + 1)
             }
             brand = display_brand(sheet.title)
+            if brand.upper() == "TO IDENTIFY":
+                continue
 
             for row_index in range(2, sheet.max_row + 1):
                 raw_model = clean_text(sheet.cell(row_index, 1).value)
-                event = clean_text(sheet.cell(row_index, 2).value)
+                event = normalize_event(sheet.cell(row_index, 2).value)
                 date_cell = sheet.cell(row_index, 3)
                 raw_date = raw_sheet_cells.get(date_cell.coordinate, ("", None))[0]
                 shown_date = normalize_date(date_cell.value, raw_date)
@@ -237,9 +277,9 @@ def main(source_arg: str) -> None:
 
                 if not raw_model and not image_refs:
                     continue
-                if not raw_model:
-                    unknown_counter += 1
-                    raw_model = f"Unidentified prototype #{unknown_counter}"
+                model_name, collections = collection_data(raw_model)
+                if not model_name:
+                    model_name = brand
 
                 model_id = f"{slugify(brand)}-{row_index:02d}"
                 photos: list[dict[str, str]] = []
@@ -272,11 +312,11 @@ def main(source_arg: str) -> None:
                 models.append(
                     {
                         "id": model_id,
-                        "name": raw_model,
+                        "name": model_name,
                         "brand": brand,
                         "event": event,
                         "date": shown_date,
-                        "collections": collection_names(raw_model),
+                        "collections": collections,
                         "cancelled": is_cancelled_row(sheet, row_index),
                         "photos": photos,
                     }

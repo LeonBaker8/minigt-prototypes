@@ -30,8 +30,16 @@ $publishFolder = Join-Path $workspaceRoot "minigt-prototypes-publish"
 
 if ($WorkbookPath) {
     Write-Host "1/6 Extracting data and photos from Excel..." -ForegroundColor Cyan
-    $python = Get-Command python -ErrorAction Stop
-    & $python.Source (Join-Path $projectRoot "scripts\extract_catalog.py") $WorkbookPath
+    $pythonPath = (Get-Command python -ErrorAction Stop).Source
+    & $pythonPath -c "import openpyxl" 2>$null
+    if ($LASTEXITCODE -ne 0) {
+        Write-Host "Installing the Excel reader for the first run..." -ForegroundColor Cyan
+        & $pythonPath -m pip install --user openpyxl
+        if ($LASTEXITCODE -ne 0) {
+            throw "Python could not install the Excel reader. Run 'python -m pip install --user openpyxl', then try again."
+        }
+    }
+    & $pythonPath (Join-Path $projectRoot "scripts\extract_catalog.py") $WorkbookPath
     if ($LASTEXITCODE -ne 0) {
         throw "The Excel export failed. Nothing was sent to GitHub."
     }

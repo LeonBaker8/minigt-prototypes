@@ -123,14 +123,13 @@ function renderSidebar() {
   const createFilter = (kind, name, count) => {
     const value = kind === "all" ? "all" : name;
     return `
-      <button class="side-filter ${isSelected(kind, value) ? "is-active" : ""}"
+      <button class="side-filter ${kind === "collection" ? "collection" : ""} ${isSelected(kind, value) ? "is-active" : ""}"
         type="button" data-filter-kind="${kind}" data-filter-value="${escapeHtml(value)}">
         <span class="filter-label">${escapeHtml(displayFilterName(kind, name))}</span><span class="filter-count">${count}</span>
       </button>`;
   };
   const collections = getCollections();
   const brands = getBrands();
-  const toIdentify = brands.find(({ name }) => name === "TO IDENTIFY");
   elements.sidebarNav.innerHTML = `
     <div class="filter-group">
       <p class="filter-group-title">Show</p>
@@ -139,7 +138,6 @@ function renderSidebar() {
     <div class="filter-group">
       <p class="filter-group-title">Special</p>
       ${createFilter("status", "CANCELLED", cancelledCount())}
-      ${toIdentify ? createFilter("brand", toIdentify.name, toIdentify.count) : ""}
     </div>
     <div class="filter-group">
       <p class="filter-group-title">Collections</p>
@@ -147,19 +145,17 @@ function renderSidebar() {
     </div>
     <div class="filter-group">
       <p class="filter-group-title">Brands</p>
-      ${brands.filter(({ name }) => name !== "TO IDENTIFY").map(({ name, count }) => createFilter("brand", name, count)).join("")}
+      ${brands.map(({ name, count }) => createFilter("brand", name, count)).join("")}
     </div>`;
 }
 
 function renderQuickFilters() {
   const brands = getBrands();
-  const toIdentify = brands.find(({ name }) => name === "TO IDENTIFY");
   const filters = [
     { kind: "all", name: "All Models", count: activeModels().length },
     { kind: "status", name: "CANCELLED", count: cancelledCount() },
-    ...(toIdentify ? [{ ...toIdentify, kind: "brand" }] : []),
     ...getCollections().map((item) => ({ ...item, kind: "collection" })),
-    ...brands.filter(({ name }) => name !== "TO IDENTIFY").map((item) => ({ ...item, kind: "brand" })),
+    ...brands.map((item) => ({ ...item, kind: "brand" })),
   ];
   elements.quickFilters.innerHTML = filters.map(({ kind, name, count }) => {
     const value = kind === "all" ? "all" : name;
@@ -200,7 +196,7 @@ function renderCards() {
     <article class="model-card" data-model-id="${escapeHtml(model.id)}">
       ${photoStage(model)}
       <div class="card-info">
-        <div class="card-meta"><span>${escapeHtml(model.brand)}</span>${model.date ? `<span>${escapeHtml(formatDate(model.date))}</span>` : ""}</div>
+        ${model.date ? `<div class="card-meta"><span>${escapeHtml(formatDate(model.date))}</span></div>` : ""}
         <h2 class="card-name">${escapeHtml(model.name)}</h2>
         ${model.event ? `<p class="card-event">${eventIcon}<span>${escapeHtml(model.event)}</span></p>` : ""}
         ${model.cancelled ? `<span class="cancelled-notice">CANCELLED</span>` : ""}

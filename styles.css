@@ -6,6 +6,7 @@
   --canvas: #f5f5f3;
   --soft: #ececea;
   --signal: #e0001b;
+  --collection: #7c3aed;
   --sidebar-width: 265px;
 }
 
@@ -78,6 +79,9 @@ button { cursor: pointer; }
 .side-filter.is-active { font-weight: 800; }
 .side-filter.is-active::before { width: 8px; height: 8px; margin-right: 8px; background: var(--signal); content: ""; }
 .side-filter.is-active .filter-label { margin-right: auto; }
+.side-filter.collection .filter-label { color: var(--collection); }
+.side-filter.collection:hover .filter-label, .side-filter.collection:focus-visible .filter-label { color: var(--collection); }
+.side-filter.collection.is-active::before { background: var(--collection); }
 .filter-count { color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
 .sidebar-footnote { margin: 42px 0 0; color: var(--muted); font-size: 11px; line-height: 1.45; }
 
@@ -108,8 +112,8 @@ h1 { margin: 8px 0 4px; font-size: clamp(31px, 4.1vw, 54px); font-weight: 800; l
 }
 .quick-filter:hover, .quick-filter:focus-visible { border-color: var(--ink); box-shadow: 2px 2px 0 var(--ink); }
 .quick-filter.is-active { border-color: var(--ink); color: var(--paper); background: var(--ink); box-shadow: 2px 2px 0 var(--signal); }
-.quick-filter.collection { color: var(--signal); }
-.quick-filter.collection.is-active { color: var(--paper); }
+.quick-filter.collection { border-color: var(--collection); color: var(--collection); }
+.quick-filter.collection.is-active { color: var(--paper); background: var(--collection); box-shadow: 2px 2px 0 var(--ink); }
 .quick-filter.status { border-color: var(--signal); color: var(--signal); }
 .quick-filter.status.is-active { color: var(--paper); background: var(--signal); box-shadow: 2px 2px 0 var(--ink); }
 .quick-filter.disabled { opacity: .48; }
@@ -132,7 +136,7 @@ h1 { margin: 8px 0 4px; font-size: clamp(31px, 4.1vw, 54px); font-weight: 800; l
 .card-event { display: grid; grid-template-columns: 14px 1fr; gap: 7px; align-items: start; margin: 2px 0 0; color: #4c4c4b; font-size: 12px; line-height: 1.35; }
 .card-event svg { width: 14px; height: 14px; fill: var(--signal); }
 .card-collections { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 2px; }
-.collection-tag { padding: 4px 5px; border: 1px solid #d4d4d1; color: var(--signal); font-size: 9px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
+.collection-tag { padding: 4px 5px; border: 1px solid #c4b5fd; color: var(--collection); font-size: 9px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
 .cancelled-notice { justify-self: start; padding: 5px 6px; color: var(--paper); background: var(--signal); font-size: 10px; font-weight: 800; letter-spacing: .09em; }
 .empty-state { padding: 70px 0; text-align: center; }
 .empty-state p { margin: 0 0 14px; font-size: 18px; font-weight: 800; }
