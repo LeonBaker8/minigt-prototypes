@@ -292,7 +292,9 @@
     "brand": "BMW",
     "event": "Dongguan Flagship Store",
     "date": "2026-08-01",
-    "collections": [],
+    "collections": [
+      "IMSA Collection"
+    ],
     "cancelled": false,
     "photos": [
       {
@@ -324,7 +326,9 @@
     "brand": "BMW",
     "event": "Hobby Expo China",
     "date": "2026-04-01",
-    "collections": [],
+    "collections": [
+      "IMSA Collection"
+    ],
     "cancelled": false,
     "photos": [
       {
@@ -341,7 +345,7 @@
   },
   {
     "id": "bmw-08",
-    "name": "BMW Z8",
+    "name": "BMW Z8 Red",
     "brand": "BMW",
     "event": "Alloy Shanghai Car Club",
     "date": "2026-08-01",
@@ -357,7 +361,7 @@
   },
   {
     "id": "bmw-09",
-    "name": "BMW Z8",
+    "name": "BMW Z8 Black",
     "brand": "BMW",
     "event": "Alloy Shanghai Car Club",
     "date": "2026-08-01",
@@ -377,7 +381,9 @@
     "brand": "BMW",
     "event": "Salao Diecast Brazil 7",
     "date": "2026-07-01",
-    "collections": [],
+    "collections": [
+      "IMSA Collection"
+    ],
     "cancelled": false,
     "photos": [
       {
@@ -543,11 +549,13 @@
   },
   {
     "id": "cadillac-02",
-    "name": "Cadillac V-Series.R",
+    "name": "Cadillac V-Series.R #10",
     "brand": "CADILLAC",
     "event": "Alloy Shanghai Car Club",
     "date": "2026-08-01",
-    "collections": [],
+    "collections": [
+      "IMSA Collection"
+    ],
     "cancelled": false,
     "photos": [
       {
@@ -622,8 +630,29 @@
     ]
   },
   {
-    "id": "chevrolet-07",
+    "id": "chevrolet-06",
     "name": "Chevrolet Camaro ZL1 Nascar Garage 56 Early Development Mule",
+    "brand": "CHEVROLET",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/chevrolet-06-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/chevrolet-06-real-car.png",
+        "role": "realCar",
+        "label": "Real car"
+      }
+    ]
+  },
+  {
+    "id": "chevrolet-07",
+    "name": "Chevrolet Camaro ZL1 Nascar Garage 56 Presentation / Test Car",
     "brand": "CHEVROLET",
     "event": "",
     "date": "",
@@ -634,32 +663,11 @@
         "src": "assets/images/chevrolet-07-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/chevrolet-07-real-car.png",
-        "role": "realCar",
-        "label": "Real car"
       }
     ]
   },
   {
     "id": "chevrolet-08",
-    "name": "Chevrolet Camaro ZL1 Nascar Garage 56 Presentation / Test Car",
-    "brand": "CHEVROLET",
-    "event": "",
-    "date": "",
-    "collections": [],
-    "cancelled": false,
-    "photos": [
-      {
-        "src": "assets/images/chevrolet-08-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "chevrolet-09",
     "name": "Chevrolet Camaro ZL1 Nascar Garage 56 2023 24H of Le Mans",
     "brand": "CHEVROLET",
     "event": "",
@@ -668,7 +676,7 @@
     "cancelled": false,
     "photos": [
       {
-        "src": "assets/images/chevrolet-09-model.png",
+        "src": "assets/images/chevrolet-08-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -1006,8 +1014,8 @@
     "id": "ferrari-14",
     "name": "Ferrari FXX-K Evo",
     "brand": "FERRARI",
-    "event": "",
-    "date": "",
+    "event": "Malaysia Diecast Expo",
+    "date": "2026",
     "collections": [],
     "cancelled": false,
     "photos": [
@@ -2210,7 +2218,9 @@
     "brand": "LAMBORGHINI",
     "event": "Salao Diecast Brazil 7",
     "date": "2026-07-01",
-    "collections": [],
+    "collections": [
+      "IMSA Collection"
+    ],
     "cancelled": false,
     "photos": [
       {
@@ -2325,11 +2335,13 @@
   },
   {
     "id": "lamborghini-16",
-    "name": "Lamborghini SC63 \"Squadra Corse\" 2025 IMSA",
+    "name": "Lamborghini SC63 \"Squadra Corse\" 2025",
     "brand": "LAMBORGHINI",
     "event": "Hobby Expo China",
     "date": "2026-04-01",
-    "collections": [],
+    "collections": [
+      "IMSA Collection"
+    ],
     "cancelled": false,
     "photos": [
       {
@@ -2399,13 +2411,11 @@
   },
   {
     "id": "lotus-03",
-    "name": "Lotus 78 #5 Mario Andretti John Player Team Lotus 1978 Formula 1",
+    "name": "Lotus Espirit Turbo Black",
     "brand": "LOTUS",
-    "event": "Shizouka Hobby Show",
+    "event": "Australian Diecast Expo",
     "date": "2026",
-    "collections": [
-      "F1 Collection"
-    ],
+    "collections": [],
     "cancelled": false,
     "photos": [
       {
@@ -2417,11 +2427,13 @@
   },
   {
     "id": "lotus-04",
-    "name": "Lotus Espirit Turbo Black",
+    "name": "Lotus 78 #5 Mario Andretti John Player Team Lotus 1978 Formula 1",
     "brand": "LOTUS",
-    "event": "Australian Diecast Expo",
+    "event": "Shizouka Hobby Show",
     "date": "2026",
-    "collections": [],
+    "collections": [
+      "F1 Collection"
+    ],
     "cancelled": false,
     "photos": [
       {
@@ -3771,7 +3783,9 @@
     "brand": "PORSCHE",
     "event": "Hobby Expo China",
     "date": "2026-04-01",
-    "collections": [],
+    "collections": [
+      "IMSA Collection"
+    ],
     "cancelled": false,
     "photos": [
       {
@@ -3804,7 +3818,7 @@
   },
   {
     "id": "porsche-06",
-    "name": "Porsche 911 GT3 R \"The Boring Concept\" #288",
+    "name": "Porsche 911 GT3 Cup \"The Boring Concept\" #288",
     "brand": "PORSCHE",
     "event": "Dongguan Flagship Store",
     "date": "2026-08-01",
@@ -3820,7 +3834,7 @@
   },
   {
     "id": "porsche-07",
-    "name": "Porsche 911 GT3 R \"The Boring Concept\" #288",
+    "name": "Porsche 911 GT3 Cup \"The Boring Concept\" #288",
     "brand": "PORSCHE",
     "event": "Dongguan Flagship Store",
     "date": "2026-08-01",
@@ -3840,7 +3854,9 @@
     "brand": "PORSCHE",
     "event": "Salao Diecast Brazil 7",
     "date": "2026-07-01",
-    "collections": [],
+    "collections": [
+      "IMSA Collection"
+    ],
     "cancelled": false,
     "photos": [
       {
@@ -3868,10 +3884,10 @@
   },
   {
     "id": "porsche-10",
-    "name": "Porsche 911 GT3 Cup",
+    "name": "Porsche 962",
     "brand": "PORSCHE",
-    "event": "Malaysia Diecast Expo",
-    "date": "2025",
+    "event": "Shizouka Hobby Show",
+    "date": "2026",
     "collections": [],
     "cancelled": false,
     "photos": [
@@ -3879,17 +3895,12 @@
         "src": "assets/images/porsche-10-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/porsche-10-detail.png",
-        "role": "additional",
-        "label": "Additional photo"
       }
     ]
   },
   {
     "id": "porsche-11",
-    "name": "Porsche 962",
+    "name": "Porsche 956",
     "brand": "PORSCHE",
     "event": "Shizouka Hobby Show",
     "date": "2026",
@@ -3905,7 +3916,7 @@
   },
   {
     "id": "porsche-12",
-    "name": "Porsche 956",
+    "name": "Porsche 901 1963 Yellow",
     "brand": "PORSCHE",
     "event": "Shizouka Hobby Show",
     "date": "2026",
@@ -3921,22 +3932,6 @@
   },
   {
     "id": "porsche-13",
-    "name": "Porsche 901 1963 Yellow",
-    "brand": "PORSCHE",
-    "event": "Shizouka Hobby Show",
-    "date": "2026",
-    "collections": [],
-    "cancelled": false,
-    "photos": [
-      {
-        "src": "assets/images/porsche-13-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "porsche-14",
     "name": "Porsche Carrera GT Red",
     "brand": "PORSCHE",
     "event": "Salao Diecast Brazil 7",
@@ -3945,7 +3940,7 @@
     "cancelled": false,
     "photos": [
       {
-        "src": "assets/images/porsche-14-model.png",
+        "src": "assets/images/porsche-13-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
