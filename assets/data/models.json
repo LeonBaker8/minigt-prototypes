@@ -607,6 +607,22 @@
   },
   {
     "id": "chevrolet-05",
+    "name": "Chevrolet Corvette ZR1 Black",
+    "brand": "CHEVROLET",
+    "event": "Essen Motor Show",
+    "date": "2025-11-01",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/chevrolet-05-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "chevrolet-07",
     "name": "Chevrolet Camaro ZL1 Nascar Garage 56 Early Development Mule",
     "brand": "CHEVROLET",
     "event": "",
@@ -615,19 +631,19 @@
     "cancelled": false,
     "photos": [
       {
-        "src": "assets/images/chevrolet-05-model.png",
+        "src": "assets/images/chevrolet-07-model.png",
         "role": "model",
         "label": "MINI GT model"
       },
       {
-        "src": "assets/images/chevrolet-05-real-car.png",
+        "src": "assets/images/chevrolet-07-real-car.png",
         "role": "realCar",
         "label": "Real car"
       }
     ]
   },
   {
-    "id": "chevrolet-06",
+    "id": "chevrolet-08",
     "name": "Chevrolet Camaro ZL1 Nascar Garage 56 Presentation / Test Car",
     "brand": "CHEVROLET",
     "event": "",
@@ -636,14 +652,14 @@
     "cancelled": false,
     "photos": [
       {
-        "src": "assets/images/chevrolet-06-model.png",
+        "src": "assets/images/chevrolet-08-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "chevrolet-07",
+    "id": "chevrolet-09",
     "name": "Chevrolet Camaro ZL1 Nascar Garage 56 2023 24H of Le Mans",
     "brand": "CHEVROLET",
     "event": "",
@@ -652,7 +668,7 @@
     "cancelled": false,
     "photos": [
       {
-        "src": "assets/images/chevrolet-07-model.png",
+        "src": "assets/images/chevrolet-09-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -1301,6 +1317,38 @@
     ]
   },
   {
+    "id": "ford-14",
+    "name": "Ford Falcon XC Hardtop",
+    "brand": "FORD",
+    "event": "Diecast Model Expo",
+    "date": "2025",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ford-14-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "ford-15",
+    "name": "Ford Falcon XB GT",
+    "brand": "FORD",
+    "event": "Diecast Model Expo",
+    "date": "2025",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ford-15-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
     "id": "fiat-02",
     "name": "Fiat Tempra 16V",
     "brand": "FIAT",
@@ -1341,12 +1389,12 @@
   },
   {
     "id": "harley-davidson-02",
-    "name": "Harley Davidson",
+    "name": "Harley Davidson Fat Boy 2005",
     "brand": "HARLEY DAVIDSON",
     "event": "",
     "date": "",
     "collections": [
-      "Motorcycle Collection"
+      "Motorbike Collection"
     ],
     "cancelled": false,
     "photos": [
@@ -1359,12 +1407,12 @@
   },
   {
     "id": "harley-davidson-03",
-    "name": "Harley Davidson V-ROD \"Night Rod\"",
+    "name": "Harley Davidson V-ROD 2002 \"Night Rod\"",
     "brand": "HARLEY DAVIDSON",
     "event": "",
     "date": "",
     "collections": [
-      "Motorcycle Collection"
+      "Motorbike Collection"
     ],
     "cancelled": false,
     "photos": [
@@ -2368,6 +2416,22 @@
     ]
   },
   {
+    "id": "lotus-04",
+    "name": "Lotus Espirit Turbo Black",
+    "brand": "LOTUS",
+    "event": "Australian Diecast Expo",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/lotus-04-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
     "id": "maserati-02",
     "name": "Maserati Levante Trofeo",
     "brand": "MASERATI",
@@ -3312,11 +3376,6 @@
         "src": "assets/images/nissan-06-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/nissan-06-detail.png",
-        "role": "additional",
-        "label": "Additional photo"
       }
     ]
   },
@@ -3633,6 +3692,22 @@
     ]
   },
   {
+    "id": "nissan-25",
+    "name": "Nissan Silvia S15 D-MAX Black",
+    "brand": "NISSAN",
+    "event": "Malaysia Diecast Expo",
+    "date": "2025",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/nissan-25-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
     "id": "pagani-02",
     "name": "Pagani Huayra BC",
     "brand": "PAGANI",
@@ -3793,10 +3868,10 @@
   },
   {
     "id": "porsche-10",
-    "name": "Porsche 962",
+    "name": "Porsche 911 GT3 Cup",
     "brand": "PORSCHE",
-    "event": "Shizouka Hobby Show",
-    "date": "2026",
+    "event": "Malaysia Diecast Expo",
+    "date": "2025",
     "collections": [],
     "cancelled": false,
     "photos": [
@@ -3804,12 +3879,17 @@
         "src": "assets/images/porsche-10-model.png",
         "role": "model",
         "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/porsche-10-detail.png",
+        "role": "additional",
+        "label": "Additional photo"
       }
     ]
   },
   {
     "id": "porsche-11",
-    "name": "Porsche 956",
+    "name": "Porsche 962",
     "brand": "PORSCHE",
     "event": "Shizouka Hobby Show",
     "date": "2026",
@@ -3825,7 +3905,7 @@
   },
   {
     "id": "porsche-12",
-    "name": "Porsche 901 1963 Yellow",
+    "name": "Porsche 956",
     "brand": "PORSCHE",
     "event": "Shizouka Hobby Show",
     "date": "2026",
@@ -3841,6 +3921,22 @@
   },
   {
     "id": "porsche-13",
+    "name": "Porsche 901 1963 Yellow",
+    "brand": "PORSCHE",
+    "event": "Shizouka Hobby Show",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/porsche-13-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "porsche-14",
     "name": "Porsche Carrera GT Red",
     "brand": "PORSCHE",
     "event": "Salao Diecast Brazil 7",
@@ -3849,7 +3945,7 @@
     "cancelled": false,
     "photos": [
       {
-        "src": "assets/images/porsche-13-model.png",
+        "src": "assets/images/porsche-14-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -3939,10 +4035,10 @@
   },
   {
     "id": "toyota-03",
-    "name": "KUHL Toyota Supra GR Red",
+    "name": "KUHL Toyota Supra GR D1GP EVANGELION RACING",
     "brand": "TOYOTA",
-    "event": "All in Tuning",
-    "date": "2024-09-01",
+    "event": "Hobby Expo China",
+    "date": "2025-04-01",
     "collections": [],
     "cancelled": true,
     "photos": [
@@ -3955,10 +4051,10 @@
   },
   {
     "id": "toyota-04",
-    "name": "Toyota Supra (A80) Top Secret GT-300 Top Secret Red",
+    "name": "KUHL Toyota Supra GR Red",
     "brand": "TOYOTA",
-    "event": "Malaysia Diecast Expo",
-    "date": "2025-05-01",
+    "event": "All in Tuning",
+    "date": "2024-09-01",
     "collections": [],
     "cancelled": true,
     "photos": [
@@ -3971,28 +4067,23 @@
   },
   {
     "id": "toyota-05",
-    "name": "Toyota GR86 KUHL Outroad",
+    "name": "Toyota Supra (A80) Top Secret GT-300 Top Secret Red",
     "brand": "TOYOTA",
-    "event": "Alloy Shanghai Car Club",
-    "date": "2026-08-01",
+    "event": "Malaysia Diecast Expo",
+    "date": "2025-05-01",
     "collections": [],
-    "cancelled": false,
+    "cancelled": true,
     "photos": [
       {
         "src": "assets/images/toyota-05-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/toyota-05-real-car.png",
-        "role": "realCar",
-        "label": "Real car"
       }
     ]
   },
   {
     "id": "toyota-06",
-    "name": "Toyota GR Yaris Rally1 Hybrid",
+    "name": "Toyota GR86 KUHL Outroad",
     "brand": "TOYOTA",
     "event": "Alloy Shanghai Car Club",
     "date": "2026-08-01",
@@ -4003,15 +4094,20 @@
         "src": "assets/images/toyota-06-model.png",
         "role": "model",
         "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/toyota-06-real-car.png",
+        "role": "realCar",
+        "label": "Real car"
       }
     ]
   },
   {
     "id": "toyota-07",
-    "name": "Toyota Sprinter Trueno (AE86) \"Drifter LOLA2\"",
+    "name": "Toyota GR Yaris Rally1 Hybrid",
     "brand": "TOYOTA",
-    "event": "",
-    "date": "2026",
+    "event": "Alloy Shanghai Car Club",
+    "date": "2026-08-01",
     "collections": [],
     "cancelled": false,
     "photos": [
@@ -4024,7 +4120,7 @@
   },
   {
     "id": "toyota-08",
-    "name": "Toyota Sprinter Trueno (AE86) \"Drifter LOLA1\"",
+    "name": "Toyota Sprinter Trueno (AE86) \"Drifter LOLA2\"",
     "brand": "TOYOTA",
     "event": "",
     "date": "2026",
@@ -4040,7 +4136,7 @@
   },
   {
     "id": "toyota-09",
-    "name": "TEC ART's Toyota Sprinter Trueno (AE86) - Keiichi Tsuchiya (Open Headlights)",
+    "name": "Toyota Sprinter Trueno (AE86) \"Drifter LOLA1\"",
     "brand": "TOYOTA",
     "event": "",
     "date": "2026",
@@ -4056,7 +4152,7 @@
   },
   {
     "id": "toyota-10",
-    "name": "TEC ART's Toyota Sprinter Trueno (AE86) - Keiichi Tsuchiya (Closed Headlights)",
+    "name": "TEC ART's Toyota Sprinter Trueno (AE86) - Keiichi Tsuchiya (Open Headlights)",
     "brand": "TOYOTA",
     "event": "",
     "date": "2026",
@@ -4072,7 +4168,7 @@
   },
   {
     "id": "toyota-11",
-    "name": "Toyota GR010 Hybrid 2025",
+    "name": "TEC ART's Toyota Sprinter Trueno (AE86) - Keiichi Tsuchiya (Closed Headlights)",
     "brand": "TOYOTA",
     "event": "",
     "date": "2026",
@@ -4088,13 +4184,11 @@
   },
   {
     "id": "toyota-12",
-    "name": "Toyota 2000GT (Open Headlights)",
+    "name": "Toyota GR010 Hybrid 2025",
     "brand": "TOYOTA",
     "event": "",
     "date": "2026",
-    "collections": [
-      "Bond 007 Collection"
-    ],
+    "collections": [],
     "cancelled": false,
     "photos": [
       {
@@ -4106,11 +4200,13 @@
   },
   {
     "id": "toyota-13",
-    "name": "Toyota Supra (A80) GT-300 Top Secret 2JZ-GTE Spec",
+    "name": "Toyota 2000GT (Open Headlights)",
     "brand": "TOYOTA",
-    "event": "Mini GT Pop Up Store",
+    "event": "",
     "date": "2026",
-    "collections": [],
+    "collections": [
+      "Bond 007 Collection"
+    ],
     "cancelled": false,
     "photos": [
       {
@@ -4122,7 +4218,7 @@
   },
   {
     "id": "toyota-14",
-    "name": "Toyota Supra (A80) Top Secret",
+    "name": "Toyota Supra (A80) GT-300 Top Secret 2JZ-GTE Spec",
     "brand": "TOYOTA",
     "event": "Mini GT Pop Up Store",
     "date": "2026",
@@ -4147,6 +4243,22 @@
     "photos": [
       {
         "src": "assets/images/toyota-15-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "toyota-16",
+    "name": "Toyota Supra (A80) Top Secret",
+    "brand": "TOYOTA",
+    "event": "Mini GT Pop Up Store",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/toyota-16-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
