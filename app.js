@@ -49,8 +49,15 @@ const visualAssets = {
     "IMSA Collection": "assets/collections/imsa.svg",
     "Korean Collection": "assets/collections/korean.svg",
     "Motorbike Collection": "assets/collections/motorbike.svg",
-    "Senna Collection": "assets/collections/senna.svg",
+    "Senna Collection": "assets/collections/senna.png",
   },
+};
+
+// Some badges use their official colours: applying the white interface filter
+// would erase fine details or make their lettering unreadable.
+const fullColourLogos = {
+  brands: new Set(["ALFA ROMEO", "AMC", "DATSUN", "LOTUS", "Piaggio", "RED BULL"]),
+  collections: new Set(["IMSA Collection", "Korean Collection", "Senna Collection"]),
 };
 
 const state = {
@@ -139,11 +146,12 @@ function visualFor(kind, value) {
   if (kind === "all") return { src: "assets/mini-gt-logo.png", alt: "MINI GT logo" };
   if (kind === "status") return { mark: "×" };
   const map = kind === "brand" ? visualAssets.brands : visualAssets.collections;
-  return map[value] ? { src: map[value], alt: `${titleCase(value)} logo` } : { mark: initial(value) };
+  const palette = kind === "brand" ? fullColourLogos.brands : fullColourLogos.collections;
+  return map[value] ? { src: map[value], alt: `${titleCase(value)} logo`, fullColour: palette.has(value) } : { mark: initial(value) };
 }
 function filterLogo(kind, value) {
   const visual = visualFor(kind, value);
-  return `<span class="filter-logo">${visual.src ? `<img src="${visual.src}" alt="" />` : `<b>${escapeHtml(visual.mark)}</b>`}</span>`;
+  return `<span class="filter-logo">${visual.src ? `<img class="${visual.fullColour ? "full-colour" : ""}" src="${visual.src}" alt="" />` : `<b>${escapeHtml(visual.mark)}</b>`}</span>`;
 }
 
 function getVisibleModels() {
@@ -182,6 +190,7 @@ function renderSelection() {
   if (visual.src) {
     elements.selectionImage.src = visual.src;
     elements.selectionImage.alt = visual.alt;
+    elements.selectionImage.classList.toggle("full-colour", Boolean(visual.fullColour));
     elements.selectionImage.hidden = false;
     elements.selectionMark.hidden = true;
   } else {

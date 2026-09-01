@@ -3884,10 +3884,10 @@
   },
   {
     "id": "porsche-10",
-    "name": "Porsche 962",
+    "name": "Porsche 911",
     "brand": "PORSCHE",
-    "event": "Shizouka Hobby Show",
-    "date": "2026",
+    "event": "Salao Diecast Brazil 7",
+    "date": "2026-07-01",
     "collections": [],
     "cancelled": false,
     "photos": [
@@ -3900,7 +3900,7 @@
   },
   {
     "id": "porsche-11",
-    "name": "Porsche 956",
+    "name": "Porsche 962",
     "brand": "PORSCHE",
     "event": "Shizouka Hobby Show",
     "date": "2026",
@@ -3916,7 +3916,7 @@
   },
   {
     "id": "porsche-12",
-    "name": "Porsche 901 1963 Yellow",
+    "name": "Porsche 956",
     "brand": "PORSCHE",
     "event": "Shizouka Hobby Show",
     "date": "2026",
@@ -3932,6 +3932,22 @@
   },
   {
     "id": "porsche-13",
+    "name": "Porsche 901 1963 Yellow",
+    "brand": "PORSCHE",
+    "event": "Shizouka Hobby Show",
+    "date": "2026",
+    "collections": [],
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/porsche-13-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "porsche-14",
     "name": "Porsche Carrera GT Red",
     "brand": "PORSCHE",
     "event": "Salao Diecast Brazil 7",
@@ -3940,7 +3956,7 @@
     "cancelled": false,
     "photos": [
       {
-        "src": "assets/images/porsche-13-model.png",
+        "src": "assets/images/porsche-14-model.png",
         "role": "model",
         "label": "MINI GT model"
       }

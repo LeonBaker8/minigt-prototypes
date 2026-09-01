@@ -1,1 +1,9 @@
-<svg viewBox="0 0 76 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Motorbike Collection"><circle cx="17" cy="27" r="7" fill="none" stroke="#fff" stroke-width="3"/><circle cx="51" cy="27" r="7" fill="none" stroke="#fff" stroke-width="3"/><path d="m17 27 12-14h12l10 14M29 13l-6 14M41 13h10l7-7" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<svg viewBox="0 0 132 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Motorbike Collection">
+  <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="22" cy="33" r="8" stroke-width="3"/>
+    <circle cx="62" cy="33" r="8" stroke-width="3"/>
+    <path d="M22 33 36 18h14l12 15M36 18l-6 15m20-15 12-7 7 2m-7-2 4 11m-25-4 8-9h10" stroke-width="3.4"/>
+    <path d="M78 14h13m-16 6h20m-17 6h13" stroke-width="2"/>
+  </g>
+  <text x="78" y="39" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="800" letter-spacing="1.5">MOTO</text>
+</svg>

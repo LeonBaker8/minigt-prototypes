@@ -1,1 +1,10 @@
-<svg viewBox="0 0 68 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Korean Collection"><circle cx="19" cy="20" r="14" fill="none" stroke="#fff" stroke-width="3"/><path d="M9 20h20M19 10v20" stroke="#fff" stroke-width="2"/><text x="42" y="25" fill="#fff" font-family="Arial,sans-serif" font-size="14" font-weight="800">K</text></svg>
+<svg viewBox="0 0 72 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="South Korean flag">
+  <rect x="1" y="2" width="70" height="44" rx="2" fill="#fff" stroke="#d9d9de"/>
+  <g transform="translate(36 24) rotate(-34)">
+    <path d="M0-10A10 10 0 0 1 0 10 5 5 0 0 0 0 0 5 5 0 0 1 0-10" fill="#cd2e3a"/>
+    <path d="M0-10A10 10 0 0 0 0 10 5 5 0 0 1 0 0 5 5 0 0 0 0-10" fill="#0f64af"/>
+  </g>
+  <g stroke="#111" stroke-width="2" stroke-linecap="square">
+    <path d="m12 14 4-3m-2 7 4-3m-2 7 4-3M55 34l4-3m-2 7 4-3m-2 7 4-3M54 12l4 3m-2 1 4 3M13 34l4 3m-2 1 4 3"/>
+  </g>
+</svg>

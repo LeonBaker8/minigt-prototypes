@@ -1,7 +1,7 @@
 window.MINI_GT_CATALOG_META = {
   "lastUpdated": "2026-09-01",
   "counts": {
-    "active": 219,
+    "active": 220,
     "cancelled": 34,
     "brands": {
       "ALFA ROMEO": 1,
@@ -33,7 +33,7 @@ window.MINI_GT_CATALOG_META = {
       "MERCEDES": 16,
       "MINI": 2,
       "NISSAN": 20,
-      "PORSCHE": 11,
+      "PORSCHE": 12,
       "Piaggio": 1,
       "SCANIA": 2,
       "TOYOTA": 11,
