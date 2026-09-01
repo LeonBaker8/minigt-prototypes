@@ -25,20 +25,50 @@
       .identity img { width: 43px; height: 25px; object-fit: contain; filter: invert(1); }
       .identity span:last-child { color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .15em; }
       .top-actions { display: flex; align-items: center; gap: 12px; }
-      .live-count { padding: 8px 11px; border: 1px solid rgba(212,255,81,.45); color: var(--lime); font-size: 10px; font-weight: 800; letter-spacing: .12em; }
       .top-actions button { padding: 9px 12px; border: 1px solid var(--line); background: transparent; font-size: 10px; font-weight: 700; letter-spacing: .1em; }
-      .layout { display: grid; grid-template-columns: 230px minmax(0, 1fr); min-height: calc(100vh - 78px); }
-      .side { display: flex; flex-direction: column; gap: 32px; padding: 29px 22px; border-right: 1px solid var(--line); background: rgba(9,9,12,.7); }
-      .side-label { margin: 0 0 9px; color: var(--muted); font-size: 9px; font-weight: 800; letter-spacing: .16em; }
-      .side-nav { display: grid; gap: 4px; }
-      .side-nav button { display: flex; justify-content: space-between; padding: 10px 9px; border: 0; border-left: 2px solid transparent; color: var(--muted); background: transparent; font-size: 12px; text-align: left; }
-      .side-nav button.is-active { border-left-color: var(--paper); color: var(--paper); background: rgba(255,255,255,.06); font-weight: 700; }
-      .side-nav .purple { color: var(--purple); }
-      .side-nav .danger { color: var(--red); }
-      .side-nav em { font-style: normal; font-variant-numeric: tabular-nums; }
-      .archive-note { margin-top: auto; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 11px; line-height: 1.5; }
-      .archive-note strong { display: block; margin-bottom: 5px; color: var(--paper); font-size: 11px; letter-spacing: .1em; }
+      .layout { display: grid; grid-template-columns: 296px minmax(0, 1fr); min-height: calc(100vh - 78px); }
+      .side { display: flex; flex-direction: column; gap: 21px; padding: 24px 16px 18px; border-right: 1px solid var(--line); background: linear-gradient(180deg, rgba(20,20,27,.92), rgba(9,9,12,.86)); }
+      .side-head { display: flex; align-items: center; justify-content: space-between; }
+      .side-label { margin: 0; color: var(--paper); font-size: 11px; font-weight: 800; letter-spacing: .13em; }
+      .side-index { color: var(--muted); font-size: 9px; font-weight: 700; letter-spacing: .12em; }
+      .archive-all { position: relative; width: 100%; min-height: 104px; padding: 17px; border: 1px solid rgba(245,244,240,.5); background: linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.02)); color: var(--paper); text-align: left; overflow: hidden; }
+      .archive-all::after { position: absolute; top: -32px; right: -19px; width: 86px; height: 86px; border: 1px solid rgba(212,255,81,.55); border-radius: 50%; content: ""; }
+      .archive-all small { position: relative; display: block; margin-bottom: 7px; color: var(--lime); font-size: 10px; font-weight: 800; letter-spacing: .14em; }
+      .archive-all span { position: relative; display: block; font-size: 21px; font-weight: 800; letter-spacing: -.04em; }
+      .archive-all b { position: relative; display: block; margin-top: 11px; color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .08em; }
+      .archive-splits { display: block; margin-top: 8px; }
+      .archive-splits button { width: 100%; min-height: 64px; padding: 11px; border: 1px solid var(--line); background: transparent; color: var(--muted); text-align: left; }
+      .archive-splits button span { display: block; margin-bottom: 7px; font-size: 12px; font-weight: 800; letter-spacing: .01em; }
+      .archive-splits button b { display: block; color: rgba(255,255,255,.56); font-size: 9px; letter-spacing: .1em; line-height: 1; }
+      .archive-splits .collections { border-color: rgba(143,97,255,.65); color: #cebaff; background: rgba(143,97,255,.08); }
+      .archive-splits .cancelled { border-color: rgba(240,68,82,.45); color: #ff9ca4; background: rgba(240,68,82,.05); }
+      .collection-panel { padding-top: 18px; border-top: 1px solid var(--line); }
+      .collection-panel > p { margin-bottom: 12px; color: var(--muted); }
+      .collection-list { display: grid; gap: 5px; }
+      .collection-list button { display: grid; grid-template-columns: 47px minmax(0,1fr); align-items: center; gap: 11px; min-height: 44px; width: 100%; padding: 8px 8px 8px 0; border: 0; border-bottom: 1px solid rgba(255,255,255,.06); background: transparent; color: var(--paper); text-align: left; }
+      .collection-list img { width: 40px; height: 25px; object-fit: contain; filter: brightness(0) invert(1); }
+      .collection-list span { font-size: 14px; font-weight: 700; }
+      .brand-panel { padding-top: 18px; border-top: 1px solid var(--line); }
+      .brand-panel > p { margin-bottom: 12px; }
+      .brand-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; }
+      .brand-grid button { display: flex; align-items: center; gap: 10px; min-width: 0; min-height: 48px; padding: 8px 9px; border: 1px solid rgba(255,255,255,.1); background: rgba(255,255,255,.025); text-align: left; }
+      .brand-grid img { width: 27px; height: 27px; flex: 0 0 auto; object-fit: contain; filter: brightness(0) invert(1); }
+      .brand-grid .ferrari { width: 34px; }
+      .brand-grid span { color: var(--paper); font-size: 13px; font-weight: 700; line-height: 1.12; overflow-wrap: anywhere; }
+      .brand-grid button:hover, .collection-list button:hover, .archive-splits button:hover { border-color: rgba(245,244,240,.48); background: rgba(255,255,255,.07); }
+      .archive-note { display: flex; gap: 9px; align-items: start; margin-top: auto; padding: 11px; border: 1px solid var(--line); background: rgba(255,255,255,.035); color: var(--muted); font-size: 10px; line-height: 1.45; }
+      .archive-note::before { width: 6px; height: 6px; flex: 0 0 auto; margin-top: 4px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 12px rgba(212,255,81,.65); content: ""; }
+      .archive-note strong { display: block; margin-bottom: 3px; color: var(--paper); font-size: 9px; letter-spacing: .12em; }
       .stage { padding: clamp(23px, 3.8vw, 56px); }
+      .current-view { display: flex; align-items: center; gap: 20px; min-height: 132px; margin-bottom: 32px; padding: 24px 28px; border: 1px solid rgba(143,97,255,.72); background: linear-gradient(110deg, rgba(143,97,255,.20), rgba(143,97,255,.05) 54%, rgba(255,255,255,.025)); box-shadow: inset 0 0 0 1px rgba(255,255,255,.04); }
+      .current-view[hidden] { display: none; }
+      .current-logo { display: grid; width: 82px; height: 82px; place-items: center; border: 1px solid rgba(245,244,240,.38); background: rgba(6,6,9,.46); }
+      .current-logo img { width: 61px; height: 55px; object-fit: contain; filter: brightness(0) invert(1); }
+      .current-logo img.is-mini { width: 64px; }
+      .current-logo b { color: #ff9ca4; font-size: 64px; font-weight: 400; line-height: 1; }
+      .current-copy p { margin: 0 0 7px; color: #cebaff; font-size: 10px; font-weight: 800; letter-spacing: .16em; }
+      .current-copy h2 { margin: 0; color: var(--paper); font-size: clamp(31px, 4vw, 53px); letter-spacing: -.055em; line-height: .92; }
+      .current-count { margin: 10px 0 0; color: var(--lime); font-size: 11px; font-weight: 800; letter-spacing: .13em; }
       .hero-line { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin-bottom: 29px; }
       .kicker { margin: 0 0 12px; color: var(--lime); font-size: 10px; font-weight: 800; letter-spacing: .18em; }
       h1 { max-width: 720px; margin: 0; font-size: clamp(42px, 6vw, 86px); letter-spacing: -.075em; line-height: .87; }
@@ -63,7 +93,7 @@
       .catalog-footer p { margin: 0; color: var(--muted); font-size: 11px; }
       .catalog-footer strong { color: var(--paper); }
       .catalog-footer button { padding: 11px 14px; border: 0; background: var(--paper); color: var(--night); font-size: 10px; font-weight: 800; letter-spacing: .12em; }
-      @media (max-width: 840px) { .layout { grid-template-columns: 1fr; }.side { display: none; }.gallery { grid-template-columns: 1.35fr 1fr; grid-template-rows: 240px 190px 190px; }.tile.feature { grid-row: span 2; }.topbar { padding: 0 18px; }.stage { padding: 26px 18px 34px; }.hero-line { display: block; }.hero-copy { margin-top: 18px; }.tile:nth-child(4) { grid-column: 1 / -1; } }
+      @media (max-width: 840px) { .layout { grid-template-columns: 1fr; }.side { display: none; }.gallery { grid-template-columns: 1.35fr 1fr; grid-template-rows: 240px 190px 190px; }.tile.feature { grid-row: span 2; }.topbar { padding: 0 18px; }.stage { padding: 26px 18px 34px; }.current-view { min-height: 106px; margin-bottom: 22px; padding: 17px; }.current-logo { width: 62px; height: 62px; }.current-logo img { width: 45px; height: 42px; }.hero-line { display: block; }.hero-copy { margin-top: 18px; }.tile:nth-child(4) { grid-column: 1 / -1; } }
       @media (max-width: 520px) { .identity span:last-child, .live-count { display: none; }.gallery { grid-template-columns: 1fr 1fr; grid-template-rows: 230px 145px 145px; }.tile.feature { grid-column: 1 / -1; grid-row: auto; }.tile:nth-child(4) { grid-column: auto; }.catalog-footer { align-items: start; flex-direction: column; } }
     </style>
   </head>
@@ -71,30 +101,42 @@
     <div class="concept">
       <header class="topbar">
         <div class="identity"><img src="assets/mini-gt-logo.png" alt="MINI GT" /><span>PROTOTYPE ARCHIVE</span><span>EST. 2026</span></div>
-        <div class="top-actions"><span class="live-count">220 UNRELEASED</span><button type="button">SEARCH ARCHIVE</button></div>
+        <div class="top-actions"><button type="button">SEARCH ARCHIVE</button></div>
       </header>
       <div class="layout">
         <aside class="side">
-          <section>
-            <p class="side-label">DISCOVER</p>
-            <nav class="side-nav" aria-label="Concept navigation">
-              <button class="is-active" type="button"><span>All prototypes</span><em>220</em></button>
-              <button type="button"><span>Latest reveals</span><em>18</em></button>
-              <button class="purple" type="button"><span>Collections</span><em>6</em></button>
-              <button class="danger" type="button"><span>Cancelled</span><em>33</em></button>
-            </nav>
+          <div class="side-head"><p class="side-label">CATALOGUE</p><span class="side-index">FILTERS</span></div>
+          <section aria-label="Catalogue filters">
+            <button class="archive-all" type="button" data-title="All models" data-type="CATALOGUE" data-logo="assets/mini-gt-logo.png" data-count-key="active" data-count-fallback="219"><small>EXPLORE THE ARCHIVE</small><span>All models</span><b>VIEW THE COMPLETE CATALOGUE</b></button>
+            <div class="archive-splits">
+              <button class="cancelled" type="button" data-title="Cancelled" data-type="STATUS" data-mark="×" data-count-key="cancelled" data-count-fallback="34"><span>Cancelled</span><b>ARCHIVED MODELS</b></button>
+            </div>
           </section>
-          <section>
+          <section class="collection-panel">
             <p class="side-label">CURATED SERIES</p>
-            <nav class="side-nav">
-              <button class="purple" type="button"><span>Bond 007</span><em>8</em></button>
-              <button class="purple" type="button"><span>Fast &amp; Furious</span><em>13</em></button>
-              <button class="purple" type="button"><span>F1 Collection</span><em>16</em></button>
+            <nav class="collection-list" aria-label="Collection filters">
+              <button type="button" data-title="Bond 007 Collection" data-type="COLLECTION" data-logo="assets/collections/bond-007.svg" data-count-kind="collections" data-count-fallback="8"><img src="assets/collections/bond-007.svg" alt="007 logo" /><span>Bond 007</span></button>
+              <button type="button" data-title="Fast &amp; Furious Collection" data-type="COLLECTION" data-logo="assets/collections/fast-furious.png" data-count-kind="collections" data-count-fallback="13"><img src="assets/collections/fast-furious.png" alt="Fast &amp; Furious logo" /><span>Fast &amp; Furious</span></button>
+              <button type="button" data-title="F1 Collection" data-type="COLLECTION" data-logo="assets/collections/f1.svg" data-count-kind="collections" data-count-fallback="15"><img src="assets/collections/f1.svg" alt="Formula 1 logo" /><span>F1 Collection</span></button>
             </nav>
           </section>
-          <p class="archive-note"><strong>LIVE ARCHIVE</strong>Every prototype is preserved here before pre-order or release.</p>
+          <section class="brand-panel">
+            <p class="side-label">SELECT A BRAND</p>
+            <nav class="brand-grid" aria-label="Brand filters">
+              <button type="button" data-title="FERRARI" data-type="BRAND" data-logo="assets/brands/ferrari.svg" data-count-kind="brands" data-count-fallback="19"><img class="ferrari" src="assets/brands/ferrari.svg" alt="Ferrari logo" /><span>Ferrari</span></button>
+              <button type="button" data-title="BMW" data-type="BRAND" data-logo="assets/brands/bmw.svg" data-count-kind="brands" data-count-fallback="10"><img src="assets/brands/bmw.svg" alt="BMW logo" /><span>BMW</span></button>
+              <button type="button" data-title="MERCEDES" data-type="BRAND" data-logo="assets/brands/mercedes.svg" data-count-kind="brands" data-count-fallback="16"><img src="assets/brands/mercedes.svg" alt="Mercedes logo" /><span>Mercedes</span></button>
+              <button type="button" data-title="TOYOTA" data-type="BRAND" data-logo="assets/brands/toyota.svg" data-count-kind="brands" data-count-fallback="11"><img src="assets/brands/toyota.svg" alt="Toyota logo" /><span>Toyota</span></button>
+              <button type="button" data-title="ASTON MARTIN" data-type="BRAND" data-logo="assets/brands/aston-martin.svg" data-count-kind="brands" data-count-fallback="9"><img src="assets/brands/aston-martin.svg" alt="Aston Martin logo" /><span>Aston Martin</span></button>
+            </nav>
+          </section>
+          <p class="archive-note"><span><strong>LIVE ARCHIVE</strong><span id="archiveUpdated">Last updated from Excel —</span></span></p>
         </aside>
         <main class="stage">
+          <div class="current-view" aria-live="polite">
+            <div class="current-logo"><img id="currentLogo" src="assets/mini-gt-logo.png" alt="MINI GT logo" /><b id="currentMark" hidden></b></div>
+            <div class="current-copy"><p id="currentType">CATALOGUE</p><h2 id="currentTitle">All models</h2><p class="current-count" id="currentCount">219 PROTOTYPES</p></div>
+          </div>
           <div class="hero-line">
             <div><p class="kicker">MINI GT / PROTOTYPES</p><h1>THE <span>VAULT</span><br />OF WHAT’S NEXT.</h1></div>
             <p class="hero-copy">A focused archive for the models shown at exhibitions, tracked before they become available.</p>
@@ -113,5 +155,57 @@
         </main>
       </div>
     </div>
+    <script src="assets/data/catalog-meta.js"></script>
+    <script>
+      const catalogMeta = window.MINI_GT_CATALOG_META || {};
+      const filterButtons = document.querySelectorAll("[data-title]");
+      const currentTitle = document.querySelector("#currentTitle");
+      const currentType = document.querySelector("#currentType");
+      const currentLogo = document.querySelector("#currentLogo");
+      const currentView = document.querySelector(".current-view");
+      const currentMark = document.querySelector("#currentMark");
+      const currentCount = document.querySelector("#currentCount");
+      const archiveUpdated = document.querySelector("#archiveUpdated");
+
+      function formatArchiveDate(value) {
+        if (!value || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return "Last updated from Excel —";
+        return `Last updated ${new Intl.DateTimeFormat("en-US", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(new Date(`${value}T12:00:00Z`))}`;
+      }
+
+      function countFor(button) {
+        const counts = catalogMeta.counts || {};
+        if (button.dataset.countKey) return counts[button.dataset.countKey] ?? button.dataset.countFallback;
+        const collectionOrBrandCounts = counts[button.dataset.countKind] || {};
+        return collectionOrBrandCounts[button.dataset.title] ?? button.dataset.countFallback;
+      }
+
+      function displayTitle(value) {
+        return value.toLocaleLowerCase("en-US").replace(/(^|[\s&/\-])([a-z])/g, (match, before, letter) => `${before}${letter.toUpperCase()}`);
+      }
+
+      function updateCurrentView(button) {
+        const count = countFor(button);
+        currentView.hidden = false;
+        currentTitle.textContent = displayTitle(button.dataset.title);
+        currentType.textContent = button.dataset.type;
+        currentCount.textContent = `${count} ${Number(count) === 1 ? "PROTOTYPE" : "PROTOTYPES"}`;
+        if (button.dataset.logo) {
+          currentLogo.src = button.dataset.logo;
+          currentLogo.alt = `${button.dataset.title} logo`;
+          currentLogo.hidden = false;
+          currentMark.hidden = true;
+        } else {
+          currentMark.textContent = button.dataset.mark || "×";
+          currentLogo.hidden = true;
+          currentMark.hidden = false;
+        }
+      }
+
+      archiveUpdated.textContent = formatArchiveDate(catalogMeta.lastUpdated);
+
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", () => updateCurrentView(button));
+      });
+    </script>
   </body>
 </html>

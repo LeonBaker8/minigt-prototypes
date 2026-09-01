@@ -3,11 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="A catalogue of MINI GT prototypes shown at exhibitions before pre-order or release."
-    />
-    <meta name="theme-color" content="#101010" />
+    <meta name="description" content="A catalogue of MINI GT prototypes shown at exhibitions before pre-order or release." />
+    <meta name="theme-color" content="#08080a" />
     <title>MINI GT PROTOTYPES</title>
     <meta property="og:title" content="MINI GT PROTOTYPES" />
     <meta property="og:description" content="MINI GT prototypes shown before pre-order or release." />
@@ -19,72 +16,54 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <button class="mobile-filter-button" id="openFilters" type="button" aria-controls="sidebar">
-        Filters
-      </button>
-      <a class="wordmark" href="#all" aria-label="All MINI GT prototypes">
-        <img class="wordmark-logo" src="assets/mini-gt-logo.png" alt="MINI GT" />
-        <span>MINI GT PROTOTYPES</span>
+    <header class="topbar">
+      <button class="mobile-filter-button" id="openFilters" type="button" aria-controls="sidebar">Filters</button>
+      <a class="identity" href="#all" aria-label="All MINI GT prototypes">
+        <img src="assets/mini-gt-logo.png" alt="MINI GT" />
+        <span>PROTOTYPE ARCHIVE</span><small>EST. 2026</small>
       </a>
-      <span class="header-note" aria-hidden="true">CATALOGUE</span>
+      <a class="header-link" href="#all">ALL PROTOTYPES</a>
     </header>
 
     <div class="backdrop" id="backdrop" hidden></div>
     <main class="app-shell">
       <aside class="sidebar" id="sidebar" aria-label="Catalogue filters">
-        <div class="sidebar-heading">
-          <span>Catalogue</span>
-          <button class="close-filters" id="closeFilters" type="button" aria-label="Close filters">×</button>
-        </div>
+        <div class="sidebar-heading"><span>CATALOGUE</span><button class="close-filters" id="closeFilters" type="button" aria-label="Close filters">×</button></div>
         <nav id="sidebarNav"></nav>
-        <p class="sidebar-footnote">Models shown before pre-order or release.</p>
+        <p class="archive-note"><span><strong>LIVE ARCHIVE</strong><span id="archiveUpdated">Last updated from Excel —</span></span></p>
       </aside>
 
       <section class="catalogue" aria-labelledby="catalogueTitle">
-        <div class="catalogue-top">
-          <div>
-            <p class="eyebrow" id="selectionEyebrow">MINI GT / PROTOTYPES</p>
-            <h1 id="catalogueTitle">All Models</h1>
-            <p class="result-count" id="resultCount" aria-live="polite"></p>
-          </div>
-          <label class="search-box">
-            <span class="visually-hidden">Search catalogue</span>
-            <input id="searchInput" type="search" placeholder="Search model or exhibition" autocomplete="off" />
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m20.3 19-4.1-4.1a7.5 7.5 0 1 0-1.2 1.2l4.1 4.1 1.2-1.2ZM5.8 10.5a4.7 4.7 0 1 1 9.4 0 4.7 4.7 0 0 1-9.4 0Z" /></svg>
-          </label>
-        </div>
-
-        <section class="filter-board" aria-label="Quick selection">
-          <div class="filter-board-intro">
-            <span class="section-label">Quick selection</span>
-            <p>Browse all models, a brand, or a collection.</p>
-          </div>
-          <div class="quick-filter-grid" id="quickFilters"></div>
+        <section class="selection-banner" id="selectionBanner" aria-live="polite">
+          <div class="selection-logo" id="selectionLogo"><img id="selectionImage" src="assets/mini-gt-logo.png" alt="MINI GT logo" /><b id="selectionMark" hidden></b></div>
+          <div><p id="selectionEyebrow">CATALOGUE</p><h1 id="catalogueTitle">All Models</h1><p class="selection-count" id="resultCount"></p></div>
         </section>
+
+        <section class="hero">
+          <div><p class="kicker">MINI GT / PROTOTYPES</p><h2>THE <span>VAULT</span><br />OF WHAT’S NEXT.</h2></div>
+          <p>A focused archive for the models shown at exhibitions, tracked before they become available.</p>
+        </section>
+
+        <div class="catalogue-tools">
+          <div class="quick-filter-grid" id="quickFilters" aria-label="Featured filters"></div>
+          <label class="search-box"><span class="visually-hidden">Search catalogue</span><input id="searchInput" type="search" placeholder="Search model or exhibition" autocomplete="off" /><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m20.3 19-4.1-4.1a7.5 7.5 0 1 0-1.2 1.2l4.1 4.1 1.2-1.2ZM5.8 10.5a4.7 4.7 0 1 1 9.4 0 4.7 4.7 0 0 1-9.4 0Z" /></svg></label>
+        </div>
 
         <div class="active-filter-line" id="activeFilterLine"></div>
         <div class="model-grid" id="modelGrid" aria-live="polite"></div>
-        <div class="empty-state" id="emptyState" hidden>
-          <p>No models found.</p>
-          <button id="clearFilters" type="button">Clear filters</button>
-        </div>
+        <div class="empty-state" id="emptyState" hidden><p>No models found.</p><button id="clearFilters" type="button">Clear filters</button></div>
       </section>
     </main>
 
     <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
       <button class="lightbox-close" id="closeLightbox" type="button" aria-label="Close viewer">×</button>
       <button class="lightbox-arrow previous" id="previousPhoto" type="button" aria-label="Previous photo">‹</button>
-      <figure>
-        <img id="lightboxImage" src="" alt="" />
-        <figcaption id="lightboxCaption"></figcaption>
-      </figure>
+      <figure><img id="lightboxImage" src="" alt="" /><figcaption id="lightboxCaption"></figcaption></figure>
       <button class="lightbox-arrow next" id="nextPhoto" type="button" aria-label="Next photo">›</button>
     </dialog>
 
-    <template id="photoMissingTemplate">
-      <div class="photo-missing">Photo not added yet</div>
-    </template>
+    <template id="photoMissingTemplate"><div class="photo-missing">Photo not added yet</div></template>
+    <script src="assets/data/catalog-meta.js"></script>
     <script src="app.js" defer></script>
   </body>
 </html>

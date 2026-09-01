@@ -24,6 +24,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "assets"
 IMAGE_DIR = ASSETS / "images"
 DATA_FILE = ASSETS / "data" / "models.json"
+META_FILE = ASSETS / "data" / "catalog-meta.js"
 
 
 def local_name(tag: str) -> str:
@@ -223,6 +224,33 @@ def copy_image(archive: ZipFile, package_path: str, destination: Path) -> None:
         shutil.copyfileobj(source, target)
 
 
+def catalog_metadata(workbook: Any, source: Path, models: list[dict[str, Any]]) -> dict[str, Any]:
+    """Create the small site metadata object from the Excel workbook itself."""
+    modified = workbook.properties.modified
+    if not isinstance(modified, (datetime, date)):
+        modified = datetime.fromtimestamp(source.stat().st_mtime)
+    updated_at = modified.date().isoformat() if isinstance(modified, datetime) else modified.isoformat()
+
+    active = [model for model in models if not model["cancelled"]]
+    brand_counts: dict[str, int] = {}
+    collection_counts: dict[str, int] = {}
+    for model in active:
+        brand = model["brand"]
+        brand_counts[brand] = brand_counts.get(brand, 0) + 1
+        for collection in model["collections"]:
+            collection_counts[collection] = collection_counts.get(collection, 0) + 1
+
+    return {
+        "lastUpdated": updated_at,
+        "counts": {
+            "active": len(active),
+            "cancelled": len(models) - len(active),
+            "brands": brand_counts,
+            "collections": collection_counts,
+        },
+    }
+
+
 def main(source_arg: str) -> None:
     source = Path(source_arg).expanduser().resolve()
     if not source.is_file():
@@ -330,6 +358,13 @@ def main(source_arg: str) -> None:
 
     DATA_FILE.write_text(
         json.dumps(models, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    metadata = catalog_metadata(workbook, source, models)
+    META_FILE.write_text(
+        "window.MINI_GT_CATALOG_META = "
+        + json.dumps(metadata, ensure_ascii=False, indent=2)
+        + ";\n",
+        encoding="utf-8",
     )
     print(
         f"Exported {len(models)} models, {sum(len(model['photos']) for model in models)} images, "
