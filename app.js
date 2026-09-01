@@ -4,16 +4,52 @@ const catalogMeta = window.MINI_GT_CATALOG_META || {};
 
 const visualAssets = {
   brands: {
+    "ALFA ROMEO": "assets/brands/alfa-romeo.svg",
+    "AMC": "assets/brands/amc.svg",
     "FERRARI": "assets/brands/ferrari.svg",
     "BMW": "assets/brands/bmw.svg",
+    "BENTLEY": "assets/brands/bentley.svg",
+    "BUGATTI": "assets/brands/bugatti.svg",
+    "CADILLAC": "assets/brands/cadillac.svg",
+    "CHEVROLET": "assets/brands/chevrolet.svg",
+    "CITROEN": "assets/brands/citroen.svg",
+    "DATSUN": "assets/brands/datsun.svg",
+    "DODGE": "assets/brands/dodge.svg",
+    "FIAT": "assets/brands/fiat.svg",
+    "FORD": "assets/brands/ford.svg",
+    "HARLEY DAVIDSON": "assets/brands/harley-davidson.svg",
+    "HONDA": "assets/brands/honda.svg",
+    "HYUNDAI": "assets/brands/hyundai.svg",
+    "JAGUAR": "assets/brands/jaguar.svg",
+    "LAMBORGHINI": "assets/brands/lamborghini.svg",
+    "LAND ROVER": "assets/brands/land-rover.svg",
+    "LEXUS": "assets/brands/lexus.svg",
+    "LINCOLN": "assets/brands/lincoln.svg",
+    "LOTUS": "assets/brands/lotus.svg",
+    "MAZDA": "assets/brands/mazda.svg",
+    "MCLAREN": "assets/brands/mclaren.svg",
     "MERCEDES": "assets/brands/mercedes.svg",
+    "MINI": "assets/brands/mini.svg",
+    "MITSUBISHI": "assets/brands/mitsubishi.svg",
+    "NISSAN": "assets/brands/nissan.svg",
+    "Piaggio": "assets/brands/piaggio.svg",
+    "PORSCHE": "assets/brands/porsche.svg",
+    "RACING BULLS": "assets/brands/racing-bulls.svg",
+    "RED BULL": "assets/brands/red-bull.svg",
+    "SCANIA": "assets/brands/scania.svg",
     "TOYOTA": "assets/brands/toyota.svg",
+    "VOLKSWAGEN": "assets/brands/volkswagen.svg",
+    "WESTERN STAR": "assets/brands/western-star.svg",
     "ASTON MARTIN": "assets/brands/aston-martin.svg",
   },
   collections: {
     "Bond 007 Collection": "assets/collections/bond-007.svg",
     "Fast & Furious Collection": "assets/collections/fast-furious.png",
     "F1 Collection": "assets/collections/f1.svg",
+    "IMSA Collection": "assets/collections/imsa.svg",
+    "Korean Collection": "assets/collections/korean.svg",
+    "Motorbike Collection": "assets/collections/motorbike.svg",
+    "Senna Collection": "assets/collections/senna.svg",
   },
 };
 
@@ -58,7 +94,9 @@ function escapeHtml(value) {
 }
 
 function titleCase(value) {
-  return String(value).toLocaleLowerCase("en-US").replace(/(^|[\s&/\-])([a-z])/g, (match, before, letter) => `${before}${letter.toUpperCase()}`);
+  return String(value).toLocaleLowerCase("en-US")
+    .replace(/(^|[\s&/\-])([a-z])/g, (match, before, letter) => `${before}${letter.toUpperCase()}`)
+    .replace(/\bImsa\b/g, "IMSA");
 }
 
 function formatDate(value) {
@@ -121,7 +159,7 @@ function renderSidebar() {
   const collections = getCollections();
   const brands = getBrands();
   const collectionItems = collections.map(({ name }) => `<button class="side-filter ${isSelected("collection", name) ? "is-active" : ""}" type="button" data-filter-kind="collection" data-filter-value="${escapeHtml(name)}">${filterLogo("collection", name)}<span class="filter-label">${escapeHtml(titleCase(name.replace(/ Collection$/, "")))}</span></button>`).join("");
-  const brandItems = brands.map(({ name }) => `<button class="brand-filter ${isSelected("brand", name) ? "is-active" : ""}" type="button" data-filter-kind="brand" data-filter-value="${escapeHtml(name)}">${filterLogo("brand", name)}<span class="filter-label">${escapeHtml(titleCase(name))}</span></button>`).join("");
+  const brandItems = brands.map(({ name }) => `<button class="brand-filter ${isSelected("brand", name) ? "is-active" : ""}" type="button" data-filter-kind="brand" data-filter-value="${escapeHtml(name)}">${filterLogo("brand", name)}<span class="filter-label ${name.includes(" ") ? "is-multiword" : "is-single-word"}">${escapeHtml(titleCase(name))}</span></button>`).join("");
   elements.sidebarNav.innerHTML = `
     <section><button class="archive-all ${isSelected("all", "all") ? "is-active" : ""}" type="button" data-filter-kind="all" data-filter-value="all"><small>EXPLORE THE ARCHIVE</small><span>All models</span><b>VIEW THE COMPLETE CATALOGUE</b></button><button class="side-status ${isSelected("status", "CANCELLED") ? "is-active" : ""}" type="button" data-filter-kind="status" data-filter-value="CANCELLED"><span>Cancelled</span><small>ARCHIVED MODELS</small></button></section>
     <section class="filter-group"><p class="filter-group-title">CURATED SERIES</p><div class="collection-list">${collectionItems}</div></section>
@@ -131,11 +169,9 @@ function renderSidebar() {
 function renderQuickFilters() {
   const featured = [
     { kind: "all", value: "all", label: "ALL PROTOTYPES" },
-    { kind: "collection", value: "Bond 007 Collection", label: "BOND 007" },
-    { kind: "collection", value: "Fast & Furious Collection", label: "FAST & FURIOUS" },
-    { kind: "collection", value: "F1 Collection", label: "F1" },
+    ...getCollections().map(({ name }) => ({ kind: "collection", value: name, label: titleCase(name.replace(/ Collection$/, "")).toUpperCase() })),
   ];
-  elements.quickFilters.innerHTML = featured.filter(({ kind, value }) => kind === "all" || (kind === "collection" && getCollections().some((item) => item.name === value))).map(({ kind, value, label }) => `<button class="quick-filter ${isSelected(kind, value) ? "is-active" : ""}" type="button" data-filter-kind="${kind}" data-filter-value="${escapeHtml(value)}">${label}</button>`).join("");
+  elements.quickFilters.innerHTML = featured.map(({ kind, value, label }) => `<button class="quick-filter ${isSelected(kind, value) ? "is-active" : ""}" type="button" data-filter-kind="${kind}" data-filter-value="${escapeHtml(value)}">${label}</button>`).join("");
 }
 
 function renderSelection() {

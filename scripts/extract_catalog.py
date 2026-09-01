@@ -333,7 +333,7 @@ def main(source_arg: str) -> None:
                     label = {
                         "model": "MINI GT model",
                         "additional": "Additional photo",
-                        "realCar": "Real car",
+                        "realCar": "Real Photo",
                     }[role]
                     photos.append(
                         {
