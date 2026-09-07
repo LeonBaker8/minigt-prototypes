@@ -95,6 +95,8 @@ function escapeHtml(value) {
 }
 
 function titleCase(value) {
+  const brandNames = { BMW: "BMW", AMC: "AMC", MINI: "MINI", MCLAREN: "McLaren" };
+  if (brandNames[String(value).toUpperCase()]) return brandNames[String(value).toUpperCase()];
   return String(value).toLocaleLowerCase("en-US")
     .replace(/(^|[\s&/\-])([a-z])/g, (match, before, letter) => `${before}${letter.toUpperCase()}`)
     .replace(/\bImsa\b/g, "IMSA");
