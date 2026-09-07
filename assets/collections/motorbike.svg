@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 48" role="img" aria-label="Motorbike Collection">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 76" role="img" aria-label="Motorbike Collection">
   <g fill="#d4d7dc">
-    <path fill-rule="evenodd" d="M17 23a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm0 5a7 7 0 1 1 0 14 7 7 0 0 1 0-14ZM64 23a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm0 5a7 7 0 1 1 0 14 7 7 0 0 1 0-14Z"/>
-    <path d="m49 5 2-4h9l3 5-3 3h-5l11 25-4 2-12-27ZM28 15h13c4 0 8 3 9 7l-8 5H30l-7-5H9l-2-5h16l3 2 2-4Z"/>
-    <path d="m29 26 7 2 6 10h10v4H34l-9-10h-8v-4h11Zm19-1 6-3 3 5-8 9h-6l-4-7Z"/>
+    <path fill-rule="evenodd" d="M23 35a19 19 0 1 0 0 38 19 19 0 0 0 0-38Zm0 7a12 12 0 1 1 0 24 12 12 0 0 1 0-24ZM97 35a19 19 0 1 0 0 38 19 19 0 0 0 0-38Zm0 7a12 12 0 1 1 0 24 12 12 0 0 1 0-24Z"/>
+    <path d="m10 17 18 4 13 5 18-2c4-8 8-10 16-9l11 2-8-12 12 5 3 5 5-2c6 3 10 9 12 17l-15 3c-11 3-17 13-19 23l1 10-34-3 5-16c-2-11-10-17-24-19-9-1-13-4-14-11Z"/>
+    <path d="m22 50 30-7 3 8-31 7a4 4 0 0 1-2-8Zm65-16 6-3 8 22a4 4 0 0 1-7 3Z"/>
   </g>
 </svg>
