@@ -332,6 +332,12 @@ def main(source_arg: str) -> None:
                 if not raw_model and not image_refs:
                     continue
                 model_name, collections = collection_data(raw_model)
+                # User-confirmed collection for the Australian Diecast Expo prototype.
+                if (brand.upper() == "DODGE" and model_name in {"Dodge Carger", "Dodge Charger"}
+                        and event == "Australian Diecast Expo" and shown_date.startswith("2026")):
+                    model_name = "Dodge Charger"
+                    if "Fast & Furious Collection" not in collections:
+                        collections.append("Fast & Furious Collection")
                 if not model_name:
                     model_name = brand
 

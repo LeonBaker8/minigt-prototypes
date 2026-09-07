@@ -1,5 +1,6 @@
 const sourceUrl = "assets/data/models.json";
-const specialCollectionOrder = ["Bond 007 Collection", "Fast & Furious Collection", "Korean Collection"];
+const specialCollectionOrder = ["Bond 007 Collection", "Fast & Furious Collection"];
+const lastCollectionOrder = ["Korean Collection", "Motorbike Collection"];
 const catalogMeta = window.MINI_GT_CATALOG_META || {};
 
 const visualAssets = {
@@ -14,7 +15,7 @@ const visualAssets = {
     "CHEVROLET": "assets/brands/chevrolet-emblem.svg",
     "CITROEN": "assets/brands/citroen-emblem.svg",
     "DATSUN": "assets/brands/datsun.svg",
-    "DODGE": "assets/brands/dodge-emblem.svg",
+    "DODGE": "assets/brands/dodge-fratzog.svg",
     "FIAT": "assets/brands/fiat.png",
     "FORD": "assets/brands/ford.png",
     "HARLEY DAVIDSON": "assets/brands/harley-davidson.svg",
@@ -125,7 +126,7 @@ function getCollections() {
   activeModels().forEach((model) => model.collections.forEach((collection) => counts.set(collection, (counts.get(collection) || 0) + 1)));
   const ordered = specialCollectionOrder.map((name) => ({ name, count: counts.get(name) || 0 }));
   const extras = [...counts.entries()].filter(([name]) => !specialCollectionOrder.includes(name)).sort(([a], [b]) => a.localeCompare(b, "en")).map(([name, count]) => ({ name, count }));
-  return [...ordered, ...extras];
+  return [...ordered, ...extras.filter(({ name }) => !lastCollectionOrder.includes(name)), ...lastCollectionOrder.filter((name) => counts.has(name)).map((name) => ({ name, count: counts.get(name) }))];
 }
 function isSelected(kind, value) { return state.filter.kind === kind && state.filter.value === value; }
 function filterLabel() { if (state.filter.kind === "all") return "All Models"; if (state.filter.kind === "status") return "Cancelled"; return state.filter.value; }

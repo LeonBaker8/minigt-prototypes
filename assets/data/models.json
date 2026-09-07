@@ -813,11 +813,13 @@
   },
   {
     "id": "dodge-06",
-    "name": "Dodge Carger",
+    "name": "Dodge Charger",
     "brand": "DODGE",
     "event": "Australian Diecast Expo",
     "date": "2026-08-01",
-    "collections": [],
+    "collections": [
+      "Fast & Furious Collection"
+    ],
     "cancelled": false,
     "photos": [
       {

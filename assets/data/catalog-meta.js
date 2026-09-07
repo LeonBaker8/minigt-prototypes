@@ -45,7 +45,7 @@ window.MINI_GT_CATALOG_META = {
       "Bond 007 Collection": 7,
       "F1 Collection": 15,
       "IMSA Collection": 8,
-      "Fast & Furious Collection": 13,
+      "Fast & Furious Collection": 14,
       "Senna Collection": 1,
       "Motorbike Collection": 3,
       "Korean Collection": 19
