@@ -33,7 +33,7 @@ const visualAssets = {
     "MITSUBISHI": "assets/brands/mitsubishi.svg",
     "NISSAN": "assets/brands/nissan.svg",
     "Piaggio": "assets/brands/piaggio.svg",
-    "PORSCHE": "assets/brands/porsche.png",
+    "PORSCHE": "assets/brands/porsche-crest.svg",
     "RACING BULLS": "assets/brands/racing-bulls.png",
     "RED BULL": "assets/brands/red-bull.svg",
     "SCANIA": "assets/brands/scania.svg",
