@@ -70,6 +70,8 @@ def normalize_event(value: Any) -> str:
     event = re.sub(r"\b(?:19|20)\d{2}\b", "", event)
     event = re.sub(r"\s+", " ", event).strip(" -–")
     aliases = {
+        "SHIZOUKA HOBBY SHOW": "Shizuoka Hobby Show",
+        "MINI GT POP UP STORE TAIPEI": "Mini GT Pop Up Store Taipei",
         "SD7": "Salao Diecast Brazil 7",
         "SD 7": "Salao Diecast Brazil 7",
         "SALAO DIECAST BRAZIL 7": "Salao Diecast Brazil 7",
@@ -81,6 +83,24 @@ def normalize_event(value: Any) -> str:
         "MDX - MALAYSIA DIECAST EXPO": "Malaysia Diecast Expo",
     }
     return aliases.get(event.upper(), event)
+
+
+def complete_event_months(models: list[dict[str, Any]]) -> None:
+    """Complete year-only dates from unambiguous matching event editions."""
+    months: dict[tuple[str, str], set[str]] = {}
+    for model in models:
+        value = model["date"]
+        if model["event"] and re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
+            months.setdefault((model["event"].casefold(), value[:4]), set()).add(value[:7])
+    # Organizer sources: https://www.hobby-shizuoka.com/english/index.html
+    # https://www.tokyoautosalon.jp/2024/index.html
+    months.setdefault(("shizuoka hobby show", "2026"), set()).add("2026-05")
+    months.setdefault(("tokyo auto salon", "2024"), set()).add("2024-01")
+    for model in models:
+        if re.fullmatch(r"20\d{2}", model["date"]):
+            candidates = months.get((model["event"].casefold(), model["date"]), set())
+            if len(candidates) == 1:
+                model["date"] = next(iter(candidates)) + "-01"
 
 
 def normalize_collection_name(value: str) -> str:
@@ -356,6 +376,7 @@ def main(source_arg: str) -> None:
                     }
                 )
 
+    complete_event_months(models)
     DATA_FILE.write_text(
         json.dumps(models, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )

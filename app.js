@@ -6,34 +6,34 @@ const visualAssets = {
   brands: {
     "ALFA ROMEO": "assets/brands/alfa-romeo.svg",
     "AMC": "assets/brands/amc.svg",
-    "FERRARI": "assets/brands/ferrari.svg",
-    "BMW": "assets/brands/bmw.svg",
+    "FERRARI": "assets/brands/ferrari.png",
+    "BMW": "assets/brands/bmw.png",
     "BENTLEY": "assets/brands/bentley.svg",
-    "BUGATTI": "assets/brands/bugatti.svg",
-    "CADILLAC": "assets/brands/cadillac.svg",
-    "CHEVROLET": "assets/brands/chevrolet.svg",
-    "CITROEN": "assets/brands/citroen.svg",
+    "BUGATTI": "assets/brands/bugatti.png",
+    "CADILLAC": "assets/brands/cadillac.png",
+    "CHEVROLET": "assets/brands/chevrolet.png",
+    "CITROEN": "assets/brands/citroen.png",
     "DATSUN": "assets/brands/datsun.svg",
     "DODGE": "assets/brands/dodge.svg",
-    "FIAT": "assets/brands/fiat.svg",
-    "FORD": "assets/brands/ford.svg",
+    "FIAT": "assets/brands/fiat.png",
+    "FORD": "assets/brands/ford.png",
     "HARLEY DAVIDSON": "assets/brands/harley-davidson.svg",
-    "HONDA": "assets/brands/honda.svg",
-    "HYUNDAI": "assets/brands/hyundai.svg",
+    "HONDA": "assets/brands/honda.png",
+    "HYUNDAI": "assets/brands/hyundai.png",
     "JAGUAR": "assets/brands/jaguar.svg",
-    "LAMBORGHINI": "assets/brands/lamborghini.svg",
-    "LAND ROVER": "assets/brands/land-rover.svg",
-    "LEXUS": "assets/brands/lexus.svg",
+    "LAMBORGHINI": "assets/brands/lamborghini.png",
+    "LAND ROVER": "assets/brands/land-rover.png",
+    "LEXUS": "assets/brands/lexus.png",
     "LINCOLN": "assets/brands/lincoln.svg",
     "LOTUS": "assets/brands/lotus.png",
-    "MAZDA": "assets/brands/mazda.svg",
+    "MAZDA": "assets/brands/mazda.png",
     "MCLAREN": "assets/brands/mclaren.svg",
     "MERCEDES": "assets/brands/mercedes.svg",
-    "MINI": "assets/brands/mini.svg",
+    "MINI": "assets/brands/mini.png",
     "MITSUBISHI": "assets/brands/mitsubishi.svg",
     "NISSAN": "assets/brands/nissan.svg",
     "Piaggio": "assets/brands/piaggio.svg",
-    "PORSCHE": "assets/brands/porsche.svg",
+    "PORSCHE": "assets/brands/porsche.png",
     "RACING BULLS": "assets/brands/racing-bulls.png",
     "RED BULL": "assets/brands/red-bull.svg",
     "SCANIA": "assets/brands/scania.svg",
@@ -53,12 +53,6 @@ const visualAssets = {
   },
 };
 
-// Some badges use their official colours: applying the white interface filter
-// would erase fine details or make their lettering unreadable.
-const fullColourLogos = {
-  brands: new Set(["ALFA ROMEO", "AMC", "DATSUN", "LOTUS", "Piaggio", "RED BULL"]),
-  collections: new Set(["IMSA Collection", "Korean Collection", "Senna Collection"]),
-};
 
 const state = {
   models: [],
@@ -146,8 +140,7 @@ function visualFor(kind, value) {
   if (kind === "all") return { src: "assets/mini-gt-logo.png", alt: "MINI GT logo" };
   if (kind === "status") return { mark: "×" };
   const map = kind === "brand" ? visualAssets.brands : visualAssets.collections;
-  const palette = kind === "brand" ? fullColourLogos.brands : fullColourLogos.collections;
-  return map[value] ? { src: map[value], alt: `${titleCase(value)} logo`, fullColour: palette.has(value) } : { mark: initial(value) };
+  return map[value] ? { src: map[value], alt: `${titleCase(value)} logo`, fullColour: true } : { mark: initial(value) };
 }
 function filterLogo(kind, value) {
   const visual = visualFor(kind, value);

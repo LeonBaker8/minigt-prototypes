@@ -1,9 +1,7 @@
-<svg viewBox="0 0 132 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Motorbike Collection">
-  <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="22" cy="33" r="8" stroke-width="3"/>
-    <circle cx="62" cy="33" r="8" stroke-width="3"/>
-    <path d="M22 33 36 18h14l12 15M36 18l-6 15m20-15 12-7 7 2m-7-2 4 11m-25-4 8-9h10" stroke-width="3.4"/>
-    <path d="M78 14h13m-16 6h20m-17 6h13" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 48" role="img" aria-label="Motorbike Collection">
+  <g fill="#d4d7dc">
+    <path fill-rule="evenodd" d="M17 23a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm0 5a7 7 0 1 1 0 14 7 7 0 0 1 0-14ZM64 23a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm0 5a7 7 0 1 1 0 14 7 7 0 0 1 0-14Z"/>
+    <path d="m49 5 2-4h9l3 5-3 3h-5l11 25-4 2-12-27ZM28 15h13c4 0 8 3 9 7l-8 5H30l-7-5H9l-2-5h16l3 2 2-4Z"/>
+    <path d="m29 26 7 2 6 10h10v4H34l-9-10h-8v-4h11Zm19-1 6-3 3 5-8 9h-6l-4-7Z"/>
   </g>
-  <text x="78" y="39" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="800" letter-spacing="1.5">MOTO</text>
 </svg>

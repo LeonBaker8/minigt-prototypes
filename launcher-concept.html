@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#09090c" />
+    <title>MINI GT PROTOTYPES — Launcher concept</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root { --bg:#09090c; --surface:#121217; --surface-2:#18171f; --line:rgba(255,255,255,.09); --text:#f6f5f8; --muted:#a5a2ad; --purple:#8f35ff; --violet:#bd85ff; --lime:#d9ff4d; --red:#ff5b68; }
+      * { box-sizing:border-box; }
+      html { background:var(--bg); scroll-behavior:smooth; }
+      body { min-width:320px; margin:0; overflow-x:hidden; color:var(--text); background:radial-gradient(circle at 51% 14%,rgba(143,53,255,.17),transparent 31rem),radial-gradient(circle at 92% 41%,rgba(103,42,201,.12),transparent 31rem),var(--bg); font-family:Manrope,Arial,sans-serif; }
+      button { font:inherit; cursor:pointer; }
+      .shell { width:min(1440px,calc(100% - 48px)); margin:auto; }
+      .nav-wrap { position:relative; z-index:2; padding-top:22px; }
+      .topnav { display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:22px; min-height:62px; padding:8px 10px 8px 14px; border:1px solid rgba(255,255,255,.08); border-radius:22px; background:rgba(15,15,20,.77); box-shadow:0 14px 50px rgba(0,0,0,.3),inset 0 1px 0 rgba(255,255,255,.04); backdrop-filter:blur(22px); }
+      .brand { display:flex; align-items:center; gap:11px; color:var(--text); font-family:"Space Grotesk",sans-serif; font-size:13px; font-weight:700; letter-spacing:.12em; text-decoration:none; white-space:nowrap; }
+      .brand img { width:44px; height:26px; object-fit:contain; filter:invert(1); }
+      .navlinks { display:flex; justify-content:center; gap:4px; }
+      .navlinks a { padding:10px 13px; border-radius:11px; color:var(--muted); font-size:12px; font-weight:700; text-decoration:none; transition:.2s ease; }
+      .navlinks a:hover,.navlinks a.is-active { color:var(--text); background:rgba(255,255,255,.07); }
+      .navlinks .is-active::after { display:inline-grid; width:16px; height:16px; margin-left:6px; place-items:center; border-radius:50%; color:#fff; background:var(--purple); font-size:9px; content:"•"; vertical-align:middle; }
+      .nav-actions { display:flex; gap:8px; }
+      .small-btn,.button { display:inline-flex; align-items:center; justify-content:center; gap:9px; border:0; border-radius:13px; font-weight:800; transition:transform .18s ease,filter .18s ease,background .18s ease; }
+      .small-btn { min-height:42px; padding:0 15px; color:var(--text); background:linear-gradient(135deg,#6e20e8,#a637ff); box-shadow:0 8px 24px rgba(123,33,238,.24); font-size:12px; }
+      .small-btn:hover,.button:hover { transform:translateY(-2px); filter:brightness(1.08); }
+      .hero { position:relative; z-index:1; padding:99px 0 54px; text-align:center; }
+      .eyebrow { display:inline-flex; align-items:center; gap:9px; margin:0 0 17px; color:var(--violet); font-family:"Space Grotesk",sans-serif; font-size:11px; font-weight:700; letter-spacing:.17em; }
+      .eyebrow::before { width:22px; height:1px; background:var(--purple); content:""; }
+      .hero h1 { max-width:880px; margin:0 auto; font-family:"Space Grotesk",sans-serif; font-size:clamp(40px,6.2vw,86px); font-weight:700; letter-spacing:-.07em; line-height:.95; }
+      .hero h1 strong { color:var(--violet); font-weight:inherit; }
+      .hero p { max-width:610px; margin:22px auto 0; color:var(--muted); font-size:15px; line-height:1.65; }
+      .hero-actions { display:flex; justify-content:center; gap:11px; margin-top:29px; }
+      .button { min-height:50px; padding:0 20px; font-size:13px; }
+      .button.primary { color:#130525; background:var(--text); box-shadow:0 10px 28px rgba(255,255,255,.1); }
+      .button.ghost { border:1px solid var(--line); color:var(--text); background:rgba(255,255,255,.055); }
+      .button svg { width:17px; height:17px; fill:currentColor; }
+      .microcopy { margin-top:14px; color:#777480; font-size:11px; font-weight:600; }
+      .launchpad { position:relative; overflow:hidden; border:1px solid rgba(204,153,255,.2); border-radius:26px; background:linear-gradient(120deg,rgba(21,20,29,.96),rgba(11,11,15,.94)); box-shadow:0 0 0 1px rgba(255,255,255,.025),0 30px 100px rgba(0,0,0,.44),0 0 90px rgba(133,43,255,.12); }
+      .launchpad::before { position:absolute; inset:-220px 33% auto; height:350px; border-radius:50%; background:radial-gradient(ellipse,rgba(146,58,255,.18),transparent 70%); content:""; pointer-events:none; }
+      .window-bar { position:relative; z-index:1; display:flex; align-items:center; justify-content:space-between; height:47px; padding:0 17px; border-bottom:1px solid var(--line); color:#aaa7b2; font-size:10px; }
+      .window-bar .dots { display:flex; gap:6px; }
+      .window-bar .dots i { width:7px; height:7px; border-radius:50%; background:#4b4852; }
+      .window-bar .dots i:first-child { background:var(--purple); box-shadow:0 0 10px var(--purple); }
+      .window-title { display:flex; align-items:center; gap:7px; }
+      .window-title img { width:20px; height:15px; object-fit:contain; filter:invert(1); }
+      .application { position:relative; z-index:1; display:grid; grid-template-columns:74px 295px minmax(0,1fr); min-height:590px; }
+      .rail { display:flex; flex-direction:column; align-items:center; gap:17px; padding:18px 0; border-right:1px solid var(--line); background:rgba(7,7,10,.55); }
+      .rail-icon { display:grid; width:34px; height:34px; place-items:center; border:0; border-radius:11px; color:#85818e; background:transparent; font-size:15px; }
+      .rail-icon.is-active { color:#fff; background:linear-gradient(135deg,#7027dc,#a63cff); box-shadow:0 8px 18px rgba(124,34,234,.3); }
+      .rail-spacer { flex:1; }
+      .sidebar { padding:19px 15px; border-right:1px solid var(--line); background:rgba(11,11,16,.68); }
+      .sidebar-head { display:flex; align-items:center; justify-content:space-between; margin:0 0 16px; font-family:"Space Grotesk",sans-serif; font-size:16px; font-weight:700; }
+      .sidebar-head b { display:grid; width:20px; height:20px; place-items:center; border-radius:50%; color:#cfb4ff; background:rgba(143,53,255,.2); font-size:9px; }
+      .search { display:flex; align-items:center; gap:9px; height:38px; padding:0 11px; border:1px solid var(--line); border-radius:10px; color:#84808c; background:rgba(255,255,255,.025); font-size:11px; }
+      .search::before { color:#c6c3ca; content:"⌕"; font-size:18px; line-height:1; }
+      .side-caption { margin:21px 0 8px; color:#76727d; font-size:10px; font-weight:800; letter-spacing:.1em; }
+      .nav-card { width:100%; margin-bottom:6px; padding:10px; border:1px solid transparent; border-radius:11px; color:#a4a0aa; background:transparent; text-align:left; font-size:12px; font-weight:700; }
+      .nav-card span { display:block; margin-top:3px; color:#74717a; font-size:9px; font-weight:600; }
+      .nav-card.is-active { border-color:rgba(159,91,255,.4); color:#fff; background:linear-gradient(135deg,rgba(105,34,215,.32),rgba(119,40,218,.12)); box-shadow:inset 0 0 20px rgba(126,42,237,.09); }
+      .nav-card.is-active span { color:#bfa1ff; }
+      .side-line { height:1px; margin:19px 0; background:var(--line); }
+      .collection { display:flex; align-items:center; gap:9px; width:100%; padding:8px 4px; border:0; color:#c9c6cf; background:transparent; text-align:left; font-size:11px; font-weight:700; }
+      .collection i { display:grid; width:23px; height:23px; place-items:center; border-radius:7px; background:rgba(255,255,255,.07); color:var(--violet); font-style:normal; font-size:10px; }
+      .view { min-width:0; padding:28px; background:radial-gradient(circle at 85% 10%,rgba(118,42,222,.16),transparent 23rem),linear-gradient(140deg,rgba(11,11,15,.88),rgba(19,17,24,.56)); }
+      .view-top { display:flex; align-items:flex-start; justify-content:space-between; gap:20px; }
+      .view-top p { margin:0 0 4px; color:#a4a0ab; font-size:10px; font-weight:700; letter-spacing:.12em; }
+      .view-top h2 { margin:0; font-family:"Space Grotesk",sans-serif; font-size:27px; letter-spacing:-.055em; }
+      .count { display:flex; align-items:center; gap:8px; margin-top:3px; color:var(--lime); font-size:10px; font-weight:800; letter-spacing:.08em; }
+      .count::before { width:7px; height:7px; border-radius:50%; background:var(--lime); box-shadow:0 0 12px var(--lime); content:""; }
+      .filter-row { display:flex; flex-wrap:wrap; gap:7px; margin:22px 0; }
+      .filter { padding:8px 11px; border:1px solid var(--line); border-radius:9px; color:#a9a5af; background:rgba(255,255,255,.025); font-size:10px; font-weight:800; letter-spacing:.055em; }
+      .filter.is-active { border-color:rgba(171,101,255,.72); color:#fff; background:rgba(128,42,236,.22); }
+      .feature-stage { display:grid; grid-template-columns:minmax(0,1.55fr) minmax(210px,.7fr); gap:12px; }
+      .hero-car { position:relative; min-height:300px; overflow:hidden; border:1px solid rgba(255,255,255,.1); border-radius:17px; background:#17151d; }
+      .hero-car img { width:100%; height:100%; min-height:300px; object-fit:cover; filter:saturate(1.06) contrast(1.03); transition:transform .5s ease; }
+      .hero-car:hover img { transform:scale(1.035); }
+      .hero-car::after { position:absolute; inset:0; background:linear-gradient(180deg,transparent 30%,rgba(7,7,10,.9)); content:""; }
+      .hero-copy { position:absolute; z-index:1; right:0; bottom:0; left:0; padding:21px; }
+      .hero-meta { display:flex; align-items:center; justify-content:space-between; color:#d5d2da; font-size:10px; font-weight:800; letter-spacing:.09em; }
+      .hero-meta span:last-child { color:#d5baff; }
+      .hero-copy h3 { margin:8px 0 0; font-family:"Space Grotesk",sans-serif; font-size:25px; letter-spacing:-.05em; }
+      .hero-copy p { max-width:390px; margin:6px 0 0; color:#c0bcc7; font-size:11px; line-height:1.5; }
+      .queue { display:grid; grid-template-rows:repeat(3,1fr); gap:12px; }
+      .queue-card { position:relative; min-height:92px; overflow:hidden; border:1px solid rgba(255,255,255,.09); border-radius:15px; background:#18161f; }
+      .queue-card img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:.46; filter:grayscale(.18); }
+      .queue-card::after { position:absolute; inset:0; background:linear-gradient(90deg,rgba(14,13,18,.96),rgba(14,13,18,.32)); content:""; }
+      .queue-copy { position:relative; z-index:1; padding:15px; }
+      .queue-copy small { color:#bca0ff; font-size:9px; font-weight:800; letter-spacing:.09em; }
+      .queue-copy h4 { max-width:155px; margin:5px 0 0; font-family:"Space Grotesk",sans-serif; font-size:15px; letter-spacing:-.04em; line-height:1; }
+      .activity { display:grid; grid-template-columns:repeat(3,1fr); gap:11px; margin-top:13px; }
+      .activity-card { padding:14px; border:1px solid var(--line); border-radius:14px; background:rgba(255,255,255,.026); }
+      .activity-card small { color:#87838d; font-size:9px; font-weight:800; letter-spacing:.11em; }
+      .activity-card strong { display:block; margin-top:6px; font-family:"Space Grotesk",sans-serif; font-size:16px; letter-spacing:-.04em; }
+      .activity-card em { display:block; margin-top:6px; color:#b8b3bf; font-size:10px; font-style:normal; }
+      .underbar { display:flex; align-items:center; justify-content:space-between; gap:20px; margin-top:18px; color:#8e8995; font-size:10px; }
+      .underbar b { color:#e9e5ed; font-size:10px; }
+      .progress { width:140px; height:4px; overflow:hidden; border-radius:999px; background:rgba(255,255,255,.12); }
+      .progress i { display:block; width:68%; height:100%; border-radius:inherit; background:linear-gradient(90deg,#6821e3,#c779ff); box-shadow:0 0 10px #a044ff; }
+      .principles { padding:106px 0; }
+      .section-intro { display:flex; align-items:end; justify-content:space-between; gap:30px; max-width:1070px; margin:auto; }
+      .section-intro h2 { max-width:640px; margin:0; font-family:"Space Grotesk",sans-serif; font-size:clamp(29px,4vw,52px); letter-spacing:-.065em; line-height:1; }
+      .section-intro h2 span { color:var(--violet); }
+      .section-intro p { max-width:270px; margin:0; color:var(--muted); font-size:13px; line-height:1.6; }
+      .principle-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-top:36px; }
+      .principle { min-height:211px; padding:20px; border:1px solid var(--line); border-radius:18px; background:linear-gradient(145deg,rgba(23,22,29,.7),rgba(13,13,17,.4)); }
+      .principle b { display:grid; width:28px; height:28px; place-items:center; border:1px solid rgba(168,99,255,.36); border-radius:50%; color:#d7bfff; background:rgba(139,55,255,.12); font-size:10px; }
+      .principle h3 { margin:44px 0 9px; font-family:"Space Grotesk",sans-serif; font-size:18px; letter-spacing:-.045em; }
+      .principle p { margin:0; color:var(--muted); font-size:11px; line-height:1.6; }
+      .bottom-cta { position:relative; overflow:hidden; margin-bottom:56px; padding:48px; border:1px solid rgba(166,91,255,.32); border-radius:25px; background:linear-gradient(115deg,rgba(78,25,155,.38),rgba(17,15,25,.72) 50%,rgba(11,11,14,.9)); }
+      .bottom-cta::after { position:absolute; top:-140px; right:-80px; width:450px; height:370px; border:1px solid rgba(207,161,255,.24); border-radius:50%; box-shadow:0 0 0 35px rgba(161,86,255,.04),0 0 0 70px rgba(161,86,255,.025); content:""; }
+      .bottom-cta > * { position:relative; z-index:1; }
+      .bottom-cta h2 { max-width:620px; margin:0; font-family:"Space Grotesk",sans-serif; font-size:clamp(30px,4vw,52px); letter-spacing:-.065em; line-height:.98; }
+      .bottom-cta p { max-width:540px; margin:16px 0 23px; color:#c3bec9; font-size:13px; line-height:1.6; }
+      .toast { position:fixed; z-index:10; right:24px; bottom:24px; padding:13px 16px; border:1px solid rgba(192,142,255,.46); border-radius:14px; color:#f5efff; background:rgba(31,17,48,.92); box-shadow:0 18px 45px rgba(0,0,0,.4); font-size:12px; font-weight:700; opacity:0; transform:translateY(12px); pointer-events:none; transition:.25s ease; }
+      .toast.show { opacity:1; transform:none; }
+      @media (max-width:980px) { .application { grid-template-columns:56px 238px minmax(0,1fr); }.view { padding:20px; }.hero-car,.hero-car img { min-height:250px; }.principle-grid { grid-template-columns:repeat(2,1fr); } .navlinks { display:none; } .topnav { grid-template-columns:auto 1fr auto; } }
+      @media (max-width:720px) { .shell { width:min(100% - 28px,640px); }.nav-wrap { padding-top:14px; }.topnav { min-height:56px; border-radius:17px; }.brand { font-size:11px; }.brand img { width:37px; }.small-btn { min-height:38px; padding:0 11px; }.small-btn span { display:none; }.hero { padding:67px 0 35px; }.hero p { font-size:13px; }.hero-actions { flex-direction:column; align-items:stretch; max-width:290px; margin-right:auto; margin-left:auto; }.application { display:block; min-height:0; }.rail,.sidebar { display:none; }.view { padding:16px; }.view-top h2 { font-size:23px; }.feature-stage { grid-template-columns:1fr; }.hero-car,.hero-car img { min-height:270px; }.queue { grid-template-columns:repeat(3,1fr); grid-template-rows:none; }.queue-card { min-height:116px; }.queue-copy { padding:10px; }.queue-copy h4 { font-size:12px; }.activity { grid-template-columns:1fr; }.underbar { flex-wrap:wrap; }.principles { padding:68px 0; }.section-intro { display:block; }.section-intro p { margin-top:16px; }.principle-grid { grid-template-columns:1fr; margin-top:25px; }.principle { min-height:158px; }.principle h3 { margin-top:28px; }.bottom-cta { padding:31px 22px; margin-bottom:28px; } }
+      @media (max-width:460px) { .topnav { gap:8px; padding:7px 8px 7px 10px; }.brand { letter-spacing:.06em; }.brand img { width:32px; }.hero h1 { font-size:40px; }.queue { grid-template-columns:1fr; }.queue-card { min-height:88px; }.hero-copy h3 { font-size:21px; }.filter-row { margin:17px 0; } }
+    </style>
+  </head>
+  <body>
+    <div class="shell nav-wrap">
+      <nav class="topnav" aria-label="Concept navigation">
+        <a class="brand" href="#top"><img src="assets/mini-gt-logo.png" alt="MINI GT" /> <span>PROTOTYPE ARCHIVE</span></a>
+        <div class="navlinks"><a href="#archive" class="is-active">Archive</a><a href="#archive">Collections</a><a href="#principles">About the archive</a><a href="#principles">Latest updates</a></div>
+        <div class="nav-actions"><button class="small-btn" type="button" data-toast="Prototype mode — no catalogue data was changed."><span>Open catalogue</span> ↗</button></div>
+      </nav>
+    </div>
+
+    <main id="top">
+      <section class="hero shell">
+        <p class="eyebrow">MINI GT / PROTOTYPES</p>
+        <h1>A faster way to <strong>discover</strong> what’s next.</h1>
+        <p>A premium archive for models revealed at exhibitions before pre-order or release. Browse brands, collections and every unpublished prototype from one focused space.</p>
+        <div class="hero-actions"><button class="button primary" type="button" data-toast="All prototypes would open here."><svg viewBox="0 0 24 24"><path d="m8 5 11 7-11 7V5Z" /></svg> Explore all prototypes</button><a class="button ghost" href="#archive">View the archive ↓</a></div>
+        <div class="microcopy">LIVE ARCHIVE · 254 PROTOTYPES TRACKED · UPDATED FROM EXCEL</div>
+      </section>
+
+      <section class="shell" id="archive" aria-label="Archive launcher concept">
+        <div class="launchpad">
+          <div class="window-bar"><span class="window-title"><img src="assets/mini-gt-logo.png" alt="" /> MINI GT Archive <em>v2.0 concept</em></span><span class="dots"><i></i><i></i><i></i></span></div>
+          <div class="application">
+            <aside class="rail" aria-label="Primary archive navigation"><button class="rail-icon is-active" type="button" aria-label="Archive">⌂</button><button class="rail-icon" type="button" aria-label="Collections">◈</button><button class="rail-icon" type="button" aria-label="Brands">▦</button><button class="rail-icon" type="button" aria-label="Updates">◌</button><span class="rail-spacer"></span><button class="rail-icon" type="button" aria-label="Settings">⚙</button></aside>
+            <aside class="sidebar"><div class="sidebar-head">Archive <b>254</b></div><div class="search">Search models</div><p class="side-caption">VIEW</p><button class="nav-card is-active" type="button" data-title="All prototypes" data-subtitle="Every announced MINI GT prototype" data-count="220 UNRELEASED" data-image="assets/images/ferrari-02-model.png" data-model="SF-23 — Las Vegas Grand Prix" data-brand="FERRARI / F1 COLLECTION">All prototypes<span>220 unreleased models</span></button><button class="nav-card" type="button" data-title="Cancelled archive" data-subtitle="Officially cancelled Mini GT prototypes" data-count="34 CANCELLED" data-image="assets/images/toyota-02-model.png" data-model="Cancelled prototypes" data-brand="ARCHIVED / CANCELLED">Cancelled<span>Separate archived list</span></button><div class="side-line"></div><p class="side-caption">CURATED COLLECTIONS</p><button class="collection" type="button" data-title="Bond 007 Collection" data-subtitle="Prototype cars from the 007 universe" data-count="12 MODELS" data-image="assets/images/toyota-02-model.png" data-model="Toyota 2000GT" data-brand="BOND 007 COLLECTION"><i>007</i> Bond 007</button><button class="collection" type="button" data-title="Fast & Furious Collection" data-subtitle="Models from the Fast saga" data-count="18 MODELS" data-image="assets/images/dodge-02-model.png" data-model="Dodge Charger" data-brand="FAST & FURIOUS COLLECTION"><i>F&F</i> Fast & Furious</button><button class="collection" type="button" data-title="F1 Collection" data-subtitle="Formula 1 prototypes" data-count="26 MODELS" data-image="assets/images/ferrari-02-model.png" data-model="SF-23 — Las Vegas Grand Prix" data-brand="F1 COLLECTION"><i>F1</i> F1 Collection</button></aside>
+            <section class="view">
+              <div class="view-top"><div><p id="screen-subtitle">EVERY ANNOUNCED MINI GT PROTOTYPE</p><h2 id="screen-title">All prototypes</h2></div><div class="count" id="screen-count">220 UNRELEASED</div></div>
+              <div class="filter-row"><button class="filter is-active" type="button">Featured</button><button class="filter" type="button">Latest reveal</button><button class="filter" type="button">Collections</button><button class="filter" type="button">Brands A–Z</button></div>
+              <div class="feature-stage"><article class="hero-car"><img id="hero-image" src="assets/images/ferrari-02-model.png" alt="Featured MINI GT prototype" /><div class="hero-copy"><div class="hero-meta"><span id="hero-brand">FERRARI / F1 COLLECTION</span><span>EXHIBITION REVEAL</span></div><h3 id="hero-model">SF-23 — Las Vegas Grand Prix</h3><p>Open the archive to see prototype images, exhibition information and the exact month each model was shown.</p></div></article><div class="queue"><article class="queue-card"><img src="assets/images/aston-martin-03-model.png" alt="Aston Martin prototype" /><div class="queue-copy"><small>NEW REVEAL</small><h4>Aston Martin Valkyrie</h4></div></article><article class="queue-card"><img src="assets/images/bmw-02-model.png" alt="BMW prototype" /><div class="queue-copy"><small>TRACKED</small><h4>BMW M4 GT3 EVO</h4></div></article><article class="queue-card"><img src="assets/images/mercedes-02-model.png" alt="Mercedes prototype" /><div class="queue-copy"><small>ARCHIVE</small><h4>Mercedes AMG EQS 53</h4></div></article></div></div>
+              <div class="activity"><article class="activity-card"><small>ACTIVE ARCHIVE</small><strong>220 models</strong><em>Ready to explore before release.</em></article><article class="activity-card"><small>PHOTO LIBRARY</small><strong>298 images</strong><em>Models, details and real photos.</em></article><article class="activity-card"><small>CURATED SERIES</small><strong>7 collections</strong><em>A separate way to browse the archive.</em></article></div>
+              <div class="underbar"><span><b>Archive sync</b> · Excel import complete</span><span class="progress"><i></i></span><span>Last update · September 2026</span></div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="principles shell" id="principles"><div class="section-intro"><h2>Less searching.<br /><span>More collecting.</span></h2><p>The prototype should feel as immediate as a launcher: clear next steps, strong imagery and only the information a collector needs.</p></div><div class="principle-grid"><article class="principle"><b>01</b><h3>Open the archive</h3><p>Land on an inviting overview with the newest models already in view.</p></article><article class="principle"><b>02</b><h3>Choose your route</h3><p>Switch between all models, a favourite brand or a collection without losing context.</p></article><article class="principle"><b>03</b><h3>See the reveal</h3><p>Images lead every card, supported by exhibition and month-year details.</p></article><article class="principle"><b>04</b><h3>Track what’s next</h3><p>Every card remains focused on the models that are not yet available to order.</p></article></div></section>
+
+      <section class="shell bottom-cta"><p class="eyebrow">CONCEPT DIRECTION</p><h2>A collector’s archive with the energy of a modern launchpad.</h2><p>This is a separate visual prototype only. The live MINI GT catalogue and its data remain unchanged until you decide to apply this direction.</p><button class="button primary" type="button" data-toast="Concept saved — the live catalogue remains unchanged.">Keep this direction →</button></section>
+    </main>
+    <div class="toast" id="toast" role="status"></div>
+    <script>
+      const toast = document.querySelector('#toast');
+      let toastTimer;
+      document.querySelectorAll('[data-toast]').forEach((button) => button.addEventListener('click', () => { toast.textContent = button.dataset.toast; toast.classList.add('show'); clearTimeout(toastTimer); toastTimer = setTimeout(() => toast.classList.remove('show'), 2600); }));
+      document.querySelectorAll('[data-title]').forEach((button) => button.addEventListener('click', () => {
+        document.querySelectorAll('[data-title]').forEach((item) => item.classList.remove('is-active'));
+        button.classList.add('is-active');
+        document.querySelector('#screen-title').textContent = button.dataset.title;
+        document.querySelector('#screen-subtitle').textContent = button.dataset.subtitle;
+        document.querySelector('#screen-count').textContent = button.dataset.count;
+        document.querySelector('#hero-image').src = button.dataset.image;
+        document.querySelector('#hero-image').alt = button.dataset.model;
+        document.querySelector('#hero-model').textContent = button.dataset.model;
+        document.querySelector('#hero-brand').textContent = button.dataset.brand;
+      }));
+      document.querySelectorAll('.filter').forEach((button) => button.addEventListener('click', () => { document.querySelectorAll('.filter').forEach((item) => item.classList.remove('is-active')); button.classList.add('is-active'); }));
+    </script>
+  </body>
+</html>

@@ -1,21 +1,20 @@
 window.MINI_GT_CATALOG_META = {
-  "lastUpdated": "2026-09-01",
+  "lastUpdated": "2026-09-07",
   "counts": {
-    "active": 220,
+    "active": 219,
     "cancelled": 34,
     "brands": {
-      "ALFA ROMEO": 1,
       "AMC": 1,
       "ASTON MARTIN": 9,
-      "BENTLEY": 1,
+      "BENTLEY": 2,
       "BMW": 10,
       "BUGATTI": 5,
       "CADILLAC": 1,
       "CHEVROLET": 7,
       "CITROEN": 3,
       "DATSUN": 1,
-      "DODGE": 4,
-      "FERRARI": 19,
+      "DODGE": 5,
+      "FERRARI": 17,
       "FORD": 12,
       "FIAT": 2,
       "HARLEY DAVIDSON": 2,
@@ -43,7 +42,7 @@ window.MINI_GT_CATALOG_META = {
       "WESTERN STAR": 3
     },
     "collections": {
-      "Bond 007 Collection": 8,
+      "Bond 007 Collection": 7,
       "F1 Collection": 15,
       "IMSA Collection": 8,
       "Fast & Furious Collection": 13,
