@@ -1,6 +1,6 @@
 const sourceUrl = "assets/data/models.json";
 const specialCollectionOrder = ["Bond 007 Collection", "Fast & Furious Collection"];
-const lastCollectionOrder = ["Korean Collection", "Motorbike Collection"];
+const lastCollectionOrder = ["Korean Collection", "Motorbike Collection", "Qube Carz Collection"];
 const catalogMeta = window.MINI_GT_CATALOG_META || {};
 
 const visualAssets = {
@@ -50,6 +50,7 @@ const visualAssets = {
     "IMSA Collection": "assets/collections/imsa.svg",
     "Korean Collection": "assets/collections/korean.svg",
     "Motorbike Collection": "assets/collections/motorbike.svg",
+    "Qube Carz Collection": "assets/collections/qube-carz.png",
     "Senna Collection": "assets/collections/senna.png",
   },
 };
@@ -87,6 +88,7 @@ const elements = {
   previousPhoto: document.querySelector("#previousPhoto"),
   nextPhoto: document.querySelector("#nextPhoto"),
   missingPhoto: document.querySelector("#photoMissingTemplate"),
+  homeHero: document.querySelector("#homeHero"),
 };
 
 const eventIcon = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5a7.5 7.5 0 0 0-7.5 7.5c0 5.6 7.5 11.5 7.5 11.5s7.5-5.9 7.5-11.5A7.5 7.5 0 0 0 12 2.5Zm0 10.3a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6Z" /></svg>`;
@@ -172,14 +174,15 @@ function renderSidebar() {
 
 function renderQuickFilters() {
   const featured = [
-    { kind: "all", value: "all", label: "ALL PROTOTYPES" },
-    ...getCollections().map(({ name }) => ({ kind: "collection", value: name, label: titleCase(name.replace(/ Collection$/, "")).toUpperCase() })),
+    { kind: "all", value: "all", label: "ALL PROTOTYPES", logo: "" },
+    ...getCollections().map(({ name }) => ({ kind: "collection", value: name, label: titleCase(name.replace(/ Collection$/, "")).toUpperCase(), logo: filterLogo("collection", name) })),
   ];
-  elements.quickFilters.innerHTML = featured.map(({ kind, value, label }) => `<button class="quick-filter ${isSelected(kind, value) ? "is-active" : ""}" type="button" data-filter-kind="${kind}" data-filter-value="${escapeHtml(value)}">${label}</button>`).join("");
+  elements.quickFilters.innerHTML = featured.map(({ kind, value, label, logo }) => `<button class="quick-filter ${isSelected(kind, value) ? "is-active" : ""}" type="button" data-filter-kind="${kind}" data-filter-value="${escapeHtml(value)}">${logo}<span>${label}</span></button>`).join("");
 }
 
 function renderSelection() {
   const visual = visualFor(state.filter.kind, state.filter.value);
+  elements.homeHero.hidden = state.filter.kind !== "all";
   elements.title.textContent = titleCase(filterLabel());
   elements.eyebrow.textContent = filterType();
   elements.count.textContent = `${filterCount()} ${filterCount() === 1 ? "PROTOTYPE" : "PROTOTYPES"}`;
@@ -203,13 +206,47 @@ function photoStage(model) {
   return `<div class="photo-stage" data-photo-stage><img src="${escapeHtml(first.src)}" alt="${escapeHtml(`${model.name} — ${first.label}`)}" loading="lazy" data-open-lightbox="true" tabindex="0" />${controls}</div>`;
 }
 
+function modelCard(model) {
+  return `<article class="model-card" data-model-id="${escapeHtml(model.id)}">${photoStage(model)}<div class="card-info">${model.date ? `<div class="card-meta"><span>${escapeHtml(formatDate(model.date))}</span></div>` : ""}<h2 class="card-name">${escapeHtml(model.name)}</h2>${model.event ? `<p class="card-event">${eventIcon}<span>${escapeHtml(model.event)}</span></p>` : ""}${model.cancelled ? `<span class="cancelled-notice">CANCELLED</span>` : ""}${model.collections.length ? `<div class="card-collections">${model.collections.map((collection) => `<span class="collection-tag">${escapeHtml(collection.toUpperCase())}</span>`).join("")}</div>` : ""}</div></article>`;
+}
+
+function brandSection(name, models) {
+  const visual = visualFor("brand", name);
+  const logo = visual.src
+    ? `<img src="${escapeHtml(visual.src)}" alt="" />`
+    : `<b>${escapeHtml(visual.mark)}</b>`;
+  return `<section class="brand-section" aria-labelledby="brand-${escapeHtml(slugFor(name))}">
+    <header class="brand-section-header">
+      <span class="brand-section-logo">${logo}</span>
+      <div><p>MARQUE</p><h2 id="brand-${escapeHtml(slugFor(name))}">${escapeHtml(titleCase(name))}</h2></div>
+      <span class="brand-section-count">${models.length} ${models.length === 1 ? "PROTOTYPE" : "PROTOTYPES"}</span>
+    </header>
+    <div class="brand-section-grid">${models.map(modelCard).join("")}</div>
+  </section>`;
+}
+
+function slugFor(value) {
+  return String(value).toLocaleLowerCase("en-US").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
 function renderCards() {
   const models = getVisibleModels();
   const label = titleCase(filterLabel());
   elements.activeFilterLine.textContent = state.search ? `Search results for “${state.search}” in “${label}”` : `${models.length} model${models.length === 1 ? "" : "s"} shown`;
   elements.modelGrid.hidden = models.length === 0;
   elements.emptyState.hidden = models.length !== 0;
-  elements.modelGrid.innerHTML = models.map((model) => `<article class="model-card" data-model-id="${escapeHtml(model.id)}">${photoStage(model)}<div class="card-info">${model.date ? `<div class="card-meta"><span>${escapeHtml(formatDate(model.date))}</span></div>` : ""}<h2 class="card-name">${escapeHtml(model.name)}</h2>${model.event ? `<p class="card-event">${eventIcon}<span>${escapeHtml(model.event)}</span></p>` : ""}${model.cancelled ? `<span class="cancelled-notice">CANCELLED</span>` : ""}${model.collections.length ? `<div class="card-collections">${model.collections.map((collection) => `<span class="collection-tag">${escapeHtml(collection.toUpperCase())}</span>`).join("")}</div>` : ""}</div></article>`).join("");
+  const groupByBrand = state.filter.kind !== "brand";
+  elements.modelGrid.classList.toggle("is-grouped", groupByBrand);
+  if (!groupByBrand) {
+    elements.modelGrid.innerHTML = models.map(modelCard).join("");
+    return;
+  }
+  const groups = [...models.reduce((map, model) => {
+    if (!map.has(model.brand)) map.set(model.brand, []);
+    map.get(model.brand).push(model);
+    return map;
+  }, new Map()).entries()].sort(([a], [b]) => a.localeCompare(b, "en"));
+  elements.modelGrid.innerHTML = groups.map(([name, brandModels]) => brandSection(name, brandModels)).join("");
 }
 
 function render() { renderSidebar(); renderQuickFilters(); renderSelection(); renderCards(); }
