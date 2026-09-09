@@ -218,7 +218,7 @@ function brandSection(name, models) {
   return `<section class="brand-section" aria-labelledby="brand-${escapeHtml(slugFor(name))}">
     <header class="brand-section-header">
       <span class="brand-section-logo">${logo}</span>
-      <div><p>MARQUE</p><h2 id="brand-${escapeHtml(slugFor(name))}">${escapeHtml(titleCase(name))}</h2></div>
+      <div><h2 id="brand-${escapeHtml(slugFor(name))}">${escapeHtml(titleCase(name))}</h2></div>
       <span class="brand-section-count">${models.length} ${models.length === 1 ? "PROTOTYPE" : "PROTOTYPES"}</span>
     </header>
     <div class="brand-section-grid">${models.map(modelCard).join("")}</div>

@@ -105,7 +105,6 @@ button { cursor: pointer; }
 .brand-section-logo { display: grid; width: 58px; height: 50px; place-items: center; border: 1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.035); }
 .brand-section-logo img { width: 42px; height: 38px; object-fit: contain; }
 .brand-section-logo b { display: grid; width: 34px; height: 34px; place-items: center; border: 1px solid rgba(255,255,255,.38); border-radius: 50%; color: var(--paper); font-size: 12px; }
-.brand-section-header p { margin: 0 0 3px; color: #cebaff; font-size: 9px; font-weight: 800; letter-spacing: .16em; }
 .brand-section-header h2 { margin: 0; color: var(--paper); font-size: clamp(24px,3vw,38px); letter-spacing: -.045em; line-height: .95; }
 .brand-section-count { justify-self: end; color: var(--lime); font-size: 9px; font-weight: 800; letter-spacing: .13em; white-space: nowrap; }
 .brand-section-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(225px,1fr)); gap: 11px; }
