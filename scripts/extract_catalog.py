@@ -268,11 +268,16 @@ def catalog_metadata(workbook: Any, source: Path, models: list[dict[str, Any]]) 
     updated_at = modified.date().isoformat() if isinstance(modified, datetime) else modified.isoformat()
 
     active = [model for model in models if not model["cancelled"]]
+    catalogue_active = [model for model in active if not model["seriesOnly"]]
+    catalogue_cancelled = [
+        model for model in models if model["cancelled"] and not model["seriesOnly"]
+    ]
     brand_counts: dict[str, int] = {}
     collection_counts: dict[str, int] = {}
     for model in active:
-        brand = model["brand"]
-        brand_counts[brand] = brand_counts.get(brand, 0) + 1
+        if not model["seriesOnly"]:
+            brand = model["brand"]
+            brand_counts[brand] = brand_counts.get(brand, 0) + 1
         for collection in model["collections"]:
             collection_counts[collection] = collection_counts.get(collection, 0) + 1
 
@@ -281,6 +286,8 @@ def catalog_metadata(workbook: Any, source: Path, models: list[dict[str, Any]]) 
         "counts": {
             "active": len(active),
             "cancelled": len(models) - len(active),
+            "catalogueActive": len(catalogue_active),
+            "catalogueCancelled": len(catalogue_cancelled),
             "brands": brand_counts,
             "collections": collection_counts,
         },
@@ -409,6 +416,7 @@ def main(source_arg: str) -> None:
                         "event": event,
                         "date": shown_date,
                         "collections": collections,
+                        "seriesOnly": sheet_brand.upper() == "QUBE CARZ",
                         "cancelled": is_cancelled_row(sheet, row_index),
                         "photos": photos,
                     }

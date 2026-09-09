@@ -120,9 +120,10 @@ function formatArchiveDate(value) {
 }
 
 function activeModels() { return state.models.filter((model) => !model.cancelled); }
-function cancelledCount() { return state.models.filter((model) => model.cancelled).length; }
+function catalogueModels() { return activeModels().filter((model) => !model.seriesOnly); }
+function cancelledCount() { return state.models.filter((model) => model.cancelled && !model.seriesOnly).length; }
 function countBy(items, getter) { return items.reduce((counts, item) => counts.set(getter(item), (counts.get(getter(item)) || 0) + 1), new Map()); }
-function getBrands() { return [...countBy(activeModels(), (model) => model.brand).entries()].map(([name, count]) => ({ name, count })).sort((a, b) => a.name.localeCompare(b.name, "en")); }
+function getBrands() { return [...countBy(catalogueModels(), (model) => model.brand).entries()].map(([name, count]) => ({ name, count })).sort((a, b) => a.name.localeCompare(b.name, "en")); }
 function getCollections() {
   const counts = new Map(specialCollectionOrder.map((name) => [name, 0]));
   activeModels().forEach((model) => model.collections.forEach((collection) => counts.set(collection, (counts.get(collection) || 0) + 1)));
@@ -135,8 +136,8 @@ function filterLabel() { if (state.filter.kind === "all") return "All Models"; i
 function filterType() { return state.filter.kind === "all" ? "CATALOGUE" : state.filter.kind.toUpperCase(); }
 function filterCount() {
   const counts = catalogMeta.counts || {};
-  if (state.filter.kind === "all") return counts.active ?? activeModels().length;
-  if (state.filter.kind === "status") return counts.cancelled ?? cancelledCount();
+  if (state.filter.kind === "all") return counts.catalogueActive ?? catalogueModels().length;
+  if (state.filter.kind === "status") return counts.catalogueCancelled ?? cancelledCount();
   const group = state.filter.kind === "brand" ? counts.brands : counts.collections;
   return (group && group[state.filter.value]) ?? getVisibleModels().length;
 }
@@ -155,7 +156,13 @@ function filterLogo(kind, value) {
 function getVisibleModels() {
   const query = state.search.trim().toLocaleLowerCase("en");
   return state.models.filter((model) => {
-    const matches = state.filter.kind === "status" ? model.cancelled : !model.cancelled && (state.filter.kind === "all" || (state.filter.kind === "brand" && model.brand === state.filter.value) || (state.filter.kind === "collection" && model.collections.includes(state.filter.value)));
+    const matches = state.filter.kind === "status"
+      ? model.cancelled && !model.seriesOnly
+      : !model.cancelled && (
+        (state.filter.kind === "all" && !model.seriesOnly)
+        || (state.filter.kind === "brand" && !model.seriesOnly && model.brand === state.filter.value)
+        || (state.filter.kind === "collection" && model.collections.includes(state.filter.value))
+      );
     if (!matches) return false;
     return !query || [model.name, model.brand, model.event, model.date, ...model.collections].join(" ").toLocaleLowerCase("en").includes(query);
   });
@@ -192,7 +199,9 @@ function renderSelection() {
     elements.selectionImage.classList.toggle("full-colour", Boolean(visual.fullColour));
     elements.selectionImage.hidden = false;
     elements.selectionMark.hidden = true;
+    elements.selectionImage.parentElement.classList.toggle("is-wide-logo", visual.src.endsWith("/qube-carz.png"));
   } else {
+    elements.selectionImage.parentElement.classList.remove("is-wide-logo");
     elements.selectionMark.textContent = visual.mark;
     elements.selectionImage.hidden = true;
     elements.selectionMark.hidden = false;

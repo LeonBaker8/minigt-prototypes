@@ -8,6 +8,7 @@
     "collections": [
       "Qube Carz Collection"
     ],
+    "seriesOnly": true,
     "cancelled": false,
     "photos": [
       {
@@ -26,6 +27,7 @@
     "collections": [
       "Qube Carz Collection"
     ],
+    "seriesOnly": true,
     "cancelled": false,
     "photos": [
       {
@@ -44,6 +46,7 @@
     "collections": [
       "Qube Carz Collection"
     ],
+    "seriesOnly": true,
     "cancelled": false,
     "photos": [
       {
@@ -62,6 +65,7 @@
     "collections": [
       "Qube Carz Collection"
     ],
+    "seriesOnly": true,
     "cancelled": false,
     "photos": [
       {
@@ -80,6 +84,7 @@
     "collections": [
       "Qube Carz Collection"
     ],
+    "seriesOnly": true,
     "cancelled": false,
     "photos": [
       {
@@ -98,6 +103,7 @@
     "collections": [
       "Qube Carz Collection"
     ],
+    "seriesOnly": true,
     "cancelled": false,
     "photos": [
       {
@@ -116,6 +122,7 @@
     "collections": [
       "Qube Carz Collection"
     ],
+    "seriesOnly": true,
     "cancelled": false,
     "photos": [
       {
@@ -134,6 +141,7 @@
     "collections": [
       "Qube Carz Collection"
     ],
+    "seriesOnly": true,
     "cancelled": false,
     "photos": [
       {
@@ -152,6 +160,7 @@
     "collections": [
       "Qube Carz Collection"
     ],
+    "seriesOnly": true,
     "cancelled": false,
     "photos": [
       {
@@ -170,6 +179,7 @@
     "collections": [
       "Qube Carz Collection"
     ],
+    "seriesOnly": true,
     "cancelled": false,
     "photos": [
       {
@@ -188,6 +198,7 @@
     "collections": [
       "Qube Carz Collection"
     ],
+    "seriesOnly": true,
     "cancelled": false,
     "photos": [
       {
@@ -206,6 +217,7 @@
     "collections": [
       "Qube Carz Collection"
     ],
+    "seriesOnly": true,
     "cancelled": false,
     "photos": [
       {
@@ -224,6 +236,7 @@
     "collections": [
       "Qube Carz Collection"
     ],
+    "seriesOnly": true,
     "cancelled": false,
     "photos": [
       {
@@ -242,6 +255,7 @@
     "collections": [
       "Qube Carz Collection"
     ],
+    "seriesOnly": true,
     "cancelled": false,
     "photos": [
       {
@@ -260,6 +274,7 @@
     "collections": [
       "Bond 007 Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -276,6 +291,7 @@
     "event": "Salao Diecast Brazil 7",
     "date": "2026-07-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -292,6 +308,7 @@
     "event": "Shizuoka Hobby Show",
     "date": "2018-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -313,6 +330,7 @@
     "event": "Shizuoka Hobby Show",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -331,6 +349,7 @@
     "collections": [
       "Bond 007 Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -354,6 +373,7 @@
     "collections": [
       "Bond 007 Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -372,6 +392,7 @@
     "collections": [
       "Bond 007 Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -390,6 +411,7 @@
     "collections": [
       "Bond 007 Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -406,6 +428,7 @@
     "event": "Shizuoka Hobby Show",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -422,6 +445,7 @@
     "event": "Shizuoka Hobby Show",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -438,6 +462,7 @@
     "event": "Shizuoka Hobby Show",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -456,6 +481,7 @@
     "collections": [
       "F1 Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -474,6 +500,7 @@
     "collections": [
       "F1 Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -492,6 +519,7 @@
     "collections": [
       "F1 Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -510,6 +538,7 @@
     "collections": [
       "F1 Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -526,6 +555,7 @@
     "event": "R&D Office",
     "date": "2026-09-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -542,6 +572,7 @@
     "event": "R&D Office",
     "date": "2026-09-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -558,6 +589,7 @@
     "event": "Shizuoka Hobby Show",
     "date": "2018-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -579,6 +611,7 @@
     "event": "",
     "date": "",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -600,6 +633,7 @@
     "event": "Tokyo Auto Salon",
     "date": "",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -618,6 +652,7 @@
     "collections": [
       "IMSA Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -634,6 +669,7 @@
     "event": "Salao Diecast Brazil 7",
     "date": "2026-07-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -652,6 +688,7 @@
     "collections": [
       "IMSA Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -678,6 +715,7 @@
     "event": "Alloy Shanghai Car Club",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -694,6 +732,7 @@
     "event": "Alloy Shanghai Car Club",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -712,6 +751,7 @@
     "collections": [
       "IMSA Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -728,6 +768,7 @@
     "event": "Salao Diecast Brazil 7",
     "date": "2026-07-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -744,6 +785,7 @@
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -760,6 +802,7 @@
     "event": "Salao Diecast Brazil 7",
     "date": "2026-07-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -776,6 +819,7 @@
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -792,6 +836,7 @@
     "event": "Dongguan Flagship Store",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -808,6 +853,7 @@
     "event": "Salao Diecast Brazil 7",
     "date": "2026-07-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -824,6 +870,7 @@
     "event": "Hobby Expo China",
     "date": "2026-04-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -840,6 +887,7 @@
     "event": "Hobby Expo China",
     "date": "2026-04-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -861,6 +909,7 @@
     "event": "Hobby Expo China",
     "date": "2026-04-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -884,6 +933,7 @@
     "collections": [
       "IMSA Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -900,6 +950,7 @@
     "event": "Salao Diecast Brazil 7",
     "date": "2026-07-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -916,6 +967,7 @@
     "event": "Diecast Con Madrid",
     "date": "2026-03-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -932,6 +984,7 @@
     "event": "Essen Motor Show",
     "date": "2025-11-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -948,6 +1001,7 @@
     "event": "Shizuoka Hobby Show",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -964,6 +1018,7 @@
     "event": "Shizuoka Hobby Show",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -985,6 +1040,7 @@
     "event": "Shizuoka Hobby Show",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1001,6 +1057,7 @@
     "event": "Shizuoka Hobby Show",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1017,6 +1074,7 @@
     "event": "Dongguan Flagship Store",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1033,6 +1091,7 @@
     "event": "Dongguan Flagship Store",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1049,6 +1108,7 @@
     "event": "Salao Diecast Brazil 7",
     "date": "2026-07-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1065,6 +1125,7 @@
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1081,6 +1142,7 @@
     "event": "Shizuoka Hobby Show",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1099,6 +1161,7 @@
     "collections": [
       "Fast & Furious Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1117,6 +1180,7 @@
     "collections": [
       "Fast & Furious Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1135,6 +1199,7 @@
     "collections": [
       "Fast & Furious Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1153,6 +1218,7 @@
     "collections": [
       "Fast & Furious Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1171,6 +1237,7 @@
     "collections": [
       "Fast & Furious Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1187,6 +1254,7 @@
     "event": "Dongguan Flagship Store",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1203,6 +1271,7 @@
     "event": "",
     "date": "2025",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1219,6 +1288,7 @@
     "event": "",
     "date": "2025",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1235,6 +1305,7 @@
     "event": "",
     "date": "2025",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1251,6 +1322,7 @@
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1267,6 +1339,7 @@
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1283,6 +1356,7 @@
     "event": "",
     "date": "2025",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1299,6 +1373,7 @@
     "event": "",
     "date": "2025",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1315,6 +1390,7 @@
     "event": "",
     "date": "2025",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1331,6 +1407,7 @@
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1347,6 +1424,7 @@
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1363,6 +1441,7 @@
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1379,6 +1458,7 @@
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1397,6 +1477,7 @@
     "collections": [
       "F1 Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1415,6 +1496,7 @@
     "collections": [
       "F1 Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1431,6 +1513,7 @@
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1447,6 +1530,7 @@
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1463,6 +1547,7 @@
     "event": "IDE",
     "date": "2023",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -1479,6 +1564,7 @@
     "event": "Hobby Expo China",
     "date": "2025-04-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -1495,6 +1581,7 @@
     "event": "Dongguan Flagship Store",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1511,6 +1598,7 @@
     "event": "Dongguan Flagship Store",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1527,6 +1615,7 @@
     "event": "Salao Diecast Brazil 7",
     "date": "2026-07-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1545,6 +1634,7 @@
     "collections": [
       "Fast & Furious Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1563,6 +1653,7 @@
     "collections": [
       "Fast & Furious Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1579,6 +1670,7 @@
     "event": "Salao Diecast Brazil 7",
     "date": "2026-07-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1595,6 +1687,7 @@
     "event": "Spielwarenmesse",
     "date": "2026-01-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1613,6 +1706,7 @@
     "collections": [
       "Bond 007 Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1629,6 +1723,7 @@
     "event": "",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1645,6 +1740,7 @@
     "event": "Mini GT Pop Up Store Taipei",
     "date": "2025",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1661,6 +1757,7 @@
     "event": "Diecast Model Expo",
     "date": "2025",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1677,6 +1774,7 @@
     "event": "Diecast Model Expo",
     "date": "2025",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1695,6 +1793,7 @@
     "collections": [
       "Senna Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1718,6 +1817,7 @@
     "collections": [
       "Motorbike Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1736,6 +1836,7 @@
     "collections": [
       "Motorbike Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1757,6 +1858,7 @@
     "event": "Shizuoka Hobby Show",
     "date": "2019-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -1773,6 +1875,7 @@
     "event": "Shizuoka Hobby Show",
     "date": "2019-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -1789,6 +1892,7 @@
     "event": "Tokyo Auto Salon",
     "date": "2024-01-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -1805,6 +1909,7 @@
     "event": "",
     "date": "2024",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -1821,6 +1926,7 @@
     "event": "All Japan Model & Hobby Show",
     "date": "September 2023",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -1837,6 +1943,7 @@
     "event": "Shizuoka Hobby Show",
     "date": "2019-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -1853,6 +1960,7 @@
     "event": "Dongguan Flagship Store",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1869,6 +1977,7 @@
     "event": "",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1885,6 +1994,7 @@
     "event": "",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1901,6 +2011,7 @@
     "event": "Alloy Shanghai Car Club",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1917,6 +2028,7 @@
     "event": "Alloy Shanghai Car Club",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1933,6 +2045,7 @@
     "event": "Salao Diecast Brazil 7",
     "date": "2026-07-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1951,6 +2064,7 @@
     "collections": [
       "Fast & Furious Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1969,6 +2083,7 @@
     "collections": [
       "Fast & Furious Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -1987,6 +2102,7 @@
     "collections": [
       "Motorbike Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2010,6 +2126,7 @@
     "collections": [
       "Korean Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2028,6 +2145,7 @@
     "collections": [
       "Korean Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2046,6 +2164,7 @@
     "collections": [
       "Korean Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2064,6 +2183,7 @@
     "collections": [
       "Korean Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2082,6 +2202,7 @@
     "collections": [
       "Korean Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2100,6 +2221,7 @@
     "collections": [
       "Korean Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2118,6 +2240,7 @@
     "collections": [
       "Korean Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2136,6 +2259,7 @@
     "collections": [
       "Korean Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2154,6 +2278,7 @@
     "collections": [
       "Korean Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2172,6 +2297,7 @@
     "collections": [
       "Korean Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2190,6 +2316,7 @@
     "collections": [
       "Korean Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2208,6 +2335,7 @@
     "collections": [
       "Korean Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2226,6 +2354,7 @@
     "collections": [
       "Korean Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2244,6 +2373,7 @@
     "collections": [
       "Korean Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2262,6 +2392,7 @@
     "collections": [
       "Korean Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2280,6 +2411,7 @@
     "collections": [
       "Korean Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2298,6 +2430,7 @@
     "collections": [
       "Korean Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2316,6 +2449,7 @@
     "collections": [
       "Korean Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2334,6 +2468,7 @@
     "collections": [
       "Korean Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2350,6 +2485,7 @@
     "event": "Hobby Expo China",
     "date": "2026-04-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2366,6 +2502,7 @@
     "event": "",
     "date": "2022",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -2382,6 +2519,7 @@
     "event": "",
     "date": "2022",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -2400,6 +2538,7 @@
     "collections": [
       "Bond 007 Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2421,6 +2560,7 @@
     "event": "Australian Diecast Expo",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2437,6 +2577,7 @@
     "event": "HK Toy Fair",
     "date": "2020",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -2453,6 +2594,7 @@
     "event": "HK Toy Fair",
     "date": "2020",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -2469,6 +2611,7 @@
     "event": "Dongguan Flagship Store",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2485,6 +2628,7 @@
     "event": "",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2501,6 +2645,7 @@
     "event": "Dongguan Flagship Store",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2517,6 +2662,7 @@
     "event": "Australian Diecast Expo",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2533,6 +2679,7 @@
     "event": "Alloy Shanghai Car Club",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2551,6 +2698,7 @@
     "collections": [
       "IMSA Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2572,6 +2720,7 @@
     "event": "Salao Diecast Brazil 7",
     "date": "2026-07-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2588,6 +2737,7 @@
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2604,6 +2754,7 @@
     "event": "",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2622,6 +2773,7 @@
     "collections": [
       "Fast & Furious Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2638,6 +2790,7 @@
     "event": "Australian Diecast Expo",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2654,6 +2807,7 @@
     "event": "Australian Diecast Expo",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2672,6 +2826,7 @@
     "collections": [
       "IMSA Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2688,6 +2843,7 @@
     "event": "Australian Diecast Expo",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2709,6 +2865,7 @@
     "event": "",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2730,6 +2887,7 @@
     "event": "Mini GT Pop Up Store Taipei",
     "date": "2025-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2751,6 +2909,7 @@
     "event": "Australian Diecast Expo",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2769,6 +2928,7 @@
     "collections": [
       "F1 Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2787,6 +2947,7 @@
     "collections": [
       "Bond 007 Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2803,6 +2964,7 @@
     "event": "Shizuoka Hobby Show",
     "date": "2018-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -2819,6 +2981,7 @@
     "event": "Shizuoka Hobby Show",
     "date": "2018-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -2835,6 +2998,7 @@
     "event": "HK Toycar Salon",
     "date": "2020",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -2851,6 +3015,7 @@
     "event": "HK Toycar Salon",
     "date": "2020",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -2867,6 +3032,7 @@
     "event": "Dongguan Flagship Store",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2883,6 +3049,7 @@
     "event": "Dongguan Flagship Store",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2899,6 +3066,7 @@
     "event": "Salao Diecast Brazil 7",
     "date": "2026-07-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2920,6 +3088,7 @@
     "event": "Australian Diecast Expo",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2936,6 +3105,7 @@
     "event": "Malaysia Diecast Expo",
     "date": "2025-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2952,6 +3122,7 @@
     "event": "",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2973,6 +3144,7 @@
     "event": "",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -2989,6 +3161,7 @@
     "event": "",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3007,6 +3180,7 @@
     "collections": [
       "Fast & Furious Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3030,6 +3204,7 @@
     "collections": [
       "Fast & Furious Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3051,6 +3226,7 @@
     "event": "Shizuoka Hobby Show",
     "date": "2018-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -3072,6 +3248,7 @@
     "event": "ToySoul",
     "date": "2017-12-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -3093,6 +3270,7 @@
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3111,6 +3289,7 @@
     "collections": [
       "F1 Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3129,6 +3308,7 @@
     "collections": [
       "F1 Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3145,6 +3325,7 @@
     "event": "Hobby Expo China",
     "date": "2026-04-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3161,6 +3342,7 @@
     "event": "Salao Diecast Brazil 7",
     "date": "2026-07-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3177,6 +3359,7 @@
     "event": "Salao Diecast Brazil 7",
     "date": "2026-07-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3193,6 +3376,7 @@
     "event": "Mini GT Pop Up Store Taipei",
     "date": "2025-11-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3211,6 +3395,7 @@
     "collections": [
       "F1 Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3234,6 +3419,7 @@
     "collections": [
       "F1 Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3257,6 +3443,7 @@
     "collections": [
       "F1 Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3280,6 +3467,7 @@
     "collections": [
       "F1 Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3301,6 +3489,7 @@
     "event": "",
     "date": "2022",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -3317,6 +3506,7 @@
     "event": "Hong Kong ToyCar Salon",
     "date": "September 2021",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -3343,6 +3533,7 @@
     "event": "Nuremberg International Toy Fair",
     "date": "January 2023",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -3369,6 +3560,7 @@
     "event": "Spielwarenmesse",
     "date": "2026-01-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3385,6 +3577,7 @@
     "event": "Spielwarenmesse",
     "date": "2026-01-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3401,6 +3594,7 @@
     "event": "Spielwarenmesse",
     "date": "2026-01-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3417,6 +3611,7 @@
     "event": "Spielwarenmesse",
     "date": "2026-01-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3433,6 +3628,7 @@
     "event": "",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3454,6 +3650,7 @@
     "event": "",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3475,6 +3672,7 @@
     "event": "",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3491,6 +3689,7 @@
     "event": "",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3512,6 +3711,7 @@
     "event": "",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3533,6 +3733,7 @@
     "event": "",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3554,6 +3755,7 @@
     "event": "",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3575,6 +3777,7 @@
     "event": "",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3596,6 +3799,7 @@
     "event": "",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3612,6 +3816,7 @@
     "event": "",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3633,6 +3838,7 @@
     "event": "",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3649,6 +3855,7 @@
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3665,6 +3872,7 @@
     "event": "R&D Office",
     "date": "2026-09-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3681,6 +3889,7 @@
     "event": "R&D Office",
     "date": "2026-09-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3697,6 +3906,7 @@
     "event": "R&D Office",
     "date": "2026-09-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3713,6 +3923,7 @@
     "event": "Hobby Expo China",
     "date": "2026-04-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3734,6 +3945,7 @@
     "event": "Hobby Expo China",
     "date": "2026-04-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3755,6 +3967,7 @@
     "event": "Nürnberg Toy Fair",
     "date": "2018-02-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -3776,6 +3989,7 @@
     "event": "59th All Japan Model & Hobby Show",
     "date": "2019-10-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -3792,6 +4006,7 @@
     "event": "",
     "date": "2020",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -3813,6 +4028,7 @@
     "event": "Tokyo Auto Salon",
     "date": "2024-01-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -3829,6 +4045,7 @@
     "event": "SD6",
     "date": "2025-07-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -3845,6 +4062,7 @@
     "event": "Malaysia Diecast Expo",
     "date": "2025-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3861,6 +4079,7 @@
     "event": "Tokyo Auto Salon",
     "date": "2026-01-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3882,6 +4101,7 @@
     "event": "Tokyo Auto Salon",
     "date": "2026-01-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3898,6 +4118,7 @@
     "event": "Tokyo Auto Salon",
     "date": "2026-01-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3914,6 +4135,7 @@
     "event": "Alloy Shanghai Car Club",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3930,6 +4152,7 @@
     "event": "Mini GT Pop Up Store Taipei",
     "date": "2025-11-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3948,6 +4171,7 @@
     "collections": [
       "Fast & Furious Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3964,6 +4188,7 @@
     "event": "Mini GT Pop Up Store Taipei",
     "date": "2025-11-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3980,6 +4205,7 @@
     "event": "Mini GT Pop Up Store Taipei",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -3996,6 +4222,7 @@
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4017,6 +4244,7 @@
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4033,6 +4261,7 @@
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4051,6 +4280,7 @@
     "collections": [
       "Fast & Furious Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4067,6 +4297,7 @@
     "event": "Tokyo Auto Salon",
     "date": "2026-01-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4088,6 +4319,7 @@
     "event": "Tokyo Auto Salon",
     "date": "2026-01-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4109,6 +4341,7 @@
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4125,6 +4358,7 @@
     "event": "Mini GT Pop Up Store Taipei",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4141,6 +4375,7 @@
     "event": "Mini GT Pop Up Store Taipei",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4157,6 +4392,7 @@
     "event": "Mini GT Pop Up Store Taipei",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4173,6 +4409,7 @@
     "event": "Mini GT Pop Up Store Taipei",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4189,6 +4426,7 @@
     "event": "Malaysia Diecast Expo",
     "date": "2025-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4205,6 +4443,7 @@
     "event": "Nurenberg Toy Fair",
     "date": "2019-01-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -4221,6 +4460,7 @@
     "event": "Nürnberg Toy Fair",
     "date": "2018-02-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -4242,6 +4482,7 @@
     "event": "Hobby Expo China",
     "date": "2026-04-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4265,6 +4506,7 @@
     "collections": [
       "IMSA Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4286,6 +4528,7 @@
     "event": "Dongguan Flagship Store",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4302,6 +4545,7 @@
     "event": "Dongguan Flagship Store",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4318,6 +4562,7 @@
     "event": "Dongguan Flagship Store",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4336,6 +4581,7 @@
     "collections": [
       "IMSA Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4352,6 +4598,7 @@
     "event": "Salao Diecast Brazil 7",
     "date": "2026-07-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4368,6 +4615,7 @@
     "event": "Salao Diecast Brazil 7",
     "date": "2026-07-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4384,6 +4632,7 @@
     "event": "Shizuoka Hobby Show",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4400,6 +4649,7 @@
     "event": "Shizuoka Hobby Show",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4416,6 +4666,7 @@
     "event": "Shizuoka Hobby Show",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4432,6 +4683,7 @@
     "event": "Salao Diecast Brazil 7",
     "date": "2026-07-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4450,6 +4702,7 @@
     "collections": [
       "Bond 007 Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4466,6 +4719,7 @@
     "event": "Shizuoka Hobby Show",
     "date": "2019-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -4482,6 +4736,7 @@
     "event": "Mini GT Pop Up Store Taipei",
     "date": "2025-11-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4498,6 +4753,7 @@
     "event": "Australian Diecast Expo",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4514,6 +4770,7 @@
     "event": "Shizuoka Hobby Show",
     "date": "2026-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4530,6 +4787,7 @@
     "event": "Shizuoka Hobby Show",
     "date": "2018-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -4546,6 +4804,7 @@
     "event": "Hobby Expo China",
     "date": "2025-04-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -4562,6 +4821,7 @@
     "event": "All in Tuning",
     "date": "2024-09-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -4578,6 +4838,7 @@
     "event": "Malaysia Diecast Expo",
     "date": "2025-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -4594,6 +4855,7 @@
     "event": "Alloy Shanghai Car Club",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4615,6 +4877,7 @@
     "event": "Alloy Shanghai Car Club",
     "date": "2026-08-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4631,6 +4894,7 @@
     "event": "",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4647,6 +4911,7 @@
     "event": "",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4663,6 +4928,7 @@
     "event": "",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4679,6 +4945,7 @@
     "event": "",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4695,6 +4962,7 @@
     "event": "",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4713,6 +4981,7 @@
     "collections": [
       "Bond 007 Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4729,6 +4998,7 @@
     "event": "Mini GT Pop Up Store",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4745,6 +5015,7 @@
     "event": "Mini GT Pop Up Store",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4761,6 +5032,7 @@
     "event": "Mini GT Pop Up Store",
     "date": "2026",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4779,6 +5051,7 @@
     "collections": [
       "F1 Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4800,6 +5073,7 @@
     "event": "Hong Kong Toycar Salon",
     "date": "2023-09-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": true,
     "photos": [
       {
@@ -4818,6 +5092,7 @@
     "collections": [
       "F1 Collection"
     ],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4839,6 +5114,7 @@
     "event": "Salao Diecast Brazil 7",
     "date": "2026-07-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4855,6 +5131,7 @@
     "event": "Hobby Expo China",
     "date": "2025-04-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4871,6 +5148,7 @@
     "event": "Salao Diecast Brazil 7",
     "date": "2026-07-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4887,6 +5165,7 @@
     "event": "Spielwarenmesse",
     "date": "2024-01-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4903,6 +5182,7 @@
     "event": "Mini GT Pop Up Store Taipei",
     "date": "2025-11-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4919,6 +5199,7 @@
     "event": "Mini GT Pop Up Store Taipei",
     "date": "2025-11-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4935,6 +5216,7 @@
     "event": "Shizuoka Hobby Show",
     "date": "2022-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
@@ -4951,6 +5233,7 @@
     "event": "Shizuoka Hobby Show",
     "date": "2022-05-01",
     "collections": [],
+    "seriesOnly": false,
     "cancelled": false,
     "photos": [
       {
