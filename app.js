@@ -50,7 +50,7 @@ const visualAssets = {
     "IMSA Collection": "assets/collections/imsa.svg",
     "Korean Collection": "assets/collections/korean.svg",
     "Motorbike Collection": "assets/collections/motorbike.svg",
-    "Qube Carz Collection": "assets/collections/qube-carz.png",
+    "Qube Carz Collection": "assets/collections/qube-carz-white.png",
     "Senna Collection": "assets/collections/senna.png",
   },
 };
@@ -199,7 +199,7 @@ function renderSelection() {
     elements.selectionImage.classList.toggle("full-colour", Boolean(visual.fullColour));
     elements.selectionImage.hidden = false;
     elements.selectionMark.hidden = true;
-    elements.selectionImage.parentElement.classList.toggle("is-wide-logo", visual.src.endsWith("/qube-carz.png"));
+    elements.selectionImage.parentElement.classList.toggle("is-wide-logo", visual.src.endsWith("/qube-carz-white.png"));
   } else {
     elements.selectionImage.parentElement.classList.remove("is-wide-logo");
     elements.selectionMark.textContent = visual.mark;
