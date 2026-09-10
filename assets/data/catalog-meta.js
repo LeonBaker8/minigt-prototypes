@@ -1,10 +1,11 @@
 window.MINI_GT_CATALOG_META = {
-  "lastUpdated": "2026-09-10",
+  "lastUpdated": "2026-09-09",
   "counts": {
-    "active": 253,
+    "active": 245,
     "cancelled": 38,
+    "catalogueActive": 231,
+    "catalogueCancelled": 38,
     "brands": {
-      "Qube Carz": 21,
       "AMC": 1,
       "ALFA ROMEO": 1,
       "ASTON MARTIN": 12,
@@ -30,7 +31,7 @@ window.MINI_GT_CATALOG_META = {
       "LOTUS": 4,
       "MAZDA": 8,
       "MITSUBISHI": 2,
-      "MCLAREN": 12,
+      "MCLAREN": 11,
       "MERCEDES": 19,
       "MINI": 2,
       "NISSAN": 21,
@@ -44,8 +45,9 @@ window.MINI_GT_CATALOG_META = {
       "WESTERN STAR": 5
     },
     "collections": {
-      "Bond 007 Collection": 9,
-      "F1 Collection": 16,
+      "Qube Carz Collection": 14,
+      "Bond 007 Collection": 10,
+      "F1 Collection": 15,
       "IMSA Collection": 8,
       "Fast & Furious Collection": 14,
       "Senna Collection": 1,
