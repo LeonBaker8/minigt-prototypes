@@ -136,7 +136,7 @@ function filterLabel() { if (state.filter.kind === "all") return "All Models"; i
 function filterType() { return state.filter.kind === "all" ? "CATALOGUE" : state.filter.kind.toUpperCase(); }
 function filterCount() {
   const counts = catalogMeta.counts || {};
-  if (state.filter.kind === "all") return counts.catalogueActive ?? catalogueModels().length;
+  if (state.filter.kind === "all") return counts.active ?? activeModels().length;
   if (state.filter.kind === "status") return counts.catalogueCancelled ?? cancelledCount();
   const group = state.filter.kind === "brand" ? counts.brands : counts.collections;
   return (group && group[state.filter.value]) ?? getVisibleModels().length;
@@ -159,7 +159,7 @@ function getVisibleModels() {
     const matches = state.filter.kind === "status"
       ? model.cancelled && !model.seriesOnly
       : !model.cancelled && (
-        (state.filter.kind === "all" && !model.seriesOnly)
+        state.filter.kind === "all"
         || (state.filter.kind === "brand" && !model.seriesOnly && model.brand === state.filter.value)
         || (state.filter.kind === "collection" && model.collections.includes(state.filter.value))
       );
@@ -221,6 +221,7 @@ function modelCard(model) {
 
 function brandSection(name, models) {
   const visual = visualFor("brand", name);
+  const orderedModels = [...models].sort((a, b) => Number(Boolean(a.seriesOnly)) - Number(Boolean(b.seriesOnly)));
   const logo = visual.src
     ? `<img src="${escapeHtml(visual.src)}" alt="" />`
     : `<b>${escapeHtml(visual.mark)}</b>`;
@@ -230,7 +231,7 @@ function brandSection(name, models) {
       <div><h2 id="brand-${escapeHtml(slugFor(name))}">${escapeHtml(titleCase(name))}</h2></div>
       <span class="brand-section-count">${models.length} ${models.length === 1 ? "PROTOTYPE" : "PROTOTYPES"}</span>
     </header>
-    <div class="brand-section-grid">${models.map(modelCard).join("")}</div>
+    <div class="brand-section-grid">${orderedModels.map(modelCard).join("")}</div>
   </section>`;
 }
 
