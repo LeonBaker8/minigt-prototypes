@@ -20,10 +20,10 @@
   },
   {
     "id": "qube-carz-03",
-    "name": "Porsche 911 GT3 RS",
+    "name": "Porsche 911 Carrera RS 2.7 Orange",
     "brand": "PORSCHE",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026-05-01",
+    "event": "Australian Diecast Expo",
+    "date": "2026-08-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -39,10 +39,10 @@
   },
   {
     "id": "qube-carz-04",
-    "name": "Lamborghini Countach 500S Black",
-    "brand": "LAMBORGHINI",
-    "event": "Nurnberg Toy Fair",
-    "date": "2026-01-01",
+    "name": "Porsche 911 Carrera RS 2.7 Blue",
+    "brand": "PORSCHE",
+    "event": "Australian Diecast Expo",
+    "date": "2026-08-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -58,10 +58,10 @@
   },
   {
     "id": "qube-carz-05",
-    "name": "BMW M3 (E30) DTM",
-    "brand": "BMW",
-    "event": "Nurnberg Toy Fair",
-    "date": "2026-01-01",
+    "name": "Porsche 911 GT3 RS",
+    "brand": "PORSCHE",
+    "event": "Malaysia Diecast Expo",
+    "date": "2026-05-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -77,10 +77,10 @@
   },
   {
     "id": "qube-carz-06",
-    "name": "BMW M3 (E30) Rally",
-    "brand": "BMW",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026-05-01",
+    "name": "Lamborghini Countach 500S Black",
+    "brand": "LAMBORGHINI",
+    "event": "Nurnberg Toy Fair",
+    "date": "2026-01-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -96,10 +96,10 @@
   },
   {
     "id": "qube-carz-07",
-    "name": "Nissan Skyline GT-R R32 Nismo / Group A",
-    "brand": "NISSAN",
-    "event": "Nurnberg Toy Fair",
-    "date": "2026-01-01",
+    "name": "Lamborghini Countach 500S Red",
+    "brand": "LAMBORGHINI",
+    "event": "Australian Diecast Expo",
+    "date": "2026-08-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -115,10 +115,10 @@
   },
   {
     "id": "qube-carz-08",
-    "name": "Mercedes Benz 190E",
-    "brand": "MERCEDES",
-    "event": "Diecastcon Madrid Spain",
-    "date": "2026-03-01",
+    "name": "Lamborghini Revuelto Viola 30Th",
+    "brand": "LAMBORGHINI",
+    "event": "Australian Diecast Expo",
+    "date": "2026-08-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -134,10 +134,10 @@
   },
   {
     "id": "qube-carz-09",
-    "name": "Ford Mustang Boss",
-    "brand": "FORD",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026-05-01",
+    "name": "Lamborghini Revuelto Giallo",
+    "brand": "LAMBORGHINI",
+    "event": "Australian Diecast Expo",
+    "date": "2026-08-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -153,10 +153,10 @@
   },
   {
     "id": "qube-carz-10",
-    "name": "Volkswagen T1 Crewcab Pickup",
-    "brand": "VOLKSWAGEN",
-    "event": "Shizuoka Hobby Show",
-    "date": "2026-05-01",
+    "name": "BMW M3 (E30) DTM",
+    "brand": "BMW",
+    "event": "Australian Diecast Expo",
+    "date": "2026-08-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -172,9 +172,9 @@
   },
   {
     "id": "qube-carz-11",
-    "name": "Volkswagen T1 Microbus",
-    "brand": "VOLKSWAGEN",
-    "event": "Shizuoka Hobby Show",
+    "name": "BMW M3 (E30) Rally",
+    "brand": "BMW",
+    "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
     "collections": [
       "Qube Carz Collection"
@@ -191,10 +191,10 @@
   },
   {
     "id": "qube-carz-12",
-    "name": "Mazda RX-7 VeilSide Fortune7 Silver",
-    "brand": "MAZDA",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026-05-01",
+    "name": "Nissan Skyline GT-R (R32) Nismo S-Tune Silver",
+    "brand": "NISSAN",
+    "event": "Nurnberg Toy Fair",
+    "date": "2026-01-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -210,10 +210,10 @@
   },
   {
     "id": "qube-carz-13",
-    "name": "Toyota TRD 3000GT Red",
-    "brand": "TOYOTA",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026-05-01",
+    "name": "Mercedes Benz 190E",
+    "brand": "MERCEDES",
+    "event": "Diecastcon Madrid Spain",
+    "date": "2026-03-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -229,8 +229,8 @@
   },
   {
     "id": "qube-carz-14",
-    "name": "Honda NSX Ver. 1",
-    "brand": "HONDA",
+    "name": "Ford Mustang Boss",
+    "brand": "FORD",
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
     "collections": [
@@ -248,6 +248,120 @@
   },
   {
     "id": "qube-carz-15",
+    "name": "Volkswagen T1 Crewcab Pickup",
+    "brand": "VOLKSWAGEN",
+    "event": "Australian Diecast Expo",
+    "date": "2026-08-01",
+    "collections": [
+      "Qube Carz Collection"
+    ],
+    "seriesOnly": true,
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/qube-carz-15-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "qube-carz-16",
+    "name": "Volkswagen T1 Microbus",
+    "brand": "VOLKSWAGEN",
+    "event": "Australian Diecast Expo",
+    "date": "2026-08-01",
+    "collections": [
+      "Qube Carz Collection"
+    ],
+    "seriesOnly": true,
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/qube-carz-16-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "qube-carz-17",
+    "name": "Mazda RX-7 VeilSide Fortune7 Silver",
+    "brand": "MAZDA",
+    "event": "Malaysia Diecast Expo",
+    "date": "2026-05-01",
+    "collections": [
+      "Qube Carz Collection"
+    ],
+    "seriesOnly": true,
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/qube-carz-17-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "qube-carz-18",
+    "name": "Toyota TRD 3000GT Red",
+    "brand": "TOYOTA",
+    "event": "Malaysia Diecast Expo",
+    "date": "2026-05-01",
+    "collections": [
+      "Qube Carz Collection"
+    ],
+    "seriesOnly": true,
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/qube-carz-18-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "qube-carz-19",
+    "name": "Toyota TRD 3000GT Silver",
+    "brand": "TOYOTA",
+    "event": "Australian Diecast Expo",
+    "date": "2026-08-01",
+    "collections": [
+      "Qube Carz Collection"
+    ],
+    "seriesOnly": true,
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/qube-carz-19-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "qube-carz-20",
+    "name": "Honda NSX Ver. 1",
+    "brand": "HONDA",
+    "event": "Malaysia Diecast Expo",
+    "date": "2026-05-01",
+    "collections": [
+      "Qube Carz Collection"
+    ],
+    "seriesOnly": true,
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/qube-carz-20-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "qube-carz-21",
     "name": "Honda NSX Ver. 2",
     "brand": "HONDA",
     "event": "Malaysia Diecast Expo",
@@ -259,7 +373,26 @@
     "cancelled": false,
     "photos": [
       {
-        "src": "assets/images/qube-carz-15-model.png",
+        "src": "assets/images/qube-carz-21-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "qube-carz-22",
+    "name": "Nissan GT-R (R35) LB★WORKS Type 1, Rear Wing ver.2 Velocity Blue",
+    "brand": "NISSAN",
+    "event": "Australian Diecast Expo",
+    "date": "2026-08-01",
+    "collections": [
+      "Qube Carz Collection"
+    ],
+    "seriesOnly": true,
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/qube-carz-22-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -765,8 +898,8 @@
     "id": "bmw-11",
     "name": "BMW M3 (E30) GR. A Rally #10 Motul",
     "brand": "BMW",
-    "event": "Salao Diecast Brazil 7",
-    "date": "2026-07-01",
+    "event": "Australian Diecast Expo",
+    "date": "2026-08-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -1211,7 +1344,7 @@
   },
   {
     "id": "dodge-05",
-    "name": "Dodge Carger 1970",
+    "name": "Dodge Carger 1970 \"Fast & Furious 4\"",
     "brand": "DODGE",
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
@@ -1230,7 +1363,7 @@
   },
   {
     "id": "dodge-06",
-    "name": "Dodge Charger",
+    "name": "Dodge Charger 1970",
     "brand": "DODGE",
     "event": "Australian Diecast Expo",
     "date": "2026-08-01",
@@ -2942,8 +3075,8 @@
     "id": "lotus-05",
     "name": "Lotus Esprit S1 Ver.2",
     "brand": "LOTUS",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026-05-01",
+    "event": "Australian Diecast Expo",
+    "date": "2026-08-01",
     "collections": [
       "Bond 007 Collection"
     ],
@@ -3479,6 +3612,25 @@
         "src": "assets/images/mclaren-14-real-car.png",
         "role": "realCar",
         "label": "Real Photo"
+      }
+    ]
+  },
+  {
+    "id": "mclaren-15",
+    "name": "McLaren MP4/6 #2 Gerhard Berger",
+    "brand": "MCLAREN",
+    "event": "Cool Car Show",
+    "date": "2026-03-01",
+    "collections": [
+      "F1 Collection"
+    ],
+    "seriesOnly": false,
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mclaren-15-model.png",
+        "role": "model",
+        "label": "MINI GT model"
       }
     ]
   },
@@ -4976,11 +5128,9 @@
     "id": "toyota-13",
     "name": "Toyota 2000GT (Open Headlights)",
     "brand": "TOYOTA",
-    "event": "",
-    "date": "2026",
-    "collections": [
-      "Bond 007 Collection"
-    ],
+    "event": "Shizuoka Hobby Show",
+    "date": "2026-05-01",
+    "collections": [],
     "seriesOnly": false,
     "cancelled": false,
     "photos": [
