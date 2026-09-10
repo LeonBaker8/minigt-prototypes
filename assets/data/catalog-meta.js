@@ -2,9 +2,9 @@ window.MINI_GT_CATALOG_META = {
   "lastUpdated": "2026-09-10",
   "counts": {
     "active": 253,
-    "cancelled": 41,
+    "cancelled": 39,
     "catalogueActive": 232,
-    "catalogueCancelled": 41,
+    "catalogueCancelled": 39,
     "brands": {
       "AMC": 1,
       "ALFA ROMEO": 1,

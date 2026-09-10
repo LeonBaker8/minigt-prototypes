@@ -5399,40 +5399,6 @@
     ]
   },
   {
-    "id": "accessories-02",
-    "name": "Western Star 49X Red/White",
-    "brand": "Accessories",
-    "event": "Spielwarenmesse",
-    "date": "2024-01-01",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": true,
-    "photos": [
-      {
-        "src": "assets/images/accessories-02-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "accessories-03",
-    "name": "Western Star 49X Red/Black",
-    "brand": "Accessories",
-    "event": "Mini GT Pop Up Store Taipei",
-    "date": "2025-11-01",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": true,
-    "photos": [
-      {
-        "src": "assets/images/accessories-03-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
     "id": "accessories-04",
     "name": "Car Hauler Trailer Blue",
     "brand": "Accessories",

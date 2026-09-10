@@ -364,6 +364,9 @@ def main(source_arg: str) -> None:
 
                 if not raw_model and not image_refs:
                     continue
+                cancelled = is_cancelled_row(sheet, row_index)
+                if sheet_brand.upper() == "ACCESSORIES" and not cancelled:
+                    continue
                 model_name, collections = collection_data(raw_model)
                 if sheet_brand.upper() == "QUBE CARZ":
                     brand = qube_carz_brand(model_name, workbook_brands)
@@ -421,10 +424,7 @@ def main(source_arg: str) -> None:
                         "date": shown_date,
                         "collections": collections,
                         "seriesOnly": sheet_brand.upper() == "QUBE CARZ",
-                        "cancelled": (
-                            sheet_brand.upper() == "ACCESSORIES"
-                            or is_cancelled_row(sheet, row_index)
-                        ),
+                        "cancelled": cancelled,
                         "photos": photos,
                     }
                 )
