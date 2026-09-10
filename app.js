@@ -37,6 +37,7 @@ const visualAssets = {
     "PORSCHE": "assets/brands/porsche-crest.svg",
     "RACING BULLS": "assets/brands/racing-bulls.png",
     "RED BULL": "assets/brands/red-bull.svg",
+    "RUF": "assets/brands/ruf.svg",
     "SCANIA": "assets/brands/scania.svg",
     "TOYOTA": "assets/brands/toyota.svg",
     "VOLKSWAGEN": "assets/brands/volkswagen.svg",
@@ -222,13 +223,15 @@ function modelCard(model) {
 function brandSection(name, models) {
   const visual = visualFor("brand", name);
   const orderedModels = [...models].sort((a, b) => Number(Boolean(a.seriesOnly)) - Number(Boolean(b.seriesOnly)));
-  const logo = visual.src
-    ? `<img src="${escapeHtml(visual.src)}" alt="" />`
-    : `<b>${escapeHtml(visual.mark)}</b>`;
+  const hasLogo = name.toUpperCase() !== "ACCESSORIES";
+  const logo = hasLogo ? (visual.src
+    ? `<span class="brand-section-logo"><img src="${escapeHtml(visual.src)}" alt="" /></span>`
+    : `<span class="brand-section-logo"><b>${escapeHtml(visual.mark)}</b></span>`) : "";
+  const displayName = name.toUpperCase() === "RUF" ? "RUF" : titleCase(name);
   return `<section class="brand-section" aria-labelledby="brand-${escapeHtml(slugFor(name))}">
-    <header class="brand-section-header">
-      <span class="brand-section-logo">${logo}</span>
-      <div><h2 id="brand-${escapeHtml(slugFor(name))}">${escapeHtml(titleCase(name))}</h2></div>
+    <header class="brand-section-header ${hasLogo ? "" : "is-text-only"}">
+      ${logo}
+      <div><h2 id="brand-${escapeHtml(slugFor(name))}">${escapeHtml(displayName)}</h2></div>
       <span class="brand-section-count">${models.length} ${models.length === 1 ? "PROTOTYPE" : "PROTOTYPES"}</span>
     </header>
     <div class="brand-section-grid">${orderedModels.map(modelCard).join("")}</div>
@@ -255,7 +258,11 @@ function renderCards() {
     if (!map.has(model.brand)) map.set(model.brand, []);
     map.get(model.brand).push(model);
     return map;
-  }, new Map()).entries()].sort(([a], [b]) => a.localeCompare(b, "en"));
+  }, new Map()).entries()].sort(([a], [b]) => {
+    if (a.toUpperCase() === "ACCESSORIES") return -1;
+    if (b.toUpperCase() === "ACCESSORIES") return 1;
+    return a.localeCompare(b, "en");
+  });
   elements.modelGrid.innerHTML = groups.map(([name, brandModels]) => brandSection(name, brandModels)).join("");
 }
 

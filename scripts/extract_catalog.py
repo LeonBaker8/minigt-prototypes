@@ -40,7 +40,11 @@ def clean_text(value: Any) -> str:
 def display_brand(value: Any) -> str:
     """Apply display names that are consistent across every future export."""
     brand = clean_text(value)
-    return "FERRARI" if brand.upper() == "FERRARI (BBR)" else brand
+    aliases = {
+        "FERRARI (BBR)": "FERRARI",
+        "WESTERN STAR (2)": "WESTERN STAR",
+    }
+    return aliases.get(brand.upper(), brand)
 
 
 def qube_carz_brand(model: str, workbook_brands: list[str]) -> str:
@@ -417,7 +421,10 @@ def main(source_arg: str) -> None:
                         "date": shown_date,
                         "collections": collections,
                         "seriesOnly": sheet_brand.upper() == "QUBE CARZ",
-                        "cancelled": is_cancelled_row(sheet, row_index),
+                        "cancelled": (
+                            sheet_brand.upper() == "ACCESSORIES"
+                            or is_cancelled_row(sheet, row_index)
+                        ),
                         "photos": photos,
                     }
                 )

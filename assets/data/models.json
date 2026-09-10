@@ -1416,7 +1416,7 @@
   },
   {
     "id": "ferrari-04",
-    "name": "Ferrari F50 Spider Rosso Corsa",
+    "name": "Ferrari F50 Coupe Rosso Corsa",
     "brand": "FERRARI",
     "event": "",
     "date": "2025",
@@ -1433,7 +1433,7 @@
   },
   {
     "id": "ferrari-05",
-    "name": "Ferrari F50 Coupe Rosso Corsa",
+    "name": "Ferrari F50 Spider Rosso Corsa",
     "brand": "FERRARI",
     "event": "",
     "date": "2025",
@@ -1450,7 +1450,7 @@
   },
   {
     "id": "ferrari-06",
-    "name": "Ferrari SF90 XX Black",
+    "name": "Ferrari SF90 XX Stradale Matt Black Charles Leclerc Edition",
     "brand": "FERRARI",
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
@@ -1467,7 +1467,7 @@
   },
   {
     "id": "ferrari-07",
-    "name": "Ferrari SF90 XX Yellow",
+    "name": "Ferrari SF90 XX Stradale Giallo Modena",
     "brand": "FERRARI",
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
@@ -1501,7 +1501,7 @@
   },
   {
     "id": "ferrari-09",
-    "name": "Ferrari Testarossa Spider White",
+    "name": "Ferrari Testarossa Spider Bianco",
     "brand": "FERRARI",
     "event": "",
     "date": "2025",
@@ -1518,7 +1518,7 @@
   },
   {
     "id": "ferrari-10",
-    "name": "Ferrari Testarossa (Open Headlights)",
+    "name": "Ferrari 512 TR (Open Headlights)",
     "brand": "FERRARI",
     "event": "",
     "date": "2025",
@@ -1535,7 +1535,7 @@
   },
   {
     "id": "ferrari-11",
-    "name": "Ferrari F80 Yellow (Active Rear Wing)",
+    "name": "Ferrari F80 Yellow Giallo Modena (Active Rear Wing)",
     "brand": "FERRARI",
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
@@ -1552,7 +1552,7 @@
   },
   {
     "id": "ferrari-12",
-    "name": "Ferrari F80 (Active Rear Wing)",
+    "name": "Ferrari F80 Rosso Corsa (Active Rear Wing)",
     "brand": "FERRARI",
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
@@ -1569,7 +1569,7 @@
   },
   {
     "id": "ferrari-13",
-    "name": "Ferrari F80 (Inactive Rear Wing)",
+    "name": "Ferrari F80 Rosso Corsa (Inactive Rear Wing)",
     "brand": "FERRARI",
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
@@ -1641,7 +1641,7 @@
   },
   {
     "id": "ferrari-17",
-    "name": "Ferrari 599XX EVO Yellow",
+    "name": "Ferrari 599XX EVO #512",
     "brand": "FERRARI",
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
@@ -1658,7 +1658,7 @@
   },
   {
     "id": "ferrari-18",
-    "name": "Ferrari 296 Speciale",
+    "name": "Ferrari 296 Speciale Piloti Ferrari",
     "brand": "FERRARI",
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
@@ -4963,6 +4963,11 @@
         "src": "assets/images/toyota-03-model.png",
         "role": "model",
         "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/toyota-03-detail.png",
+        "role": "additional",
+        "label": "Additional photo"
       }
     ]
   },
@@ -5388,6 +5393,57 @@
     "photos": [
       {
         "src": "assets/images/western-star-06-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "accessories-02",
+    "name": "Western Star 49X Red/White",
+    "brand": "Accessories",
+    "event": "Spielwarenmesse",
+    "date": "2024-01-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/accessories-02-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "accessories-03",
+    "name": "Western Star 49X Red/Black",
+    "brand": "Accessories",
+    "event": "Mini GT Pop Up Store Taipei",
+    "date": "2025-11-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/accessories-03-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "accessories-04",
+    "name": "Car Hauler Trailer Blue",
+    "brand": "Accessories",
+    "event": "Indonesia Diecast Expo",
+    "date": "2023-10-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": true,
+    "photos": [
+      {
+        "src": "assets/images/accessories-04-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
