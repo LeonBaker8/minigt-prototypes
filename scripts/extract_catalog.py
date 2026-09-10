@@ -43,22 +43,6 @@ def display_brand(value: Any) -> str:
     return "FERRARI" if brand.upper() == "FERRARI (BBR)" else brand
 
 
-def qube_carz_brand(model: str, workbook_brands: list[str]) -> str:
-    """Assign Qube Carz models to their real automotive marque."""
-    normalized = clean_text(model).upper()
-    aliases = {
-        "MERCEDES BENZ": "MERCEDES",
-        "MERCEDES-BENZ": "MERCEDES",
-    }
-    for prefix, brand in aliases.items():
-        if normalized.startswith(prefix):
-            return brand
-    for brand in sorted(workbook_brands, key=len, reverse=True):
-        if normalized.startswith(brand.upper()):
-            return brand
-    return clean_text(model).split(" ", 1)[0].upper() or "QUBE CARZ"
-
-
 def slugify(value: str) -> str:
     normalized = value.lower().replace("★", "star")
     normalized = re.sub(r"[^a-z0-9]+", "-", normalized)
@@ -268,16 +252,11 @@ def catalog_metadata(workbook: Any, source: Path, models: list[dict[str, Any]]) 
     updated_at = modified.date().isoformat() if isinstance(modified, datetime) else modified.isoformat()
 
     active = [model for model in models if not model["cancelled"]]
-    catalogue_active = [model for model in active if not model["seriesOnly"]]
-    catalogue_cancelled = [
-        model for model in models if model["cancelled"] and not model["seriesOnly"]
-    ]
     brand_counts: dict[str, int] = {}
     collection_counts: dict[str, int] = {}
     for model in active:
-        if not model["seriesOnly"]:
-            brand = model["brand"]
-            brand_counts[brand] = brand_counts.get(brand, 0) + 1
+        brand = model["brand"]
+        brand_counts[brand] = brand_counts.get(brand, 0) + 1
         for collection in model["collections"]:
             collection_counts[collection] = collection_counts.get(collection, 0) + 1
 
@@ -286,8 +265,6 @@ def catalog_metadata(workbook: Any, source: Path, models: list[dict[str, Any]]) 
         "counts": {
             "active": len(active),
             "cancelled": len(models) - len(active),
-            "catalogueActive": len(catalogue_active),
-            "catalogueCancelled": len(catalogue_cancelled),
             "brands": brand_counts,
             "collections": collection_counts,
         },
@@ -307,11 +284,6 @@ def main(source_arg: str) -> None:
 
     models: list[dict[str, Any]] = []
     missing_images = 0
-    workbook_brands = [
-        display_brand(sheet.title)
-        for sheet in workbook.worksheets
-        if display_brand(sheet.title).upper() not in {"QUBE CARZ", "TO IDENTIFY"}
-    ]
     with ZipFile(source) as archive:
         metadata_to_rich_value, image_paths = xml_cell_metadata(archive)
 
@@ -321,8 +293,7 @@ def main(source_arg: str) -> None:
                 column: clean_text(sheet.cell(1, column).value)
                 for column in range(1, sheet.max_column + 1)
             }
-            sheet_brand = display_brand(sheet.title)
-            brand = sheet_brand
+            brand = display_brand(sheet.title)
             if brand.upper() == "TO IDENTIFY":
                 continue
 
@@ -361,12 +332,6 @@ def main(source_arg: str) -> None:
                 if not raw_model and not image_refs:
                     continue
                 model_name, collections = collection_data(raw_model)
-                if sheet_brand.upper() == "QUBE CARZ":
-                    brand = qube_carz_brand(model_name, workbook_brands)
-                    if "Qube Carz Collection" not in collections:
-                        collections.append("Qube Carz Collection")
-                else:
-                    brand = sheet_brand
                 # User-confirmed collection for the Australian Diecast Expo prototype.
                 if (brand.upper() == "DODGE" and model_name in {"Dodge Carger", "Dodge Charger"}
                         and event == "Australian Diecast Expo" and shown_date.startswith("2026")):
@@ -376,11 +341,7 @@ def main(source_arg: str) -> None:
                 if not model_name:
                     model_name = brand
 
-                model_id = (
-                    f"qube-carz-{row_index:02d}"
-                    if sheet_brand.upper() == "QUBE CARZ"
-                    else f"{slugify(brand)}-{row_index:02d}"
-                )
+                model_id = f"{slugify(brand)}-{row_index:02d}"
                 photos: list[dict[str, str]] = []
                 role_counters: dict[str, int] = {}
                 for image_index, image_ref in enumerate(image_refs, start=1):
@@ -416,7 +377,6 @@ def main(source_arg: str) -> None:
                         "event": event,
                         "date": shown_date,
                         "collections": collections,
-                        "seriesOnly": sheet_brand.upper() == "QUBE CARZ",
                         "cancelled": is_cancelled_row(sheet, row_index),
                         "photos": photos,
                     }
