@@ -5399,7 +5399,7 @@
     ]
   },
   {
-    "id": "accessories-04",
+    "id": "accessories-02",
     "name": "Car Hauler Trailer Blue",
     "brand": "Accessories",
     "event": "Indonesia Diecast Expo",
@@ -5409,7 +5409,7 @@
     "cancelled": true,
     "photos": [
       {
-        "src": "assets/images/accessories-04-model.png",
+        "src": "assets/images/accessories-02-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
