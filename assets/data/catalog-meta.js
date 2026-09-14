@@ -1,18 +1,18 @@
 window.MINI_GT_CATALOG_META = {
-  "lastUpdated": "2026-09-11",
+  "lastUpdated": "2026-09-14",
   "counts": {
-    "active": 253,
+    "active": 249,
     "cancelled": 39,
-    "catalogueActive": 232,
+    "catalogueActive": 228,
     "catalogueCancelled": 39,
     "brands": {
       "AMC": 1,
       "ALFA ROMEO": 1,
       "ASTON MARTIN": 12,
       "BENTLEY": 2,
-      "BMW": 10,
+      "BMW": 9,
       "BUGATTI": 5,
-      "CADILLAC": 1,
+      "CADILLAC": 2,
       "CHEVROLET": 7,
       "CITROEN": 4,
       "DATSUN": 1,
@@ -22,10 +22,10 @@ window.MINI_GT_CATALOG_META = {
       "FIAT": 1,
       "HARLEY DAVIDSON": 2,
       "HONDA": 9,
-      "HYUNDAI": 19,
+      "HYUNDAI": 18,
       "JAGUAR": 1,
-      "LAND ROVER": 2,
-      "LAMBORGHINI": 13,
+      "LAND ROVER": 1,
+      "LAMBORGHINI": 11,
       "LEXUS": 1,
       "LINCOLN": 1,
       "LOTUS": 4,
@@ -52,7 +52,7 @@ window.MINI_GT_CATALOG_META = {
       "Fast & Furious Collection": 14,
       "Senna Collection": 1,
       "Motorbike Collection": 3,
-      "Korean Collection": 19
+      "Korean Collection": 18
     }
   }
 };
