@@ -1832,13 +1832,11 @@
   },
   {
     "id": "ford-11",
-    "name": "Ford Mustang Convertible",
+    "name": "Ford Mustang Dark Horse Candy Red",
     "brand": "FORD",
-    "event": "Malaysia Diecast Expo",
+    "event": "",
     "date": "2026",
-    "collections": [
-      "Bond 007 Collection"
-    ],
+    "collections": [],
     "seriesOnly": false,
     "cancelled": false,
     "photos": [
@@ -1851,10 +1849,10 @@
   },
   {
     "id": "ford-12",
-    "name": "Ford Mustang Dark Horse Candy Red",
+    "name": "Ford Falcon XC Hardtop #1 Allan Moffat / John Fitzpatrick 1979 Bathurst 1000",
     "brand": "FORD",
-    "event": "",
-    "date": "2026",
+    "event": "Mini GT Pop Up Store Taipei",
+    "date": "2025",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -1868,9 +1866,9 @@
   },
   {
     "id": "ford-13",
-    "name": "Ford Falcon XC Hardtop #1 Allan Moffat / John Fitzpatrick 1979 Bathurst 1000",
+    "name": "Ford Falcon XC Hardtop",
     "brand": "FORD",
-    "event": "Mini GT Pop Up Store Taipei",
+    "event": "Diecast Model Expo",
     "date": "2025",
     "collections": [],
     "seriesOnly": false,
@@ -1885,23 +1883,6 @@
   },
   {
     "id": "ford-14",
-    "name": "Ford Falcon XC Hardtop",
-    "brand": "FORD",
-    "event": "Diecast Model Expo",
-    "date": "2025",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "photos": [
-      {
-        "src": "assets/images/ford-14-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "ford-15",
     "name": "Ford Falcon XB GT",
     "brand": "FORD",
     "event": "Diecast Model Expo",
@@ -1911,7 +1892,7 @@
     "cancelled": false,
     "photos": [
       {
-        "src": "assets/images/ford-15-model.png",
+        "src": "assets/images/ford-14-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -3090,7 +3071,7 @@
   },
   {
     "id": "mazda-02",
-    "name": "Matsukiyo MINI GT Mazda NA-7 RE-Amemiya",
+    "name": "Mazda RX-7 VeilSide Red",
     "brand": "MAZDA",
     "event": "Dongguan Flagship Store",
     "date": "2026-08-01",
@@ -3107,23 +3088,6 @@
   },
   {
     "id": "mazda-03",
-    "name": "Mazda RX-7 VeilSide Red",
-    "brand": "MAZDA",
-    "event": "Dongguan Flagship Store",
-    "date": "2026-08-01",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "photos": [
-      {
-        "src": "assets/images/mazda-03-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "mazda-04",
     "name": "RE-AMEMIYA Mazda X Power Craft NA7 2023",
     "brand": "MAZDA",
     "event": "Salao Diecast Brazil 7",
@@ -3133,23 +3097,40 @@
     "cancelled": false,
     "photos": [
       {
-        "src": "assets/images/mazda-04-model.png",
+        "src": "assets/images/mazda-03-model.png",
         "role": "model",
         "label": "MINI GT model"
       },
       {
-        "src": "assets/images/mazda-04-real-car.png",
+        "src": "assets/images/mazda-03-real-car.png",
         "role": "realCar",
         "label": "Real Photo"
       }
     ]
   },
   {
-    "id": "mazda-05",
+    "id": "mazda-04",
     "name": "RE-AMEMIYA Mazda NA7",
     "brand": "MAZDA",
     "event": "Australian Diecast Expo",
     "date": "2026-08-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/mazda-04-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "mazda-05",
+    "name": "Mazda RX-7 (FD3S) Silver",
+    "brand": "MAZDA",
+    "event": "Malaysia Diecast Expo",
+    "date": "2025-05-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -3163,10 +3144,10 @@
   },
   {
     "id": "mazda-06",
-    "name": "Mazda RX-7 (FD3S) Silver",
+    "name": "Mazda RX-7 LB-Super Silhouette Momo/Penthhouse Livery",
     "brand": "MAZDA",
-    "event": "Malaysia Diecast Expo",
-    "date": "2025-05-01",
+    "event": "",
+    "date": "2026",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -3175,12 +3156,17 @@
         "src": "assets/images/mazda-06-model.png",
         "role": "model",
         "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/mazda-06-real-car.png",
+        "role": "realCar",
+        "label": "Real Photo"
       }
     ]
   },
   {
     "id": "mazda-07",
-    "name": "Mazda RX-7 LB-Super Silhouette Momo/Penthhouse Livery",
+    "name": "Mazda MX-5 Pandem Red",
     "brand": "MAZDA",
     "event": "",
     "date": "2026",
@@ -3192,33 +3178,11 @@
         "src": "assets/images/mazda-07-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/mazda-07-real-car.png",
-        "role": "realCar",
-        "label": "Real Photo"
       }
     ]
   },
   {
     "id": "mazda-08",
-    "name": "Mazda MX-5 Pandem Red",
-    "brand": "MAZDA",
-    "event": "",
-    "date": "2026",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "photos": [
-      {
-        "src": "assets/images/mazda-08-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "mazda-09",
     "name": "Mazda RX-7 LB-Super Silhouette ATHLETE / COLLET",
     "brand": "MAZDA",
     "event": "",
@@ -3228,7 +3192,7 @@
     "cancelled": false,
     "photos": [
       {
-        "src": "assets/images/mazda-09-model.png",
+        "src": "assets/images/mazda-08-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -5129,7 +5093,7 @@
   },
   {
     "id": "racing-bulls-02",
-    "name": "Racing Bulls VCARB03",
+    "name": "Racing Bulls VCARB03 2026",
     "brand": "RACING BULLS",
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
