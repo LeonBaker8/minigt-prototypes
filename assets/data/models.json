@@ -1419,7 +1419,7 @@
   },
   {
     "id": "dodge-04",
-    "name": "Dodge Charger 1970 \"Fast Five\"",
+    "name": "Dodge Carger 1970 \"Fast & Furious 4\"",
     "brand": "DODGE",
     "event": "Malaysia Diecast Expo",
     "date": "2026-05-01",
@@ -1438,25 +1438,6 @@
   },
   {
     "id": "dodge-05",
-    "name": "Dodge Carger 1970 \"Fast & Furious 4\"",
-    "brand": "DODGE",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026-05-01",
-    "collections": [
-      "Fast & Furious Collection"
-    ],
-    "seriesOnly": false,
-    "cancelled": false,
-    "photos": [
-      {
-        "src": "assets/images/dodge-05-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "dodge-06",
     "name": "Dodge Charger 1970",
     "brand": "DODGE",
     "event": "Australian Diecast Expo",
@@ -1468,7 +1449,7 @@
     "cancelled": false,
     "photos": [
       {
-        "src": "assets/images/dodge-06-model.png",
+        "src": "assets/images/dodge-05-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -4338,13 +4319,11 @@
   },
   {
     "id": "nissan-13",
-    "name": "Nissan Skyline GT-R (R34) C-West",
+    "name": "Nissan GT-R32 Kaido Works ATHLETE / COLLET",
     "brand": "NISSAN",
-    "event": "Salao Diecast Brazil 7",
-    "date": "2026-07-01",
-    "collections": [
-      "Fast & Furious Collection"
-    ],
+    "event": "Mini GT Pop Up Store Taipei",
+    "date": "2025-11-01",
+    "collections": [],
     "seriesOnly": false,
     "cancelled": false,
     "photos": [
@@ -4357,10 +4336,10 @@
   },
   {
     "id": "nissan-14",
-    "name": "Nissan GT-R32 Kaido Works ATHLETE / COLLET",
+    "name": "Nissan Silvia S15 LB-Super Silhouette",
     "brand": "NISSAN",
     "event": "Mini GT Pop Up Store Taipei",
-    "date": "2025-11-01",
+    "date": "2026",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -4374,9 +4353,9 @@
   },
   {
     "id": "nissan-15",
-    "name": "Nissan Silvia S15 LB-Super Silhouette",
+    "name": "KUHL Nissan GT-R (R35) MY24",
     "brand": "NISSAN",
-    "event": "Mini GT Pop Up Store Taipei",
+    "event": "Malaysia Diecast Expo",
     "date": "2026",
     "collections": [],
     "seriesOnly": false,
@@ -4386,12 +4365,17 @@
         "src": "assets/images/nissan-15-model.png",
         "role": "model",
         "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/nissan-15-detail.png",
+        "role": "additional",
+        "label": "Additional photo"
       }
     ]
   },
   {
     "id": "nissan-16",
-    "name": "KUHL Nissan GT-R (R35) MY24",
+    "name": "Nissan Z Nismo 2026",
     "brand": "NISSAN",
     "event": "Malaysia Diecast Expo",
     "date": "2026",
@@ -4403,17 +4387,12 @@
         "src": "assets/images/nissan-16-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/nissan-16-detail.png",
-        "role": "additional",
-        "label": "Additional photo"
       }
     ]
   },
   {
     "id": "nissan-17",
-    "name": "Nissan Z Nismo 2026",
+    "name": "Nissan Skyline GT-R R34 C-West Bodykit 2002",
     "brand": "NISSAN",
     "event": "Malaysia Diecast Expo",
     "date": "2026",
@@ -4430,11 +4409,13 @@
   },
   {
     "id": "nissan-18",
-    "name": "Nissan Skyline GT-R R34 C-West Bodykit 2002",
+    "name": "Nissan Silvia (S15) C-West GT Bodykit \"Mona Lisa\"",
     "brand": "NISSAN",
     "event": "Malaysia Diecast Expo",
     "date": "2026",
-    "collections": [],
+    "collections": [
+      "Fast & Furious Collection"
+    ],
     "seriesOnly": false,
     "cancelled": false,
     "photos": [
@@ -4447,13 +4428,11 @@
   },
   {
     "id": "nissan-19",
-    "name": "Nissan Silvia (S15) C-West GT Bodykit \"Mona Lisa\"",
+    "name": "Veilside Nissan 180SX RPS13 VeilSide C-III",
     "brand": "NISSAN",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026",
-    "collections": [
-      "Fast & Furious Collection"
-    ],
+    "event": "Tokyo Auto Salon",
+    "date": "2026-01-01",
+    "collections": [],
     "seriesOnly": false,
     "cancelled": false,
     "photos": [
@@ -4461,12 +4440,17 @@
         "src": "assets/images/nissan-19-model.png",
         "role": "model",
         "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/nissan-19-detail.png",
+        "role": "additional",
+        "label": "Additional photo"
       }
     ]
   },
   {
     "id": "nissan-20",
-    "name": "Veilside Nissan 180SX RPS13 VeilSide C-III",
+    "name": "Veilside Nissan Skyline GT-R R33 \"Combat C-I\"",
     "brand": "NISSAN",
     "event": "Tokyo Auto Salon",
     "date": "2026-01-01",
@@ -4488,10 +4472,10 @@
   },
   {
     "id": "nissan-21",
-    "name": "Veilside Nissan Skyline GT-R R33 \"Combat C-I\"",
+    "name": "LB-Super Silhouette Nissan S15 SILVIA #555 Team MINI GT Liberty Walk 2025 Formula Drift W/ Trophy",
     "brand": "NISSAN",
-    "event": "Tokyo Auto Salon",
-    "date": "2026-01-01",
+    "event": "Malaysia Diecast Expo",
+    "date": "2026",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -4500,19 +4484,14 @@
         "src": "assets/images/nissan-21-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/nissan-21-detail.png",
-        "role": "additional",
-        "label": "Additional photo"
       }
     ]
   },
   {
     "id": "nissan-22",
-    "name": "LB-Super Silhouette Nissan S15 SILVIA #555 Team MINI GT Liberty Walk 2025 Formula Drift W/ Trophy",
+    "name": "Nissan Skyline R32 TOP SECRET",
     "brand": "NISSAN",
-    "event": "Malaysia Diecast Expo",
+    "event": "Mini GT Pop Up Store Taipei",
     "date": "2026",
     "collections": [],
     "seriesOnly": false,
@@ -4544,7 +4523,7 @@
   },
   {
     "id": "nissan-24",
-    "name": "Nissan Skyline R32 TOP SECRET",
+    "name": "Nissan Skyline GT-R (R34) White With Carbon Hood",
     "brand": "NISSAN",
     "event": "Mini GT Pop Up Store Taipei",
     "date": "2026",
@@ -4561,7 +4540,7 @@
   },
   {
     "id": "nissan-25",
-    "name": "Nissan Skyline GT-R (R34) White With Carbon Hood",
+    "name": "Nissan Skyline GT-R (R34) Red With Carbon Hood",
     "brand": "NISSAN",
     "event": "Mini GT Pop Up Store Taipei",
     "date": "2026",
@@ -4578,23 +4557,6 @@
   },
   {
     "id": "nissan-26",
-    "name": "Nissan Skyline GT-R (R34) Red With Carbon Hood",
-    "brand": "NISSAN",
-    "event": "Mini GT Pop Up Store Taipei",
-    "date": "2026",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "photos": [
-      {
-        "src": "assets/images/nissan-26-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "nissan-27",
     "name": "Nissan Silvia S15 D-MAX Black",
     "brand": "NISSAN",
     "event": "Malaysia Diecast Expo",
@@ -4604,7 +4566,7 @@
     "cancelled": false,
     "photos": [
       {
-        "src": "assets/images/nissan-27-model.png",
+        "src": "assets/images/nissan-26-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
