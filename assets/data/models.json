@@ -399,8 +399,46 @@
     ]
   },
   {
+    "id": "qube-carz-23",
+    "name": "Datsun Kaido 510 Wagon",
+    "brand": "DATSUN",
+    "event": "Tokyo Diecast Club Shibuya",
+    "date": "2026-08-01",
+    "collections": [
+      "Qube Carz Collection"
+    ],
+    "seriesOnly": true,
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/qube-carz-23-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "qube-carz-24",
+    "name": "Datsun Kaido 510 Wagon 4x4",
+    "brand": "DATSUN",
+    "event": "Tokyo Diecast Club Shibuya",
+    "date": "2026-08-01",
+    "collections": [
+      "Qube Carz Collection"
+    ],
+    "seriesOnly": true,
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/qube-carz-24-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
     "id": "amc-02",
-    "name": "AMC Hornet",
+    "name": "AMC Hornet Red",
     "brand": "AMC",
     "event": "Salao Diecast Brazil 7",
     "date": "2026-07-01",
@@ -412,6 +450,23 @@
     "photos": [
       {
         "src": "assets/images/amc-02-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "amc-03",
+    "name": "AMC Hornet Yellow",
+    "brand": "AMC",
+    "event": "Mini GT Donguann Flagship Store",
+    "date": "2026-08-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/amc-03-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -475,6 +530,23 @@
   },
   {
     "id": "aston-martin-04",
+    "name": "Aston Martin Vantage Red",
+    "brand": "ASTON MARTIN",
+    "event": "Mini GT Dongguan Flagship Store",
+    "date": "2026-08-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/aston-martin-04-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "aston-martin-05",
     "name": "Aston Martin Vantage Volante",
     "brand": "ASTON MARTIN",
     "event": "Hobby Expo China",
@@ -486,39 +558,20 @@
     "cancelled": false,
     "photos": [
       {
-        "src": "assets/images/aston-martin-04-model.png",
+        "src": "assets/images/aston-martin-05-model.png",
         "role": "model",
         "label": "MINI GT model"
       },
       {
-        "src": "assets/images/aston-martin-04-real-car.png",
+        "src": "assets/images/aston-martin-05-real-car.png",
         "role": "realCar",
         "label": "Real Photo"
       }
     ]
   },
   {
-    "id": "aston-martin-05",
-    "name": "Aston Martin DBS Vantage 1968 \"On Her Majesty's Secret Service\"",
-    "brand": "ASTON MARTIN",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026",
-    "collections": [
-      "Bond 007 Collection"
-    ],
-    "seriesOnly": false,
-    "cancelled": false,
-    "photos": [
-      {
-        "src": "assets/images/aston-martin-05-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
     "id": "aston-martin-06",
-    "name": "Aston Martin V12 Vanquish \"Die Another Day\"",
+    "name": "Aston Martin DBS Vantage 1968 \"On Her Majesty's Secret Service\"",
     "brand": "ASTON MARTIN",
     "event": "Malaysia Diecast Expo",
     "date": "2026",
@@ -537,7 +590,7 @@
   },
   {
     "id": "aston-martin-07",
-    "name": "Aston Martin V8 Vantage",
+    "name": "Aston Martin V12 Vanquish \"Die Another Day\"",
     "brand": "ASTON MARTIN",
     "event": "Malaysia Diecast Expo",
     "date": "2026",
@@ -556,11 +609,13 @@
   },
   {
     "id": "aston-martin-08",
-    "name": "Aston Martin V8 Vantage Black",
+    "name": "Aston Martin V8 Vantage",
     "brand": "ASTON MARTIN",
-    "event": "Shizuoka Hobby Show",
-    "date": "2026-05-01",
-    "collections": [],
+    "event": "Malaysia Diecast Expo",
+    "date": "2026",
+    "collections": [
+      "Bond 007 Collection"
+    ],
     "seriesOnly": false,
     "cancelled": false,
     "photos": [
@@ -573,7 +628,7 @@
   },
   {
     "id": "aston-martin-09",
-    "name": "Aston Martin Valkyrie White",
+    "name": "Aston Martin V8 Vantage Black",
     "brand": "ASTON MARTIN",
     "event": "Shizuoka Hobby Show",
     "date": "2026-05-01",
@@ -590,7 +645,7 @@
   },
   {
     "id": "aston-martin-10",
-    "name": "Aston Martin Valkyrie Blue",
+    "name": "Aston Martin Valkyrie White",
     "brand": "ASTON MARTIN",
     "event": "Shizuoka Hobby Show",
     "date": "2026-05-01",
@@ -607,13 +662,11 @@
   },
   {
     "id": "aston-martin-11",
-    "name": "Aston Martin AMR25 #18 Lance Stroll 2025 Bahrain Grand Prix",
+    "name": "Aston Martin Valkyrie Blue",
     "brand": "ASTON MARTIN",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026",
-    "collections": [
-      "F1 Collection"
-    ],
+    "event": "Shizuoka Hobby Show",
+    "date": "2026-05-01",
+    "collections": [],
     "seriesOnly": false,
     "cancelled": false,
     "photos": [
@@ -626,7 +679,7 @@
   },
   {
     "id": "aston-martin-12",
-    "name": "Aston Martin AMR25 #14 Fernando Alonso 2025 Bahrain Grand Prix",
+    "name": "Aston Martin AMR25 #18 Lance Stroll 2025 Bahrain Grand Prix",
     "brand": "ASTON MARTIN",
     "event": "Malaysia Diecast Expo",
     "date": "2026",
@@ -645,7 +698,7 @@
   },
   {
     "id": "aston-martin-13",
-    "name": "Aston Martin AMR25 #18 Lance Stroll 2025 Australian Grand Prix",
+    "name": "Aston Martin AMR25 #14 Fernando Alonso 2025 Bahrain Grand Prix",
     "brand": "ASTON MARTIN",
     "event": "Malaysia Diecast Expo",
     "date": "2026",
@@ -664,7 +717,7 @@
   },
   {
     "id": "aston-martin-14",
-    "name": "Aston Martin AMR25 #14 Fernando Alonso 2025 Australian Grand Prix",
+    "name": "Aston Martin AMR25 #18 Lance Stroll 2025 Australian Grand Prix",
     "brand": "ASTON MARTIN",
     "event": "Malaysia Diecast Expo",
     "date": "2026",
@@ -676,6 +729,25 @@
     "photos": [
       {
         "src": "assets/images/aston-martin-14-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "aston-martin-15",
+    "name": "Aston Martin AMR25 #14 Fernando Alonso 2025 Australian Grand Prix",
+    "brand": "ASTON MARTIN",
+    "event": "Malaysia Diecast Expo",
+    "date": "2026",
+    "collections": [
+      "F1 Collection"
+    ],
+    "seriesOnly": false,
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/aston-martin-15-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -946,6 +1018,23 @@
     ]
   },
   {
+    "id": "bmw-14",
+    "name": "BMW Z3 Silver",
+    "brand": "BMW",
+    "event": "Hobby Expo China",
+    "date": "2026-03-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/bmw-14-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
     "id": "bugatti-02",
     "name": "Bugatti W16 Mistral White",
     "brand": "BUGATTI",
@@ -984,7 +1073,7 @@
     "name": "Bugatti Bolide White",
     "brand": "BUGATTI",
     "event": "Hobby Expo China",
-    "date": "2026-04-01",
+    "date": "2026",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -1001,7 +1090,7 @@
     "name": "Bugatti Tourbillon Equipe Pur Sang",
     "brand": "BUGATTI",
     "event": "Hobby Expo China",
-    "date": "2026-04-01",
+    "date": "2026",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -1023,7 +1112,7 @@
     "name": "Bugatti Tourbillon",
     "brand": "BUGATTI",
     "event": "Hobby Expo China",
-    "date": "2026-04-01",
+    "date": "2026",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -1124,6 +1213,11 @@
         "src": "assets/images/chevrolet-04-model.png",
         "role": "model",
         "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/chevrolet-04-detail.png",
+        "role": "additional",
+        "label": "Additional photo"
       }
     ]
   },
@@ -1815,7 +1909,7 @@
   },
   {
     "id": "ford-10",
-    "name": "Ford Mustang Convertible 1965 (No Roof)",
+    "name": "Ford Mustang Convertible 1964 Skylight Blue",
     "brand": "FORD",
     "event": "Spielwarenmesse",
     "date": "2026-01-01",
@@ -1832,10 +1926,10 @@
   },
   {
     "id": "ford-11",
-    "name": "Ford Mustang Dark Horse Candy Red",
+    "name": "Ford Mustang Convertible 1964 Yellow",
     "brand": "FORD",
-    "event": "",
-    "date": "2026",
+    "event": "Nuremberg Toy Fair",
+    "date": "2026-02-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -1849,10 +1943,10 @@
   },
   {
     "id": "ford-12",
-    "name": "Ford Falcon XC Hardtop #1 Allan Moffat / John Fitzpatrick 1979 Bathurst 1000",
+    "name": "Ford Mustang Dark Horse Candy Red",
     "brand": "FORD",
-    "event": "Mini GT Pop Up Store Taipei",
-    "date": "2025",
+    "event": "",
+    "date": "2026",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -1866,9 +1960,9 @@
   },
   {
     "id": "ford-13",
-    "name": "Ford Falcon XC Hardtop",
+    "name": "Ford Falcon XC Hardtop #1 Allan Moffat / John Fitzpatrick 1979 Bathurst 1000",
     "brand": "FORD",
-    "event": "Diecast Model Expo",
+    "event": "Mini GT Pop Up Store Taipei",
     "date": "2025",
     "collections": [],
     "seriesOnly": false,
@@ -1883,7 +1977,7 @@
   },
   {
     "id": "ford-14",
-    "name": "Ford Falcon XB GT",
+    "name": "Ford Falcon XC Hardtop",
     "brand": "FORD",
     "event": "Diecast Model Expo",
     "date": "2025",
@@ -1893,6 +1987,23 @@
     "photos": [
       {
         "src": "assets/images/ford-14-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "ford-15",
+    "name": "Ford Falcon XB GT",
+    "brand": "FORD",
+    "event": "Diecast Model Expo",
+    "date": "2025",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/ford-15-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -2578,7 +2689,7 @@
     "name": "Jaguar C-X75 Dark Grey",
     "brand": "JAGUAR",
     "event": "Hobby Expo China",
-    "date": "2026-04-01",
+    "date": "2026",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -2645,6 +2756,23 @@
         "src": "assets/images/land-rover-04-real-car.png",
         "role": "realCar",
         "label": "Real Photo"
+      }
+    ]
+  },
+  {
+    "id": "land-rover-05",
+    "name": "Range Rover Classic Camel Trophy Sumatra 1981 Leyland Service Vehicle",
+    "brand": "LAND ROVER",
+    "event": "Hobby Expo China",
+    "date": "2026-04-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/land-rover-05-model.png",
+        "role": "model",
+        "label": "MINI GT model"
       }
     ]
   },
@@ -3967,7 +4095,7 @@
     "name": "Mini Cooper S Rally Monte Carlo",
     "brand": "MINI",
     "event": "Hobby Expo China",
-    "date": "2026-04-01",
+    "date": "2026",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -3989,7 +4117,7 @@
     "name": "Mini Cooper S",
     "brand": "MINI",
     "event": "Hobby Expo China",
-    "date": "2026-04-01",
+    "date": "2026",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -5010,7 +5138,7 @@
     "id": "toyota-12",
     "name": "Toyota GR010 Hybrid 2025",
     "brand": "TOYOTA",
-    "event": "",
+    "event": "Malaysia Diecast Expo",
     "date": "2026",
     "collections": [],
     "seriesOnly": false,
@@ -5208,6 +5336,23 @@
     ]
   },
   {
+    "id": "volkswagen-05",
+    "name": "Volkswagen ID.Buzz Candy White / Red",
+    "brand": "VOLKSWAGEN",
+    "event": "Nuremberg Toy Fair",
+    "date": "2026-02-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "photos": [
+      {
+        "src": "assets/images/volkswagen-05-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
     "id": "western-star-02",
     "name": "Western Star 49X Red/White",
     "brand": "WESTERN STAR",
@@ -5245,8 +5390,8 @@
     "id": "western-star-04",
     "name": "Western Star 49X Black/White",
     "brand": "WESTERN STAR",
-    "event": "Mini GT Pop Up Store Taipei",
-    "date": "2025-11-01",
+    "event": "Malaysia Diecast Expo",
+    "date": "2026-05-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
