@@ -120,9 +120,10 @@ function formatArchiveDate(value) {
   return `Last updated ${new Intl.DateTimeFormat("en-US", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(new Date(`${value}T12:00:00Z`))}`;
 }
 
-function activeModels() { return state.models.filter((model) => !model.cancelled); }
-function catalogueModels() { return activeModels().filter((model) => !model.seriesOnly); }
+function activeModels() { return state.models.filter((model) => !model.cancelled && !model.potential); }
+function catalogueModels() { return activeModels().filter((model) => !model.potential && !model.seriesOnly); }
 function cancelledCount() { return state.models.filter((model) => model.cancelled && !model.seriesOnly).length; }
+function potentialCount() { return state.models.filter((model) => model.potential).length; }
 function countBy(items, getter) { return items.reduce((counts, item) => counts.set(getter(item), (counts.get(getter(item)) || 0) + 1), new Map()); }
 function getBrands() { return [...countBy(catalogueModels(), (model) => model.brand).entries()].map(([name, count]) => ({ name, count })).sort((a, b) => a.name.localeCompare(b.name, "en")); }
 function getCollections() {
@@ -133,19 +134,21 @@ function getCollections() {
   return [...ordered, ...extras.filter(({ name }) => !lastCollectionOrder.includes(name)), ...lastCollectionOrder.filter((name) => counts.has(name)).map((name) => ({ name, count: counts.get(name) }))];
 }
 function isSelected(kind, value) { return state.filter.kind === kind && state.filter.value === value; }
-function filterLabel() { if (state.filter.kind === "all") return "All Models"; if (state.filter.kind === "status") return "Cancelled"; return state.filter.value; }
+function filterLabel() { if (state.filter.kind === "all") return "All Models"; if (state.filter.kind === "status") return state.filter.value === "POTENTIAL" ? "Potential" : "Cancelled"; return state.filter.value; }
 function filterType() { return state.filter.kind === "all" ? "CATALOGUE" : state.filter.kind.toUpperCase(); }
 function filterCount() {
   const counts = catalogMeta.counts || {};
   if (state.filter.kind === "all") return counts.active ?? activeModels().length;
-  if (state.filter.kind === "status") return counts.catalogueCancelled ?? cancelledCount();
+  if (state.filter.kind === "status") return state.filter.value === "POTENTIAL"
+    ? counts.cataloguePotential ?? potentialCount()
+    : counts.catalogueCancelled ?? cancelledCount();
   const group = state.filter.kind === "brand" ? counts.brands : counts.collections;
   return (group && group[state.filter.value]) ?? getVisibleModels().length;
 }
 function initial(value) { return titleCase(value).split(/\s+/).map((word) => word[0]).join("").slice(0, 2); }
 function visualFor(kind, value) {
   if (kind === "all") return { src: "assets/mini-gt-logo.png", alt: "MINI GT logo" };
-  if (kind === "status") return { mark: "×" };
+  if (kind === "status") return { mark: value === "POTENTIAL" ? "P" : "×" };
   const map = kind === "brand" ? visualAssets.brands : visualAssets.collections;
   return map[value] ? { src: map[value], alt: `${titleCase(value)} logo`, fullColour: true } : { mark: initial(value) };
 }
@@ -158,8 +161,8 @@ function getVisibleModels() {
   const query = state.search.trim().toLocaleLowerCase("en");
   return state.models.filter((model) => {
     const matches = state.filter.kind === "status"
-      ? model.cancelled && !model.seriesOnly
-      : !model.cancelled && (
+      ? (state.filter.value === "POTENTIAL" ? model.potential : model.cancelled && !model.seriesOnly)
+      : !model.cancelled && !model.potential && (
         state.filter.kind === "all"
         || (state.filter.kind === "brand" && !model.seriesOnly && model.brand === state.filter.value)
         || (state.filter.kind === "collection" && model.collections.includes(state.filter.value))
@@ -175,12 +178,13 @@ function renderSidebar() {
   const collectionItems = collections.map(({ name }) => `<button class="side-filter ${isSelected("collection", name) ? "is-active" : ""}" type="button" data-filter-kind="collection" data-filter-value="${escapeHtml(name)}">${filterLogo("collection", name)}<span class="filter-label">${escapeHtml(titleCase(name.replace(/ Collection$/, "")))}</span></button>`).join("");
   const brandItems = brands.map(({ name }) => `<button class="brand-filter ${isSelected("brand", name) ? "is-active" : ""}" type="button" data-filter-kind="brand" data-filter-value="${escapeHtml(name)}">${filterLogo("brand", name)}<span class="filter-label ${name.includes(" ") ? "is-multiword" : "is-single-word"}">${escapeHtml(titleCase(name))}</span></button>`).join("");
   elements.sidebarNav.innerHTML = `
-    <section><button class="archive-all ${isSelected("all", "all") ? "is-active" : ""}" type="button" data-filter-kind="all" data-filter-value="all"><small>EXPLORE THE ARCHIVE</small><span>All models</span><b>VIEW THE COMPLETE CATALOGUE</b></button><button class="side-status ${isSelected("status", "CANCELLED") ? "is-active" : ""}" type="button" data-filter-kind="status" data-filter-value="CANCELLED"><span>Cancelled</span><small>ARCHIVED MODELS</small></button></section>
+    <section><button class="archive-all ${isSelected("all", "all") ? "is-active" : ""}" type="button" data-filter-kind="all" data-filter-value="all"><small>EXPLORE THE ARCHIVE</small><span>All models</span><b>VIEW THE COMPLETE CATALOGUE</b></button><button class="side-status ${isSelected("status", "CANCELLED") ? "is-active" : ""}" type="button" data-filter-kind="status" data-filter-value="CANCELLED"><span>Cancelled</span><small>ARCHIVED MODELS</small></button><button class="side-status potential ${isSelected("status", "POTENTIAL") ? "is-active" : ""}" type="button" data-filter-kind="status" data-filter-value="POTENTIAL"><span>Potential</span><small>POSSIBLE FUTURE MODELS</small></button></section>
     <section class="filter-group"><p class="filter-group-title">CURATED SERIES</p><div class="collection-list">${collectionItems}</div></section>
     <section class="filter-group"><p class="filter-group-title">SELECT A BRAND</p><div class="brand-grid">${brandItems}</div></section>`;
 }
 
 function renderQuickFilters() {
+  elements.quickFilters.hidden = state.filter.kind === "status";
   const featured = [
     { kind: "all", value: "all", label: "ALL PROTOTYPES", logo: "" },
     ...getCollections().map(({ name }) => ({ kind: "collection", value: name, label: titleCase(name.replace(/ Collection$/, "")).toUpperCase(), logo: filterLogo("collection", name) })),
@@ -194,6 +198,7 @@ function renderSelection() {
   elements.title.textContent = titleCase(filterLabel());
   elements.eyebrow.textContent = filterType();
   elements.count.textContent = `${filterCount()} ${filterCount() === 1 ? "PROTOTYPE" : "PROTOTYPES"}`;
+  elements.selectionImage.closest(".selection-banner").classList.toggle("is-potential", state.filter.kind === "status" && state.filter.value === "POTENTIAL");
   if (visual.src) {
     elements.selectionImage.src = visual.src;
     elements.selectionImage.alt = visual.alt;
@@ -217,7 +222,7 @@ function photoStage(model) {
 }
 
 function modelCard(model) {
-  return `<article class="model-card" data-model-id="${escapeHtml(model.id)}">${photoStage(model)}<div class="card-info">${model.date ? `<div class="card-meta"><span>${escapeHtml(formatDate(model.date))}</span></div>` : ""}<h2 class="card-name">${escapeHtml(model.name)}</h2>${model.event ? `<p class="card-event">${eventIcon}<span>${escapeHtml(model.event)}</span></p>` : ""}${model.cancelled ? `<span class="cancelled-notice">CANCELLED</span>` : ""}${model.collections.length ? `<div class="card-collections">${model.collections.map((collection) => `<span class="collection-tag">${escapeHtml(collection.toUpperCase())}</span>`).join("")}</div>` : ""}</div></article>`;
+  return `<article class="model-card" data-model-id="${escapeHtml(model.id)}">${photoStage(model)}<div class="card-info">${model.date ? `<div class="card-meta"><span>${escapeHtml(formatDate(model.date))}</span></div>` : ""}<h2 class="card-name">${escapeHtml(model.name)}</h2>${model.event ? `<p class="card-event">${eventIcon}<span>${escapeHtml(model.event)}</span></p>` : ""}${model.cancelled ? `<span class="cancelled-notice">CANCELLED</span>` : ""}${model.potential ? `<span class="potential-notice">POTENTIAL</span>` : ""}${model.collections.length ? `<div class="card-collections">${model.collections.map((collection) => `<span class="collection-tag">${escapeHtml(collection.toUpperCase())}</span>`).join("")}</div>` : ""}</div></article>`;
 }
 
 function brandSection(name, models) {
@@ -273,7 +278,7 @@ function setCardPhoto(card, index) { const model = state.models.find((item) => i
 function updateLightbox() { const photo = state.lightbox.photos[state.lightbox.index]; if (!photo) return; elements.lightboxImage.src = photo.src; elements.lightboxImage.alt = `${state.lightbox.modelName} — ${photo.label}`; elements.lightboxCaption.textContent = `${state.lightbox.modelName} · ${photo.label} (${state.lightbox.index + 1}/${state.lightbox.photos.length})`; const multiple = state.lightbox.photos.length > 1; elements.previousPhoto.hidden = !multiple; elements.nextPhoto.hidden = !multiple; }
 function openLightbox(card) { const model = state.models.find((item) => item.id === card.dataset.modelId); if (!model || !model.photos.length) return; const active = [...card.querySelectorAll(".gallery-dot")].findIndex((dot) => dot.classList.contains("is-active")); state.lightbox = { photos: model.photos, index: Math.max(active, 0), modelName: model.name }; updateLightbox(); elements.lightbox.showModal(); }
 function moveLightboxPhoto(direction) { const total = state.lightbox.photos.length; if (total < 2) return; state.lightbox.index = (state.lightbox.index + direction + total) % total; updateLightbox(); }
-function applyHash() { const hash = decodeURIComponent(window.location.hash.replace(/^#/, "")); if (!hash || hash === "all") { state.filter = { kind: "all", value: "all" }; return; } const [kind, ...valueParts] = hash.split("/"); const value = valueParts.join("/"); if ((kind === "status" && value === "CANCELLED") || (kind === "brand" && getBrands().some((item) => item.name === value)) || (kind === "collection" && getCollections().some((item) => item.name === value))) state.filter = { kind, value }; }
+function applyHash() { const hash = decodeURIComponent(window.location.hash.replace(/^#/, "")); if (!hash || hash === "all") { state.filter = { kind: "all", value: "all" }; return; } const [kind, ...valueParts] = hash.split("/"); const value = valueParts.join("/"); if ((kind === "status" && ["CANCELLED", "POTENTIAL"].includes(value)) || (kind === "brand" && getBrands().some((item) => item.name === value)) || (kind === "collection" && getCollections().some((item) => item.name === value))) state.filter = { kind, value }; }
 
 document.addEventListener("click", (event) => { const filter = event.target.closest("[data-filter-kind]"); if (filter) chooseFilter(filter.dataset.filterKind, filter.dataset.filterValue); const gallery = event.target.closest(".gallery-dot"); if (gallery) { event.stopPropagation(); setCardPhoto(gallery.closest(".model-card"), Number(gallery.dataset.photoIndex)); } if (event.target.closest("[data-open-lightbox]")) openLightbox(event.target.closest(".model-card")); });
 elements.search.addEventListener("input", (event) => { state.search = event.target.value; renderCards(); });

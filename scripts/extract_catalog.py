@@ -47,10 +47,11 @@ def display_brand(value: Any) -> str:
     return aliases.get(brand.upper(), brand)
 
 
-def qube_carz_brand(model: str, workbook_brands: list[str]) -> str:
-    """Assign Qube Carz models to their real automotive marque."""
+def model_brand(model: str, workbook_brands: list[str], fallback: str) -> str:
+    """Assign mixed-sheet models to their real automotive marque."""
     normalized = clean_text(model).upper()
     aliases = {
+        "ABARTH": "ABARTH",
         "MERCEDES BENZ": "MERCEDES",
         "MERCEDES-BENZ": "MERCEDES",
     }
@@ -60,7 +61,12 @@ def qube_carz_brand(model: str, workbook_brands: list[str]) -> str:
     for brand in sorted(workbook_brands, key=len, reverse=True):
         if normalized.startswith(brand.upper()):
             return brand
-    return clean_text(model).split(" ", 1)[0].upper() or "QUBE CARZ"
+    return clean_text(model).split(" ", 1)[0].upper() or fallback
+
+
+def qube_carz_brand(model: str, workbook_brands: list[str]) -> str:
+    """Assign Qube Carz models to their real automotive marque."""
+    return model_brand(model, workbook_brands, "QUBE CARZ")
 
 
 def slugify(value: str) -> str:
@@ -271,7 +277,11 @@ def catalog_metadata(workbook: Any, source: Path, models: list[dict[str, Any]]) 
         modified = datetime.fromtimestamp(source.stat().st_mtime)
     updated_at = modified.date().isoformat() if isinstance(modified, datetime) else modified.isoformat()
 
-    active = [model for model in models if not model["cancelled"]]
+    active = [
+        model for model in models if not model["cancelled"] and not model["potential"]
+    ]
+    cancelled = [model for model in models if model["cancelled"]]
+    potential = [model for model in models if model["potential"]]
     catalogue_active = [model for model in active if not model["seriesOnly"]]
     catalogue_cancelled = [
         model for model in models if model["cancelled"] and not model["seriesOnly"]
@@ -289,9 +299,11 @@ def catalog_metadata(workbook: Any, source: Path, models: list[dict[str, Any]]) 
         "lastUpdated": updated_at,
         "counts": {
             "active": len(active),
-            "cancelled": len(models) - len(active),
+            "cancelled": len(cancelled),
+            "potential": len(potential),
             "catalogueActive": len(catalogue_active),
             "catalogueCancelled": len(catalogue_cancelled),
+            "cataloguePotential": len(potential),
             "brands": brand_counts,
             "collections": collection_counts,
         },
@@ -314,7 +326,8 @@ def main(source_arg: str) -> None:
     workbook_brands = [
         display_brand(sheet.title)
         for sheet in workbook.worksheets
-        if display_brand(sheet.title).upper() not in {"QUBE CARZ", "TO IDENTIFY"}
+        if display_brand(sheet.title).upper()
+        not in {"POTENTIAL MODELS", "QUBE CARZ", "TO IDENTIFY"}
     ]
     with ZipFile(source) as archive:
         metadata_to_rich_value, image_paths = xml_cell_metadata(archive)
@@ -327,18 +340,20 @@ def main(source_arg: str) -> None:
             }
             sheet_brand = display_brand(sheet.title)
             brand = sheet_brand
+            is_potential_sheet = sheet_brand.upper() == "POTENTIAL MODELS"
             if brand.upper() == "TO IDENTIFY":
                 continue
 
             for row_index in range(2, sheet.max_row + 1):
                 raw_model = clean_text(sheet.cell(row_index, 1).value)
-                event = normalize_event(sheet.cell(row_index, 2).value)
-                date_cell = sheet.cell(row_index, 3)
+                event = "" if is_potential_sheet else normalize_event(sheet.cell(row_index, 2).value)
+                date_cell = sheet.cell(row_index, 2 if is_potential_sheet else 3)
                 raw_date = raw_sheet_cells.get(date_cell.coordinate, ("", None))[0]
                 shown_date = normalize_date(date_cell.value, raw_date)
 
                 image_refs: list[dict[str, str]] = []
-                for column_index in range(4, sheet.max_column + 1):
+                first_image_column = 3 if is_potential_sheet else 4
+                for column_index in range(first_image_column, sheet.max_column + 1):
                     coordinate = sheet.cell(row_index, column_index).coordinate
                     _, metadata_index = raw_sheet_cells.get(coordinate, ("", None))
                     if metadata_index is None:
@@ -359,16 +374,22 @@ def main(source_arg: str) -> None:
                         missing_images += 1
                         continue
 
-                    role = image_role(headers[column_index], column_index)
+                    role = (
+                        "model"
+                        if is_potential_sheet and column_index == first_image_column
+                        else image_role(headers[column_index], column_index)
+                    )
                     image_refs.append({"role": role, "package_path": package_path})
 
                 if not raw_model and not image_refs:
                     continue
-                cancelled = is_cancelled_row(sheet, row_index)
+                cancelled = False if is_potential_sheet else is_cancelled_row(sheet, row_index)
                 if sheet_brand.upper() == "ACCESSORIES" and not cancelled:
                     continue
                 model_name, collections = collection_data(raw_model)
-                if sheet_brand.upper() == "QUBE CARZ":
+                if is_potential_sheet:
+                    brand = model_brand(model_name, workbook_brands, "POTENTIAL")
+                elif sheet_brand.upper() == "QUBE CARZ":
                     brand = qube_carz_brand(model_name, workbook_brands)
                     if "Qube Carz Collection" not in collections:
                         collections.append("Qube Carz Collection")
@@ -384,9 +405,13 @@ def main(source_arg: str) -> None:
                     model_name = brand
 
                 model_id = (
-                    f"qube-carz-{row_index:02d}"
-                    if sheet_brand.upper() == "QUBE CARZ"
-                    else f"{slugify(brand)}-{row_index:02d}"
+                    f"potential-{slugify(brand)}-{row_index:02d}"
+                    if is_potential_sheet
+                    else (
+                        f"qube-carz-{row_index:02d}"
+                        if sheet_brand.upper() == "QUBE CARZ"
+                        else f"{slugify(brand)}-{row_index:02d}"
+                    )
                 )
                 photos: list[dict[str, str]] = []
                 role_counters: dict[str, int] = {}
@@ -425,6 +450,7 @@ def main(source_arg: str) -> None:
                         "collections": collections,
                         "seriesOnly": sheet_brand.upper() == "QUBE CARZ",
                         "cancelled": cancelled,
+                        "potential": is_potential_sheet,
                         "photos": photos,
                     }
                 )
