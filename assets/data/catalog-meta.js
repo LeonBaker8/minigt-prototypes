@@ -3,10 +3,10 @@ window.MINI_GT_CATALOG_META = {
   "counts": {
     "active": 247,
     "cancelled": 39,
-    "potential": 15,
+    "potential": 33,
     "catalogueActive": 227,
     "catalogueCancelled": 39,
-    "cataloguePotential": 15,
+    "cataloguePotential": 33,
     "brands": {
       "AMC": 2,
       "ALFA ROMEO": 1,

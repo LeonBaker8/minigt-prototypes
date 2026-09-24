@@ -66,6 +66,11 @@ def model_brand(model: str, workbook_brands: list[str], fallback: str) -> str:
     for brand in sorted(workbook_brands, key=len, reverse=True):
         if normalized.startswith(brand.upper()):
             return brand
+    # Some Liberty Walk names put the collection/style before the marque,
+    # for example "LB-WORKS NISSAN" and "LB★WORKS BMW".
+    for brand in sorted(workbook_brands, key=len, reverse=True):
+        if re.search(rf"(?<![A-Z0-9]){re.escape(brand.upper())}(?![A-Z0-9])", normalized):
+            return brand
     return clean_text(model).split(" ", 1)[0].upper() or fallback
 
 

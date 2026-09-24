@@ -15,6 +15,7 @@ const visualAssets = {
     "CADILLAC": "assets/brands/cadillac-emblem.svg",
     "CHEVROLET": "assets/brands/chevrolet-emblem.svg",
     "CITROEN": "assets/brands/citroen-emblem.svg",
+    "DAIHATSU": "assets/brands/daihatsu.svg",
     "DATSUN": "assets/brands/datsun.svg",
     "DODGE": "assets/brands/dodge-fratzog.svg",
     "FIAT": "assets/brands/fiat.png",
@@ -206,7 +207,7 @@ function renderSelection() {
     elements.selectionImage.classList.toggle("full-colour", Boolean(visual.fullColour));
     elements.selectionImage.hidden = false;
     elements.selectionMark.hidden = true;
-    elements.selectionImage.parentElement.classList.toggle("is-wide-logo", visual.src.endsWith("/qube-carz-inverted.png") || visual.src.endsWith("/mclaren.svg"));
+    elements.selectionImage.parentElement.classList.toggle("is-wide-logo", visual.src.endsWith("/qube-carz-inverted.png") || visual.src.endsWith("/mclaren.svg") || visual.src.endsWith("/daihatsu.svg"));
   } else {
     elements.selectionImage.parentElement.classList.remove("is-wide-logo");
     elements.selectionMark.textContent = visual.mark;
