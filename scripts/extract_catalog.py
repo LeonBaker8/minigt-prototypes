@@ -25,11 +25,7 @@ ASSETS = ROOT / "assets"
 IMAGE_DIR = ASSETS / "images"
 DATA_FILE = ASSETS / "data" / "models.json"
 META_FILE = ASSETS / "data" / "catalog-meta.js"
-MODEL_EXCLUSIONS = {
-    "Datsun Kaido 510 Wagon",
-    "Datsun Kaido 510 Wagon 4x4",
-    "Nissan GT-R (R35) LB★WORKS Type 1, Rear Wing ver.2 Velocity Blue",
-}
+NON_BRAND_SHEETS = {"POTENTIAL MODELS", "QUBE CARZ", "TO IDENTIFY"}
 
 
 def local_name(tag: str) -> str:
@@ -336,8 +332,7 @@ def main(source_arg: str) -> None:
     workbook_brands = [
         display_brand(sheet.title)
         for sheet in workbook.worksheets
-        if display_brand(sheet.title).upper()
-        not in {"POTENTIAL MODELS", "QUBE CARZ", "TO IDENTIFY"}
+        if display_brand(sheet.title).upper() not in NON_BRAND_SHEETS
     ]
     with ZipFile(source) as archive:
         metadata_to_rich_value, image_paths = xml_cell_metadata(archive)
@@ -356,8 +351,6 @@ def main(source_arg: str) -> None:
 
             for row_index in range(2, sheet.max_row + 1):
                 raw_model = clean_text(sheet.cell(row_index, 1).value)
-                if raw_model in MODEL_EXCLUSIONS:
-                    continue
                 event = "" if is_potential_sheet else normalize_event(sheet.cell(row_index, 2).value)
                 date_cell = sheet.cell(row_index, 2 if is_potential_sheet else 3)
                 raw_date = raw_sheet_cells.get(date_cell.coordinate, ("", None))[0]

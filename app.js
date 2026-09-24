@@ -2,15 +2,21 @@ const sourceUrl = "assets/data/models.json";
 const specialCollectionOrder = ["Bond 007 Collection", "Fast & Furious Collection"];
 const lastCollectionOrder = ["Korean Collection", "Motorbike Collection", "Qube Carz Collection"];
 const catalogMeta = window.MINI_GT_CATALOG_META || {};
+const statusFilters = new Set(["CANCELLED", "POTENTIAL"]);
+const wideLogoAssets = new Set([
+  "assets/brands/daihatsu.svg",
+  "assets/brands/mclaren.svg",
+  "assets/collections/qube-carz-inverted.png",
+]);
 
 const visualAssets = {
   brands: {
     "ABARTH": "assets/brands/abarth.svg",
     "ALFA ROMEO": "assets/brands/alfa-romeo.svg",
     "AMC": "assets/brands/amc.svg",
-    "FERRARI": "assets/brands/ferrari.png",
-    "BMW": "assets/brands/bmw.png",
+    "ASTON MARTIN": "assets/brands/aston-martin.svg",
     "BENTLEY": "assets/brands/bentley.svg",
+    "BMW": "assets/brands/bmw.png",
     "BUGATTI": "assets/brands/bugatti.png",
     "CADILLAC": "assets/brands/cadillac-emblem.svg",
     "CHEVROLET": "assets/brands/chevrolet-emblem.svg",
@@ -18,6 +24,7 @@ const visualAssets = {
     "DAIHATSU": "assets/brands/daihatsu.svg",
     "DATSUN": "assets/brands/datsun.svg",
     "DODGE": "assets/brands/dodge-fratzog.svg",
+    "FERRARI": "assets/brands/ferrari.png",
     "FIAT": "assets/brands/fiat.png",
     "FORD": "assets/brands/ford.png",
     "HARLEY DAVIDSON": "assets/brands/harley-davidson.svg",
@@ -44,7 +51,6 @@ const visualAssets = {
     "TOYOTA": "assets/brands/toyota.svg",
     "VOLKSWAGEN": "assets/brands/volkswagen.svg",
     "WESTERN STAR": "assets/brands/western-star.svg",
-    "ASTON MARTIN": "assets/brands/aston-martin.svg",
   },
   collections: {
     "Bond 007 Collection": "assets/collections/bond-007.svg",
@@ -57,7 +63,6 @@ const visualAssets = {
     "Senna Collection": "assets/collections/senna.png",
   },
 };
-
 
 const state = {
   models: [],
@@ -122,12 +127,35 @@ function formatArchiveDate(value) {
   return `Last updated ${new Intl.DateTimeFormat("en-US", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(new Date(`${value}T12:00:00Z`))}`;
 }
 
-function activeModels() { return state.models.filter((model) => !model.cancelled && !model.potential); }
-function catalogueModels() { return activeModels().filter((model) => !model.potential && !model.seriesOnly); }
-function cancelledCount() { return state.models.filter((model) => model.cancelled && !model.seriesOnly).length; }
-function potentialCount() { return state.models.filter((model) => model.potential).length; }
-function countBy(items, getter) { return items.reduce((counts, item) => counts.set(getter(item), (counts.get(getter(item)) || 0) + 1), new Map()); }
-function getBrands() { return [...countBy(catalogueModels(), (model) => model.brand).entries()].map(([name, count]) => ({ name, count })).sort((a, b) => a.name.localeCompare(b.name, "en")); }
+function activeModels() {
+  return state.models.filter((model) => !model.cancelled && !model.potential);
+}
+
+function catalogueModels() {
+  return activeModels().filter((model) => !model.seriesOnly);
+}
+
+function cancelledCount() {
+  return state.models.filter((model) => model.cancelled && !model.seriesOnly).length;
+}
+
+function potentialCount() {
+  return state.models.filter((model) => model.potential).length;
+}
+
+function countBy(items, getter) {
+  return items.reduce((counts, item) => {
+    const key = getter(item);
+    counts.set(key, (counts.get(key) || 0) + 1);
+    return counts;
+  }, new Map());
+}
+
+function getBrands() {
+  return [...countBy(catalogueModels(), (model) => model.brand).entries()]
+    .map(([name, count]) => ({ name, count }))
+    .sort((a, b) => a.name.localeCompare(b.name, "en"));
+}
 function getCollections() {
   const counts = new Map(specialCollectionOrder.map((name) => [name, 0]));
   activeModels().forEach((model) => model.collections.forEach((collection) => counts.set(collection, (counts.get(collection) || 0) + 1)));
@@ -135,9 +163,23 @@ function getCollections() {
   const extras = [...counts.entries()].filter(([name]) => !specialCollectionOrder.includes(name)).sort(([a], [b]) => a.localeCompare(b, "en")).map(([name, count]) => ({ name, count }));
   return [...ordered, ...extras.filter(({ name }) => !lastCollectionOrder.includes(name)), ...lastCollectionOrder.filter((name) => counts.has(name)).map((name) => ({ name, count: counts.get(name) }))];
 }
-function isSelected(kind, value) { return state.filter.kind === kind && state.filter.value === value; }
-function filterLabel() { if (state.filter.kind === "all") return "All Models"; if (state.filter.kind === "status") return state.filter.value === "POTENTIAL" ? "Potential" : "Cancelled"; return state.filter.value; }
-function filterType() { return state.filter.kind === "all" ? "CATALOGUE" : state.filter.kind.toUpperCase(); }
+function isSelected(kind, value) {
+  return state.filter.kind === kind && state.filter.value === value;
+}
+
+function isPotentialFilter() {
+  return isSelected("status", "POTENTIAL");
+}
+
+function filterLabel() {
+  if (state.filter.kind === "all") return "All Models";
+  if (state.filter.kind === "status") return isPotentialFilter() ? "Potential" : "Cancelled";
+  return state.filter.value;
+}
+
+function filterType() {
+  return state.filter.kind === "all" ? "CATALOGUE" : state.filter.kind.toUpperCase();
+}
 function filterCount() {
   const counts = catalogMeta.counts || {};
   if (state.filter.kind === "all") return counts.active ?? activeModels().length;
@@ -147,7 +189,9 @@ function filterCount() {
   const group = state.filter.kind === "brand" ? counts.brands : counts.collections;
   return (group && group[state.filter.value]) ?? getVisibleModels().length;
 }
-function initial(value) { return titleCase(value).split(/\s+/).map((word) => word[0]).join("").slice(0, 2); }
+function initial(value) {
+  return titleCase(value).split(/\s+/).map((word) => word[0]).join("").slice(0, 2);
+}
 function visualFor(kind, value) {
   if (kind === "all") return { src: "assets/mini-gt-logo.png", alt: "MINI GT logo" };
   if (kind === "status") return { mark: value === "POTENTIAL" ? "P" : "×" };
@@ -161,17 +205,26 @@ function filterLogo(kind, value) {
 
 function getVisibleModels() {
   const query = state.search.trim().toLocaleLowerCase("en");
-  return state.models.filter((model) => {
-    const matches = state.filter.kind === "status"
-      ? (state.filter.value === "POTENTIAL" ? model.potential : model.cancelled && !model.seriesOnly)
-      : !model.cancelled && !model.potential && (
-        state.filter.kind === "all"
-        || (state.filter.kind === "brand" && !model.seriesOnly && model.brand === state.filter.value)
-        || (state.filter.kind === "collection" && model.collections.includes(state.filter.value))
-      );
-    if (!matches) return false;
-    return !query || [model.name, model.brand, model.event, model.date, ...model.collections].join(" ").toLocaleLowerCase("en").includes(query);
-  });
+  return state.models.filter((model) => matchesCurrentFilter(model) && matchesSearch(model, query));
+}
+
+function matchesCurrentFilter(model) {
+  if (state.filter.kind === "status") {
+    return isPotentialFilter() ? model.potential : model.cancelled && !model.seriesOnly;
+  }
+  if (model.cancelled || model.potential) return false;
+  if (state.filter.kind === "all") return true;
+  if (state.filter.kind === "brand") return !model.seriesOnly && model.brand === state.filter.value;
+  if (state.filter.kind === "collection") return model.collections.includes(state.filter.value);
+  return false;
+}
+
+function matchesSearch(model, query) {
+  if (!query) return true;
+  return [model.name, model.brand, model.event, model.date, ...model.collections]
+    .join(" ")
+    .toLocaleLowerCase("en")
+    .includes(query);
 }
 
 function renderSidebar() {
@@ -196,18 +249,19 @@ function renderQuickFilters() {
 
 function renderSelection() {
   const visual = visualFor(state.filter.kind, state.filter.value);
+  const count = filterCount();
   elements.homeHero.hidden = state.filter.kind !== "all";
   elements.title.textContent = titleCase(filterLabel());
   elements.eyebrow.textContent = filterType();
-  elements.count.textContent = `${filterCount()} ${filterCount() === 1 ? "PROTOTYPE" : "PROTOTYPES"}`;
-  elements.selectionImage.closest(".selection-banner").classList.toggle("is-potential", state.filter.kind === "status" && state.filter.value === "POTENTIAL");
+  elements.count.textContent = `${count} ${count === 1 ? "PROTOTYPE" : "PROTOTYPES"}`;
+  elements.selectionImage.closest(".selection-banner").classList.toggle("is-potential", isPotentialFilter());
   if (visual.src) {
     elements.selectionImage.src = visual.src;
     elements.selectionImage.alt = visual.alt;
     elements.selectionImage.classList.toggle("full-colour", Boolean(visual.fullColour));
     elements.selectionImage.hidden = false;
     elements.selectionMark.hidden = true;
-    elements.selectionImage.parentElement.classList.toggle("is-wide-logo", visual.src.endsWith("/qube-carz-inverted.png") || visual.src.endsWith("/mclaren.svg") || visual.src.endsWith("/daihatsu.svg"));
+    elements.selectionImage.parentElement.classList.toggle("is-wide-logo", wideLogoAssets.has(visual.src));
   } else {
     elements.selectionImage.parentElement.classList.remove("is-wide-logo");
     elements.selectionMark.textContent = visual.mark;
@@ -273,21 +327,138 @@ function renderCards() {
   elements.modelGrid.innerHTML = groups.map(([name, brandModels]) => brandSection(name, brandModels)).join("");
 }
 
-function render() { renderSidebar(); renderQuickFilters(); renderSelection(); renderCards(); }
-function closeFilters() { elements.sidebar.classList.remove("is-open"); elements.backdrop.hidden = true; }
-function chooseFilter(kind, value) { state.filter = { kind, value }; state.search = ""; elements.search.value = ""; render(); closeFilters(); window.location.hash = kind === "all" ? "all" : `${kind}/${encodeURIComponent(value)}`; }
-function setCardPhoto(card, index) { const model = state.models.find((item) => item.id === card.dataset.modelId); if (!model || !model.photos[index]) return; const photo = model.photos[index]; const image = card.querySelector(".photo-stage img"); image.src = photo.src; image.alt = `${model.name} — ${photo.label}`; card.querySelectorAll(".gallery-dot").forEach((dot, dotIndex) => dot.classList.toggle("is-active", dotIndex === index)); }
-function updateLightbox() { const photo = state.lightbox.photos[state.lightbox.index]; if (!photo) return; elements.lightboxImage.src = photo.src; elements.lightboxImage.alt = `${state.lightbox.modelName} — ${photo.label}`; elements.lightboxCaption.textContent = `${state.lightbox.modelName} · ${photo.label} (${state.lightbox.index + 1}/${state.lightbox.photos.length})`; const multiple = state.lightbox.photos.length > 1; elements.previousPhoto.hidden = !multiple; elements.nextPhoto.hidden = !multiple; }
-function openLightbox(card) { const model = state.models.find((item) => item.id === card.dataset.modelId); if (!model || !model.photos.length) return; const active = [...card.querySelectorAll(".gallery-dot")].findIndex((dot) => dot.classList.contains("is-active")); state.lightbox = { photos: model.photos, index: Math.max(active, 0), modelName: model.name }; updateLightbox(); elements.lightbox.showModal(); }
-function moveLightboxPhoto(direction) { const total = state.lightbox.photos.length; if (total < 2) return; state.lightbox.index = (state.lightbox.index + direction + total) % total; updateLightbox(); }
-function applyHash() { const hash = decodeURIComponent(window.location.hash.replace(/^#/, "")); if (!hash || hash === "all") { state.filter = { kind: "all", value: "all" }; return; } const [kind, ...valueParts] = hash.split("/"); const value = valueParts.join("/"); if ((kind === "status" && ["CANCELLED", "POTENTIAL"].includes(value)) || (kind === "brand" && getBrands().some((item) => item.name === value)) || (kind === "collection" && getCollections().some((item) => item.name === value))) state.filter = { kind, value }; }
+function render() {
+  renderSidebar();
+  renderQuickFilters();
+  renderSelection();
+  renderCards();
+}
 
-document.addEventListener("click", (event) => { const filter = event.target.closest("[data-filter-kind]"); if (filter) chooseFilter(filter.dataset.filterKind, filter.dataset.filterValue); const gallery = event.target.closest(".gallery-dot"); if (gallery) { event.stopPropagation(); setCardPhoto(gallery.closest(".model-card"), Number(gallery.dataset.photoIndex)); } if (event.target.closest("[data-open-lightbox]")) openLightbox(event.target.closest(".model-card")); });
-elements.search.addEventListener("input", (event) => { state.search = event.target.value; renderCards(); });
-elements.openFilters.addEventListener("click", () => { elements.sidebar.classList.add("is-open"); elements.backdrop.hidden = false; });
-elements.closeFilters.addEventListener("click", closeFilters); elements.backdrop.addEventListener("click", closeFilters); elements.clearFilters.addEventListener("click", () => chooseFilter("all", "all")); elements.closeLightbox.addEventListener("click", () => elements.lightbox.close()); elements.previousPhoto.addEventListener("click", () => moveLightboxPhoto(-1)); elements.nextPhoto.addEventListener("click", () => moveLightboxPhoto(1)); elements.lightbox.addEventListener("click", (event) => { if (event.target === elements.lightbox) elements.lightbox.close(); });
-document.addEventListener("keydown", (event) => { if (event.key === "Escape") closeFilters(); if (!elements.lightbox.open) return; if (event.key === "ArrowLeft") moveLightboxPhoto(-1); if (event.key === "ArrowRight") moveLightboxPhoto(1); });
-window.addEventListener("hashchange", () => { applyHash(); render(); });
+function closeFilters() {
+  elements.sidebar.classList.remove("is-open");
+  elements.backdrop.hidden = true;
+}
+
+function chooseFilter(kind, value) {
+  state.filter = { kind, value };
+  state.search = "";
+  elements.search.value = "";
+  render();
+  closeFilters();
+  window.location.hash = kind === "all" ? "all" : `${kind}/${encodeURIComponent(value)}`;
+}
+
+function setCardPhoto(card, index) {
+  const model = state.models.find((item) => item.id === card.dataset.modelId);
+  if (!model || !model.photos[index]) return;
+  const photo = model.photos[index];
+  const image = card.querySelector(".photo-stage img");
+  image.src = photo.src;
+  image.alt = `${model.name} — ${photo.label}`;
+  card.querySelectorAll(".gallery-dot").forEach((dot, dotIndex) => dot.classList.toggle("is-active", dotIndex === index));
+}
+
+function updateLightbox() {
+  const photo = state.lightbox.photos[state.lightbox.index];
+  if (!photo) return;
+  elements.lightboxImage.src = photo.src;
+  elements.lightboxImage.alt = `${state.lightbox.modelName} — ${photo.label}`;
+  elements.lightboxCaption.textContent = `${state.lightbox.modelName} · ${photo.label} (${state.lightbox.index + 1}/${state.lightbox.photos.length})`;
+  const multiple = state.lightbox.photos.length > 1;
+  elements.previousPhoto.hidden = !multiple;
+  elements.nextPhoto.hidden = !multiple;
+}
+
+function openLightbox(card) {
+  const model = state.models.find((item) => item.id === card.dataset.modelId);
+  if (!model || !model.photos.length) return;
+  const active = [...card.querySelectorAll(".gallery-dot")].findIndex((dot) => dot.classList.contains("is-active"));
+  state.lightbox = { photos: model.photos, index: Math.max(active, 0), modelName: model.name };
+  updateLightbox();
+  elements.lightbox.showModal();
+}
+
+function moveLightboxPhoto(direction) {
+  const total = state.lightbox.photos.length;
+  if (total < 2) return;
+  state.lightbox.index = (state.lightbox.index + direction + total) % total;
+  updateLightbox();
+}
+
+function applyHash() {
+  const hash = decodeURIComponent(window.location.hash.replace(/^#/, ""));
+  if (!hash || hash === "all") {
+    state.filter = { kind: "all", value: "all" };
+    return;
+  }
+
+  const [kind, ...valueParts] = hash.split("/");
+  const value = valueParts.join("/");
+  const isValid = (kind === "status" && statusFilters.has(value))
+    || (kind === "brand" && getBrands().some((item) => item.name === value))
+    || (kind === "collection" && getCollections().some((item) => item.name === value));
+  if (isValid) state.filter = { kind, value };
+}
+
+document.addEventListener("click", (event) => {
+  const filter = event.target.closest("[data-filter-kind]");
+  if (filter) chooseFilter(filter.dataset.filterKind, filter.dataset.filterValue);
+
+  const gallery = event.target.closest(".gallery-dot");
+  if (gallery) {
+    event.stopPropagation();
+    setCardPhoto(gallery.closest(".model-card"), Number(gallery.dataset.photoIndex));
+  }
+
+  const lightboxTrigger = event.target.closest("[data-open-lightbox]");
+  if (lightboxTrigger) openLightbox(lightboxTrigger.closest(".model-card"));
+});
+
+elements.search.addEventListener("input", (event) => {
+  state.search = event.target.value;
+  renderCards();
+});
+elements.openFilters.addEventListener("click", () => {
+  elements.sidebar.classList.add("is-open");
+  elements.backdrop.hidden = false;
+});
+elements.closeFilters.addEventListener("click", closeFilters);
+elements.backdrop.addEventListener("click", closeFilters);
+elements.clearFilters.addEventListener("click", () => chooseFilter("all", "all"));
+elements.closeLightbox.addEventListener("click", () => elements.lightbox.close());
+elements.previousPhoto.addEventListener("click", () => moveLightboxPhoto(-1));
+elements.nextPhoto.addEventListener("click", () => moveLightboxPhoto(1));
+elements.lightbox.addEventListener("click", (event) => {
+  if (event.target === elements.lightbox) elements.lightbox.close();
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeFilters();
+  if (!elements.lightbox.open) return;
+  if (event.key === "ArrowLeft") moveLightboxPhoto(-1);
+  if (event.key === "ArrowRight") moveLightboxPhoto(1);
+});
+window.addEventListener("hashchange", () => {
+  applyHash();
+  render();
+});
 
 elements.archiveUpdated.textContent = formatArchiveDate(catalogMeta.lastUpdated);
-fetch(sourceUrl).then((response) => { if (!response.ok) throw new Error(response.status === 404 ? "The deployment is missing the assets folder." : "The catalogue could not be loaded."); return response.json(); }).then((models) => { state.models = models; applyHash(); render(); }).catch((error) => { elements.modelGrid.innerHTML = `<p>${escapeHtml(error.message)}</p>`; console.error(error); });
+fetch(sourceUrl)
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(response.status === 404
+        ? "The deployment is missing the assets folder."
+        : "The catalogue could not be loaded.");
+    }
+    return response.json();
+  })
+  .then((models) => {
+    state.models = models;
+    applyHash();
+    render();
+  })
+  .catch((error) => {
+    elements.modelGrid.innerHTML = `<p>${escapeHtml(error.message)}</p>`;
+    console.error(error);
+  });
