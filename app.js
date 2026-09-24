@@ -5,6 +5,7 @@ const catalogMeta = window.MINI_GT_CATALOG_META || {};
 
 const visualAssets = {
   brands: {
+    "ABARTH": "assets/brands/abarth.svg",
     "ALFA ROMEO": "assets/brands/alfa-romeo.svg",
     "AMC": "assets/brands/amc.svg",
     "FERRARI": "assets/brands/ferrari.png",
@@ -205,7 +206,7 @@ function renderSelection() {
     elements.selectionImage.classList.toggle("full-colour", Boolean(visual.fullColour));
     elements.selectionImage.hidden = false;
     elements.selectionMark.hidden = true;
-    elements.selectionImage.parentElement.classList.toggle("is-wide-logo", visual.src.endsWith("/qube-carz-inverted.png"));
+    elements.selectionImage.parentElement.classList.toggle("is-wide-logo", visual.src.endsWith("/qube-carz-inverted.png") || visual.src.endsWith("/mclaren.svg"));
   } else {
     elements.selectionImage.parentElement.classList.remove("is-wide-logo");
     elements.selectionMark.textContent = visual.mark;

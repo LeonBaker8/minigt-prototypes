@@ -1,12 +1,12 @@
 window.MINI_GT_CATALOG_META = {
   "lastUpdated": "2026-09-24",
   "counts": {
-    "active": 250,
+    "active": 247,
     "cancelled": 39,
-    "potential": 18,
+    "potential": 15,
     "catalogueActive": 227,
     "catalogueCancelled": 39,
-    "cataloguePotential": 18,
+    "cataloguePotential": 15,
     "brands": {
       "AMC": 2,
       "ALFA ROMEO": 1,
@@ -47,7 +47,7 @@ window.MINI_GT_CATALOG_META = {
       "WESTERN STAR": 5
     },
     "collections": {
-      "Qube Carz Collection": 23,
+      "Qube Carz Collection": 20,
       "Bond 007 Collection": 8,
       "F1 Collection": 16,
       "IMSA Collection": 8,

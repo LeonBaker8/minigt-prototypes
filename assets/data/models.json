@@ -285,60 +285,6 @@
     ]
   },
   {
-    "id": "potential-nissan-23",
-    "name": "Nissan GT-R (R35) LB★WORKS Type 1, Rear Wing ver.2 Velocity Blue",
-    "brand": "NISSAN",
-    "event": "",
-    "date": "2026-08-01",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": true,
-    "photos": [
-      {
-        "src": "assets/images/potential-nissan-23-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "potential-datsun-24",
-    "name": "Datsun Kaido 510 Wagon",
-    "brand": "DATSUN",
-    "event": "",
-    "date": "2026-08-01",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": true,
-    "photos": [
-      {
-        "src": "assets/images/potential-datsun-24-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "potential-datsun-25",
-    "name": "Datsun Kaido 510 Wagon 4x4",
-    "brand": "DATSUN",
-    "event": "",
-    "date": "2026-08-01",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": true,
-    "photos": [
-      {
-        "src": "assets/images/potential-datsun-25-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
     "id": "qube-carz-02",
     "name": "Porsche 911 Carrera RS 2.7 White",
     "brand": "PORSCHE",
@@ -733,66 +679,6 @@
     "photos": [
       {
         "src": "assets/images/qube-carz-21-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "qube-carz-22",
-    "name": "Nissan GT-R (R35) LB★WORKS Type 1, Rear Wing ver.2 Velocity Blue",
-    "brand": "NISSAN",
-    "event": "Australian Diecast Expo",
-    "date": "2026-08-01",
-    "collections": [
-      "Qube Carz Collection"
-    ],
-    "seriesOnly": true,
-    "cancelled": false,
-    "potential": false,
-    "photos": [
-      {
-        "src": "assets/images/qube-carz-22-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "qube-carz-23",
-    "name": "Datsun Kaido 510 Wagon",
-    "brand": "DATSUN",
-    "event": "Tokyo Diecast Club Shibuya",
-    "date": "2026-08-01",
-    "collections": [
-      "Qube Carz Collection"
-    ],
-    "seriesOnly": true,
-    "cancelled": false,
-    "potential": false,
-    "photos": [
-      {
-        "src": "assets/images/qube-carz-23-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "qube-carz-24",
-    "name": "Datsun Kaido 510 Wagon 4x4",
-    "brand": "DATSUN",
-    "event": "Tokyo Diecast Club Shibuya",
-    "date": "2026-08-01",
-    "collections": [
-      "Qube Carz Collection"
-    ],
-    "seriesOnly": true,
-    "cancelled": false,
-    "potential": false,
-    "photos": [
-      {
-        "src": "assets/images/qube-carz-24-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
