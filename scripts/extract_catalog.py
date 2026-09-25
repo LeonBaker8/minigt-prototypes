@@ -270,6 +270,19 @@ def is_cancelled_row(sheet: Any, row_index: int) -> bool:
     return False
 
 
+def is_new_tooling_row(sheet: Any, row_index: int) -> bool:
+    """The source workbook marks New Tooling prototypes with its green theme fill."""
+    for column_index in range(1, sheet.max_column + 1):
+        fill = sheet.cell(row_index, column_index).fill
+        if (
+            fill.fill_type == "solid"
+            and fill.fgColor.type == "theme"
+            and fill.fgColor.theme == 9
+        ):
+            return True
+    return False
+
+
 def copy_image(archive: ZipFile, package_path: str, destination: Path) -> None:
     destination.parent.mkdir(parents=True, exist_ok=True)
     with archive.open(package_path) as source, destination.open("wb") as target:
@@ -288,6 +301,7 @@ def catalog_metadata(workbook: Any, source: Path, models: list[dict[str, Any]]) 
     ]
     cancelled = [model for model in models if model["cancelled"]]
     potential = [model for model in models if model["potential"]]
+    new_tooling = [model for model in models if model["newTooling"]]
     catalogue_active = [model for model in active if not model["seriesOnly"]]
     catalogue_cancelled = [
         model for model in models if model["cancelled"] and not model["seriesOnly"]
@@ -310,6 +324,7 @@ def catalog_metadata(workbook: Any, source: Path, models: list[dict[str, Any]]) 
             "catalogueActive": len(catalogue_active),
             "catalogueCancelled": len(catalogue_cancelled),
             "cataloguePotential": len(potential),
+            "catalogueNewTooling": len(new_tooling),
             "brands": brand_counts,
             "collections": collection_counts,
         },
@@ -389,6 +404,7 @@ def main(source_arg: str) -> None:
                 if not raw_model and not image_refs:
                     continue
                 cancelled = False if is_potential_sheet else is_cancelled_row(sheet, row_index)
+                new_tooling = False if is_potential_sheet else is_new_tooling_row(sheet, row_index)
                 if sheet_brand.upper() == "ACCESSORIES" and not cancelled:
                     continue
                 model_name, collections = collection_data(raw_model)
@@ -456,6 +472,7 @@ def main(source_arg: str) -> None:
                         "seriesOnly": sheet_brand.upper() == "QUBE CARZ",
                         "cancelled": cancelled,
                         "potential": is_potential_sheet,
+                        "newTooling": new_tooling,
                         "photos": photos,
                     }
                 )

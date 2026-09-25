@@ -2,7 +2,7 @@ const sourceUrl = "assets/data/models.json";
 const specialCollectionOrder = ["Bond 007 Collection", "Fast & Furious Collection"];
 const lastCollectionOrder = ["Korean Collection", "Motorbike Collection", "Qube Carz Collection"];
 const catalogMeta = window.MINI_GT_CATALOG_META || {};
-const statusFilters = new Set(["CANCELLED", "POTENTIAL"]);
+const statusFilters = new Set(["CANCELLED", "POTENTIAL", "NEW_TOOLING"]);
 const wideLogoAssets = new Set([
   "assets/brands/daihatsu.svg",
   "assets/brands/mclaren.svg",
@@ -80,6 +80,7 @@ const elements = {
   count: document.querySelector("#resultCount"),
   selectionImage: document.querySelector("#selectionImage"),
   selectionMark: document.querySelector("#selectionMark"),
+  selectionLogo: document.querySelector("#selectionLogo"),
   archiveUpdated: document.querySelector("#archiveUpdated"),
   activeFilterLine: document.querySelector("#activeFilterLine"),
   modelGrid: document.querySelector("#modelGrid"),
@@ -143,6 +144,10 @@ function potentialCount() {
   return state.models.filter((model) => model.potential).length;
 }
 
+function newToolingCount() {
+  return state.models.filter((model) => model.newTooling).length;
+}
+
 function countBy(items, getter) {
   return items.reduce((counts, item) => {
     const key = getter(item);
@@ -171,9 +176,17 @@ function isPotentialFilter() {
   return isSelected("status", "POTENTIAL");
 }
 
+function isNewToolingFilter() {
+  return isSelected("status", "NEW_TOOLING");
+}
+
 function filterLabel() {
   if (state.filter.kind === "all") return "All Models";
-  if (state.filter.kind === "status") return isPotentialFilter() ? "Potential" : "Cancelled";
+  if (state.filter.kind === "status") {
+    if (isPotentialFilter()) return "Potential";
+    if (isNewToolingFilter()) return "New Tooling";
+    return "Cancelled";
+  }
   return state.filter.value;
 }
 
@@ -183,9 +196,11 @@ function filterType() {
 function filterCount() {
   const counts = catalogMeta.counts || {};
   if (state.filter.kind === "all") return counts.active ?? activeModels().length;
-  if (state.filter.kind === "status") return state.filter.value === "POTENTIAL"
-    ? counts.cataloguePotential ?? potentialCount()
-    : counts.catalogueCancelled ?? cancelledCount();
+  if (state.filter.kind === "status") {
+    if (isPotentialFilter()) return counts.cataloguePotential ?? potentialCount();
+    if (isNewToolingFilter()) return counts.catalogueNewTooling ?? newToolingCount();
+    return counts.catalogueCancelled ?? cancelledCount();
+  }
   const group = state.filter.kind === "brand" ? counts.brands : counts.collections;
   return (group && group[state.filter.value]) ?? getVisibleModels().length;
 }
@@ -194,7 +209,7 @@ function initial(value) {
 }
 function visualFor(kind, value) {
   if (kind === "all") return { src: "assets/mini-gt-logo.png", alt: "MINI GT logo" };
-  if (kind === "status") return { mark: value === "POTENTIAL" ? "P" : "×" };
+  if (kind === "status") return value === "CANCELLED" ? { mark: "×" } : { none: true };
   const map = kind === "brand" ? visualAssets.brands : visualAssets.collections;
   return map[value] ? { src: map[value], alt: `${titleCase(value)} logo`, fullColour: true } : { mark: initial(value) };
 }
@@ -210,7 +225,9 @@ function getVisibleModels() {
 
 function matchesCurrentFilter(model) {
   if (state.filter.kind === "status") {
-    return isPotentialFilter() ? model.potential : model.cancelled && !model.seriesOnly;
+    if (isPotentialFilter()) return model.potential;
+    if (isNewToolingFilter()) return model.newTooling;
+    return model.cancelled && !model.seriesOnly;
   }
   if (model.cancelled || model.potential) return false;
   if (state.filter.kind === "all") return true;
@@ -233,7 +250,7 @@ function renderSidebar() {
   const collectionItems = collections.map(({ name }) => `<button class="side-filter ${isSelected("collection", name) ? "is-active" : ""}" type="button" data-filter-kind="collection" data-filter-value="${escapeHtml(name)}">${filterLogo("collection", name)}<span class="filter-label">${escapeHtml(titleCase(name.replace(/ Collection$/, "")))}</span></button>`).join("");
   const brandItems = brands.map(({ name }) => `<button class="brand-filter ${isSelected("brand", name) ? "is-active" : ""}" type="button" data-filter-kind="brand" data-filter-value="${escapeHtml(name)}">${filterLogo("brand", name)}<span class="filter-label ${name.includes(" ") ? "is-multiword" : "is-single-word"}">${escapeHtml(titleCase(name))}</span></button>`).join("");
   elements.sidebarNav.innerHTML = `
-    <section><button class="archive-all ${isSelected("all", "all") ? "is-active" : ""}" type="button" data-filter-kind="all" data-filter-value="all"><small>EXPLORE THE ARCHIVE</small><span>All models</span><b>VIEW THE COMPLETE CATALOGUE</b></button><button class="side-status ${isSelected("status", "CANCELLED") ? "is-active" : ""}" type="button" data-filter-kind="status" data-filter-value="CANCELLED"><span>Cancelled</span><small>ARCHIVED MODELS</small></button><button class="side-status potential ${isSelected("status", "POTENTIAL") ? "is-active" : ""}" type="button" data-filter-kind="status" data-filter-value="POTENTIAL"><span>Potential</span><small>POSSIBLE FUTURE MODELS</small></button></section>
+    <section><button class="archive-all ${isSelected("all", "all") ? "is-active" : ""}" type="button" data-filter-kind="all" data-filter-value="all"><small>EXPLORE THE ARCHIVE</small><span>All models</span><b>VIEW THE COMPLETE CATALOGUE</b></button><button class="side-status new-tooling ${isSelected("status", "NEW_TOOLING") ? "is-active" : ""}" type="button" data-filter-kind="status" data-filter-value="NEW_TOOLING"><span>New Tooling</span><small>NEWLY DEVELOPED CASTINGS</small></button><button class="side-status ${isSelected("status", "CANCELLED") ? "is-active" : ""}" type="button" data-filter-kind="status" data-filter-value="CANCELLED"><span>Cancelled</span><small>ARCHIVED MODELS</small></button><button class="side-status potential ${isSelected("status", "POTENTIAL") ? "is-active" : ""}" type="button" data-filter-kind="status" data-filter-value="POTENTIAL"><span>Potential</span><small>POSSIBLE FUTURE MODELS</small></button></section>
     <section class="filter-group"><p class="filter-group-title">CURATED SERIES</p><div class="collection-list">${collectionItems}</div></section>
     <section class="filter-group"><p class="filter-group-title">SELECT A BRAND</p><div class="brand-grid">${brandItems}</div></section>`;
 }
@@ -255,6 +272,15 @@ function renderSelection() {
   elements.eyebrow.textContent = filterType();
   elements.count.textContent = `${count} ${count === 1 ? "PROTOTYPE" : "PROTOTYPES"}`;
   elements.selectionImage.closest(".selection-banner").classList.toggle("is-potential", isPotentialFilter());
+  elements.selectionImage.closest(".selection-banner").classList.toggle("is-new-tooling", isNewToolingFilter());
+  elements.selectionLogo.hidden = Boolean(visual.none);
+  elements.selectionImage.closest(".selection-banner").classList.toggle("is-text-only", Boolean(visual.none));
+  if (visual.none) {
+    elements.selectionImage.hidden = true;
+    elements.selectionMark.hidden = true;
+    elements.selectionLogo.classList.remove("is-wide-logo");
+    return;
+  }
   if (visual.src) {
     elements.selectionImage.src = visual.src;
     elements.selectionImage.alt = visual.alt;
