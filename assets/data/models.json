@@ -643,6 +643,106 @@
     ]
   },
   {
+    "id": "potential-nissan-34",
+    "name": "Nissan LB-ER34 Super Silhouette SKYLINE (Midnight Purple Livery)",
+    "brand": "NISSAN",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": true,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/potential-nissan-34-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "potential-toyota-35",
+    "name": "Toyota GR Supra LB★WORKS (The Boring Concept Livery)",
+    "brand": "TOYOTA",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": true,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/potential-toyota-35-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "potential-nissan-36",
+    "name": "Nissan Silvia S15 (Advan Livery)",
+    "brand": "NISSAN",
+    "event": "",
+    "date": "2025",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": true,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/potential-nissan-36-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "potential-subaru-37",
+    "name": "Subaru BRZ LBWK (Light Blue Livery)",
+    "brand": "SUBARU",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": true,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/potential-subaru-37-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/potential-subaru-37-model-2.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "potential-bmw-38",
+    "name": "BMW M3 (E30) GR. A Rally #5",
+    "brand": "BMW",
+    "event": "",
+    "date": "2025",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": true,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/potential-bmw-38-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
     "id": "qube-carz-02",
     "name": "Porsche 911 Carrera RS 2.7 White",
     "brand": "PORSCHE",
@@ -1436,12 +1536,12 @@
   },
   {
     "id": "aston-martin-14",
-    "name": "Aston Martin AMR25 #18 Lance Stroll 2025 Australian Grand Prix",
+    "name": "Aston Martin DB5 \"No Time To Die\"",
     "brand": "ASTON MARTIN",
-    "event": "Malaysia Diecast Expo",
+    "event": "Salao Diecast 7",
     "date": "2026",
     "collections": [
-      "F1 Collection"
+      "Bond 007 Collection"
     ],
     "seriesOnly": false,
     "cancelled": false,
@@ -1457,12 +1557,12 @@
   },
   {
     "id": "aston-martin-15",
-    "name": "Aston Martin AMR25 #14 Fernando Alonso 2025 Australian Grand Prix",
+    "name": "Aston Martin DB5 \"Goldfinger\"",
     "brand": "ASTON MARTIN",
     "event": "Malaysia Diecast Expo",
     "date": "2026",
     "collections": [
-      "F1 Collection"
+      "Bond 007 Collection"
     ],
     "seriesOnly": false,
     "cancelled": false,
@@ -3536,6 +3636,25 @@
     ]
   },
   {
+    "id": "hyundai-17",
+    "name": "Hyundai i20 N Rally1 #16 2025 Rally Monte-Carlo 3rd Place",
+    "brand": "HYUNDAI",
+    "event": "Hyundai Motorstudio Seoul",
+    "date": "June 2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/hyundai-17-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
     "id": "jaguar-02",
     "name": "Jaguar C-X75 Dark Grey",
     "brand": "JAGUAR",
@@ -3779,10 +3898,10 @@
   },
   {
     "id": "lamborghini-09",
-    "name": "Lamborghini Temerario Purple",
+    "name": "Lamborghini Temerario Lime",
     "brand": "LAMBORGHINI",
-    "event": "Salao Diecast Brazil 7",
-    "date": "2026-07-01",
+    "event": "Malaysia Diecast Expo",
+    "date": "2026",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -3798,9 +3917,9 @@
   },
   {
     "id": "lamborghini-10",
-    "name": "Lamborghini Temerario Lime",
+    "name": "Lamborghini Countach Black",
     "brand": "LAMBORGHINI",
-    "event": "Malaysia Diecast Expo",
+    "event": "",
     "date": "2026",
     "collections": [],
     "seriesOnly": false,
@@ -3817,25 +3936,6 @@
   },
   {
     "id": "lamborghini-11",
-    "name": "Lamborghini Countach Black",
-    "brand": "LAMBORGHINI",
-    "event": "",
-    "date": "2026",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": false,
-    "photos": [
-      {
-        "src": "assets/images/lamborghini-11-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "lamborghini-12",
     "name": "Lamborghini LM002",
     "brand": "LAMBORGHINI",
     "event": "Malaysia Diecast Expo",
@@ -3849,14 +3949,14 @@
     "newTooling": true,
     "photos": [
       {
-        "src": "assets/images/lamborghini-12-model.png",
+        "src": "assets/images/lamborghini-11-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "lamborghini-13",
+    "id": "lamborghini-12",
     "name": "Lamborghini Revuelto Green",
     "brand": "LAMBORGHINI",
     "event": "Australian Diecast Expo",
@@ -3868,14 +3968,14 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/lamborghini-13-model.png",
+        "src": "assets/images/lamborghini-12-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "lamborghini-14",
+    "id": "lamborghini-13",
     "name": "Lamborghini SC63 \"Squadra Corse\" 2025",
     "brand": "LAMBORGHINI",
     "event": "Hobby Expo China",
@@ -3889,7 +3989,7 @@
     "newTooling": true,
     "photos": [
       {
-        "src": "assets/images/lamborghini-14-model.png",
+        "src": "assets/images/lamborghini-13-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -3988,27 +4088,6 @@
   },
   {
     "id": "lotus-04",
-    "name": "Lotus 78 #5 Mario Andretti John Player Team Lotus 1978 Formula 1",
-    "brand": "LOTUS",
-    "event": "Shizuoka Hobby Show",
-    "date": "2026-05-01",
-    "collections": [
-      "F1 Collection"
-    ],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": false,
-    "photos": [
-      {
-        "src": "assets/images/lotus-04-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "lotus-05",
     "name": "Lotus Esprit S1 Ver.2",
     "brand": "LOTUS",
     "event": "Australian Diecast Expo",
@@ -4022,7 +4101,7 @@
     "newTooling": true,
     "photos": [
       {
-        "src": "assets/images/lotus-05-model.png",
+        "src": "assets/images/lotus-04-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -5991,25 +6070,6 @@
   },
   {
     "id": "scania-03",
-    "name": "Scania 770S Hooklift with Detachable Container",
-    "brand": "SCANIA",
-    "event": "Australian Diecast Expo",
-    "date": "2026-08-01",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": true,
-    "photos": [
-      {
-        "src": "assets/images/scania-03-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "scania-04",
     "name": "Scania 770S 2x6",
     "brand": "SCANIA",
     "event": "Shizuoka Hobby Show",
@@ -6021,7 +6081,7 @@
     "newTooling": true,
     "photos": [
       {
-        "src": "assets/images/scania-04-model.png",
+        "src": "assets/images/scania-03-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -6091,7 +6151,7 @@
   },
   {
     "id": "toyota-05",
-    "name": "Toyota Supra (A80) Top Secret GT-300 Top Secret Red",
+    "name": "Toyota Supra (A80) Top Secret GT-300 Top Secret Red Metallic",
     "brand": "TOYOTA",
     "event": "Malaysia Diecast Expo",
     "date": "2025-05-01",
@@ -6191,7 +6251,7 @@
   },
   {
     "id": "toyota-10",
-    "name": "TEC ART's Toyota Sprinter Trueno (AE86) - Keiichi Tsuchiya (Open Headlights)",
+    "name": "TEC ART's Toyota Sprinter Trueno (AE86) - Keiichi Tsuchiya (Closed Headlights)",
     "brand": "TOYOTA",
     "event": "",
     "date": "2026",
@@ -6210,9 +6270,9 @@
   },
   {
     "id": "toyota-11",
-    "name": "TEC ART's Toyota Sprinter Trueno (AE86) - Keiichi Tsuchiya (Closed Headlights)",
+    "name": "Toyota GR010 Hybrid 2025",
     "brand": "TOYOTA",
-    "event": "",
+    "event": "Malaysia Diecast Expo",
     "date": "2026",
     "collections": [],
     "seriesOnly": false,
@@ -6229,10 +6289,10 @@
   },
   {
     "id": "toyota-12",
-    "name": "Toyota GR010 Hybrid 2025",
+    "name": "Toyota 2000GT (Open Headlights)",
     "brand": "TOYOTA",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026",
+    "event": "Shizuoka Hobby Show",
+    "date": "2026-05-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -6248,15 +6308,15 @@
   },
   {
     "id": "toyota-13",
-    "name": "Toyota 2000GT (Open Headlights)",
+    "name": "Toyota Supra (A80) GT-300 Top Secret 2JZ-GTE Spec",
     "brand": "TOYOTA",
-    "event": "Shizuoka Hobby Show",
-    "date": "2026-05-01",
+    "event": "Mini GT Pop Up Store",
+    "date": "2026",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
     "potential": false,
-    "newTooling": true,
+    "newTooling": false,
     "photos": [
       {
         "src": "assets/images/toyota-13-model.png",
@@ -6267,7 +6327,7 @@
   },
   {
     "id": "toyota-14",
-    "name": "Toyota Supra (A80) GT-300 Top Secret 2JZ-GTE Spec",
+    "name": "Toyota Supra (A80) Top Secret",
     "brand": "TOYOTA",
     "event": "Mini GT Pop Up Store",
     "date": "2026",
@@ -6298,25 +6358,6 @@
     "photos": [
       {
         "src": "assets/images/toyota-15-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "toyota-16",
-    "name": "Toyota Supra (A80) Top Secret",
-    "brand": "TOYOTA",
-    "event": "Mini GT Pop Up Store",
-    "date": "2026",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": true,
-    "photos": [
-      {
-        "src": "assets/images/toyota-16-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
