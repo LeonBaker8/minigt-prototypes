@@ -7096,5 +7096,24 @@
         "label": "MINI GT model"
       }
     ]
+  },
+  {
+    "id": "potential-porsche-60",
+    "name": "Porsche 911 GT3 R EVO \"The Boring Concept\"",
+    "brand": "PORSCHE",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": true,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/potential-porsche-60-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
   }
 ]
