@@ -55,7 +55,7 @@ window.MINI_GT_CATALOG_META = {
       "Fast & Furious Collection": 12,
       "Senna Collection": 1,
       "Motorbike Collection": 3,
-      "Korean Collection": 17
+      "Korean Collection": 18
     }
   }
 };

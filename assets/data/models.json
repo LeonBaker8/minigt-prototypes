@@ -2940,7 +2940,9 @@
     "brand": "HYUNDAI",
     "event": "Korean Car Collection Poster",
     "date": "June 2026",
-    "collections": [],
+    "collections": [
+      "Korean Collection"
+    ],
     "seriesOnly": false,
     "cancelled": false,
     "potential": false,
