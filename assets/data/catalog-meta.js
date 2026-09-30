@@ -3,10 +3,10 @@ window.MINI_GT_CATALOG_META = {
   "counts": {
     "active": 249,
     "cancelled": 39,
-    "potential": 59,
+    "potential": 60,
     "catalogueActive": 226,
     "catalogueCancelled": 39,
-    "cataloguePotential": 59,
+    "cataloguePotential": 60,
     "catalogueNewTooling": 125,
     "brands": {
       "AMC": 2,

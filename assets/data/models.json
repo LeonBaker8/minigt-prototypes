@@ -7115,5 +7115,29 @@
         "label": "MINI GT model"
       }
     ]
+  },
+  {
+    "id": "potential-mazda-61",
+    "name": "Mazda RX-7 LB-Super Silhouette \"Meiji Livery\"",
+    "brand": "MAZDA",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": true,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/potential-mazda-61-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/potential-mazda-61-model-2.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
   }
 ]
