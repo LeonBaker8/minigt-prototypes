@@ -1,12 +1,12 @@
 window.MINI_GT_CATALOG_META = {
   "lastUpdated": "2026-09-30",
   "counts": {
-    "active": 247,
+    "active": 249,
     "cancelled": 39,
-    "potential": 54,
-    "catalogueActive": 224,
+    "potential": 58,
+    "catalogueActive": 226,
     "catalogueCancelled": 39,
-    "cataloguePotential": 54,
+    "cataloguePotential": 58,
     "catalogueNewTooling": 125,
     "brands": {
       "AMC": 2,
@@ -25,7 +25,7 @@ window.MINI_GT_CATALOG_META = {
       "FIAT": 1,
       "HARLEY DAVIDSON": 2,
       "HONDA": 9,
-      "HYUNDAI": 16,
+      "HYUNDAI": 18,
       "JAGUAR": 1,
       "LAND ROVER": 2,
       "LAMBORGHINI": 10,
@@ -55,7 +55,7 @@ window.MINI_GT_CATALOG_META = {
       "Fast & Furious Collection": 12,
       "Senna Collection": 1,
       "Motorbike Collection": 3,
-      "Korean Collection": 16
+      "Korean Collection": 17
     }
   }
 };

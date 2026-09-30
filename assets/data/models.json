@@ -2810,7 +2810,7 @@
   },
   {
     "id": "hyundai-13",
-    "name": "Hyundai Casper Orange",
+    "name": "Hyundai Casper Sienna Orange Metallic",
     "brand": "HYUNDAI",
     "event": "Hyundai Motorstudio Seoul",
     "date": "June 2026",
@@ -2831,7 +2831,7 @@
   },
   {
     "id": "hyundai-14",
-    "name": "Hyundai Porter II Open-bed",
+    "name": "Hyundai Casper Aero Silver Matte",
     "brand": "HYUNDAI",
     "event": "Hyundai Motorstudio Seoul",
     "date": "June 2026",
@@ -2841,7 +2841,7 @@
     "seriesOnly": false,
     "cancelled": false,
     "potential": false,
-    "newTooling": true,
+    "newTooling": false,
     "photos": [
       {
         "src": "assets/images/hyundai-14-model.png",
@@ -2852,7 +2852,7 @@
   },
   {
     "id": "hyundai-15",
-    "name": "Hyundai Porter II Box Body",
+    "name": "Hyundai Porter II Open-bed",
     "brand": "HYUNDAI",
     "event": "Hyundai Motorstudio Seoul",
     "date": "June 2026",
@@ -2873,6 +2873,27 @@
   },
   {
     "id": "hyundai-16",
+    "name": "Hyundai Porter II Box Body",
+    "brand": "HYUNDAI",
+    "event": "Hyundai Motorstudio Seoul",
+    "date": "June 2026",
+    "collections": [
+      "Korean Collection"
+    ],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": true,
+    "photos": [
+      {
+        "src": "assets/images/hyundai-16-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "hyundai-17",
     "name": "Hyundai Porter II Box Body DHL",
     "brand": "HYUNDAI",
     "event": "Hyundai Motorstudio Seoul",
@@ -2886,14 +2907,14 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/hyundai-16-model.png",
+        "src": "assets/images/hyundai-17-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "hyundai-17",
+    "id": "hyundai-18",
     "name": "Hyundai i20 N Rally1 #16 2025 Rally Monte-Carlo 3rd Place",
     "brand": "HYUNDAI",
     "event": "Hyundai Motorstudio Seoul",
@@ -2907,7 +2928,26 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/hyundai-17-model.png",
+        "src": "assets/images/hyundai-18-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "hyundai-19",
+    "name": "Hyundai Ioniq 5 N Ultimate Red Metallic",
+    "brand": "HYUNDAI",
+    "event": "Korean Car Collection Poster",
+    "date": "June 2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/hyundai-19-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -6974,6 +7014,82 @@
     "photos": [
       {
         "src": "assets/images/potential-mazda-55-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "potential-hyundai-56",
+    "name": "Hyundai Ioniq 6 N Nocturne Grey Matte",
+    "brand": "HYUNDAI",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": true,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/potential-hyundai-56-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "potential-hyundai-57",
+    "name": "Hyundai Ioniq 6 N Serenity White Pearl",
+    "brand": "HYUNDAI",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": true,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/potential-hyundai-57-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "potential-hyundai-58",
+    "name": "Hyundai Ioniq 6 N Abyss Black Pearl",
+    "brand": "HYUNDAI",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": true,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/potential-hyundai-58-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "potential-hyundai-59",
+    "name": "Hyundai Ioniq 6 N Gravity Gold Matte",
+    "brand": "HYUNDAI",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": true,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/potential-hyundai-59-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
