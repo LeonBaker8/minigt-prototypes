@@ -6940,5 +6940,43 @@
         "label": "MINI GT model"
       }
     ]
+  },
+  {
+    "id": "potential-ford-54",
+    "name": "Ford Mustang GT3 Ford Performance \"Sweepstakes\" 125 Years Heritage Livery",
+    "brand": "FORD",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": true,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/potential-ford-54-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "potential-mazda-55",
+    "name": "Mazda AZ-1 Liberty Walk LB40 Renown",
+    "brand": "MAZDA",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": true,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/potential-mazda-55-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
   }
 ]
