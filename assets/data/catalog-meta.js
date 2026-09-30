@@ -1,12 +1,12 @@
 window.MINI_GT_CATALOG_META = {
-  "lastUpdated": "2026-09-29",
+  "lastUpdated": "2026-09-30",
   "counts": {
     "active": 247,
     "cancelled": 39,
-    "potential": 37,
+    "potential": 52,
     "catalogueActive": 224,
     "catalogueCancelled": 39,
-    "cataloguePotential": 37,
+    "cataloguePotential": 52,
     "catalogueNewTooling": 125,
     "brands": {
       "AMC": 2,
@@ -55,7 +55,7 @@ window.MINI_GT_CATALOG_META = {
       "Fast & Furious Collection": 12,
       "Senna Collection": 1,
       "Motorbike Collection": 3,
-      "Korean Collection": 15
+      "Korean Collection": 16
     }
   }
 };

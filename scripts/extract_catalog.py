@@ -2,7 +2,7 @@
 """Export MINI GT workbook rows and in-cell images to static site assets.
 
 Usage:
-    python scripts/extract_catalog.py "C:\\path\\to\\Mini GT.xlsx"
+    python scripts/extract_catalog.py "C:\\path\\to\\Mini GT.xlsx" "C:\\path\\to\\Mini GT Potential Models.xlsx"
 """
 
 from __future__ import annotations
@@ -331,12 +331,18 @@ def catalog_metadata(workbook: Any, source: Path, models: list[dict[str, Any]]) 
     }
 
 
-def main(source_arg: str) -> None:
+def main(source_arg: str, potential_source_arg: str | None = None) -> None:
     source = Path(source_arg).expanduser().resolve()
     if not source.is_file():
         raise SystemExit(f"Workbook not found: {source}")
 
     workbook = load_workbook(source, data_only=True)
+    source_workbooks = [(source, workbook)]
+    if potential_source_arg:
+        potential_source = Path(potential_source_arg).expanduser().resolve()
+        if not potential_source.is_file():
+            raise SystemExit(f"Potential models workbook not found: {potential_source}")
+        source_workbooks.append((potential_source, load_workbook(potential_source, data_only=True)))
     if IMAGE_DIR.exists():
         shutil.rmtree(IMAGE_DIR)
     IMAGE_DIR.mkdir(parents=True)
@@ -349,133 +355,134 @@ def main(source_arg: str) -> None:
         for sheet in workbook.worksheets
         if display_brand(sheet.title).upper() not in NON_BRAND_SHEETS
     ]
-    with ZipFile(source) as archive:
-        metadata_to_rich_value, image_paths = xml_cell_metadata(archive)
+    for current_source, current_workbook in source_workbooks:
+        with ZipFile(current_source) as archive:
+            metadata_to_rich_value, image_paths = xml_cell_metadata(archive)
 
-        for sheet_index, sheet in enumerate(workbook.worksheets, start=1):
-            raw_sheet_cells = raw_cells(archive, sheet_index)
-            headers = {
-                column: clean_text(sheet.cell(1, column).value)
-                for column in range(1, sheet.max_column + 1)
-            }
-            sheet_brand = display_brand(sheet.title)
-            brand = sheet_brand
-            is_potential_sheet = sheet_brand.upper() == "POTENTIAL MODELS"
-            if brand.upper() == "TO IDENTIFY":
-                continue
-
-            for row_index in range(2, sheet.max_row + 1):
-                raw_model = clean_text(sheet.cell(row_index, 1).value)
-                event = "" if is_potential_sheet else normalize_event(sheet.cell(row_index, 2).value)
-                date_cell = sheet.cell(row_index, 2 if is_potential_sheet else 3)
-                raw_date = raw_sheet_cells.get(date_cell.coordinate, ("", None))[0]
-                shown_date = normalize_date(date_cell.value, raw_date)
-
-                image_refs: list[dict[str, str]] = []
-                first_image_column = 3 if is_potential_sheet else 4
-                for column_index in range(first_image_column, sheet.max_column + 1):
-                    coordinate = sheet.cell(row_index, column_index).coordinate
-                    _, metadata_index = raw_sheet_cells.get(coordinate, ("", None))
-                    if metadata_index is None:
-                        continue
-
-                    # `vm` is a one-based reference to the <valueMetadata> block.
-                    metadata_position = metadata_index - 1
-                    if not 0 <= metadata_position < len(metadata_to_rich_value):
-                        missing_images += 1
-                        continue
-                    rich_value_index = metadata_to_rich_value[metadata_position]
-                    package_path = (
-                        image_paths[rich_value_index]
-                        if 0 <= rich_value_index < len(image_paths)
-                        else ""
-                    )
-                    if not package_path:
-                        missing_images += 1
-                        continue
-
-                    role = (
-                        "model"
-                        if is_potential_sheet and column_index == first_image_column
-                        else image_role(headers[column_index], column_index)
-                    )
-                    image_refs.append({"role": role, "package_path": package_path})
-
-                if not raw_model and not image_refs:
+            for sheet_index, sheet in enumerate(current_workbook.worksheets, start=1):
+                raw_sheet_cells = raw_cells(archive, sheet_index)
+                headers = {
+                    column: clean_text(sheet.cell(1, column).value)
+                    for column in range(1, sheet.max_column + 1)
+                }
+                sheet_brand = display_brand(sheet.title)
+                brand = sheet_brand
+                is_potential_sheet = sheet_brand.upper() == "POTENTIAL MODELS"
+                if brand.upper() == "TO IDENTIFY":
                     continue
-                cancelled = False if is_potential_sheet else is_cancelled_row(sheet, row_index)
-                new_tooling = False if is_potential_sheet else is_new_tooling_row(sheet, row_index)
-                if sheet_brand.upper() == "ACCESSORIES" and not cancelled:
-                    continue
-                model_name, collections = collection_data(raw_model)
-                if is_potential_sheet:
-                    brand = model_brand(model_name, workbook_brands, "POTENTIAL")
-                elif sheet_brand.upper() == "QUBE CARZ":
-                    brand = qube_carz_brand(model_name, workbook_brands)
-                    if "Qube Carz Collection" not in collections:
-                        collections.append("Qube Carz Collection")
-                else:
-                    brand = sheet_brand
-                # User-confirmed collection for the Australian Diecast Expo prototype.
-                if (brand.upper() == "DODGE" and model_name in {"Dodge Carger", "Dodge Charger"}
-                        and event == "Australian Diecast Expo" and shown_date.startswith("2026")):
-                    model_name = "Dodge Charger"
-                    if "Fast & Furious Collection" not in collections:
-                        collections.append("Fast & Furious Collection")
-                if not model_name:
-                    model_name = brand
 
-                model_id = (
-                    f"potential-{slugify(brand)}-{row_index:02d}"
-                    if is_potential_sheet
-                    else (
-                        f"qube-carz-{row_index:02d}"
-                        if sheet_brand.upper() == "QUBE CARZ"
-                        else f"{slugify(brand)}-{row_index:02d}"
+                for row_index in range(2, sheet.max_row + 1):
+                    raw_model = clean_text(sheet.cell(row_index, 1).value)
+                    event = "" if is_potential_sheet else normalize_event(sheet.cell(row_index, 2).value)
+                    date_cell = sheet.cell(row_index, 2 if is_potential_sheet else 3)
+                    raw_date = raw_sheet_cells.get(date_cell.coordinate, ("", None))[0]
+                    shown_date = normalize_date(date_cell.value, raw_date)
+
+                    image_refs: list[dict[str, str]] = []
+                    first_image_column = 3 if is_potential_sheet else 4
+                    for column_index in range(first_image_column, sheet.max_column + 1):
+                        coordinate = sheet.cell(row_index, column_index).coordinate
+                        _, metadata_index = raw_sheet_cells.get(coordinate, ("", None))
+                        if metadata_index is None:
+                            continue
+
+                        # `vm` is a one-based reference to the <valueMetadata> block.
+                        metadata_position = metadata_index - 1
+                        if not 0 <= metadata_position < len(metadata_to_rich_value):
+                            missing_images += 1
+                            continue
+                        rich_value_index = metadata_to_rich_value[metadata_position]
+                        package_path = (
+                            image_paths[rich_value_index]
+                            if 0 <= rich_value_index < len(image_paths)
+                            else ""
+                        )
+                        if not package_path:
+                            missing_images += 1
+                            continue
+
+                        role = (
+                            "model"
+                            if is_potential_sheet and column_index == first_image_column
+                            else image_role(headers[column_index], column_index)
+                        )
+                        image_refs.append({"role": role, "package_path": package_path})
+
+                    if not raw_model and not image_refs:
+                        continue
+                    cancelled = False if is_potential_sheet else is_cancelled_row(sheet, row_index)
+                    new_tooling = False if is_potential_sheet else is_new_tooling_row(sheet, row_index)
+                    if sheet_brand.upper() == "ACCESSORIES" and not cancelled:
+                        continue
+                    model_name, collections = collection_data(raw_model)
+                    if is_potential_sheet:
+                        brand = model_brand(model_name, workbook_brands, "POTENTIAL")
+                    elif sheet_brand.upper() == "QUBE CARZ":
+                        brand = qube_carz_brand(model_name, workbook_brands)
+                        if "Qube Carz Collection" not in collections:
+                            collections.append("Qube Carz Collection")
+                    else:
+                        brand = sheet_brand
+                    # User-confirmed collection for the Australian Diecast Expo prototype.
+                    if (brand.upper() == "DODGE" and model_name in {"Dodge Carger", "Dodge Charger"}
+                            and event == "Australian Diecast Expo" and shown_date.startswith("2026")):
+                        model_name = "Dodge Charger"
+                        if "Fast & Furious Collection" not in collections:
+                            collections.append("Fast & Furious Collection")
+                    if not model_name:
+                        model_name = brand
+
+                    model_id = (
+                        f"potential-{slugify(brand)}-{row_index:02d}"
+                        if is_potential_sheet
+                        else (
+                            f"qube-carz-{row_index:02d}"
+                            if sheet_brand.upper() == "QUBE CARZ"
+                            else f"{slugify(brand)}-{row_index:02d}"
+                        )
                     )
-                )
-                photos: list[dict[str, str]] = []
-                role_counters: dict[str, int] = {}
-                for image_index, image_ref in enumerate(image_refs, start=1):
-                    role = image_ref["role"]
-                    role_counters[role] = role_counters.get(role, 0) + 1
-                    suffix = {
-                        "model": "model",
-                        "additional": "detail",
-                        "realCar": "real-car",
-                    }[role]
-                    if role_counters[role] > 1:
-                        suffix = f"{suffix}-{role_counters[role]}"
-                    filename = f"{model_id}-{suffix}.png"
-                    copy_image(archive, image_ref["package_path"], IMAGE_DIR / filename)
-                    label = {
-                        "model": "MINI GT model",
-                        "additional": "Additional photo",
-                        "realCar": "Real Photo",
-                    }[role]
-                    photos.append(
+                    photos: list[dict[str, str]] = []
+                    role_counters: dict[str, int] = {}
+                    for image_index, image_ref in enumerate(image_refs, start=1):
+                        role = image_ref["role"]
+                        role_counters[role] = role_counters.get(role, 0) + 1
+                        suffix = {
+                            "model": "model",
+                            "additional": "detail",
+                            "realCar": "real-car",
+                        }[role]
+                        if role_counters[role] > 1:
+                            suffix = f"{suffix}-{role_counters[role]}"
+                        filename = f"{model_id}-{suffix}.png"
+                        copy_image(archive, image_ref["package_path"], IMAGE_DIR / filename)
+                        label = {
+                            "model": "MINI GT model",
+                            "additional": "Additional photo",
+                            "realCar": "Real Photo",
+                        }[role]
+                        photos.append(
+                            {
+                                "src": f"assets/images/{filename}",
+                                "role": role,
+                                "label": label,
+                            }
+                        )
+
+                    models.append(
                         {
-                            "src": f"assets/images/{filename}",
-                            "role": role,
-                            "label": label,
+                            "id": model_id,
+                            "name": model_name,
+                            "brand": brand,
+                            "event": event,
+                            "date": shown_date,
+                            "collections": collections,
+                            "seriesOnly": sheet_brand.upper() == "QUBE CARZ",
+                            "cancelled": cancelled,
+                            "potential": is_potential_sheet,
+                            "newTooling": new_tooling,
+                            "photos": photos,
                         }
                     )
-
-                models.append(
-                    {
-                        "id": model_id,
-                        "name": model_name,
-                        "brand": brand,
-                        "event": event,
-                        "date": shown_date,
-                        "collections": collections,
-                        "seriesOnly": sheet_brand.upper() == "QUBE CARZ",
-                        "cancelled": cancelled,
-                        "potential": is_potential_sheet,
-                        "newTooling": new_tooling,
-                        "photos": photos,
-                    }
-                )
 
     complete_event_months(models)
     DATA_FILE.write_text(
@@ -497,4 +504,8 @@ def main(source_arg: str) -> None:
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    if len(sys.argv) not in (2, 3):
+        raise SystemExit(
+            'Usage: extract_catalog.py "Mini GT.xlsx" ["Mini GT Potential Models.xlsx"]'
+        )
+    main(sys.argv[1], sys.argv[2] if len(sys.argv) == 3 else None)

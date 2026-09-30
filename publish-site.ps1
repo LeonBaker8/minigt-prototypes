@@ -5,12 +5,13 @@ Publishes this complete catalogue to LeonBaker8/minigt-prototypes.
 .DESCRIPTION
 Run with no arguments to publish the current site. Pass an Excel workbook path to
 extract fresh data and images first, then publish everything in one operation.
+When potential models are stored separately, pass that workbook as the second path.
 
 .EXAMPLE
 .\publish-site.ps1
 
 .EXAMPLE
-.\publish-site.ps1 "C:\Users\Leon\Downloads\Mini GT.xlsx"
+.\publish-site.ps1 "C:\Users\Leon\Downloads\Mini GT.xlsx" "C:\Users\Leon\Downloads\Mini GT Potential Models.xlsx"
 #>
 
 [CmdletBinding()]
@@ -18,6 +19,10 @@ param(
     [Parameter(Position = 0)]
     [ValidateScript({ -not $_ -or (Test-Path -LiteralPath $_ -PathType Leaf) })]
     [string]$WorkbookPath,
+
+    [Parameter(Position = 1)]
+    [ValidateScript({ -not $_ -or (Test-Path -LiteralPath $_ -PathType Leaf) })]
+    [string]$PotentialWorkbookPath,
 
     [string]$CommitMessage = "Update MINI GT prototypes"
 )
@@ -48,7 +53,11 @@ if ($WorkbookPath) {
             throw "Python could not install the Excel reader. Run 'python -m pip install --user openpyxl', then try again."
         }
     }
-    & $pythonPath (Join-Path $projectRoot "scripts\extract_catalog.py") $WorkbookPath
+    $extractArgs = @((Join-Path $projectRoot "scripts\extract_catalog.py"), $WorkbookPath)
+    if ($PotentialWorkbookPath) {
+        $extractArgs += $PotentialWorkbookPath
+    }
+    & $pythonPath @extractArgs
     if ($LASTEXITCODE -ne 0) {
         throw "The Excel export failed. Nothing was sent to GitHub."
     }
