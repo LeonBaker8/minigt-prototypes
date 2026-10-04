@@ -6155,6 +6155,11 @@
         "src": "assets/images/potential-aston-martin-13-model.png",
         "role": "model",
         "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/potential-aston-martin-13-model-2.png",
+        "role": "model",
+        "label": "MINI GT model"
       }
     ]
   },
@@ -6545,31 +6550,7 @@
     ]
   },
   {
-    "id": "potential-bmw-33",
-    "name": "LB★WORKS BMW M4 (Salao Diecast 6 White Livery)",
-    "brand": "BMW",
-    "event": "",
-    "date": "2025",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": true,
-    "newTooling": false,
-    "photos": [
-      {
-        "src": "assets/images/potential-bmw-33-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/potential-bmw-33-model-2.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "potential-nissan-34",
+    "id": "potential-nissan-33",
     "name": "Nissan LB-ER34 Super Silhouette SKYLINE (Midnight Purple Livery)",
     "brand": "NISSAN",
     "event": "",
@@ -6581,14 +6562,14 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-nissan-34-model.png",
+        "src": "assets/images/potential-nissan-33-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "potential-toyota-35",
+    "id": "potential-toyota-34",
     "name": "Toyota GR Supra LB★WORKS (The Boring Concept Livery)",
     "brand": "TOYOTA",
     "event": "",
@@ -6600,14 +6581,14 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-toyota-35-model.png",
+        "src": "assets/images/potential-toyota-34-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "potential-nissan-36",
+    "id": "potential-nissan-35",
     "name": "Nissan Silvia S15 (Advan Livery)",
     "brand": "NISSAN",
     "event": "",
@@ -6619,14 +6600,14 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-nissan-36-model.png",
+        "src": "assets/images/potential-nissan-35-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "potential-subaru-37",
+    "id": "potential-subaru-36",
     "name": "Subaru BRZ LBWK (Light Blue Livery)",
     "brand": "SUBARU",
     "event": "",
@@ -6638,19 +6619,19 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-subaru-37-model.png",
+        "src": "assets/images/potential-subaru-36-model.png",
         "role": "model",
         "label": "MINI GT model"
       },
       {
-        "src": "assets/images/potential-subaru-37-model-2.png",
+        "src": "assets/images/potential-subaru-36-model-2.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "potential-bmw-38",
+    "id": "potential-bmw-37",
     "name": "BMW M3 (E30) GR. A Rally #5",
     "brand": "BMW",
     "event": "",
@@ -6662,7 +6643,26 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-bmw-38-model.png",
+        "src": "assets/images/potential-bmw-37-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "potential-aston-martin-38",
+    "name": "Aston Martin Valhalla Lunar White",
+    "brand": "ASTON MARTIN",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": true,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/potential-aston-martin-38-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -6670,7 +6670,7 @@
   },
   {
     "id": "potential-aston-martin-39",
-    "name": "Aston Martin Valhalla Lunar White",
+    "name": "Aston Martin Vantage GT3 Evo #19 van der Steur Racing 2025 IMSA Daytona 24 Hrs",
     "brand": "ASTON MARTIN",
     "event": "",
     "date": "2026",
@@ -6689,7 +6689,7 @@
   },
   {
     "id": "potential-aston-martin-40",
-    "name": "Aston Martin Vantage GT3 Evo #19 van der Steur Racing 2025 IMSA Daytona 24 Hrs",
+    "name": "Aston Martin Vantage GT3 Evo #44 Magnus Racing 2025 IMSA Watkins Glen 6 Hrs",
     "brand": "ASTON MARTIN",
     "event": "",
     "date": "2026",
@@ -6703,13 +6703,18 @@
         "src": "assets/images/potential-aston-martin-40-model.png",
         "role": "model",
         "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/potential-aston-martin-40-model-2.png",
+        "role": "model",
+        "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "potential-aston-martin-41",
-    "name": "Aston Martin Vantage GT3 Evo #44 Magnus Racing 2025 IMSA Watkins Glen 6 Hrs",
-    "brand": "ASTON MARTIN",
+    "id": "potential-mercedes-41",
+    "name": "Mercedes-AMG GT3 EVO #69 GetSpeed 2025 IMSA Daytona 24 Hrs",
+    "brand": "MERCEDES",
     "event": "",
     "date": "2026",
     "collections": [],
@@ -6719,12 +6724,12 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-aston-martin-41-model.png",
+        "src": "assets/images/potential-mercedes-41-model.png",
         "role": "model",
         "label": "MINI GT model"
       },
       {
-        "src": "assets/images/potential-aston-martin-41-model-2.png",
+        "src": "assets/images/potential-mercedes-41-model-2.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -6732,7 +6737,7 @@
   },
   {
     "id": "potential-mercedes-42",
-    "name": "Mercedes-AMG GT3 EVO #69 GetSpeed 2025 IMSA Daytona 24 Hrs",
+    "name": "Mercedes-AMG GT3 EVO #80 Lone Star Racing 2025 IMSA Daytona 24 Hrs",
     "brand": "MERCEDES",
     "event": "",
     "date": "2026",
@@ -6746,17 +6751,12 @@
         "src": "assets/images/potential-mercedes-42-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/potential-mercedes-42-model-2.png",
-        "role": "model",
-        "label": "MINI GT model"
       }
     ]
   },
   {
     "id": "potential-mercedes-43",
-    "name": "Mercedes-AMG GT3 EVO #80 Lone Star Racing 2025 IMSA Daytona 24 Hrs",
+    "name": "Mercedes-AMG GT3 EVO #32 Korthoff Competition Motors 2025 IMSA DAYTONA 24 Hrs",
     "brand": "MERCEDES",
     "event": "",
     "date": "2026",
@@ -6774,9 +6774,9 @@
     ]
   },
   {
-    "id": "potential-mercedes-44",
-    "name": "Mercedes-AMG GT3 EVO #32 Korthoff Competition Motors 2025 IMSA DAYTONA 24 Hrs",
-    "brand": "MERCEDES",
+    "id": "potential-lamborghini-44",
+    "name": "Lamborghini Huracan GT3 EVO2 #45 DEX Wayne Taylor Racing 2026 IMSA Daytona 24 Hrs",
+    "brand": "LAMBORGHINI",
     "event": "",
     "date": "2026",
     "collections": [],
@@ -6786,7 +6786,12 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-mercedes-44-model.png",
+        "src": "assets/images/potential-lamborghini-44-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/potential-lamborghini-44-model-2.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -6794,7 +6799,7 @@
   },
   {
     "id": "potential-lamborghini-45",
-    "name": "Lamborghini Huracan GT3 EVO2 #45 DEX Wayne Taylor Racing 2026 IMSA Daytona 24 Hrs",
+    "name": "Lamborghini Temerario GT3 #9 Pfaff Motorsports 2026 IMSA",
     "brand": "LAMBORGHINI",
     "event": "",
     "date": "2026",
@@ -6808,18 +6813,13 @@
         "src": "assets/images/potential-lamborghini-45-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/potential-lamborghini-45-model-2.png",
-        "role": "model",
-        "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "potential-lamborghini-46",
-    "name": "Lamborghini Temerario GT3 #9 Pfaff Motorsports 2026 IMSA",
-    "brand": "LAMBORGHINI",
+    "id": "potential-ford-46",
+    "name": "Ford Mustang GT3 #64 Ford Racing 2026 IMSA Daytona 24 Hrs",
+    "brand": "FORD",
     "event": "",
     "date": "2026",
     "collections": [],
@@ -6829,7 +6829,7 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-lamborghini-46-model.png",
+        "src": "assets/images/potential-ford-46-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -6837,7 +6837,7 @@
   },
   {
     "id": "potential-ford-47",
-    "name": "Ford Mustang GT3 #64 Ford Racing 2026 IMSA Daytona 24 Hrs",
+    "name": "Ford Mustang GT3 #64 Ford Multimatic Motorsports 2025 IMSA VIR",
     "brand": "FORD",
     "event": "",
     "date": "2026",
@@ -6855,9 +6855,9 @@
     ]
   },
   {
-    "id": "potential-ford-48",
-    "name": "Ford Mustang GT3 #64 Ford Multimatic Motorsports 2025 IMSA VIR",
-    "brand": "FORD",
+    "id": "potential-bmw-48",
+    "name": "BMW M4 GT3 EVO #77 Schubert Motorsport 2026 ADAC Nurburgring 24 Hrs",
+    "brand": "BMW",
     "event": "",
     "date": "2026",
     "collections": [],
@@ -6867,7 +6867,12 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-ford-48-model.png",
+        "src": "assets/images/potential-bmw-48-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/potential-bmw-48-model-2.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -6875,7 +6880,7 @@
   },
   {
     "id": "potential-bmw-49",
-    "name": "BMW M4 GT3 EVO #77 Schubert Motorsport 2026 ADAC Nurburgring 24 Hrs",
+    "name": "BMW M4 GT3 EVO #96 Turner Motorsport 2026 IMSA Daytona 24 Hrs",
     "brand": "BMW",
     "event": "",
     "date": "2026",
@@ -6899,7 +6904,7 @@
   },
   {
     "id": "potential-bmw-50",
-    "name": "BMW M4 GT3 EVO #96 Turner Motorsport 2026 IMSA Daytona 24 Hrs",
+    "name": "BMW M4 GT3 EVO #3 Schubert Motorsport 2026 DTM Zanvoort Race 2 Winner",
     "brand": "BMW",
     "event": "",
     "date": "2026",
@@ -6923,7 +6928,7 @@
   },
   {
     "id": "potential-bmw-51",
-    "name": "BMW M4 GT3 EVO #3 Schubert Motorsport 2026 DTM Zanvoort Race 2 Winner",
+    "name": "BMW M4 CS Riviera Blue",
     "brand": "BMW",
     "event": "",
     "date": "2026",
@@ -6937,35 +6942,11 @@
         "src": "assets/images/potential-bmw-51-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/potential-bmw-51-model-2.png",
-        "role": "model",
-        "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "potential-bmw-52",
-    "name": "BMW M4 CS Riviera Blue",
-    "brand": "BMW",
-    "event": "",
-    "date": "2026",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": true,
-    "newTooling": false,
-    "photos": [
-      {
-        "src": "assets/images/potential-bmw-52-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "potential-honda-53",
+    "id": "potential-honda-52",
     "name": "Honda Prelude Racing Blue Pear",
     "brand": "HONDA",
     "event": "",
@@ -6977,15 +6958,15 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-honda-53-model.png",
+        "src": "assets/images/potential-honda-52-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "potential-ford-54",
-    "name": "Ford Mustang GT3 Ford Performance \"Sweepstakes\" 125 Years Heritage Livery",
+    "id": "potential-ford-53",
+    "name": "Ford Mustang GT3 EVO Ford Performance \"Sweepstakes\" 125 Years Heritage Livery",
     "brand": "FORD",
     "event": "",
     "date": "2026",
@@ -6996,14 +6977,14 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-ford-54-model.png",
+        "src": "assets/images/potential-ford-53-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "potential-mazda-55",
+    "id": "potential-mazda-54",
     "name": "Mazda AZ-1 Liberty Walk LB40 Renown",
     "brand": "MAZDA",
     "event": "",
@@ -7015,7 +6996,26 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-mazda-55-model.png",
+        "src": "assets/images/potential-mazda-54-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "potential-hyundai-55",
+    "name": "Hyundai Ioniq 6 N Nocturne Grey Matte",
+    "brand": "HYUNDAI",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": true,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/potential-hyundai-55-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -7023,7 +7023,7 @@
   },
   {
     "id": "potential-hyundai-56",
-    "name": "Hyundai Ioniq 6 N Nocturne Grey Matte",
+    "name": "Hyundai Ioniq 6 N Serenity White Pearl",
     "brand": "HYUNDAI",
     "event": "",
     "date": "2026",
@@ -7042,7 +7042,7 @@
   },
   {
     "id": "potential-hyundai-57",
-    "name": "Hyundai Ioniq 6 N Serenity White Pearl",
+    "name": "Hyundai Ioniq 6 N Abyss Black Pearl",
     "brand": "HYUNDAI",
     "event": "",
     "date": "2026",
@@ -7061,7 +7061,7 @@
   },
   {
     "id": "potential-hyundai-58",
-    "name": "Hyundai Ioniq 6 N Abyss Black Pearl",
+    "name": "Hyundai Ioniq 6 N Gravity Gold Matte",
     "brand": "HYUNDAI",
     "event": "",
     "date": "2026",
@@ -7079,26 +7079,7 @@
     ]
   },
   {
-    "id": "potential-hyundai-59",
-    "name": "Hyundai Ioniq 6 N Gravity Gold Matte",
-    "brand": "HYUNDAI",
-    "event": "",
-    "date": "2026",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": true,
-    "newTooling": false,
-    "photos": [
-      {
-        "src": "assets/images/potential-hyundai-59-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "potential-porsche-60",
+    "id": "potential-porsche-59",
     "name": "Porsche 911 GT3 R EVO \"The Boring Concept\"",
     "brand": "PORSCHE",
     "event": "",
@@ -7110,14 +7091,14 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-porsche-60-model.png",
+        "src": "assets/images/potential-porsche-59-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "potential-mazda-61",
+    "id": "potential-mazda-60",
     "name": "Mazda RX-7 LB-Super Silhouette \"Meiji Livery\"",
     "brand": "MAZDA",
     "event": "",
@@ -7129,19 +7110,19 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-mazda-61-model.png",
+        "src": "assets/images/potential-mazda-60-model.png",
         "role": "model",
         "label": "MINI GT model"
       },
       {
-        "src": "assets/images/potential-mazda-61-model-2.png",
+        "src": "assets/images/potential-mazda-60-model-2.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "potential-porsche-62",
+    "id": "potential-porsche-61",
     "name": "Porsche 911 GT3 RS (Staple Livery)",
     "brand": "PORSCHE",
     "event": "",
@@ -7153,12 +7134,36 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-porsche-62-model.png",
+        "src": "assets/images/potential-porsche-61-model.png",
         "role": "model",
         "label": "MINI GT model"
       },
       {
-        "src": "assets/images/potential-porsche-62-model-2.png",
+        "src": "assets/images/potential-porsche-61-model-2.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "potential-nissan-62",
+    "name": "Nissan LB-Super Silhouette 180SX (TBC Livery)",
+    "brand": "NISSAN",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": true,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/potential-nissan-62-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/potential-nissan-62-model-2.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -7166,7 +7171,7 @@
   },
   {
     "id": "potential-nissan-63",
-    "name": "Nissan LB-Super Silhouette 180SX (TBC Livery)",
+    "name": "Nissan GT-R (R35) LB★WORKS Type 2, Rear Wing ver.3 (Motul Livery)",
     "brand": "NISSAN",
     "event": "",
     "date": "2026",
@@ -7180,17 +7185,12 @@
         "src": "assets/images/potential-nissan-63-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/potential-nissan-63-model-2.png",
-        "role": "model",
-        "label": "MINI GT model"
       }
     ]
   },
   {
     "id": "potential-nissan-64",
-    "name": "Nissan GT-R (R35) LB★WORKS Type 2, Rear Wing ver.3 (Motul Livery)",
+    "name": "Nissan GT-R NISMO GT3",
     "brand": "NISSAN",
     "event": "",
     "date": "2026",

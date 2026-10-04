@@ -1,5 +1,5 @@
 window.MINI_GT_CATALOG_META = {
-  "lastUpdated": "2026-09-30",
+  "lastUpdated": "2026-10-04",
   "counts": {
     "active": 249,
     "cancelled": 39,
