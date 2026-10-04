@@ -7206,5 +7206,24 @@
         "label": "MINI GT model"
       }
     ]
+  },
+  {
+    "id": "potential-toyota-65",
+    "name": "Toyota GR86 Veilside Driftcar (SHIBATA Racing Team)",
+    "brand": "TOYOTA",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": true,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/potential-toyota-65-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
   }
 ]
