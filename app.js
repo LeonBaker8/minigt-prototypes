@@ -12,6 +12,7 @@ const wideLogoAssets = new Set([
 const visualAssets = {
   brands: {
     "ABARTH": "assets/brands/abarth.svg",
+    "ACURA": "assets/brands/acura-emblem.svg",
     "ALFA ROMEO": "assets/brands/alfa-romeo.svg",
     "AMC": "assets/brands/amc.svg",
     "ASTON MARTIN": "assets/brands/aston-martin.svg",
