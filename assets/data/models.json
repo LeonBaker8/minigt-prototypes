@@ -64,10 +64,10 @@
   },
   {
     "id": "qube-carz-05",
-    "name": "Porsche 911 GT3 RS",
+    "name": "Porsche 911 GT3 RS Green",
     "brand": "PORSCHE",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026",
+    "event": "Australian Diecast Expo",
+    "date": "October 2026",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -253,10 +253,10 @@
   },
   {
     "id": "qube-carz-14",
-    "name": "Ford Mustang Boss",
-    "brand": "FORD",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026",
+    "name": "Volkswagen T1 Crewcab Pickup",
+    "brand": "VOLKSWAGEN",
+    "event": "Australian Diecast Expo",
+    "date": "2026-08-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -274,7 +274,7 @@
   },
   {
     "id": "qube-carz-15",
-    "name": "Volkswagen T1 Crewcab Pickup",
+    "name": "Volkswagen T1 Microbus",
     "brand": "VOLKSWAGEN",
     "event": "Australian Diecast Expo",
     "date": "2026-08-01",
@@ -295,17 +295,17 @@
   },
   {
     "id": "qube-carz-16",
-    "name": "Volkswagen T1 Microbus",
-    "brand": "VOLKSWAGEN",
-    "event": "Australian Diecast Expo",
-    "date": "2026-08-01",
+    "name": "Mazda RX-7 VeilSide Fortune7 Silver",
+    "brand": "MAZDA",
+    "event": "Malaysia Diecast Expo",
+    "date": "2026",
     "collections": [
       "Qube Carz Collection"
     ],
     "seriesOnly": true,
     "cancelled": false,
     "potential": false,
-    "newTooling": true,
+    "newTooling": false,
     "photos": [
       {
         "src": "assets/images/qube-carz-16-model.png",
@@ -316,10 +316,10 @@
   },
   {
     "id": "qube-carz-17",
-    "name": "Mazda RX-7 VeilSide Fortune7 Silver",
+    "name": "Mazda RX-7 VeilSide Fortune7 Green",
     "brand": "MAZDA",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026",
+    "event": "Indonesian Modification Expo",
+    "date": "October 2026",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -437,6 +437,11 @@
         "src": "assets/images/qube-carz-22-model.png",
         "role": "model",
         "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/qube-carz-22-detail.png",
+        "role": "additional",
+        "label": "Additional photo"
       }
     ]
   },
@@ -479,6 +484,116 @@
         "src": "assets/images/qube-carz-24-model.png",
         "role": "model",
         "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "qube-carz-25",
+    "name": "Mazda RX-7 LB-Super Silhouette",
+    "brand": "MAZDA",
+    "event": "",
+    "date": "2025",
+    "collections": [
+      "Qube Carz Collection"
+    ],
+    "seriesOnly": true,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/qube-carz-25-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "qube-carz-26",
+    "name": "Ford Mustang Boss Blue",
+    "brand": "FORD",
+    "event": "Indonesian Modification Expo",
+    "date": "2026-10-01",
+    "collections": [
+      "Qube Carz Collection"
+    ],
+    "seriesOnly": true,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": true,
+    "photos": [
+      {
+        "src": "assets/images/qube-carz-26-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "qube-carz-27",
+    "name": "Ford Mustang Boss Red",
+    "brand": "FORD",
+    "event": "Indonesian Modification Expo",
+    "date": "2026-10-01",
+    "collections": [
+      "Qube Carz Collection"
+    ],
+    "seriesOnly": true,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/qube-carz-27-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "qube-carz-28",
+    "name": "Nissan Skyline GT-R (R32) Nismo S-Tune Nissan Motorsport Livery",
+    "brand": "NISSAN",
+    "event": "Indonesian Modification Expo",
+    "date": "2026-10-01",
+    "collections": [
+      "Qube Carz Collection"
+    ],
+    "seriesOnly": true,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/qube-carz-28-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "acura-02",
+    "name": "Acura ARX-06 #60 Acura Meyer Shank Racing 2026 IMSA Daytona 24 Hrs",
+    "brand": "ACURA",
+    "event": "Indonesian Modification Expo",
+    "date": "2026-10-01",
+    "collections": [
+      "IMSA Collection"
+    ],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/acura-02-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/acura-02-detail.png",
+        "role": "additional",
+        "label": "Additional photo"
       }
     ]
   },
@@ -538,6 +653,11 @@
         "src": "assets/images/alfa-romeo-02-model.png",
         "role": "model",
         "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/alfa-romeo-02-detail.png",
+        "role": "additional",
+        "label": "Additional photo"
       }
     ]
   },
@@ -1560,7 +1680,7 @@
     "seriesOnly": false,
     "cancelled": false,
     "potential": false,
-    "newTooling": true,
+    "newTooling": false,
     "photos": [
       {
         "src": "assets/images/dodge-03-model.png",
@@ -1573,8 +1693,8 @@
     "id": "dodge-04",
     "name": "Dodge Carger 1970 \"Fast & Furious 4\"",
     "brand": "DODGE",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026-05-01",
+    "event": "Indonesian Modification Expo",
+    "date": "2026-10-01",
     "collections": [
       "Fast & Furious Collection"
     ],
@@ -1691,8 +1811,8 @@
     "id": "ferrari-06",
     "name": "Ferrari SF90 XX Stradale Matt Black Charles Leclerc Edition",
     "brand": "FERRARI",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026",
+    "event": "Indonesian Modification Expo",
+    "date": "October 2026",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -1722,6 +1842,11 @@
         "src": "assets/images/ferrari-07-model.png",
         "role": "model",
         "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/ferrari-07-detail.png",
+        "role": "additional",
+        "label": "Additional photo"
       }
     ]
   },
@@ -1862,8 +1987,8 @@
     "id": "ferrari-15",
     "name": "Ferrari SF-23 2023 Las Vegas Grand Prix #16 Charles Leclerc",
     "brand": "FERRARI",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026",
+    "event": "Indonesian Modification Expo",
+    "date": "October 2026",
     "collections": [
       "F1 Collection"
     ],
@@ -1883,8 +2008,8 @@
     "id": "ferrari-16",
     "name": "Ferrari SF-23 2023 Las Vegas Grand Prix #55 Carlos Sainz",
     "brand": "FERRARI",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026",
+    "event": "Indonesian Modification Expo",
+    "date": "October 2026",
     "collections": [
       "F1 Collection"
     ],
@@ -1933,6 +2058,63 @@
     "photos": [
       {
         "src": "assets/images/ferrari-18-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "ferrari-19",
+    "name": "Ferrari 499P Modificata Nero Giallo",
+    "brand": "FERRARI",
+    "event": "Indonesian Modification Expo",
+    "date": "2026-10-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/ferrari-19-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "ferrari-20",
+    "name": "Ferrari SF90 Spider Assetto Fiorano",
+    "brand": "FERRARI",
+    "event": "Indonesian Modification Expo",
+    "date": "2026-10-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/ferrari-20-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "ferrari-21",
+    "name": "Ferrari SF90 Stradale Assetto Fiorano \"Grigio Scuro\"",
+    "brand": "FERRARI",
+    "event": "Indonesian Modification Expo",
+    "date": "2026-10-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/ferrari-21-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -2079,8 +2261,8 @@
     "id": "ford-09",
     "name": "Ford Mustang Boss 302 1969",
     "brand": "FORD",
-    "event": "Salao Diecast Brazil 7",
-    "date": "2026-07-01",
+    "event": "Indonesian Modification Expo",
+    "date": "2026-10-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -2430,6 +2612,11 @@
         "src": "assets/images/honda-09-model.png",
         "role": "model",
         "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/honda-09-real-car.png",
+        "role": "realCar",
+        "label": "Real Photo"
       }
     ]
   },
@@ -2454,6 +2641,30 @@
   },
   {
     "id": "honda-11",
+    "name": "Honda Super-One Camouflage Livery",
+    "brand": "HONDA",
+    "event": "Indonesian Modification Expo",
+    "date": "October 2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/honda-11-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/honda-11-real-car.png",
+        "role": "realCar",
+        "label": "Real Photo"
+      }
+    ]
+  },
+  {
+    "id": "honda-12",
     "name": "LB-WORKS HONDA NSX (NA1) Silver",
     "brand": "HONDA",
     "event": "Alloy Shanghai Car Club",
@@ -2465,25 +2676,6 @@
     "newTooling": true,
     "photos": [
       {
-        "src": "assets/images/honda-11-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "honda-12",
-    "name": "LB-WORKS HONDA NSX (NA1) Black",
-    "brand": "HONDA",
-    "event": "Alloy Shanghai Car Club",
-    "date": "2026-08-01",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": false,
-    "photos": [
-      {
         "src": "assets/images/honda-12-model.png",
         "role": "model",
         "label": "MINI GT model"
@@ -2492,10 +2684,10 @@
   },
   {
     "id": "honda-13",
-    "name": "Honda Prelude Moonlit White Pearl",
+    "name": "LB-WORKS HONDA NSX (NA1) Black",
     "brand": "HONDA",
-    "event": "Salao Diecast Brazil 7",
-    "date": "2026-07-01",
+    "event": "Alloy Shanghai Car Club",
+    "date": "2026-08-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -2511,17 +2703,15 @@
   },
   {
     "id": "honda-14",
-    "name": "Honda S2000 Veilside Millenium",
+    "name": "Honda Prelude Moonlit White Pearl",
     "brand": "HONDA",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026",
-    "collections": [
-      "Fast & Furious Collection"
-    ],
+    "event": "Indonesian Modification Expo",
+    "date": "2026-10-01",
+    "collections": [],
     "seriesOnly": false,
     "cancelled": false,
     "potential": false,
-    "newTooling": true,
+    "newTooling": false,
     "photos": [
       {
         "src": "assets/images/honda-14-model.png",
@@ -2532,10 +2722,10 @@
   },
   {
     "id": "honda-15",
-    "name": "Honda S2000",
+    "name": "Honda S2000 Veilside Millenium",
     "brand": "HONDA",
-    "event": "Salao Diecast Brazil 7",
-    "date": "2026-07-01",
+    "event": "Indonesian Modification Expo",
+    "date": "2026-10-01",
     "collections": [
       "Fast & Furious Collection"
     ],
@@ -2553,6 +2743,27 @@
   },
   {
     "id": "honda-16",
+    "name": "Honda S2000",
+    "brand": "HONDA",
+    "event": "Indonesian Modification Expo",
+    "date": "2026-10-01",
+    "collections": [
+      "Fast & Furious Collection"
+    ],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": true,
+    "photos": [
+      {
+        "src": "assets/images/honda-16-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "honda-17",
     "name": "Honda Goldwing 1800",
     "brand": "HONDA",
     "event": "Malaysia Diecast Expo",
@@ -2566,12 +2777,12 @@
     "newTooling": true,
     "photos": [
       {
-        "src": "assets/images/honda-16-model.png",
+        "src": "assets/images/honda-17-model.png",
         "role": "model",
         "label": "MINI GT model"
       },
       {
-        "src": "assets/images/honda-16-real-car.png",
+        "src": "assets/images/honda-17-real-car.png",
         "role": "realCar",
         "label": "Real Photo"
       }
@@ -3279,8 +3490,8 @@
     "id": "lamborghini-13",
     "name": "Lamborghini SC63 \"Squadra Corse\" 2025",
     "brand": "LAMBORGHINI",
-    "event": "Hobby Expo China",
-    "date": "2026-04-01",
+    "event": "Indonesian Modification Expo",
+    "date": "2026-10-01",
     "collections": [
       "IMSA Collection"
     ],
@@ -3293,6 +3504,11 @@
         "src": "assets/images/lamborghini-13-model.png",
         "role": "model",
         "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/lamborghini-13-detail.png",
+        "role": "additional",
+        "label": "Additional photo"
       }
     ]
   },
@@ -3729,6 +3945,30 @@
   },
   {
     "id": "mclaren-04",
+    "name": "McLaren Senna Blue/Orange",
+    "brand": "MCLAREN",
+    "event": "",
+    "date": "",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": true,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/mclaren-04-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/mclaren-04-detail.png",
+        "role": "additional",
+        "label": "Additional photo"
+      }
+    ]
+  },
+  {
+    "id": "mclaren-05",
     "name": "McLaren F1 GTR Longtail",
     "brand": "MCLAREN",
     "event": "Malaysia Diecast Expo",
@@ -3740,27 +3980,6 @@
     "newTooling": true,
     "photos": [
       {
-        "src": "assets/images/mclaren-04-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "mclaren-05",
-    "name": "McLaren MCL60 2023 British Grand Prix #4 Lando Norris 2nd Place",
-    "brand": "MCLAREN",
-    "event": "Hobby Expo China",
-    "date": "2026-04-01",
-    "collections": [
-      "F1 Collection"
-    ],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": false,
-    "photos": [
-      {
         "src": "assets/images/mclaren-05-model.png",
         "role": "model",
         "label": "MINI GT model"
@@ -3769,7 +3988,7 @@
   },
   {
     "id": "mclaren-06",
-    "name": "McLaren MCL60 2023 British Grand Prix #81 Oscar Piastri",
+    "name": "McLaren MCL60 2023 British Grand Prix #4 Lando Norris 2nd Place",
     "brand": "MCLAREN",
     "event": "Hobby Expo China",
     "date": "2026-04-01",
@@ -3790,11 +4009,13 @@
   },
   {
     "id": "mclaren-07",
-    "name": "McLaren F1 Yellow",
+    "name": "McLaren MCL60 2023 British Grand Prix #81 Oscar Piastri",
     "brand": "MCLAREN",
-    "event": "Hobby Expo China",
-    "date": "2026-04-01",
-    "collections": [],
+    "event": "Indonesian Modification Expo",
+    "date": "2026-10-01",
+    "collections": [
+      "F1 Collection"
+    ],
     "seriesOnly": false,
     "cancelled": false,
     "potential": false,
@@ -3809,10 +4030,10 @@
   },
   {
     "id": "mclaren-08",
-    "name": "McLaren F1 GTR Marlboro #2",
+    "name": "McLaren F1 Yellow",
     "brand": "MCLAREN",
-    "event": "Salao Diecast Brazil 7",
-    "date": "2026-07-01",
+    "event": "Hobby Expo China",
+    "date": "2026-04-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -3828,7 +4049,7 @@
   },
   {
     "id": "mclaren-09",
-    "name": "McLaren F1 GTR Marlboro #8",
+    "name": "McLaren F1 GTR Marlboro #2",
     "brand": "MCLAREN",
     "event": "Salao Diecast Brazil 7",
     "date": "2026-07-01",
@@ -3847,6 +4068,25 @@
   },
   {
     "id": "mclaren-10",
+    "name": "McLaren F1 GTR Marlboro #8",
+    "brand": "MCLAREN",
+    "event": "Salao Diecast Brazil 7",
+    "date": "2026-07-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/mclaren-10-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "mclaren-11",
     "name": "McLaren W1",
     "brand": "MCLAREN",
     "event": "Mini GT Pop Up Store Taipei",
@@ -3858,41 +4098,15 @@
     "newTooling": true,
     "photos": [
       {
-        "src": "assets/images/mclaren-10-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "mclaren-11",
-    "name": "McLaren MCL39 Abu Dhabi Grand Prix",
-    "brand": "MCLAREN",
-    "event": "Hobby Expo China",
-    "date": "2026-04-01",
-    "collections": [
-      "F1 Collection"
-    ],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": true,
-    "photos": [
-      {
         "src": "assets/images/mclaren-11-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/mclaren-11-real-car.png",
-        "role": "realCar",
-        "label": "Real Photo"
       }
     ]
   },
   {
     "id": "mclaren-12",
-    "name": "McLaren M23 1974",
+    "name": "McLaren MCL39 Abu Dhabi Grand Prix",
     "brand": "MCLAREN",
     "event": "Hobby Expo China",
     "date": "2026-04-01",
@@ -3918,7 +4132,7 @@
   },
   {
     "id": "mclaren-13",
-    "name": "McLaren M23 1976",
+    "name": "McLaren M23 1974",
     "brand": "MCLAREN",
     "event": "Hobby Expo China",
     "date": "2026-04-01",
@@ -3944,7 +4158,7 @@
   },
   {
     "id": "mclaren-14",
-    "name": "McLaren M23 1973",
+    "name": "McLaren M23 1976",
     "brand": "MCLAREN",
     "event": "Hobby Expo China",
     "date": "2026-04-01",
@@ -3970,6 +4184,32 @@
   },
   {
     "id": "mclaren-15",
+    "name": "McLaren M23 1973",
+    "brand": "MCLAREN",
+    "event": "Hobby Expo China",
+    "date": "2026-04-01",
+    "collections": [
+      "F1 Collection"
+    ],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": true,
+    "photos": [
+      {
+        "src": "assets/images/mclaren-15-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/mclaren-15-real-car.png",
+        "role": "realCar",
+        "label": "Real Photo"
+      }
+    ]
+  },
+  {
+    "id": "mclaren-16",
     "name": "McLaren MP4/6 #2 Gerhard Berger",
     "brand": "MCLAREN",
     "event": "Cool Car Show",
@@ -3983,7 +4223,7 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/mclaren-15-model.png",
+        "src": "assets/images/mclaren-16-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -4464,6 +4704,32 @@
         "src": "assets/images/mercedes-23-model.png",
         "role": "model",
         "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "mercedes-24",
+    "name": "Mercedes-AMG GT3 EVO #32 Korthoff Competition Motors 2025 IMSA DAYTONA 24 Hrs",
+    "brand": "MERCEDES",
+    "event": "Indonesian Modification Expo",
+    "date": "2026-10-01",
+    "collections": [
+      "IMSA Collection"
+    ],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/mercedes-24-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/mercedes-24-detail.png",
+        "role": "additional",
+        "label": "Additional photo"
       }
     ]
   },
@@ -5290,8 +5556,8 @@
     "id": "porsche-14",
     "name": "Porsche 911 GT3 R EVO2 (Lollipop Racing #9 Livery)",
     "brand": "PORSCHE",
-    "event": "",
-    "date": "2026-09-01",
+    "event": "Indonesian Modification Expo",
+    "date": "2026-10-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -5302,6 +5568,11 @@
         "src": "assets/images/porsche-14-model.png",
         "role": "model",
         "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/porsche-14-detail.png",
+        "role": "additional",
+        "label": "Additional photo"
       },
       {
         "src": "assets/images/porsche-14-real-car.png",
@@ -5383,6 +5654,25 @@
     "photos": [
       {
         "src": "assets/images/scania-03-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "scania-04",
+    "name": "Scania 770S Highline 40ft Container \"ONE\" White/Magenta",
+    "brand": "SCANIA",
+    "event": "Indonesian Modification Expo",
+    "date": "2026-10-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/scania-04-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -5516,8 +5806,8 @@
     "id": "toyota-08",
     "name": "Toyota Sprinter Trueno (AE86) \"Drifter LOLA2\"",
     "brand": "TOYOTA",
-    "event": "",
-    "date": "2026",
+    "event": "Indonesia Modification Expo",
+    "date": "2026-10-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -5659,6 +5949,25 @@
     "photos": [
       {
         "src": "assets/images/toyota-15-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "toyota-16",
+    "name": "Toyota Alphard 40 KUHL Candy Green",
+    "brand": "TOYOTA",
+    "event": "Indonesia Modification Expo",
+    "date": "2026-10-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/toyota-16-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -6755,9 +7064,9 @@
     ]
   },
   {
-    "id": "potential-mercedes-43",
-    "name": "Mercedes-AMG GT3 EVO #32 Korthoff Competition Motors 2025 IMSA DAYTONA 24 Hrs",
-    "brand": "MERCEDES",
+    "id": "potential-lamborghini-43",
+    "name": "Lamborghini Huracan GT3 EVO2 #45 DEX Wayne Taylor Racing 2026 IMSA Daytona 24 Hrs",
+    "brand": "LAMBORGHINI",
     "event": "",
     "date": "2026",
     "collections": [],
@@ -6767,7 +7076,12 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-mercedes-43-model.png",
+        "src": "assets/images/potential-lamborghini-43-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/potential-lamborghini-43-model-2.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -6775,7 +7089,7 @@
   },
   {
     "id": "potential-lamborghini-44",
-    "name": "Lamborghini Huracan GT3 EVO2 #45 DEX Wayne Taylor Racing 2026 IMSA Daytona 24 Hrs",
+    "name": "Lamborghini Temerario GT3 #9 Pfaff Motorsports 2026 IMSA",
     "brand": "LAMBORGHINI",
     "event": "",
     "date": "2026",
@@ -6789,18 +7103,13 @@
         "src": "assets/images/potential-lamborghini-44-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/potential-lamborghini-44-model-2.png",
-        "role": "model",
-        "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "potential-lamborghini-45",
-    "name": "Lamborghini Temerario GT3 #9 Pfaff Motorsports 2026 IMSA",
-    "brand": "LAMBORGHINI",
+    "id": "potential-ford-45",
+    "name": "Ford Mustang GT3 #64 Ford Racing 2026 IMSA Daytona 24 Hrs",
+    "brand": "FORD",
     "event": "",
     "date": "2026",
     "collections": [],
@@ -6810,7 +7119,7 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-lamborghini-45-model.png",
+        "src": "assets/images/potential-ford-45-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -6818,7 +7127,7 @@
   },
   {
     "id": "potential-ford-46",
-    "name": "Ford Mustang GT3 #64 Ford Racing 2026 IMSA Daytona 24 Hrs",
+    "name": "Ford Mustang GT3 #64 Ford Multimatic Motorsports 2025 IMSA VIR",
     "brand": "FORD",
     "event": "",
     "date": "2026",
@@ -6836,9 +7145,9 @@
     ]
   },
   {
-    "id": "potential-ford-47",
-    "name": "Ford Mustang GT3 #64 Ford Multimatic Motorsports 2025 IMSA VIR",
-    "brand": "FORD",
+    "id": "potential-bmw-47",
+    "name": "BMW M4 GT3 EVO #77 Schubert Motorsport 2026 ADAC Nurburgring 24 Hrs",
+    "brand": "BMW",
     "event": "",
     "date": "2026",
     "collections": [],
@@ -6848,7 +7157,12 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-ford-47-model.png",
+        "src": "assets/images/potential-bmw-47-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/potential-bmw-47-model-2.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -6856,7 +7170,7 @@
   },
   {
     "id": "potential-bmw-48",
-    "name": "BMW M4 GT3 EVO #77 Schubert Motorsport 2026 ADAC Nurburgring 24 Hrs",
+    "name": "BMW M4 GT3 EVO #96 Turner Motorsport 2026 IMSA Daytona 24 Hrs",
     "brand": "BMW",
     "event": "",
     "date": "2026",
@@ -6880,7 +7194,7 @@
   },
   {
     "id": "potential-bmw-49",
-    "name": "BMW M4 GT3 EVO #96 Turner Motorsport 2026 IMSA Daytona 24 Hrs",
+    "name": "BMW M4 GT3 EVO #3 Schubert Motorsport 2026 DTM Zanvoort Race 2 Winner",
     "brand": "BMW",
     "event": "",
     "date": "2026",
@@ -6904,7 +7218,7 @@
   },
   {
     "id": "potential-bmw-50",
-    "name": "BMW M4 GT3 EVO #3 Schubert Motorsport 2026 DTM Zanvoort Race 2 Winner",
+    "name": "BMW M4 CS Riviera Blue",
     "brand": "BMW",
     "event": "",
     "date": "2026",
@@ -6918,35 +7232,11 @@
         "src": "assets/images/potential-bmw-50-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/potential-bmw-50-model-2.png",
-        "role": "model",
-        "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "potential-bmw-51",
-    "name": "BMW M4 CS Riviera Blue",
-    "brand": "BMW",
-    "event": "",
-    "date": "2026",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": true,
-    "newTooling": false,
-    "photos": [
-      {
-        "src": "assets/images/potential-bmw-51-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "potential-honda-52",
+    "id": "potential-honda-51",
     "name": "Honda Prelude Racing Blue Pear",
     "brand": "HONDA",
     "event": "",
@@ -6958,14 +7248,14 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-honda-52-model.png",
+        "src": "assets/images/potential-honda-51-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "potential-ford-53",
+    "id": "potential-ford-52",
     "name": "Ford Mustang GT3 EVO Ford Performance \"Sweepstakes\" 125 Years Heritage Livery",
     "brand": "FORD",
     "event": "",
@@ -6977,14 +7267,14 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-ford-53-model.png",
+        "src": "assets/images/potential-ford-52-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "potential-mazda-54",
+    "id": "potential-mazda-53",
     "name": "Mazda AZ-1 Liberty Walk LB40 Renown",
     "brand": "MAZDA",
     "event": "",
@@ -6996,7 +7286,26 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-mazda-54-model.png",
+        "src": "assets/images/potential-mazda-53-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "potential-hyundai-54",
+    "name": "Hyundai Ioniq 6 N Nocturne Grey Matte",
+    "brand": "HYUNDAI",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": true,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/potential-hyundai-54-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -7004,7 +7313,7 @@
   },
   {
     "id": "potential-hyundai-55",
-    "name": "Hyundai Ioniq 6 N Nocturne Grey Matte",
+    "name": "Hyundai Ioniq 6 N Serenity White Pearl",
     "brand": "HYUNDAI",
     "event": "",
     "date": "2026",
@@ -7023,7 +7332,7 @@
   },
   {
     "id": "potential-hyundai-56",
-    "name": "Hyundai Ioniq 6 N Serenity White Pearl",
+    "name": "Hyundai Ioniq 6 N Abyss Black Pearl",
     "brand": "HYUNDAI",
     "event": "",
     "date": "2026",
@@ -7042,7 +7351,7 @@
   },
   {
     "id": "potential-hyundai-57",
-    "name": "Hyundai Ioniq 6 N Abyss Black Pearl",
+    "name": "Hyundai Ioniq 6 N Gravity Gold Matte",
     "brand": "HYUNDAI",
     "event": "",
     "date": "2026",
@@ -7060,26 +7369,7 @@
     ]
   },
   {
-    "id": "potential-hyundai-58",
-    "name": "Hyundai Ioniq 6 N Gravity Gold Matte",
-    "brand": "HYUNDAI",
-    "event": "",
-    "date": "2026",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": true,
-    "newTooling": false,
-    "photos": [
-      {
-        "src": "assets/images/potential-hyundai-58-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "potential-porsche-59",
+    "id": "potential-porsche-58",
     "name": "Porsche 911 GT3 R EVO \"The Boring Concept\"",
     "brand": "PORSCHE",
     "event": "",
@@ -7091,14 +7381,14 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-porsche-59-model.png",
+        "src": "assets/images/potential-porsche-58-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "potential-mazda-60",
+    "id": "potential-mazda-59",
     "name": "Mazda RX-7 LB-Super Silhouette \"Meiji Livery\"",
     "brand": "MAZDA",
     "event": "",
@@ -7110,19 +7400,19 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-mazda-60-model.png",
+        "src": "assets/images/potential-mazda-59-model.png",
         "role": "model",
         "label": "MINI GT model"
       },
       {
-        "src": "assets/images/potential-mazda-60-model-2.png",
+        "src": "assets/images/potential-mazda-59-model-2.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "potential-porsche-61",
+    "id": "potential-porsche-60",
     "name": "Porsche 911 GT3 RS (Staple Livery)",
     "brand": "PORSCHE",
     "event": "",
@@ -7134,12 +7424,31 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-porsche-61-model.png",
+        "src": "assets/images/potential-porsche-60-model.png",
         "role": "model",
         "label": "MINI GT model"
       },
       {
-        "src": "assets/images/potential-porsche-61-model-2.png",
+        "src": "assets/images/potential-porsche-60-model-2.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "potential-nissan-61",
+    "name": "Nissan LB-Super Silhouette 180SX (TBC Livery)",
+    "brand": "NISSAN",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": true,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/potential-nissan-61-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -7147,7 +7456,7 @@
   },
   {
     "id": "potential-nissan-62",
-    "name": "Nissan LB-Super Silhouette 180SX (TBC Livery)",
+    "name": "Nissan GT-R (R35) LB★WORKS Type 2, Rear Wing ver.3 (Motul Livery)",
     "brand": "NISSAN",
     "event": "",
     "date": "2026",
@@ -7161,17 +7470,12 @@
         "src": "assets/images/potential-nissan-62-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/potential-nissan-62-model-2.png",
-        "role": "model",
-        "label": "MINI GT model"
       }
     ]
   },
   {
     "id": "potential-nissan-63",
-    "name": "Nissan GT-R (R35) LB★WORKS Type 2, Rear Wing ver.3 (Motul Livery)",
+    "name": "Nissan GT-R NISMO GT3",
     "brand": "NISSAN",
     "event": "",
     "date": "2026",
@@ -7189,26 +7493,7 @@
     ]
   },
   {
-    "id": "potential-nissan-64",
-    "name": "Nissan GT-R NISMO GT3",
-    "brand": "NISSAN",
-    "event": "",
-    "date": "2026",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": true,
-    "newTooling": false,
-    "photos": [
-      {
-        "src": "assets/images/potential-nissan-64-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "potential-toyota-65",
+    "id": "potential-toyota-64",
     "name": "Toyota GR86 Veilside Driftcar (SHIBATA Racing Team)",
     "brand": "TOYOTA",
     "event": "",
@@ -7220,7 +7505,7 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-toyota-65-model.png",
+        "src": "assets/images/potential-toyota-64-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
