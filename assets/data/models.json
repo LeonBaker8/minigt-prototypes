@@ -45,8 +45,8 @@
     "id": "qube-carz-04",
     "name": "Porsche 911 Carrera RS 2.7 Blue",
     "brand": "PORSCHE",
-    "event": "Australian Diecast Expo",
-    "date": "2026-08-01",
+    "event": "Indonesian Modification Expo",
+    "date": "October 2026",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -66,7 +66,7 @@
     "id": "qube-carz-05",
     "name": "Porsche 911 GT3 RS Green",
     "brand": "PORSCHE",
-    "event": "Australian Diecast Expo",
+    "event": "Indonesian Modification Expo",
     "date": "October 2026",
     "collections": [
       "Qube Carz Collection"
@@ -87,8 +87,8 @@
     "id": "qube-carz-06",
     "name": "Lamborghini Countach 500S Black",
     "brand": "LAMBORGHINI",
-    "event": "Nurnberg Toy Fair",
-    "date": "2026-01-01",
+    "event": "Australian Diecast Expo",
+    "date": "October 2026",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -129,8 +129,8 @@
     "id": "qube-carz-08",
     "name": "Lamborghini Revuelto Viola 30Th",
     "brand": "LAMBORGHINI",
-    "event": "Australian Diecast Expo",
-    "date": "2026-08-01",
+    "event": "Indonesian Modification Expo",
+    "date": "October 2026",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -213,8 +213,8 @@
     "id": "qube-carz-12",
     "name": "Nissan Skyline GT-R (R32) Nismo S-Tune Silver",
     "brand": "NISSAN",
-    "event": "Nurnberg Toy Fair",
-    "date": "2026-01-01",
+    "event": "Indonesian Modification Expo",
+    "date": "October 2026",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -360,8 +360,8 @@
     "id": "qube-carz-19",
     "name": "Toyota TRD 3000GT Silver",
     "brand": "TOYOTA",
-    "event": "Australian Diecast Expo",
-    "date": "2026-08-01",
+    "event": "Indonesian Modification Expo",
+    "date": "October 2026",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -437,11 +437,6 @@
         "src": "assets/images/qube-carz-22-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/qube-carz-22-detail.png",
-        "role": "additional",
-        "label": "Additional photo"
       }
     ]
   },
@@ -534,7 +529,7 @@
     "name": "Ford Mustang Boss Red",
     "brand": "FORD",
     "event": "Indonesian Modification Expo",
-    "date": "2026-10-01",
+    "date": "October 2026",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -1259,6 +1254,130 @@
     "photos": [
       {
         "src": "assets/images/bmw-14-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "bmw-15",
+    "name": "BMW M3 Touring GT3 April Fool's Day Livery 2025",
+    "brand": "BMW",
+    "event": "Before The Drop #4",
+    "date": "2026-10-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/bmw-15-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/bmw-15-detail.png",
+        "role": "additional",
+        "label": "Additional photo"
+      }
+    ]
+  },
+  {
+    "id": "bmw-16",
+    "name": "BMW M3 Touring GT3 NLS Presentation 2026",
+    "brand": "BMW",
+    "event": "Before The Drop #4",
+    "date": "2026-10-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/bmw-16-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "bmw-17",
+    "name": "BMW M3 Touring GT3 NLS 2026",
+    "brand": "BMW",
+    "event": "Before The Drop #4",
+    "date": "2026-10-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/bmw-17-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "bmw-18",
+    "name": "BMW M3 Touring GT3 #81 Schubert Motorsport 2026 Nürburgring 24 Hrs 2026",
+    "brand": "BMW",
+    "event": "Before The Drop #4",
+    "date": "2026-10-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/bmw-18-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "bmw-19",
+    "name": "BMW M3 Touring GT3 #81 CrowdStrike 24 Hours of Spa 2026 Promotional Car with Roof Box",
+    "brand": "BMW",
+    "event": "Before The Drop #4",
+    "date": "2026-10-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/bmw-19-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/bmw-19-detail.png",
+        "role": "additional",
+        "label": "Additional photo"
+      }
+    ]
+  },
+  {
+    "id": "bmw-20",
+    "name": "BMW M3 Touring GT3 #81 Goodwood Festival of Speed 2026",
+    "brand": "BMW",
+    "event": "Before The Drop #4",
+    "date": "2026-10-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/bmw-20-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -3269,6 +3388,25 @@
     ]
   },
   {
+    "id": "land-rover-06",
+    "name": "Land Rover Defender 90 1985 Camel Trophy Borneo Team France",
+    "brand": "LAND ROVER",
+    "event": "Indonesian Modification Expo",
+    "date": "2026-10-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/land-rover-06-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
     "id": "lamborghini-02",
     "name": "LB★WORKS Lamborghini Huracan GT Green",
     "brand": "LAMBORGHINI",
@@ -5028,8 +5166,8 @@
     "id": "nissan-14",
     "name": "Nissan Silvia S15 LB-Super Silhouette",
     "brand": "NISSAN",
-    "event": "Mini GT Pop Up Store Taipei",
-    "date": "2026",
+    "event": "Indonesian Modification Expo",
+    "date": "2026-10-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
