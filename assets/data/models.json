@@ -1242,10 +1242,10 @@
   },
   {
     "id": "bmw-14",
-    "name": "BMW Z3 Silver",
+    "name": "BMW M3 Touring GT3 April Fool's Day Livery 2025",
     "brand": "BMW",
-    "event": "Hobby Expo China",
-    "date": "2026-03-01",
+    "event": "Before The Drop #4",
+    "date": "2026-10-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -1256,12 +1256,17 @@
         "src": "assets/images/bmw-14-model.png",
         "role": "model",
         "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/bmw-14-detail.png",
+        "role": "additional",
+        "label": "Additional photo"
       }
     ]
   },
   {
     "id": "bmw-15",
-    "name": "BMW M3 Touring GT3 April Fool's Day Livery 2025",
+    "name": "BMW M3 Touring GT3 NLS Presentation 2026",
     "brand": "BMW",
     "event": "Before The Drop #4",
     "date": "2026-10-01",
@@ -1275,17 +1280,12 @@
         "src": "assets/images/bmw-15-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/bmw-15-detail.png",
-        "role": "additional",
-        "label": "Additional photo"
       }
     ]
   },
   {
     "id": "bmw-16",
-    "name": "BMW M3 Touring GT3 NLS Presentation 2026",
+    "name": "BMW M3 Touring GT3 NLS 2026",
     "brand": "BMW",
     "event": "Before The Drop #4",
     "date": "2026-10-01",
@@ -1304,7 +1304,7 @@
   },
   {
     "id": "bmw-17",
-    "name": "BMW M3 Touring GT3 NLS 2026",
+    "name": "BMW M3 Touring GT3 #81 Schubert Motorsport 2026 Nürburgring 24 Hrs 2026",
     "brand": "BMW",
     "event": "Before The Drop #4",
     "date": "2026-10-01",
@@ -1323,7 +1323,7 @@
   },
   {
     "id": "bmw-18",
-    "name": "BMW M3 Touring GT3 #81 Schubert Motorsport 2026 Nürburgring 24 Hrs 2026",
+    "name": "BMW M3 Touring GT3 #81 CrowdStrike 24 Hours of Spa 2026 Promotional Car with Roof Box",
     "brand": "BMW",
     "event": "Before The Drop #4",
     "date": "2026-10-01",
@@ -1337,35 +1337,16 @@
         "src": "assets/images/bmw-18-model.png",
         "role": "model",
         "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "bmw-19",
-    "name": "BMW M3 Touring GT3 #81 CrowdStrike 24 Hours of Spa 2026 Promotional Car with Roof Box",
-    "brand": "BMW",
-    "event": "Before The Drop #4",
-    "date": "2026-10-01",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": false,
-    "photos": [
-      {
-        "src": "assets/images/bmw-19-model.png",
-        "role": "model",
-        "label": "MINI GT model"
       },
       {
-        "src": "assets/images/bmw-19-detail.png",
+        "src": "assets/images/bmw-18-detail.png",
         "role": "additional",
         "label": "Additional photo"
       }
     ]
   },
   {
-    "id": "bmw-20",
+    "id": "bmw-19",
     "name": "BMW M3 Touring GT3 #81 Goodwood Festival of Speed 2026",
     "brand": "BMW",
     "event": "Before The Drop #4",
@@ -1377,7 +1358,7 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/bmw-20-model.png",
+        "src": "assets/images/bmw-19-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -1426,7 +1407,7 @@
     "name": "Bugatti Bolide White",
     "brand": "BUGATTI",
     "event": "Hobby Expo China",
-    "date": "2026",
+    "date": "2026-04-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -1445,7 +1426,7 @@
     "name": "Bugatti Tourbillon Equipe Pur Sang",
     "brand": "BUGATTI",
     "event": "Hobby Expo China",
-    "date": "2026",
+    "date": "2026-04-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -1469,7 +1450,7 @@
     "name": "Bugatti Tourbillon",
     "brand": "BUGATTI",
     "event": "Hobby Expo China",
-    "date": "2026",
+    "date": "2026-04-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -3290,7 +3271,7 @@
     "name": "Jaguar C-X75 Dark Grey",
     "brand": "JAGUAR",
     "event": "Hobby Expo China",
-    "date": "2026",
+    "date": "2026-04-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -3465,9 +3446,9 @@
   },
   {
     "id": "lamborghini-05",
-    "name": "Lamborghini Countach LB★WORKS Dark Green",
+    "name": "Lamborghini Countach LB★WORKS Yellow",
     "brand": "LAMBORGHINI",
-    "event": "Dongguan Flagship Store",
+    "event": "Australian Diecast Expo",
     "date": "2026-08-01",
     "collections": [],
     "seriesOnly": false,
@@ -3484,9 +3465,9 @@
   },
   {
     "id": "lamborghini-06",
-    "name": "Lamborghini Countach LB★WORKS Yellow",
+    "name": "Lamborghini Urus Performante Green",
     "brand": "LAMBORGHINI",
-    "event": "Australian Diecast Expo",
+    "event": "Alloy Shanghai Car Club",
     "date": "2026-08-01",
     "collections": [],
     "seriesOnly": false,
@@ -3503,25 +3484,6 @@
   },
   {
     "id": "lamborghini-07",
-    "name": "Lamborghini Urus Performante Green",
-    "brand": "LAMBORGHINI",
-    "event": "Alloy Shanghai Car Club",
-    "date": "2026-08-01",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": false,
-    "photos": [
-      {
-        "src": "assets/images/lamborghini-07-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "lamborghini-08",
     "name": "Lamborghini Temerario GT3",
     "brand": "LAMBORGHINI",
     "event": "Salao Diecast Brazil 7",
@@ -3535,19 +3497,19 @@
     "newTooling": true,
     "photos": [
       {
-        "src": "assets/images/lamborghini-08-model.png",
+        "src": "assets/images/lamborghini-07-model.png",
         "role": "model",
         "label": "MINI GT model"
       },
       {
-        "src": "assets/images/lamborghini-08-real-car.png",
+        "src": "assets/images/lamborghini-07-real-car.png",
         "role": "realCar",
         "label": "Real Photo"
       }
     ]
   },
   {
-    "id": "lamborghini-09",
+    "id": "lamborghini-08",
     "name": "Lamborghini Temerario Verde Citrea",
     "brand": "LAMBORGHINI",
     "event": "Malaysia Diecast Expo",
@@ -3559,14 +3521,14 @@
     "newTooling": true,
     "photos": [
       {
-        "src": "assets/images/lamborghini-09-model.png",
+        "src": "assets/images/lamborghini-08-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "lamborghini-10",
+    "id": "lamborghini-09",
     "name": "Lamborghini Countach Black",
     "brand": "LAMBORGHINI",
     "event": "",
@@ -3578,14 +3540,14 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/lamborghini-10-model.png",
+        "src": "assets/images/lamborghini-09-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "lamborghini-11",
+    "id": "lamborghini-10",
     "name": "Lamborghini LM002",
     "brand": "LAMBORGHINI",
     "event": "Malaysia Diecast Expo",
@@ -3599,14 +3561,14 @@
     "newTooling": true,
     "photos": [
       {
-        "src": "assets/images/lamborghini-11-model.png",
+        "src": "assets/images/lamborghini-10-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "lamborghini-12",
+    "id": "lamborghini-11",
     "name": "Lamborghini Revuelto Green",
     "brand": "LAMBORGHINI",
     "event": "Australian Diecast Expo",
@@ -3618,14 +3580,14 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/lamborghini-12-model.png",
+        "src": "assets/images/lamborghini-11-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "lamborghini-13",
+    "id": "lamborghini-12",
     "name": "Lamborghini SC63 \"Squadra Corse\" 2025",
     "brand": "LAMBORGHINI",
     "event": "Indonesian Modification Expo",
@@ -3639,12 +3601,12 @@
     "newTooling": true,
     "photos": [
       {
-        "src": "assets/images/lamborghini-13-model.png",
+        "src": "assets/images/lamborghini-12-model.png",
         "role": "model",
         "label": "MINI GT model"
       },
       {
-        "src": "assets/images/lamborghini-13-detail.png",
+        "src": "assets/images/lamborghini-12-detail.png",
         "role": "additional",
         "label": "Additional photo"
       }
@@ -4484,25 +4446,6 @@
   },
   {
     "id": "mercedes-07",
-    "name": "Mercedes-AMG EQS 53 Blue",
-    "brand": "MERCEDES",
-    "event": "Spielwarenmesse",
-    "date": "2026-01-01",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": true,
-    "photos": [
-      {
-        "src": "assets/images/mercedes-07-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "mercedes-08",
     "name": "Mercedes Benz Actros Transporter Taxi",
     "brand": "MERCEDES",
     "event": "Spielwarenmesse",
@@ -4514,15 +4457,39 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/mercedes-08-model.png",
+        "src": "assets/images/mercedes-07-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "mercedes-09",
+    "id": "mercedes-08",
     "name": "Mercedes 300CE (W124)",
+    "brand": "MERCEDES",
+    "event": "",
+    "date": "2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": true,
+    "photos": [
+      {
+        "src": "assets/images/mercedes-08-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/mercedes-08-real-car.png",
+        "role": "realCar",
+        "label": "Real Photo"
+      }
+    ]
+  },
+  {
+    "id": "mercedes-09",
+    "name": "Mercedes 300CE 6.0 AMG \"HAMMER\"",
     "brand": "MERCEDES",
     "event": "",
     "date": "2026",
@@ -4546,7 +4513,7 @@
   },
   {
     "id": "mercedes-10",
-    "name": "Mercedes 300CE 6.0 AMG \"HAMMER\"",
+    "name": "Mercedes Benz 500 SEC Koenig Specials",
     "brand": "MERCEDES",
     "event": "",
     "date": "2026",
@@ -4560,17 +4527,12 @@
         "src": "assets/images/mercedes-10-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/mercedes-10-real-car.png",
-        "role": "realCar",
-        "label": "Real Photo"
       }
     ]
   },
   {
     "id": "mercedes-11",
-    "name": "Mercedes Benz 500 SEC Koenig Specials",
+    "name": "Mercedes SLS AMG Black Series",
     "brand": "MERCEDES",
     "event": "",
     "date": "2026",
@@ -4584,12 +4546,17 @@
         "src": "assets/images/mercedes-11-model.png",
         "role": "model",
         "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/mercedes-11-real-car.png",
+        "role": "realCar",
+        "label": "Real Photo"
       }
     ]
   },
   {
     "id": "mercedes-12",
-    "name": "Mercedes SLS AMG Black Series",
+    "name": "Mercedes AMG ONE",
     "brand": "MERCEDES",
     "event": "",
     "date": "2026",
@@ -4613,7 +4580,7 @@
   },
   {
     "id": "mercedes-13",
-    "name": "Mercedes AMG ONE",
+    "name": "Mercedes AMG CLE 53 Coupe",
     "brand": "MERCEDES",
     "event": "",
     "date": "2026",
@@ -4637,7 +4604,7 @@
   },
   {
     "id": "mercedes-14",
-    "name": "Mercedes AMG CLE 53 Coupe",
+    "name": "Mercedes AMG GT63 PRO 2025",
     "brand": "MERCEDES",
     "event": "",
     "date": "2026",
@@ -4661,7 +4628,7 @@
   },
   {
     "id": "mercedes-15",
-    "name": "Mercedes AMG GT63 PRO 2025",
+    "name": "Mercedes AMG Concept GT XX",
     "brand": "MERCEDES",
     "event": "",
     "date": "2026",
@@ -4685,7 +4652,7 @@
   },
   {
     "id": "mercedes-16",
-    "name": "Mercedes AMG Concept GT XX",
+    "name": "Mercedes SL65 AMG Black Series Ver. 1",
     "brand": "MERCEDES",
     "event": "",
     "date": "2026",
@@ -4699,17 +4666,12 @@
         "src": "assets/images/mercedes-16-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/mercedes-16-real-car.png",
-        "role": "realCar",
-        "label": "Real Photo"
       }
     ]
   },
   {
     "id": "mercedes-17",
-    "name": "Mercedes SL65 AMG Black Series Ver. 1",
+    "name": "Mercedes SL65 AMG Black Series Ver. 2",
     "brand": "MERCEDES",
     "event": "",
     "date": "2026",
@@ -4723,12 +4685,17 @@
         "src": "assets/images/mercedes-17-model.png",
         "role": "model",
         "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/mercedes-17-real-car.png",
+        "role": "realCar",
+        "label": "Real Photo"
       }
     ]
   },
   {
     "id": "mercedes-18",
-    "name": "Mercedes SL65 AMG Black Series Ver. 2",
+    "name": "Mercedes Benz Patent Motorwagen",
     "brand": "MERCEDES",
     "event": "",
     "date": "2026",
@@ -4742,35 +4709,11 @@
         "src": "assets/images/mercedes-18-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/mercedes-18-real-car.png",
-        "role": "realCar",
-        "label": "Real Photo"
       }
     ]
   },
   {
     "id": "mercedes-19",
-    "name": "Mercedes Benz Patent Motorwagen",
-    "brand": "MERCEDES",
-    "event": "",
-    "date": "2026",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": true,
-    "photos": [
-      {
-        "src": "assets/images/mercedes-19-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "mercedes-20",
     "name": "Mercedes-Benz 190E 2.5-16 Evolution II #99",
     "brand": "MERCEDES",
     "event": "Malaysia Diecast Expo",
@@ -4782,6 +4725,25 @@
     "newTooling": false,
     "photos": [
       {
+        "src": "assets/images/mercedes-19-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "mercedes-20",
+    "name": "Mercedes-Benz ML 320 Jurrasic Park Ver. 1",
+    "brand": "MERCEDES",
+    "event": "R&D Office",
+    "date": "2026-09-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": true,
+    "photos": [
+      {
         "src": "assets/images/mercedes-20-model.png",
         "role": "model",
         "label": "MINI GT model"
@@ -4790,7 +4752,7 @@
   },
   {
     "id": "mercedes-21",
-    "name": "Mercedes-Benz ML 320 Jurrasic Park Ver. 1",
+    "name": "Mercedes-Benz ML 320 Jurrasic Park Ver. 2",
     "brand": "MERCEDES",
     "event": "R&D Office",
     "date": "2026-09-01",
@@ -4809,7 +4771,7 @@
   },
   {
     "id": "mercedes-22",
-    "name": "Mercedes-Benz ML 320 Jurrasic Park Ver. 2",
+    "name": "Mercedes-Benz ML 320 Jurrasic Park Ver. 3",
     "brand": "MERCEDES",
     "event": "R&D Office",
     "date": "2026-09-01",
@@ -4828,25 +4790,6 @@
   },
   {
     "id": "mercedes-23",
-    "name": "Mercedes-Benz ML 320 Jurrasic Park Ver. 3",
-    "brand": "MERCEDES",
-    "event": "R&D Office",
-    "date": "2026-09-01",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": true,
-    "photos": [
-      {
-        "src": "assets/images/mercedes-23-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "mercedes-24",
     "name": "Mercedes-AMG GT3 EVO #32 Korthoff Competition Motors 2025 IMSA DAYTONA 24 Hrs",
     "brand": "MERCEDES",
     "event": "Indonesian Modification Expo",
@@ -4860,12 +4803,12 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/mercedes-24-model.png",
+        "src": "assets/images/mercedes-23-model.png",
         "role": "model",
         "label": "MINI GT model"
       },
       {
-        "src": "assets/images/mercedes-24-detail.png",
+        "src": "assets/images/mercedes-23-detail.png",
         "role": "additional",
         "label": "Additional photo"
       }
@@ -4876,7 +4819,7 @@
     "name": "Mini Cooper S Rally Monte Carlo",
     "brand": "MINI",
     "event": "Hobby Expo China",
-    "date": "2026",
+    "date": "2026-04-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -4900,7 +4843,7 @@
     "name": "Mini Cooper S",
     "brand": "MINI",
     "event": "Hobby Expo China",
-    "date": "2026",
+    "date": "2026-04-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -6018,15 +5961,15 @@
   },
   {
     "id": "toyota-12",
-    "name": "Toyota 2000GT (Open Headlights)",
+    "name": "Toyota Supra (A80) GT-300 Top Secret 2JZ-GTE Spec",
     "brand": "TOYOTA",
-    "event": "Shizuoka Hobby Show",
-    "date": "2026-05-01",
+    "event": "Mini GT Pop Up Store",
+    "date": "2026",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
     "potential": false,
-    "newTooling": true,
+    "newTooling": false,
     "photos": [
       {
         "src": "assets/images/toyota-12-model.png",
@@ -6037,7 +5980,7 @@
   },
   {
     "id": "toyota-13",
-    "name": "Toyota Supra (A80) GT-300 Top Secret 2JZ-GTE Spec",
+    "name": "Toyota Supra (A80) Top Secret",
     "brand": "TOYOTA",
     "event": "Mini GT Pop Up Store",
     "date": "2026",
@@ -6064,7 +6007,7 @@
     "seriesOnly": false,
     "cancelled": false,
     "potential": false,
-    "newTooling": false,
+    "newTooling": true,
     "photos": [
       {
         "src": "assets/images/toyota-14-model.png",
@@ -6075,25 +6018,6 @@
   },
   {
     "id": "toyota-15",
-    "name": "Toyota Supra (A80) Top Secret",
-    "brand": "TOYOTA",
-    "event": "Mini GT Pop Up Store",
-    "date": "2026",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": true,
-    "photos": [
-      {
-        "src": "assets/images/toyota-15-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "toyota-16",
     "name": "Toyota Alphard 40 KUHL Candy Green",
     "brand": "TOYOTA",
     "event": "Indonesia Modification Expo",
@@ -6105,7 +6029,7 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/toyota-16-model.png",
+        "src": "assets/images/toyota-15-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -7550,9 +7474,9 @@
     ]
   },
   {
-    "id": "potential-porsche-60",
-    "name": "Porsche 911 GT3 RS (Staple Livery)",
-    "brand": "PORSCHE",
+    "id": "potential-nissan-60",
+    "name": "Nissan LB-Super Silhouette 180SX (TBC Livery)",
+    "brand": "NISSAN",
     "event": "",
     "date": "2026",
     "collections": [],
@@ -7562,12 +7486,7 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-porsche-60-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/potential-porsche-60-model-2.png",
+        "src": "assets/images/potential-nissan-60-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -7575,7 +7494,7 @@
   },
   {
     "id": "potential-nissan-61",
-    "name": "Nissan LB-Super Silhouette 180SX (TBC Livery)",
+    "name": "Nissan GT-R (R35) LB★WORKS Type 2, Rear Wing ver.3 (Motul Livery)",
     "brand": "NISSAN",
     "event": "",
     "date": "2026",
@@ -7594,7 +7513,7 @@
   },
   {
     "id": "potential-nissan-62",
-    "name": "Nissan GT-R (R35) LB★WORKS Type 2, Rear Wing ver.3 (Motul Livery)",
+    "name": "Nissan GT-R NISMO GT3",
     "brand": "NISSAN",
     "event": "",
     "date": "2026",
@@ -7612,26 +7531,7 @@
     ]
   },
   {
-    "id": "potential-nissan-63",
-    "name": "Nissan GT-R NISMO GT3",
-    "brand": "NISSAN",
-    "event": "",
-    "date": "2026",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": true,
-    "newTooling": false,
-    "photos": [
-      {
-        "src": "assets/images/potential-nissan-63-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "potential-toyota-64",
+    "id": "potential-toyota-63",
     "name": "Toyota GR86 Veilside Driftcar (SHIBATA Racing Team)",
     "brand": "TOYOTA",
     "event": "",
@@ -7643,7 +7543,7 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-toyota-64-model.png",
+        "src": "assets/images/potential-toyota-63-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
