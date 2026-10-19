@@ -5483,10 +5483,10 @@
   },
   {
     "id": "porsche-06",
-    "name": "Porsche 911 GT3 Cup (992.1) \"The Boring Concept\" #288",
+    "name": "Porsche 911 GT3 Cup (992.2) 2026",
     "brand": "PORSCHE",
-    "event": "Dongguan Flagship Store",
-    "date": "2026-08-01",
+    "event": "Salao Diecast Brazil 7",
+    "date": "2026-07-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -5502,15 +5502,15 @@
   },
   {
     "id": "porsche-07",
-    "name": "Porsche 911 GT3 Cup (992.1) \"The Boring Concept\" #288",
+    "name": "Porsche 911",
     "brand": "PORSCHE",
-    "event": "Dongguan Flagship Store",
-    "date": "2026-08-01",
+    "event": "Salao Diecast Brazil 7",
+    "date": "2026-07-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
     "potential": false,
-    "newTooling": false,
+    "newTooling": true,
     "photos": [
       {
         "src": "assets/images/porsche-07-model.png",
@@ -5521,10 +5521,10 @@
   },
   {
     "id": "porsche-08",
-    "name": "Porsche 911 GT3 Cup (992.2) 2026",
+    "name": "Porsche 962",
     "brand": "PORSCHE",
-    "event": "Salao Diecast Brazil 7",
-    "date": "2026-07-01",
+    "event": "Shizuoka Hobby Show",
+    "date": "2026-05-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -5540,10 +5540,10 @@
   },
   {
     "id": "porsche-09",
-    "name": "Porsche 911",
+    "name": "Porsche 956",
     "brand": "PORSCHE",
-    "event": "Salao Diecast Brazil 7",
-    "date": "2026-07-01",
+    "event": "Shizuoka Hobby Show",
+    "date": "2026-05-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -5559,44 +5559,6 @@
   },
   {
     "id": "porsche-10",
-    "name": "Porsche 962",
-    "brand": "PORSCHE",
-    "event": "Shizuoka Hobby Show",
-    "date": "2026-05-01",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": true,
-    "photos": [
-      {
-        "src": "assets/images/porsche-10-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "porsche-11",
-    "name": "Porsche 956",
-    "brand": "PORSCHE",
-    "event": "Shizuoka Hobby Show",
-    "date": "2026-05-01",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": true,
-    "photos": [
-      {
-        "src": "assets/images/porsche-11-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "porsche-12",
     "name": "Porsche 901 1963 Yellow",
     "brand": "PORSCHE",
     "event": "Shizuoka Hobby Show",
@@ -5608,14 +5570,14 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/porsche-12-model.png",
+        "src": "assets/images/porsche-10-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "porsche-13",
+    "id": "porsche-11",
     "name": "Porsche Carrera GT Red",
     "brand": "PORSCHE",
     "event": "Salao Diecast Brazil 7",
@@ -5627,14 +5589,14 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/porsche-13-model.png",
+        "src": "assets/images/porsche-11-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "porsche-14",
+    "id": "porsche-12",
     "name": "Porsche 911 GT3 R EVO2 (Lollipop Racing #9 Livery)",
     "brand": "PORSCHE",
     "event": "Indonesian Modification Expo",
@@ -5646,17 +5608,17 @@
     "newTooling": true,
     "photos": [
       {
-        "src": "assets/images/porsche-14-model.png",
+        "src": "assets/images/porsche-12-model.png",
         "role": "model",
         "label": "MINI GT model"
       },
       {
-        "src": "assets/images/porsche-14-detail.png",
+        "src": "assets/images/porsche-12-detail.png",
         "role": "additional",
         "label": "Additional photo"
       },
       {
-        "src": "assets/images/porsche-14-real-car.png",
+        "src": "assets/images/porsche-12-real-car.png",
         "role": "realCar",
         "label": "Real Photo"
       }

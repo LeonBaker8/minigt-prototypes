@@ -1,13 +1,13 @@
 window.MINI_GT_CATALOG_META = {
-  "lastUpdated": "2026-10-12",
+  "lastUpdated": "2026-10-19",
   "counts": {
-    "active": 264,
+    "active": 262,
     "cancelled": 40,
     "potential": 62,
-    "catalogueActive": 237,
+    "catalogueActive": 235,
     "catalogueCancelled": 40,
     "cataloguePotential": 62,
-    "catalogueNewTooling": 122,
+    "catalogueNewTooling": 121,
     "brands": {
       "ACURA": 1,
       "AMC": 2,
@@ -39,7 +39,7 @@ window.MINI_GT_CATALOG_META = {
       "MERCEDES": 19,
       "MINI": 2,
       "NISSAN": 20,
-      "PORSCHE": 12,
+      "PORSCHE": 10,
       "Piaggio": 1,
       "SCANIA": 3,
       "TOYOTA": 10,
