@@ -221,7 +221,9 @@ function filterLogo(kind, value) {
 
 function getVisibleModels() {
   const query = state.search.trim().toLocaleLowerCase("en");
-  return state.models.filter((model) => matchesCurrentFilter(model) && matchesSearch(model, query));
+  return state.models
+    .filter((model) => matchesCurrentFilter(model) && matchesSearch(model, query))
+    .sort((a, b) => a.name.localeCompare(b.name, "en", { sensitivity: "base", numeric: true }));
 }
 
 function matchesCurrentFilter(model) {
