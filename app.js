@@ -223,7 +223,12 @@ function getVisibleModels() {
   const query = state.search.trim().toLocaleLowerCase("en");
   return state.models
     .filter((model) => matchesCurrentFilter(model) && matchesSearch(model, query))
-    .sort((a, b) => a.name.localeCompare(b.name, "en", { sensitivity: "base", numeric: true }));
+    .sort((a, b) => {
+      const aQubeCarz = a.collections.includes("Qube Carz Collection");
+      const bQubeCarz = b.collections.includes("Qube Carz Collection");
+      if (aQubeCarz !== bQubeCarz) return aQubeCarz ? 1 : -1;
+      return a.name.localeCompare(b.name, "en", { sensitivity: "base", numeric: true });
+    });
 }
 
 function matchesCurrentFilter(model) {
@@ -311,7 +316,9 @@ function modelCard(model) {
 }
 
 function brandSection(name, models) {
-  const visual = visualFor("brand", name);
+  const visual = name === "Qube Carz"
+    ? visualFor("collection", "Qube Carz Collection")
+    : visualFor("brand", name);
   const orderedModels = [...models].sort((a, b) => Number(Boolean(a.seriesOnly)) - Number(Boolean(b.seriesOnly)));
   const hasLogo = name.toUpperCase() !== "ACCESSORIES";
   const logo = hasLogo ? (visual.src
@@ -345,12 +352,15 @@ function renderCards() {
     return;
   }
   const groups = [...models.reduce((map, model) => {
-    if (!map.has(model.brand)) map.set(model.brand, []);
-    map.get(model.brand).push(model);
+    const groupName = model.collections.includes("Qube Carz Collection") ? "Qube Carz" : model.brand;
+    if (!map.has(groupName)) map.set(groupName, []);
+    map.get(groupName).push(model);
     return map;
   }, new Map()).entries()].sort(([a], [b]) => {
     if (a.toUpperCase() === "ACCESSORIES") return -1;
     if (b.toUpperCase() === "ACCESSORIES") return 1;
+    if (a === "Qube Carz") return 1;
+    if (b === "Qube Carz") return -1;
     return a.localeCompare(b, "en");
   });
   elements.modelGrid.innerHTML = groups.map(([name, brandModels]) => brandSection(name, brandModels)).join("");
