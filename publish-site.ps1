@@ -28,16 +28,32 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
+$gitCommand = Get-Command git.exe -ErrorAction SilentlyContinue
+if ($gitCommand) {
+    $gitPath = $gitCommand.Source
+} else {
+    $gitCandidates = @(
+        (Join-Path $env:ProgramFiles "Git\cmd\git.exe"),
+        (Join-Path ([Environment]::GetFolderPath("ProgramFilesX86")) "Git\cmd\git.exe"),
+        (Join-Path $env:LOCALAPPDATA "Programs\Git\cmd\git.exe"),
+        (Join-Path $env:USERPROFILE "scoop\apps\git\current\cmd\git.exe")
+    )
+    $gitPath = $gitCandidates | Where-Object { Test-Path -LiteralPath $_ -PathType Leaf } | Select-Object -First 1
+}
+if (-not $gitPath) {
+    throw "Git for Windows was not found. Install it from https://git-scm.com/download/win, then run update-site.cmd again."
+}
+
 $projectRoot = Split-Path -Parent $PSCommandPath
 $repoUrl = "https://github.com/LeonBaker8/minigt-prototypes.git"
 
-$origin = (& git -C $projectRoot remote get-url origin 2>$null).Trim()
+$origin = (& $gitPath -C $projectRoot remote get-url origin 2>$null).Trim()
 if ($LASTEXITCODE -ne 0 -or $origin -ne $repoUrl) {
     throw "This folder is not connected to the expected GitHub repository. Nothing was published."
 }
 
 Write-Host "1/5 Getting the latest GitHub version..." -ForegroundColor Cyan
-& git -C $projectRoot pull --ff-only origin main
+& $gitPath -C $projectRoot pull --ff-only origin main
 if ($LASTEXITCODE -ne 0) {
     throw "Git could not update the local clone safely. Resolve the Git message, then run the script again."
 }
@@ -73,8 +89,8 @@ if (-not (Test-Path -LiteralPath $modelData) -or $imageCount -lt 1) {
 }
 
 Write-Host "3/5 Checking the catalogue update..." -ForegroundColor Cyan
-& git -C $projectRoot add --all
-& git -C $projectRoot diff --cached --quiet
+& $gitPath -C $projectRoot add --all
+& $gitPath -C $projectRoot diff --cached --quiet
 if ($LASTEXITCODE -eq 0) {
     Write-Host "GitHub already has this exact version." -ForegroundColor Yellow
     return
@@ -84,13 +100,13 @@ if ($LASTEXITCODE -ne 1) {
 }
 
 Write-Host "4/5 Creating the GitHub update..." -ForegroundColor Cyan
-& git -C $projectRoot commit -m $CommitMessage
+& $gitPath -C $projectRoot commit -m $CommitMessage
 if ($LASTEXITCODE -ne 0) {
     throw "Git could not create the update commit."
 }
 
 Write-Host "5/5 Sending the update to GitHub..." -ForegroundColor Cyan
-& git -C $projectRoot push origin main
+& $gitPath -C $projectRoot push origin main
 if ($LASTEXITCODE -ne 0) {
     throw "Git could not push the update. Complete any GitHub sign-in prompt, then run the script again."
 }

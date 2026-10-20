@@ -1126,10 +1126,10 @@
   },
   {
     "id": "bmw-08",
-    "name": "BMW Z8 Red",
+    "name": "BMW M4 GT3 EVO #33 610 Racing 2026 China GT",
     "brand": "BMW",
-    "event": "Alloy Shanghai Car Club",
-    "date": "2026-08-01",
+    "event": "China Toy Expo",
+    "date": "2026-10-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -1145,7 +1145,7 @@
   },
   {
     "id": "bmw-09",
-    "name": "BMW Z8 Black",
+    "name": "BMW Z8 Red",
     "brand": "BMW",
     "event": "Alloy Shanghai Car Club",
     "date": "2026-08-01",
@@ -1164,17 +1164,15 @@
   },
   {
     "id": "bmw-10",
-    "name": "BMW M Hybrid V8 2026",
+    "name": "BMW Z8 Black",
     "brand": "BMW",
-    "event": "Salao Diecast Brazil 7",
-    "date": "2026-07-01",
-    "collections": [
-      "IMSA Collection"
-    ],
+    "event": "Alloy Shanghai Car Club",
+    "date": "2026-08-01",
+    "collections": [],
     "seriesOnly": false,
     "cancelled": false,
     "potential": false,
-    "newTooling": true,
+    "newTooling": false,
     "photos": [
       {
         "src": "assets/images/bmw-10-model.png",
@@ -1185,11 +1183,13 @@
   },
   {
     "id": "bmw-11",
-    "name": "BMW M3 (E30) GR. A Rally #10 Motul",
+    "name": "BMW M Hybrid V8 2026",
     "brand": "BMW",
-    "event": "Australian Diecast Expo",
-    "date": "2026-08-01",
-    "collections": [],
+    "event": "Salao Diecast Brazil 7",
+    "date": "2026-07-01",
+    "collections": [
+      "IMSA Collection"
+    ],
     "seriesOnly": false,
     "cancelled": false,
     "potential": false,
@@ -1204,15 +1204,15 @@
   },
   {
     "id": "bmw-12",
-    "name": "BMW M3 (E30) GR. A Rally #14 Motul",
+    "name": "BMW M3 (E30) GR. A Rally #10 Motul",
     "brand": "BMW",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026-05-01",
+    "event": "Australian Diecast Expo",
+    "date": "2026-08-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
     "potential": false,
-    "newTooling": false,
+    "newTooling": true,
     "photos": [
       {
         "src": "assets/images/bmw-12-model.png",
@@ -1223,10 +1223,10 @@
   },
   {
     "id": "bmw-13",
-    "name": "BMW M5 G90 Purple",
+    "name": "BMW M3 (E30) GR. A Rally #14 Motul",
     "brand": "BMW",
     "event": "Malaysia Diecast Expo",
-    "date": "2026",
+    "date": "2026-05-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -1242,10 +1242,10 @@
   },
   {
     "id": "bmw-14",
-    "name": "BMW M3 Touring GT3 April Fool's Day Livery 2025",
+    "name": "BMW M5 G90 Purple",
     "brand": "BMW",
-    "event": "Before The Drop #4",
-    "date": "2026-10-01",
+    "event": "Malaysia Diecast Expo",
+    "date": "2026",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -1256,17 +1256,12 @@
         "src": "assets/images/bmw-14-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/bmw-14-detail.png",
-        "role": "additional",
-        "label": "Additional photo"
       }
     ]
   },
   {
     "id": "bmw-15",
-    "name": "BMW M3 Touring GT3 NLS Presentation 2026",
+    "name": "BMW M3 Touring GT3 April Fool's Day Livery 2025",
     "brand": "BMW",
     "event": "Before The Drop #4",
     "date": "2026-10-01",
@@ -1280,12 +1275,17 @@
         "src": "assets/images/bmw-15-model.png",
         "role": "model",
         "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/bmw-15-detail.png",
+        "role": "additional",
+        "label": "Additional photo"
       }
     ]
   },
   {
     "id": "bmw-16",
-    "name": "BMW M3 Touring GT3 NLS 2026",
+    "name": "BMW M3 Touring GT3 NLS Presentation 2026",
     "brand": "BMW",
     "event": "Before The Drop #4",
     "date": "2026-10-01",
@@ -1304,7 +1304,7 @@
   },
   {
     "id": "bmw-17",
-    "name": "BMW M3 Touring GT3 #81 Schubert Motorsport 2026 Nürburgring 24 Hrs 2026",
+    "name": "BMW M3 Touring GT3 NLS 2026",
     "brand": "BMW",
     "event": "Before The Drop #4",
     "date": "2026-10-01",
@@ -1323,7 +1323,7 @@
   },
   {
     "id": "bmw-18",
-    "name": "BMW M3 Touring GT3 #81 CrowdStrike 24 Hours of Spa 2026 Promotional Car with Roof Box",
+    "name": "BMW M3 Touring GT3 #81 Schubert Motorsport 2026 Nürburgring 24 Hrs 2026",
     "brand": "BMW",
     "event": "Before The Drop #4",
     "date": "2026-10-01",
@@ -1337,17 +1337,12 @@
         "src": "assets/images/bmw-18-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/bmw-18-detail.png",
-        "role": "additional",
-        "label": "Additional photo"
       }
     ]
   },
   {
     "id": "bmw-19",
-    "name": "BMW M3 Touring GT3 #81 Goodwood Festival of Speed 2026",
+    "name": "BMW M3 Touring GT3 #81 CrowdStrike 24 Hours of Spa 2026 Promotional Car with Roof Box",
     "brand": "BMW",
     "event": "Before The Drop #4",
     "date": "2026-10-01",
@@ -1359,6 +1354,30 @@
     "photos": [
       {
         "src": "assets/images/bmw-19-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/bmw-19-detail.png",
+        "role": "additional",
+        "label": "Additional photo"
+      }
+    ]
+  },
+  {
+    "id": "bmw-20",
+    "name": "BMW M3 Touring GT3 #81 Goodwood Festival of Speed 2026",
+    "brand": "BMW",
+    "event": "Before The Drop #4",
+    "date": "2026-10-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/bmw-20-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -1530,6 +1549,32 @@
   },
   {
     "id": "chevrolet-03",
+    "name": "Chevolet Impala SS \"Fast X\"",
+    "brand": "CHEVROLET",
+    "event": "China Toy Expo",
+    "date": "2026-10-01",
+    "collections": [
+      "Fast & Furious Collection"
+    ],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": true,
+    "photos": [
+      {
+        "src": "assets/images/chevrolet-03-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/chevrolet-03-real-car.png",
+        "role": "realCar",
+        "label": "Real Photo"
+      }
+    ]
+  },
+  {
+    "id": "chevrolet-04",
     "name": "Chevrolet Corvette Z06 Grey",
     "brand": "CHEVROLET",
     "event": "Diecast Con Madrid",
@@ -1541,14 +1586,14 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/chevrolet-03-model.png",
+        "src": "assets/images/chevrolet-04-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "chevrolet-04",
+    "id": "chevrolet-05",
     "name": "Chevrolet Corvette Z06 Black",
     "brand": "CHEVROLET",
     "event": "Essen Motor Show",
@@ -1560,19 +1605,19 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/chevrolet-04-model.png",
+        "src": "assets/images/chevrolet-05-model.png",
         "role": "model",
         "label": "MINI GT model"
       },
       {
-        "src": "assets/images/chevrolet-04-detail.png",
+        "src": "assets/images/chevrolet-05-detail.png",
         "role": "additional",
         "label": "Additional photo"
       }
     ]
   },
   {
-    "id": "chevrolet-05",
+    "id": "chevrolet-06",
     "name": "Chevrolet Corvette ZR1 Red",
     "brand": "CHEVROLET",
     "event": "Shizuoka Hobby Show",
@@ -1584,39 +1629,15 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/chevrolet-05-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "chevrolet-06",
-    "name": "Chevrolet Camaro ZL1 Nascar Garage 56 Early Development Mule",
-    "brand": "CHEVROLET",
-    "event": "Shizuoka Hobby Show",
-    "date": "2026-05-01",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": true,
-    "photos": [
-      {
         "src": "assets/images/chevrolet-06-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/chevrolet-06-real-car.png",
-        "role": "realCar",
-        "label": "Real Photo"
       }
     ]
   },
   {
     "id": "chevrolet-07",
-    "name": "Chevrolet Camaro ZL1 Nascar Garage 56 Presentation / Test Car",
+    "name": "Chevrolet Camaro ZL1 Nascar Garage 56 Early Development Mule",
     "brand": "CHEVROLET",
     "event": "Shizuoka Hobby Show",
     "date": "2026-05-01",
@@ -1630,12 +1651,17 @@
         "src": "assets/images/chevrolet-07-model.png",
         "role": "model",
         "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/chevrolet-07-real-car.png",
+        "role": "realCar",
+        "label": "Real Photo"
       }
     ]
   },
   {
     "id": "chevrolet-08",
-    "name": "Chevrolet Camaro ZL1 Nascar Garage 56 2023 24H of Le Mans",
+    "name": "Chevrolet Camaro ZL1 Nascar Garage 56 Presentation / Test Car",
     "brand": "CHEVROLET",
     "event": "Shizuoka Hobby Show",
     "date": "2026-05-01",
@@ -1647,6 +1673,25 @@
     "photos": [
       {
         "src": "assets/images/chevrolet-08-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "chevrolet-09",
+    "name": "Chevrolet Camaro ZL1 Nascar Garage 56 2023 24H of Le Mans",
+    "brand": "CHEVROLET",
+    "event": "Shizuoka Hobby Show",
+    "date": "2026-05-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": true,
+    "photos": [
+      {
+        "src": "assets/images/chevrolet-09-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -5004,9 +5049,9 @@
         "label": "MINI GT model"
       },
       {
-        "src": "assets/images/nissan-08-detail.png",
-        "role": "additional",
-        "label": "Additional photo"
+        "src": "assets/images/nissan-08-real-car.png",
+        "role": "realCar",
+        "label": "Real Photo"
       }
     ]
   },
@@ -5142,9 +5187,9 @@
         "label": "MINI GT model"
       },
       {
-        "src": "assets/images/nissan-15-detail.png",
-        "role": "additional",
-        "label": "Additional photo"
+        "src": "assets/images/nissan-15-real-car.png",
+        "role": "realCar",
+        "label": "Real Photo"
       }
     ]
   },
@@ -5188,6 +5233,32 @@
   },
   {
     "id": "nissan-18",
+    "name": "Nissan Silvia 240SX \"The Fast and the Furious\"",
+    "brand": "NISSAN",
+    "event": "China Toy Expo",
+    "date": "2026-10-01",
+    "collections": [
+      "Fast & Furious Collection"
+    ],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": true,
+    "photos": [
+      {
+        "src": "assets/images/nissan-18-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/nissan-18-real-car.png",
+        "role": "realCar",
+        "label": "Real Photo"
+      }
+    ]
+  },
+  {
+    "id": "nissan-19",
     "name": "Nissan Silvia (S15) C-West GT Bodykit \"Mona Lisa\"",
     "brand": "NISSAN",
     "event": "Malaysia Diecast Expo",
@@ -5201,39 +5272,15 @@
     "newTooling": true,
     "photos": [
       {
-        "src": "assets/images/nissan-18-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "nissan-19",
-    "name": "Veilside Nissan 180SX RPS13 VeilSide C-III",
-    "brand": "NISSAN",
-    "event": "Tokyo Auto Salon",
-    "date": "2026-01-01",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": true,
-    "photos": [
-      {
         "src": "assets/images/nissan-19-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/nissan-19-detail.png",
-        "role": "additional",
-        "label": "Additional photo"
       }
     ]
   },
   {
     "id": "nissan-20",
-    "name": "Veilside Nissan Skyline GT-R R33 \"Combat C-I\"",
+    "name": "Veilside Nissan 180SX RPS13 VeilSide C-III",
     "brand": "NISSAN",
     "event": "Tokyo Auto Salon",
     "date": "2026-01-01",
@@ -5249,36 +5296,41 @@
         "label": "MINI GT model"
       },
       {
-        "src": "assets/images/nissan-20-detail.png",
-        "role": "additional",
-        "label": "Additional photo"
+        "src": "assets/images/nissan-20-real-car.png",
+        "role": "realCar",
+        "label": "Real Photo"
       }
     ]
   },
   {
     "id": "nissan-21",
-    "name": "LB-Super Silhouette Nissan S15 SILVIA #555 Team MINI GT Liberty Walk 2025 Formula Drift W/ Trophy",
+    "name": "Veilside Nissan Skyline GT-R R33 \"Combat C-I\"",
     "brand": "NISSAN",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026",
+    "event": "Tokyo Auto Salon",
+    "date": "2026-01-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
     "potential": false,
-    "newTooling": false,
+    "newTooling": true,
     "photos": [
       {
         "src": "assets/images/nissan-21-model.png",
         "role": "model",
         "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/nissan-21-real-car.png",
+        "role": "realCar",
+        "label": "Real Photo"
       }
     ]
   },
   {
     "id": "nissan-22",
-    "name": "Nissan Skyline R32 TOP SECRET",
+    "name": "LB-Super Silhouette Nissan S15 SILVIA #555 Team MINI GT Liberty Walk 2025 Formula Drift W/ Trophy",
     "brand": "NISSAN",
-    "event": "Mini GT Pop Up Store Taipei",
+    "event": "Malaysia Diecast Expo",
     "date": "2026",
     "collections": [],
     "seriesOnly": false,
@@ -5314,7 +5366,7 @@
   },
   {
     "id": "nissan-24",
-    "name": "Nissan Skyline GT-R (R34) White With Carbon Hood",
+    "name": "Nissan Skyline R32 TOP SECRET",
     "brand": "NISSAN",
     "event": "Mini GT Pop Up Store Taipei",
     "date": "2026",
@@ -5333,7 +5385,7 @@
   },
   {
     "id": "nissan-25",
-    "name": "Nissan Skyline GT-R (R34) Red With Carbon Hood",
+    "name": "Nissan Skyline GT-R (R34) White With Carbon Hood",
     "brand": "NISSAN",
     "event": "Mini GT Pop Up Store Taipei",
     "date": "2026",
@@ -5352,6 +5404,25 @@
   },
   {
     "id": "nissan-26",
+    "name": "Nissan Skyline GT-R (R34) Red With Carbon Hood",
+    "brand": "NISSAN",
+    "event": "Mini GT Pop Up Store Taipei",
+    "date": "2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/nissan-26-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "nissan-27",
     "name": "Nissan Silvia S15 D-MAX Black",
     "brand": "NISSAN",
     "event": "Malaysia Diecast Expo",
@@ -5363,7 +5434,7 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/nissan-26-model.png",
+        "src": "assets/images/nissan-27-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -5885,7 +5956,7 @@
   },
   {
     "id": "toyota-10",
-    "name": "TEC ART's Toyota Sprinter Trueno (AE86) - Keiichi Tsuchiya (Closed Headlights)",
+    "name": "Toyota Sprinter Trueno (AE86) - Keiichi Tsuchiya (Closed Headlights)",
     "brand": "TOYOTA",
     "event": "",
     "date": "2026",
@@ -6393,7 +6464,7 @@
   },
   {
     "id": "potential-bmw-09",
-    "name": "BMW M4 GT3 EVO (TBC Livery)",
+    "name": "BMW M4 GT3 EVO 610 Racing #33 China GT (TBC Livery)",
     "brand": "BMW",
     "event": "",
     "date": "2026",
@@ -6405,6 +6476,11 @@
     "photos": [
       {
         "src": "assets/images/potential-bmw-09-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/potential-bmw-09-model-2.png",
         "role": "model",
         "label": "MINI GT model"
       }
