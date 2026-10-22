@@ -26,10 +26,10 @@ python -m http.server 8080
 
 Скрипт считывает все листы книги и извлекает встроенные Excel-фото, в том числе дополнительные изображения и колонки `REAL CAR`. Строки с жёлтой заливкой из исходной книги автоматически получают статус `CANCELLED`.
 
-Лист `Potential Models` импортируется в отдельный синий раздел `Potential`. Для него ожидаются столбцы `MODEL`, `DATE` и фотографии. Бренд определяется по названию модели. Потенциальные модели не смешиваются с основным каталогом или отменёнными моделями.
+Лист `Potential Models` можно импортировать из отдельной книги в отдельный синий раздел `Potential`. Qube Carz также можно импортировать из отдельной книги. Модели Qube Carz относятся к автомобильным брендам и показываются в конце страницы бренда, а также в коллекции Qube Carz. Потенциальные модели не смешиваются с основным каталогом или отменёнными моделями.
 
 ```bash
-python scripts/extract_catalog.py "C:\path\to\Mini GT.xlsx"
+python scripts/extract_catalog.py "C:\path\to\Mini GT.xlsx" "C:\path\to\Mini GT Potential Models.xlsx" "C:\path\to\Qube Carz.xlsx"
 ```
 
 Нужен Python 3 с библиотекой `openpyxl` (`pip install openpyxl`). Скрипт перезапишет `assets/data/models.json`, `assets/data/catalog-meta.js` и папку `assets/images`, а интерфейс сайта менять не потребуется. В `catalog-meta.js` находятся дата последнего сохранения Excel и актуальные счётчики моделей для сайта.
@@ -45,3 +45,9 @@ python scripts/extract_catalog.py "C:\path\to\Mini GT.xlsx"
 ```
 
 Скрипт проверит репозиторий, извлечёт актуальные данные и фото, создаст Git-коммит и отправит его на GitHub. Vercel автоматически начнёт новый деплой.
+
+Для трёх отдельных книг используйте Mini GT, Potential Models и Qube Carz в таком порядке:
+
+```powershell
+.\publish-site.ps1 "C:\path\to\Mini GT.xlsx" "C:\path\to\Mini GT Potential Models.xlsx" "C:\path\to\Qube Carz.xlsx"
+```

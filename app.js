@@ -5,6 +5,7 @@ const catalogMeta = window.MINI_GT_CATALOG_META || {};
 const statusFilters = new Set(["CANCELLED", "POTENTIAL", "NEW_TOOLING"]);
 const wideLogoAssets = new Set([
   "assets/brands/daihatsu.svg",
+  "assets/brands/lancia.svg",
   "assets/brands/mclaren.svg",
   "assets/collections/qube-carz-inverted.png",
 ]);
@@ -33,6 +34,7 @@ const visualAssets = {
     "HYUNDAI": "assets/brands/hyundai-emblem.svg",
     "JAGUAR": "assets/brands/jaguar-emblem.svg",
     "LAMBORGHINI": "assets/brands/lamborghini.png",
+    "LANCIA": "assets/brands/lancia.svg",
     "LAND ROVER": "assets/brands/land-rover.png",
     "LEXUS": "assets/brands/lexus-emblem.svg",
     "LINCOLN": "assets/brands/lincoln.svg",
@@ -158,7 +160,7 @@ function countBy(items, getter) {
 }
 
 function getBrands() {
-  return [...countBy(catalogueModels(), (model) => model.brand).entries()]
+  return [...countBy(activeModels(), (model) => model.brand).entries()]
     .map(([name, count]) => ({ name, count }))
     .sort((a, b) => a.name.localeCompare(b.name, "en"));
 }
@@ -239,7 +241,7 @@ function matchesCurrentFilter(model) {
   }
   if (model.cancelled || model.potential) return false;
   if (state.filter.kind === "all") return true;
-  if (state.filter.kind === "brand") return !model.seriesOnly && model.brand === state.filter.value;
+  if (state.filter.kind === "brand") return model.brand === state.filter.value;
   if (state.filter.kind === "collection") return model.collections.includes(state.filter.value);
   return false;
 }
@@ -345,7 +347,7 @@ function renderCards() {
   elements.activeFilterLine.textContent = state.search ? `Search results for “${state.search}” in “${label}”` : `${models.length} model${models.length === 1 ? "" : "s"} shown`;
   elements.modelGrid.hidden = models.length === 0;
   elements.emptyState.hidden = models.length !== 0;
-  const groupByBrand = state.filter.kind !== "brand";
+  const groupByBrand = true;
   elements.modelGrid.classList.toggle("is-grouped", groupByBrand);
   if (!groupByBrand) {
     elements.modelGrid.innerHTML = models.map(modelCard).join("");

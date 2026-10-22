@@ -2,7 +2,7 @@
 """Export MINI GT workbook rows and in-cell images to static site assets.
 
 Usage:
-    python scripts/extract_catalog.py "C:\\path\\to\\Mini GT.xlsx" "C:\\path\\to\\Mini GT Potential Models.xlsx"
+    python scripts/extract_catalog.py "C:\\path\\to\\Mini GT.xlsx" "C:\\path\\to\\Mini GT Potential Models.xlsx" "C:\\path\\to\\Qube Carz.xlsx"
 """
 
 from __future__ import annotations
@@ -289,12 +289,15 @@ def copy_image(archive: ZipFile, package_path: str, destination: Path) -> None:
         shutil.copyfileobj(source, target)
 
 
-def catalog_metadata(workbook: Any, source: Path, models: list[dict[str, Any]]) -> dict[str, Any]:
+def catalog_metadata(workbooks: list[tuple[Path, Any]], models: list[dict[str, Any]]) -> dict[str, Any]:
     """Create the small site metadata object from the Excel workbook itself."""
-    modified = workbook.properties.modified
-    if not isinstance(modified, (datetime, date)):
-        modified = datetime.fromtimestamp(source.stat().st_mtime)
-    updated_at = modified.date().isoformat() if isinstance(modified, datetime) else modified.isoformat()
+    modified_dates = []
+    for source, workbook in workbooks:
+        modified = workbook.properties.modified
+        if not isinstance(modified, (datetime, date)):
+            modified = datetime.fromtimestamp(source.stat().st_mtime)
+        modified_dates.append(modified.date() if isinstance(modified, datetime) else modified)
+    updated_at = max(modified_dates).isoformat()
 
     active = [
         model for model in models if not model["cancelled"] and not model["potential"]
@@ -309,9 +312,8 @@ def catalog_metadata(workbook: Any, source: Path, models: list[dict[str, Any]]) 
     brand_counts: dict[str, int] = {}
     collection_counts: dict[str, int] = {}
     for model in active:
-        if not model["seriesOnly"]:
-            brand = model["brand"]
-            brand_counts[brand] = brand_counts.get(brand, 0) + 1
+        brand = model["brand"]
+        brand_counts[brand] = brand_counts.get(brand, 0) + 1
         for collection in model["collections"]:
             collection_counts[collection] = collection_counts.get(collection, 0) + 1
 
@@ -331,7 +333,7 @@ def catalog_metadata(workbook: Any, source: Path, models: list[dict[str, Any]]) 
     }
 
 
-def main(source_arg: str, potential_source_arg: str | None = None) -> None:
+def main(source_arg: str, potential_source_arg: str | None = None, qube_source_arg: str | None = None) -> None:
     source = Path(source_arg).expanduser().resolve()
     if not source.is_file():
         raise SystemExit(f"Workbook not found: {source}")
@@ -343,6 +345,11 @@ def main(source_arg: str, potential_source_arg: str | None = None) -> None:
         if not potential_source.is_file():
             raise SystemExit(f"Potential models workbook not found: {potential_source}")
         source_workbooks.append((potential_source, load_workbook(potential_source, data_only=True)))
+    if qube_source_arg:
+        qube_source = Path(qube_source_arg).expanduser().resolve()
+        if not qube_source.is_file():
+            raise SystemExit(f"Qube Carz workbook not found: {qube_source}")
+        source_workbooks.append((qube_source, load_workbook(qube_source, data_only=True)))
     if IMAGE_DIR.exists():
         shutil.rmtree(IMAGE_DIR)
     IMAGE_DIR.mkdir(parents=True)
@@ -488,7 +495,7 @@ def main(source_arg: str, potential_source_arg: str | None = None) -> None:
     DATA_FILE.write_text(
         json.dumps(models, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-    metadata = catalog_metadata(workbook, source, models)
+    metadata = catalog_metadata(source_workbooks, models)
     META_FILE.write_text(
         "window.MINI_GT_CATALOG_META = "
         + json.dumps(metadata, ensure_ascii=False, indent=2)
@@ -504,8 +511,8 @@ def main(source_arg: str, potential_source_arg: str | None = None) -> None:
 
 
 if __name__ == "__main__":
-    if len(sys.argv) not in (2, 3):
+    if len(sys.argv) not in (2, 3, 4):
         raise SystemExit(
-            'Usage: extract_catalog.py "Mini GT.xlsx" ["Mini GT Potential Models.xlsx"]'
+            'Usage: extract_catalog.py "Mini GT.xlsx" ["Mini GT Potential Models.xlsx"] ["Qube Carz.xlsx"]'
         )
-    main(sys.argv[1], sys.argv[2] if len(sys.argv) == 3 else None)
+    main(sys.argv[1], sys.argv[2] if len(sys.argv) >= 3 else None, sys.argv[3] if len(sys.argv) >= 4 else None)
