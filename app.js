@@ -347,7 +347,7 @@ function renderCards() {
   elements.activeFilterLine.textContent = state.search ? `Search results for “${state.search}” in “${label}”` : `${models.length} model${models.length === 1 ? "" : "s"} shown`;
   elements.modelGrid.hidden = models.length === 0;
   elements.emptyState.hidden = models.length !== 0;
-  const groupByBrand = true;
+  const groupByBrand = state.filter.kind !== "brand";
   elements.modelGrid.classList.toggle("is-grouped", groupByBrand);
   if (!groupByBrand) {
     elements.modelGrid.innerHTML = models.map(modelCard).join("");
