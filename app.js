@@ -354,7 +354,9 @@ function renderCards() {
     return;
   }
   const groups = [...models.reduce((map, model) => {
-    const groupName = model.collections.includes("Qube Carz Collection") ? "Qube Carz" : model.brand;
+    const groupName = state.filter.kind === "all" && model.seriesOnly
+      ? model.brand
+      : model.collections.includes("Qube Carz Collection") ? "Qube Carz" : model.brand;
     if (!map.has(groupName)) map.set(groupName, []);
     map.get(groupName).push(model);
     return map;
