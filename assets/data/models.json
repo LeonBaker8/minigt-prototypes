@@ -7326,10 +7326,10 @@
   },
   {
     "id": "qube-carz-02",
-    "name": "Porsche 911 Carrera RS 2.7 White",
+    "name": "Porsche 911 Carrera RS 2.7 Orange",
     "brand": "PORSCHE",
-    "event": "Nurnberg Toy Fair",
-    "date": "2026-01-01",
+    "event": "China Toy Expo",
+    "date": "2026-10-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -7347,10 +7347,10 @@
   },
   {
     "id": "qube-carz-03",
-    "name": "Porsche 911 Carrera RS 2.7 Orange",
+    "name": "Porsche 911 Carrera RS 2.7 Blue",
     "brand": "PORSCHE",
-    "event": "China Toy Expo",
-    "date": "2026-10-01",
+    "event": "Indonesian Modification Expo",
+    "date": "October 2026",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -7368,10 +7368,10 @@
   },
   {
     "id": "qube-carz-04",
-    "name": "Porsche 911 Carrera RS 2.7 Blue",
-    "brand": "PORSCHE",
-    "event": "Indonesian Modification Expo",
-    "date": "October 2026",
+    "name": "Lamborghini Countach 500S Red",
+    "brand": "LAMBORGHINI",
+    "event": "Australian Diecast Expo",
+    "date": "2026-08-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -7389,8 +7389,8 @@
   },
   {
     "id": "qube-carz-05",
-    "name": "Porsche 911 GT3 RS Green",
-    "brand": "PORSCHE",
+    "name": "Lamborghini Revuelto Viola 30Th",
+    "brand": "LAMBORGHINI",
     "event": "Indonesian Modification Expo",
     "date": "October 2026",
     "collections": [
@@ -7399,7 +7399,7 @@
     "seriesOnly": true,
     "cancelled": false,
     "potential": false,
-    "newTooling": true,
+    "newTooling": false,
     "photos": [
       {
         "src": "assets/images/qube-carz-05-model.png",
@@ -7410,10 +7410,10 @@
   },
   {
     "id": "qube-carz-06",
-    "name": "Lamborghini Countach 500S Black",
+    "name": "Lamborghini Revuelto Giallo",
     "brand": "LAMBORGHINI",
     "event": "Australian Diecast Expo",
-    "date": "October 2026",
+    "date": "2026-08-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -7431,8 +7431,8 @@
   },
   {
     "id": "qube-carz-07",
-    "name": "Lamborghini Countach 500S Red",
-    "brand": "LAMBORGHINI",
+    "name": "BMW M3 (E30) DTM",
+    "brand": "BMW",
     "event": "Australian Diecast Expo",
     "date": "2026-08-01",
     "collections": [
@@ -7441,7 +7441,7 @@
     "seriesOnly": true,
     "cancelled": false,
     "potential": false,
-    "newTooling": false,
+    "newTooling": true,
     "photos": [
       {
         "src": "assets/images/qube-carz-07-model.png",
@@ -7452,17 +7452,17 @@
   },
   {
     "id": "qube-carz-08",
-    "name": "Lamborghini Revuelto Viola 30Th",
-    "brand": "LAMBORGHINI",
-    "event": "Indonesian Modification Expo",
-    "date": "October 2026",
+    "name": "BMW M3 (E30) Rally",
+    "brand": "BMW",
+    "event": "Malaysia Diecast Expo",
+    "date": "2026",
     "collections": [
       "Qube Carz Collection"
     ],
     "seriesOnly": true,
     "cancelled": false,
     "potential": false,
-    "newTooling": false,
+    "newTooling": true,
     "photos": [
       {
         "src": "assets/images/qube-carz-08-model.png",
@@ -7473,17 +7473,17 @@
   },
   {
     "id": "qube-carz-09",
-    "name": "Lamborghini Revuelto Giallo",
-    "brand": "LAMBORGHINI",
-    "event": "Australian Diecast Expo",
-    "date": "2026-08-01",
+    "name": "Nissan Skyline GT-R (R32) Nismo S-Tune Silver",
+    "brand": "NISSAN",
+    "event": "Indonesian Modification Expo",
+    "date": "October 2026",
     "collections": [
       "Qube Carz Collection"
     ],
     "seriesOnly": true,
     "cancelled": false,
     "potential": false,
-    "newTooling": false,
+    "newTooling": true,
     "photos": [
       {
         "src": "assets/images/qube-carz-09-model.png",
@@ -7494,10 +7494,10 @@
   },
   {
     "id": "qube-carz-10",
-    "name": "BMW M3 (E30) DTM",
-    "brand": "BMW",
-    "event": "Australian Diecast Expo",
-    "date": "2026-08-01",
+    "name": "Mercedes Benz 190E",
+    "brand": "MERCEDES",
+    "event": "Diecastcon Madrid Spain",
+    "date": "2026-03-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -7515,10 +7515,10 @@
   },
   {
     "id": "qube-carz-11",
-    "name": "BMW M3 (E30) Rally",
-    "brand": "BMW",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026",
+    "name": "Volkswagen T1 Crewcab Pickup",
+    "brand": "VOLKSWAGEN",
+    "event": "Australian Diecast Expo",
+    "date": "2026-08-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -7536,10 +7536,10 @@
   },
   {
     "id": "qube-carz-12",
-    "name": "Nissan Skyline GT-R (R32) Nismo S-Tune Silver",
-    "brand": "NISSAN",
-    "event": "Indonesian Modification Expo",
-    "date": "October 2026",
+    "name": "Volkswagen T1 Microbus",
+    "brand": "VOLKSWAGEN",
+    "event": "Australian Diecast Expo",
+    "date": "2026-08-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -7557,10 +7557,10 @@
   },
   {
     "id": "qube-carz-13",
-    "name": "Nissan Skyline GT-R (R32) Nismo S-Tune Nissan Motorsport Livery",
-    "brand": "NISSAN",
-    "event": "Indonesian Modification Expo",
-    "date": "2026-10-01",
+    "name": "Mazda RX-7 VeilSide Fortune7 Silver",
+    "brand": "MAZDA",
+    "event": "Malaysia Diecast Expo",
+    "date": "2026",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -7578,17 +7578,17 @@
   },
   {
     "id": "qube-carz-14",
-    "name": "Mercedes Benz 190E",
-    "brand": "MERCEDES",
-    "event": "Diecastcon Madrid Spain",
-    "date": "2026-03-01",
+    "name": "Mazda RX-7 VeilSide Fortune7 Green",
+    "brand": "MAZDA",
+    "event": "Indonesian Modification Expo",
+    "date": "October 2026",
     "collections": [
       "Qube Carz Collection"
     ],
     "seriesOnly": true,
     "cancelled": false,
     "potential": false,
-    "newTooling": true,
+    "newTooling": false,
     "photos": [
       {
         "src": "assets/images/qube-carz-14-model.png",
@@ -7599,17 +7599,17 @@
   },
   {
     "id": "qube-carz-15",
-    "name": "Volkswagen T1 Crewcab Pickup",
-    "brand": "VOLKSWAGEN",
-    "event": "Australian Diecast Expo",
-    "date": "2026-08-01",
+    "name": "Toyota TRD 3000GT Red",
+    "brand": "TOYOTA",
+    "event": "Malaysia Diecast Expo",
+    "date": "2026",
     "collections": [
       "Qube Carz Collection"
     ],
     "seriesOnly": true,
     "cancelled": false,
     "potential": false,
-    "newTooling": true,
+    "newTooling": false,
     "photos": [
       {
         "src": "assets/images/qube-carz-15-model.png",
@@ -7620,10 +7620,10 @@
   },
   {
     "id": "qube-carz-16",
-    "name": "Volkswagen T1 Microbus",
-    "brand": "VOLKSWAGEN",
-    "event": "Australian Diecast Expo",
-    "date": "2026-08-01",
+    "name": "Honda NSX Ver. 1",
+    "brand": "HONDA",
+    "event": "Malaysia Diecast Expo",
+    "date": "2026",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -7641,8 +7641,8 @@
   },
   {
     "id": "qube-carz-17",
-    "name": "Mazda RX-7 VeilSide Fortune7 Silver",
-    "brand": "MAZDA",
+    "name": "Honda NSX Ver. 2",
+    "brand": "HONDA",
     "event": "Malaysia Diecast Expo",
     "date": "2026",
     "collections": [
@@ -7651,7 +7651,7 @@
     "seriesOnly": true,
     "cancelled": false,
     "potential": false,
-    "newTooling": false,
+    "newTooling": true,
     "photos": [
       {
         "src": "assets/images/qube-carz-17-model.png",
@@ -7662,17 +7662,17 @@
   },
   {
     "id": "qube-carz-18",
-    "name": "Mazda RX-7 VeilSide Fortune7 Green",
-    "brand": "MAZDA",
-    "event": "Indonesian Modification Expo",
-    "date": "October 2026",
+    "name": "Datsun Kaido 510 Wagon",
+    "brand": "DATSUN",
+    "event": "Tokyo Diecast Club Shibuya",
+    "date": "2026-08-01",
     "collections": [
       "Qube Carz Collection"
     ],
     "seriesOnly": true,
     "cancelled": false,
     "potential": false,
-    "newTooling": false,
+    "newTooling": true,
     "photos": [
       {
         "src": "assets/images/qube-carz-18-model.png",
@@ -7683,17 +7683,17 @@
   },
   {
     "id": "qube-carz-19",
-    "name": "Toyota TRD 3000GT Red",
-    "brand": "TOYOTA",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026",
+    "name": "Datsun Kaido 510 Wagon 4x4",
+    "brand": "DATSUN",
+    "event": "Tokyo Diecast Club Shibuya",
+    "date": "2026-08-01",
     "collections": [
       "Qube Carz Collection"
     ],
     "seriesOnly": true,
     "cancelled": false,
     "potential": false,
-    "newTooling": false,
+    "newTooling": true,
     "photos": [
       {
         "src": "assets/images/qube-carz-19-model.png",
@@ -7704,10 +7704,10 @@
   },
   {
     "id": "qube-carz-20",
-    "name": "Toyota TRD 3000GT Silver",
-    "brand": "TOYOTA",
-    "event": "Indonesian Modification Expo",
-    "date": "October 2026",
+    "name": "Mazda RX-7 LB-Super Silhouette",
+    "brand": "MAZDA",
+    "event": "",
+    "date": "2025",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -7725,10 +7725,10 @@
   },
   {
     "id": "qube-carz-21",
-    "name": "Honda NSX Ver. 1",
-    "brand": "HONDA",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026",
+    "name": "Mazda RX-7 FC3S",
+    "brand": "MAZDA",
+    "event": "China Toy Expo",
+    "date": "2026-10-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -7746,10 +7746,10 @@
   },
   {
     "id": "qube-carz-22",
-    "name": "Honda NSX Ver. 2",
-    "brand": "HONDA",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026",
+    "name": "Ford Mustang Boss Blue",
+    "brand": "FORD",
+    "event": "Indonesian Modification Expo",
+    "date": "2026-10-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -7767,10 +7767,10 @@
   },
   {
     "id": "qube-carz-23",
-    "name": "Nissan GT-R (R35) LB★WORKS Type 1, Rear Wing ver.2 Velocity Blue",
-    "brand": "NISSAN",
-    "event": "Australian Diecast Expo",
-    "date": "2026-08-01",
+    "name": "Ford Mustang Boss Red",
+    "brand": "FORD",
+    "event": "Indonesian Modification Expo",
+    "date": "October 2026",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -7788,10 +7788,10 @@
   },
   {
     "id": "qube-carz-24",
-    "name": "Datsun Kaido 510 Wagon",
-    "brand": "DATSUN",
-    "event": "Tokyo Diecast Club Shibuya",
-    "date": "2026-08-01",
+    "name": "Land Rover Defender 90",
+    "brand": "LAND ROVER",
+    "event": "China Toy Expo",
+    "date": "2026-10-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -7809,132 +7809,6 @@
   },
   {
     "id": "qube-carz-25",
-    "name": "Datsun Kaido 510 Wagon 4x4",
-    "brand": "DATSUN",
-    "event": "Tokyo Diecast Club Shibuya",
-    "date": "2026-08-01",
-    "collections": [
-      "Qube Carz Collection"
-    ],
-    "seriesOnly": true,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": true,
-    "photos": [
-      {
-        "src": "assets/images/qube-carz-25-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "qube-carz-26",
-    "name": "Mazda RX-7 LB-Super Silhouette",
-    "brand": "MAZDA",
-    "event": "",
-    "date": "2025",
-    "collections": [
-      "Qube Carz Collection"
-    ],
-    "seriesOnly": true,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": false,
-    "photos": [
-      {
-        "src": "assets/images/qube-carz-26-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "qube-carz-27",
-    "name": "Mazda RX-7 FC3S",
-    "brand": "MAZDA",
-    "event": "China Toy Expo",
-    "date": "2026-10-01",
-    "collections": [
-      "Qube Carz Collection"
-    ],
-    "seriesOnly": true,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": true,
-    "photos": [
-      {
-        "src": "assets/images/qube-carz-27-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "qube-carz-28",
-    "name": "Ford Mustang Boss Blue",
-    "brand": "FORD",
-    "event": "Indonesian Modification Expo",
-    "date": "2026-10-01",
-    "collections": [
-      "Qube Carz Collection"
-    ],
-    "seriesOnly": true,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": true,
-    "photos": [
-      {
-        "src": "assets/images/qube-carz-28-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "qube-carz-29",
-    "name": "Ford Mustang Boss Red",
-    "brand": "FORD",
-    "event": "Indonesian Modification Expo",
-    "date": "October 2026",
-    "collections": [
-      "Qube Carz Collection"
-    ],
-    "seriesOnly": true,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": false,
-    "photos": [
-      {
-        "src": "assets/images/qube-carz-29-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "qube-carz-30",
-    "name": "Land Rover Defender 90",
-    "brand": "LAND ROVER",
-    "event": "China Toy Expo",
-    "date": "2026-10-01",
-    "collections": [
-      "Qube Carz Collection"
-    ],
-    "seriesOnly": true,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": true,
-    "photos": [
-      {
-        "src": "assets/images/qube-carz-30-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "qube-carz-31",
     "name": "Toyota Trueno (AE86) Closed Headlights",
     "brand": "TOYOTA",
     "event": "China Toy Expo",
@@ -7948,14 +7822,14 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/qube-carz-31-model.png",
+        "src": "assets/images/qube-carz-25-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "qube-carz-32",
+    "id": "qube-carz-26",
     "name": "Toyota Trueno (AE86) Open Headlights",
     "brand": "TOYOTA",
     "event": "China Toy Expo",
@@ -7969,14 +7843,14 @@
     "newTooling": true,
     "photos": [
       {
-        "src": "assets/images/qube-carz-32-model.png",
+        "src": "assets/images/qube-carz-26-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "qube-carz-33",
+    "id": "qube-carz-27",
     "name": "Nissan NISMO R34GT-R Z-Tune",
     "brand": "NISSAN",
     "event": "China Toy Expo",
@@ -7990,7 +7864,7 @@
     "newTooling": true,
     "photos": [
       {
-        "src": "assets/images/qube-carz-33-model.png",
+        "src": "assets/images/qube-carz-27-model.png",
         "role": "model",
         "label": "MINI GT model"
       }

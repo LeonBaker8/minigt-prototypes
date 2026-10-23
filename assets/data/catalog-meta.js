@@ -1,13 +1,13 @@
 window.MINI_GT_CATALOG_META = {
-  "lastUpdated": "2026-10-22",
+  "lastUpdated": "2026-10-23",
   "counts": {
-    "active": 290,
+    "active": 284,
     "cancelled": 40,
     "potential": 60,
     "catalogueActive": 258,
     "catalogueCancelled": 40,
     "cataloguePotential": 60,
-    "catalogueNewTooling": 130,
+    "catalogueNewTooling": 129,
     "brands": {
       "ACURA": 2,
       "AMC": 2,
@@ -30,7 +30,7 @@ window.MINI_GT_CATALOG_META = {
       "JAGUAR": 1,
       "LANCIA": 1,
       "LAND ROVER": 4,
-      "LAMBORGHINI": 16,
+      "LAMBORGHINI": 15,
       "LEXUS": 1,
       "LOTUS": 3,
       "LINCOLN": 1,
@@ -39,11 +39,11 @@ window.MINI_GT_CATALOG_META = {
       "MERCEDES": 21,
       "MITSUBISHI": 2,
       "MINI": 2,
-      "NISSAN": 29,
-      "PORSCHE": 14,
+      "NISSAN": 27,
+      "PORSCHE": 12,
       "Piaggio": 1,
       "SCANIA": 4,
-      "TOYOTA": 17,
+      "TOYOTA": 16,
       "RED BULL": 2,
       "VOLKSWAGEN": 6,
       "WESTERN STAR": 6
@@ -56,7 +56,7 @@ window.MINI_GT_CATALOG_META = {
       "Senna Collection": 1,
       "Motorbike Collection": 3,
       "Korean Collection": 18,
-      "Qube Carz Collection": 32
+      "Qube Carz Collection": 26
     }
   }
 };
