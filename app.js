@@ -5,7 +5,7 @@ const catalogMeta = window.MINI_GT_CATALOG_META || {};
 const statusFilters = new Set(["CANCELLED", "POTENTIAL", "NEW_TOOLING"]);
 const wideLogoAssets = new Set([
   "assets/brands/daihatsu.svg",
-  "assets/brands/lancia.svg",
+  "assets/brands/lancia.png",
   "assets/brands/mclaren.svg",
   "assets/collections/qube-carz-inverted.png",
 ]);
@@ -34,7 +34,7 @@ const visualAssets = {
     "HYUNDAI": "assets/brands/hyundai-emblem.svg",
     "JAGUAR": "assets/brands/jaguar-emblem.svg",
     "LAMBORGHINI": "assets/brands/lamborghini.png",
-    "LANCIA": "assets/brands/lancia.svg",
+    "LANCIA": "assets/brands/lancia.png",
     "LAND ROVER": "assets/brands/land-rover.png",
     "LEXUS": "assets/brands/lexus-emblem.svg",
     "LINCOLN": "assets/brands/lincoln.svg",
