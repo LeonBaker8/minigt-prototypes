@@ -5336,8 +5336,8 @@
     "id": "porsche-11",
     "name": "Porsche Carrera GT Red",
     "brand": "PORSCHE",
-    "event": "Salao Diecast Brazil 7",
-    "date": "2026-07-01",
+    "event": "China Toy Expo",
+    "date": "2026-10-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -7664,8 +7664,8 @@
     "id": "qube-carz-18",
     "name": "Datsun Kaido 510 Wagon",
     "brand": "DATSUN",
-    "event": "Tokyo Diecast Club Shibuya",
-    "date": "2026-08-01",
+    "event": "China Toy Expo",
+    "date": "2026-10-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -7685,8 +7685,8 @@
     "id": "qube-carz-19",
     "name": "Datsun Kaido 510 Wagon 4x4",
     "brand": "DATSUN",
-    "event": "Tokyo Diecast Club Shibuya",
-    "date": "2026-08-01",
+    "event": "China Toy Expo",
+    "date": "2026-10-01",
     "collections": [
       "Qube Carz Collection"
     ],
