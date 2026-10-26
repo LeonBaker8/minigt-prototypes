@@ -277,7 +277,7 @@
   },
   {
     "id": "aston-martin-10",
-    "name": "Aston Martin Valkyrie White",
+    "name": "Aston Martin Valkyrie Blue",
     "brand": "ASTON MARTIN",
     "event": "China Toy Expo",
     "date": "2026-10-01",
@@ -296,25 +296,6 @@
   },
   {
     "id": "aston-martin-11",
-    "name": "Aston Martin Valkyrie Blue",
-    "brand": "ASTON MARTIN",
-    "event": "China Toy Expo",
-    "date": "2026-10-01",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": false,
-    "photos": [
-      {
-        "src": "assets/images/aston-martin-11-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "aston-martin-12",
     "name": "Aston Martin AMR25 #18 Lance Stroll 2025 Bahrain Grand Prix",
     "brand": "ASTON MARTIN",
     "event": "Malaysia Diecast Expo",
@@ -328,6 +309,27 @@
     "newTooling": true,
     "photos": [
       {
+        "src": "assets/images/aston-martin-11-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "aston-martin-12",
+    "name": "Aston Martin AMR25 #14 Fernando Alonso 2025 Bahrain Grand Prix",
+    "brand": "ASTON MARTIN",
+    "event": "Malaysia Diecast Expo",
+    "date": "2026",
+    "collections": [
+      "F1 Collection"
+    ],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
         "src": "assets/images/aston-martin-12-model.png",
         "role": "model",
         "label": "MINI GT model"
@@ -336,12 +338,12 @@
   },
   {
     "id": "aston-martin-13",
-    "name": "Aston Martin AMR25 #14 Fernando Alonso 2025 Bahrain Grand Prix",
+    "name": "Aston Martin DB5 \"No Time To Die\"",
     "brand": "ASTON MARTIN",
-    "event": "Malaysia Diecast Expo",
+    "event": "Salao Diecast 7",
     "date": "2026",
     "collections": [
-      "F1 Collection"
+      "Bond 007 Collection"
     ],
     "seriesOnly": false,
     "cancelled": false,
@@ -357,9 +359,9 @@
   },
   {
     "id": "aston-martin-14",
-    "name": "Aston Martin DB5 \"No Time To Die\"",
+    "name": "Aston Martin DB5 \"Goldfinger\"",
     "brand": "ASTON MARTIN",
-    "event": "Salao Diecast 7",
+    "event": "Malaysia Diecast Expo",
     "date": "2026",
     "collections": [
       "Bond 007 Collection"
@@ -378,27 +380,6 @@
   },
   {
     "id": "aston-martin-15",
-    "name": "Aston Martin DB5 \"Goldfinger\"",
-    "brand": "ASTON MARTIN",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026",
-    "collections": [
-      "Bond 007 Collection"
-    ],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": false,
-    "photos": [
-      {
-        "src": "assets/images/aston-martin-15-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "aston-martin-16",
     "name": "Aston Martin Valhalla Lunar White",
     "brand": "ASTON MARTIN",
     "event": "China Toy Expo",
@@ -410,7 +391,7 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/aston-martin-16-model.png",
+        "src": "assets/images/aston-martin-15-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -1133,7 +1114,7 @@
   },
   {
     "id": "chevrolet-07",
-    "name": "Chevrolet Corvette ZR1 Red",
+    "name": "Chevrolet Camaro ZL1 Nascar Garage 56 Early Development Mule",
     "brand": "CHEVROLET",
     "event": "Shizuoka Hobby Show",
     "date": "2026-05-01",
@@ -1141,7 +1122,7 @@
     "seriesOnly": false,
     "cancelled": false,
     "potential": false,
-    "newTooling": false,
+    "newTooling": true,
     "photos": [
       {
         "src": "assets/images/chevrolet-07-model.png",
@@ -1152,7 +1133,7 @@
   },
   {
     "id": "chevrolet-08",
-    "name": "Chevrolet Camaro ZL1 Nascar Garage 56 Early Development Mule",
+    "name": "Chevrolet Camaro ZL1 Nascar Garage 56 Presentation / Test Car",
     "brand": "CHEVROLET",
     "event": "Shizuoka Hobby Show",
     "date": "2026-05-01",
@@ -1171,25 +1152,6 @@
   },
   {
     "id": "chevrolet-09",
-    "name": "Chevrolet Camaro ZL1 Nascar Garage 56 Presentation / Test Car",
-    "brand": "CHEVROLET",
-    "event": "Shizuoka Hobby Show",
-    "date": "2026-05-01",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": true,
-    "photos": [
-      {
-        "src": "assets/images/chevrolet-09-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "chevrolet-10",
     "name": "Chevrolet Camaro ZL1 Nascar Garage 56 2023 24H of Le Mans",
     "brand": "CHEVROLET",
     "event": "Shizuoka Hobby Show",
@@ -1201,7 +1163,7 @@
     "newTooling": true,
     "photos": [
       {
-        "src": "assets/images/chevrolet-10-model.png",
+        "src": "assets/images/chevrolet-09-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -2435,11 +2397,13 @@
   },
   {
     "id": "honda-18",
-    "name": "Honda NSX Fortune Veilside",
+    "name": "Honda NSX Fortune Veilside \"Fast & Furious Tokyo Drift\"",
     "brand": "HONDA",
     "event": "China Toy Expo",
     "date": "2026-10-01",
-    "collections": [],
+    "collections": [
+      "Fast & Furious Collection"
+    ],
     "seriesOnly": false,
     "cancelled": false,
     "potential": false,
@@ -3015,9 +2979,9 @@
   },
   {
     "id": "lamborghini-04",
-    "name": "Lamborghini Huracan LB★WORKS Purple",
+    "name": "Lamborghini Countach LB★WORKS Yellow",
     "brand": "LAMBORGHINI",
-    "event": "Dongguan Flagship Store",
+    "event": "Australian Diecast Expo",
     "date": "2026-08-01",
     "collections": [],
     "seriesOnly": false,
@@ -3034,10 +2998,10 @@
   },
   {
     "id": "lamborghini-05",
-    "name": "Lamborghini Countach LB★WORKS Yellow",
+    "name": "Lamborghini Urus Performante Green",
     "brand": "LAMBORGHINI",
-    "event": "Australian Diecast Expo",
-    "date": "2026-08-01",
+    "event": "China Toy Expo",
+    "date": "2026-10-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -3053,25 +3017,6 @@
   },
   {
     "id": "lamborghini-06",
-    "name": "Lamborghini Urus Performante Green",
-    "brand": "LAMBORGHINI",
-    "event": "China Toy Expo",
-    "date": "2026-10-01",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": false,
-    "photos": [
-      {
-        "src": "assets/images/lamborghini-06-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "lamborghini-07",
     "name": "Lamborghini Temerario GT3",
     "brand": "LAMBORGHINI",
     "event": "Salao Diecast Brazil 7",
@@ -3085,23 +3030,42 @@
     "newTooling": true,
     "photos": [
       {
-        "src": "assets/images/lamborghini-07-model.png",
+        "src": "assets/images/lamborghini-06-model.png",
         "role": "model",
         "label": "MINI GT model"
       },
       {
-        "src": "assets/images/lamborghini-07-real-car.png",
+        "src": "assets/images/lamborghini-06-real-car.png",
         "role": "realCar",
         "label": "Real Photo"
       }
     ]
   },
   {
-    "id": "lamborghini-08",
+    "id": "lamborghini-07",
     "name": "Lamborghini Temerario Verde Citrea",
     "brand": "LAMBORGHINI",
     "event": "Malaysia Diecast Expo",
     "date": "2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/lamborghini-07-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "lamborghini-08",
+    "name": "Lamborghini Countach LP500S Black",
+    "brand": "LAMBORGHINI",
+    "event": "Hobby Expo China",
+    "date": "2026-04-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -3117,10 +3081,10 @@
   },
   {
     "id": "lamborghini-09",
-    "name": "Lamborghini Countach LP500S Black",
+    "name": "Lamborghini Countach 25th Anniversary Blu Acapulco Metallizzato",
     "brand": "LAMBORGHINI",
-    "event": "Hobby Expo China",
-    "date": "2026-04-01",
+    "event": "China Toy Expo",
+    "date": "2026-10-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -3136,7 +3100,7 @@
   },
   {
     "id": "lamborghini-10",
-    "name": "Lamborghini Countach 25th Anniversary Blu Acapulco Metallizzato",
+    "name": "Lamborghini Countach 25th Anniversary Arancio Miura",
     "brand": "LAMBORGHINI",
     "event": "China Toy Expo",
     "date": "2026-10-01",
@@ -3155,7 +3119,7 @@
   },
   {
     "id": "lamborghini-11",
-    "name": "Lamborghini Countach 25th Anniversary Arancio Miura",
+    "name": "Lamborghini Countach 25th Anniversary White (Without Rear Wing)",
     "brand": "LAMBORGHINI",
     "event": "China Toy Expo",
     "date": "2026-10-01",
@@ -3174,25 +3138,6 @@
   },
   {
     "id": "lamborghini-12",
-    "name": "Lamborghini Countach 25th Anniversary White (Without Rear Wing)",
-    "brand": "LAMBORGHINI",
-    "event": "China Toy Expo",
-    "date": "2026-10-01",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": false,
-    "photos": [
-      {
-        "src": "assets/images/lamborghini-12-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "lamborghini-13",
     "name": "Lamborghini LM002",
     "brand": "LAMBORGHINI",
     "event": "Malaysia Diecast Expo",
@@ -3206,14 +3151,14 @@
     "newTooling": true,
     "photos": [
       {
-        "src": "assets/images/lamborghini-13-model.png",
+        "src": "assets/images/lamborghini-12-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "lamborghini-14",
+    "id": "lamborghini-13",
     "name": "Lamborghini Revuelto Green",
     "brand": "LAMBORGHINI",
     "event": "China Toy Expo",
@@ -3225,14 +3170,14 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/lamborghini-14-model.png",
+        "src": "assets/images/lamborghini-13-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "lamborghini-15",
+    "id": "lamborghini-14",
     "name": "Lamborghini SC63 \"Squadra Corse\" 2025",
     "brand": "LAMBORGHINI",
     "event": "Indonesian Modification Expo",
@@ -3246,12 +3191,12 @@
     "newTooling": true,
     "photos": [
       {
-        "src": "assets/images/lamborghini-15-model.png",
+        "src": "assets/images/lamborghini-14-model.png",
         "role": "model",
         "label": "MINI GT model"
       },
       {
-        "src": "assets/images/lamborghini-15-detail.png",
+        "src": "assets/images/lamborghini-14-detail.png",
         "role": "additional",
         "label": "Additional photo"
       }
@@ -3542,25 +3487,6 @@
   },
   {
     "id": "mazda-07",
-    "name": "Mazda MX-5 Pandem Red",
-    "brand": "MAZDA",
-    "event": "",
-    "date": "2026",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": true,
-    "photos": [
-      {
-        "src": "assets/images/mazda-07-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "mazda-08",
     "name": "Mazda RX-7 LB-Super Silhouette ATHLETE / COLLET",
     "brand": "MAZDA",
     "event": "",
@@ -3572,7 +3498,7 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/mazda-08-model.png",
+        "src": "assets/images/mazda-07-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -5176,7 +5102,7 @@
     "date": "2026-04-01",
     "collections": [],
     "seriesOnly": false,
-    "cancelled": false,
+    "cancelled": true,
     "potential": false,
     "newTooling": false,
     "photos": [
@@ -5198,11 +5124,9 @@
     "brand": "PORSCHE",
     "event": "Hobby Expo China",
     "date": "2026-04-01",
-    "collections": [
-      "IMSA Collection"
-    ],
+    "collections": [],
     "seriesOnly": false,
-    "cancelled": false,
+    "cancelled": true,
     "potential": false,
     "newTooling": false,
     "photos": [
@@ -5348,35 +5272,6 @@
         "src": "assets/images/porsche-11-model.png",
         "role": "model",
         "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "porsche-12",
-    "name": "Porsche 911 GT3 R EVO2 (Lollipop Racing #9 Livery)",
-    "brand": "PORSCHE",
-    "event": "Indonesian Modification Expo",
-    "date": "2026-10-01",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": true,
-    "photos": [
-      {
-        "src": "assets/images/porsche-12-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/porsche-12-detail.png",
-        "role": "additional",
-        "label": "Additional photo"
-      },
-      {
-        "src": "assets/images/porsche-12-real-car.png",
-        "role": "realCar",
-        "label": "Real Photo"
       }
     ]
   },
