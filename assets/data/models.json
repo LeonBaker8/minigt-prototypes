@@ -1407,10 +1407,10 @@
   },
   {
     "id": "ferrari-05",
-    "name": "Ferrari F50 Spider Rosso Corsa",
+    "name": "Ferrari SF90 XX Stradale Matt Black Charles Leclerc Edition",
     "brand": "FERRARI",
-    "event": "",
-    "date": "2025",
+    "event": "Indonesian Modification Expo",
+    "date": "October 2026",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -1426,25 +1426,6 @@
   },
   {
     "id": "ferrari-06",
-    "name": "Ferrari SF90 XX Stradale Matt Black Charles Leclerc Edition",
-    "brand": "FERRARI",
-    "event": "Indonesian Modification Expo",
-    "date": "October 2026",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": true,
-    "photos": [
-      {
-        "src": "assets/images/ferrari-06-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "ferrari-07",
     "name": "Ferrari SF90 XX Stradale Giallo Modena",
     "brand": "FERRARI",
     "event": "Malaysia Diecast Expo",
@@ -1456,19 +1437,19 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/ferrari-07-model.png",
+        "src": "assets/images/ferrari-06-model.png",
         "role": "model",
         "label": "MINI GT model"
       },
       {
-        "src": "assets/images/ferrari-07-detail.png",
+        "src": "assets/images/ferrari-06-detail.png",
         "role": "additional",
         "label": "Additional photo"
       }
     ]
   },
   {
-    "id": "ferrari-08",
+    "id": "ferrari-07",
     "name": "Ferrari Testarossa Spider (Open Headlights)",
     "brand": "FERRARI",
     "event": "",
@@ -1480,14 +1461,14 @@
     "newTooling": true,
     "photos": [
       {
-        "src": "assets/images/ferrari-08-model.png",
+        "src": "assets/images/ferrari-07-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "ferrari-09",
+    "id": "ferrari-08",
     "name": "Ferrari Testarossa Spider Bianco",
     "brand": "FERRARI",
     "event": "",
@@ -1499,14 +1480,14 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/ferrari-09-model.png",
+        "src": "assets/images/ferrari-08-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "ferrari-10",
+    "id": "ferrari-09",
     "name": "Ferrari 512 TR (Open Headlights)",
     "brand": "FERRARI",
     "event": "",
@@ -1518,14 +1499,14 @@
     "newTooling": true,
     "photos": [
       {
-        "src": "assets/images/ferrari-10-model.png",
+        "src": "assets/images/ferrari-09-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "ferrari-11",
+    "id": "ferrari-10",
     "name": "Ferrari F80 Yellow Giallo Modena (Active Rear Wing)",
     "brand": "FERRARI",
     "event": "Indonesian Modification Expo",
@@ -1537,6 +1518,25 @@
     "newTooling": false,
     "photos": [
       {
+        "src": "assets/images/ferrari-10-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "ferrari-11",
+    "name": "Ferrari F80 Rosso Corsa (Active Rear Wing)",
+    "brand": "FERRARI",
+    "event": "Malaysia Diecast Expo",
+    "date": "2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": true,
+    "photos": [
+      {
         "src": "assets/images/ferrari-11-model.png",
         "role": "model",
         "label": "MINI GT model"
@@ -1545,7 +1545,7 @@
   },
   {
     "id": "ferrari-12",
-    "name": "Ferrari F80 Rosso Corsa (Active Rear Wing)",
+    "name": "Ferrari F80 Rosso Supercar",
     "brand": "FERRARI",
     "event": "Malaysia Diecast Expo",
     "date": "2026",
@@ -1564,7 +1564,7 @@
   },
   {
     "id": "ferrari-13",
-    "name": "Ferrari F80 Rosso Corsa (Inactive Rear Wing)",
+    "name": "Ferrari FXX-K Evo",
     "brand": "FERRARI",
     "event": "Malaysia Diecast Expo",
     "date": "2026",
@@ -1583,25 +1583,6 @@
   },
   {
     "id": "ferrari-14",
-    "name": "Ferrari FXX-K Evo",
-    "brand": "FERRARI",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": true,
-    "photos": [
-      {
-        "src": "assets/images/ferrari-14-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "ferrari-15",
     "name": "Ferrari SF-23 2023 Las Vegas Grand Prix #16 Charles Leclerc",
     "brand": "FERRARI",
     "event": "Indonesian Modification Expo",
@@ -1615,14 +1596,14 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/ferrari-15-model.png",
+        "src": "assets/images/ferrari-14-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
     ]
   },
   {
-    "id": "ferrari-16",
+    "id": "ferrari-15",
     "name": "Ferrari SF-23 2023 Las Vegas Grand Prix #55 Carlos Sainz",
     "brand": "FERRARI",
     "event": "Indonesian Modification Expo",
@@ -1636,6 +1617,25 @@
     "newTooling": true,
     "photos": [
       {
+        "src": "assets/images/ferrari-15-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "ferrari-16",
+    "name": "Ferrari 499P Modificata Nero Giallo",
+    "brand": "FERRARI",
+    "event": "Indonesian Modification Expo",
+    "date": "2026-10-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
         "src": "assets/images/ferrari-16-model.png",
         "role": "model",
         "label": "MINI GT model"
@@ -1644,10 +1644,10 @@
   },
   {
     "id": "ferrari-17",
-    "name": "Ferrari 599XX EVO #512",
+    "name": "Ferrari SF90 Assetto Fiorano",
     "brand": "FERRARI",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026",
+    "event": "Indonesian Modification Expo",
+    "date": "2026-10-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -1663,63 +1663,6 @@
   },
   {
     "id": "ferrari-18",
-    "name": "Ferrari 296 Speciale Piloti Ferrari",
-    "brand": "FERRARI",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": false,
-    "photos": [
-      {
-        "src": "assets/images/ferrari-18-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "ferrari-19",
-    "name": "Ferrari 499P Modificata Nero Giallo",
-    "brand": "FERRARI",
-    "event": "Indonesian Modification Expo",
-    "date": "2026-10-01",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": false,
-    "photos": [
-      {
-        "src": "assets/images/ferrari-19-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "ferrari-20",
-    "name": "Ferrari SF90 Assetto Fiorano",
-    "brand": "FERRARI",
-    "event": "Indonesian Modification Expo",
-    "date": "2026-10-01",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": false,
-    "photos": [
-      {
-        "src": "assets/images/ferrari-20-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "ferrari-21",
     "name": "Ferrari SF90 Stradale Assetto Fiorano \"Grigio Scuro\"",
     "brand": "FERRARI",
     "event": "Indonesian Modification Expo",
@@ -1731,7 +1674,7 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/ferrari-21-model.png",
+        "src": "assets/images/ferrari-18-model.png",
         "role": "model",
         "label": "MINI GT model"
       }

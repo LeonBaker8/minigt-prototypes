@@ -1,13 +1,13 @@
 window.MINI_GT_CATALOG_META = {
-  "lastUpdated": "2026-10-28",
+  "lastUpdated": "2026-11-02",
   "counts": {
-    "active": 277,
+    "active": 274,
     "cancelled": 42,
     "potential": 54,
-    "catalogueActive": 251,
+    "catalogueActive": 248,
     "catalogueCancelled": 42,
     "cataloguePotential": 54,
-    "catalogueNewTooling": 127,
+    "catalogueNewTooling": 126,
     "brands": {
       "ACURA": 2,
       "AMC": 2,
@@ -21,7 +21,7 @@ window.MINI_GT_CATALOG_META = {
       "CITROEN": 4,
       "DATSUN": 3,
       "DODGE": 4,
-      "FERRARI": 20,
+      "FERRARI": 17,
       "FORD": 14,
       "FIAT": 1,
       "HARLEY DAVIDSON": 2,
