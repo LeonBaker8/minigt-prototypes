@@ -43,27 +43,6 @@
   },
   {
     "id": "amc-02",
-    "name": "AMC Hornet Red",
-    "brand": "AMC",
-    "event": "Salao Diecast Brazil 7",
-    "date": "2026-07-01",
-    "collections": [
-      "Bond 007 Collection"
-    ],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": true,
-    "photos": [
-      {
-        "src": "assets/images/amc-02-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "amc-03",
     "name": "AMC Hornet Yellow",
     "brand": "AMC",
     "event": "Mini GT Donguann Flagship Store",
@@ -75,7 +54,7 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/amc-03-model.png",
+        "src": "assets/images/amc-02-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -5213,27 +5192,6 @@
     "photos": [
       {
         "src": "assets/images/porsche-11-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "piaggio-02",
-    "name": "Piaggio Ape Calessino \"Tuk Tuk\"",
-    "brand": "Piaggio",
-    "event": "R&D Office",
-    "date": "2026-09-01",
-    "collections": [
-      "Bond 007 Collection"
-    ],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": true,
-    "photos": [
-      {
-        "src": "assets/images/piaggio-02-model.png",
         "role": "model",
         "label": "MINI GT model"
       }

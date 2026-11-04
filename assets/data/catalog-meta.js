@@ -1,16 +1,16 @@
 window.MINI_GT_CATALOG_META = {
-  "lastUpdated": "2026-11-02",
+  "lastUpdated": "2026-11-04",
   "counts": {
-    "active": 274,
+    "active": 272,
     "cancelled": 42,
     "potential": 54,
-    "catalogueActive": 248,
+    "catalogueActive": 246,
     "catalogueCancelled": 42,
     "cataloguePotential": 54,
-    "catalogueNewTooling": 126,
+    "catalogueNewTooling": 124,
     "brands": {
       "ACURA": 2,
-      "AMC": 2,
+      "AMC": 1,
       "ALFA ROMEO": 1,
       "ASTON MARTIN": 13,
       "BENTLEY": 2,
@@ -41,7 +41,6 @@ window.MINI_GT_CATALOG_META = {
       "MINI": 2,
       "NISSAN": 27,
       "PORSCHE": 9,
-      "Piaggio": 1,
       "SCANIA": 4,
       "TOYOTA": 16,
       "RED BULL": 2,
@@ -50,7 +49,7 @@ window.MINI_GT_CATALOG_META = {
     },
     "collections": {
       "IMSA Collection": 9,
-      "Bond 007 Collection": 10,
+      "Bond 007 Collection": 8,
       "F1 Collection": 13,
       "Fast & Furious Collection": 15,
       "Senna Collection": 1,
