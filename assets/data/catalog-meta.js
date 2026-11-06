@@ -1,12 +1,12 @@
 window.MINI_GT_CATALOG_META = {
-  "lastUpdated": "2026-11-05",
+  "lastUpdated": "2026-11-06",
   "counts": {
     "active": 272,
     "cancelled": 42,
-    "potential": 54,
+    "potential": 60,
     "catalogueActive": 246,
     "catalogueCancelled": 42,
-    "cataloguePotential": 54,
+    "cataloguePotential": 60,
     "catalogueNewTooling": 124,
     "brands": {
       "ACURA": 2,

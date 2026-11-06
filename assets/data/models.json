@@ -5963,9 +5963,9 @@
     ]
   },
   {
-    "id": "potential-nissan-05",
-    "name": "Nissan R34 Pocket Bunny (INOZETEK x MINIGT Livery)",
-    "brand": "NISSAN",
+    "id": "potential-bmw-05",
+    "name": "BMW G87 M2 (INOZETEK x STUDENT Livery)",
+    "brand": "BMW",
     "event": "",
     "date": "2026-09-01",
     "collections": [],
@@ -5975,7 +5975,7 @@
     "newTooling": false,
     "photos": [
       {
-        "src": "assets/images/potential-nissan-05-model.png",
+        "src": "assets/images/potential-bmw-05-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -5983,10 +5983,10 @@
   },
   {
     "id": "potential-bmw-06",
-    "name": "BMW G87 M2 (INOZETEK x STUDENT Livery)",
+    "name": "BMW G87 M2 (INOZETEK x STUDENT Livery V2)",
     "brand": "BMW",
     "event": "",
-    "date": "2026-09-01",
+    "date": "2026-11-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -6965,6 +6965,11 @@
         "src": "assets/images/potential-nissan-53-model.png",
         "role": "model",
         "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/potential-nissan-53-model-2.png",
+        "role": "model",
+        "label": "MINI GT model"
       }
     ]
   },
@@ -7001,6 +7006,120 @@
     "photos": [
       {
         "src": "assets/images/potential-toyota-55-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "potential-nissan-56",
+    "name": "Nissan GT-R R33 LB-Silhouette WORKS (Grey)",
+    "brand": "NISSAN",
+    "event": "",
+    "date": "Nov-2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": true,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/potential-nissan-56-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "potential-nissan-57",
+    "name": "Nissan GT-R R33 LB-Silhouette WORKS (Inozetek Dark Green)",
+    "brand": "NISSAN",
+    "event": "",
+    "date": "Nov-2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": true,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/potential-nissan-57-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "potential-nissan-58",
+    "name": "Nissan Skyline GT-R (R32) LB-Kaido Works (Fighter Livery)",
+    "brand": "NISSAN",
+    "event": "",
+    "date": "Nov-2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": true,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/potential-nissan-58-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "potential-mercedes-59",
+    "name": "Mercedes-AMG G 63 (TBC x Inozetek x Aape Livery)",
+    "brand": "MERCEDES",
+    "event": "",
+    "date": "Nov-2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": true,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/potential-mercedes-59-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "potential-nissan-60",
+    "name": "Nissan 180SX LB-Super Silhouette (the Venti livery)",
+    "brand": "NISSAN",
+    "event": "",
+    "date": "Nov-2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": true,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/potential-nissan-60-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "potential-nissan-61",
+    "name": "Nissan GT-R R33 LB-Silhouette WORKS (the Venti Livery)",
+    "brand": "NISSAN",
+    "event": "",
+    "date": "Nov-2026",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": true,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/potential-nissan-61-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
