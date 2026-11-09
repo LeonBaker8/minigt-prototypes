@@ -1,11 +1,11 @@
 window.MINI_GT_CATALOG_META = {
   "lastUpdated": "2026-11-09",
   "counts": {
-    "active": 267,
-    "cancelled": 42,
+    "active": 260,
+    "cancelled": 49,
     "potential": 60,
-    "catalogueActive": 241,
-    "catalogueCancelled": 42,
+    "catalogueActive": 234,
+    "catalogueCancelled": 49,
     "cataloguePotential": 60,
     "catalogueNewTooling": 123,
     "brands": {
@@ -38,7 +38,7 @@ window.MINI_GT_CATALOG_META = {
       "MERCEDES": 21,
       "MITSUBISHI": 2,
       "MINI": 2,
-      "NISSAN": 27,
+      "NISSAN": 20,
       "PORSCHE": 9,
       "SCANIA": 4,
       "TOYOTA": 16,
