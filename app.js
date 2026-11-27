@@ -213,7 +213,7 @@ function visualFor(kind, value) {
   if (kind === "all") return { src: "assets/mini-gt-logo.png", alt: "MINI GT logo" };
   if (kind === "status") return value === "CANCELLED" ? { mark: "×" } : { none: true };
   if (kind === "brand" && isAccessoriesBrand(value)) {
-    return { src: "assets/brands/accessories.svg", alt: "Car-hauler trailer icon" };
+    return { src: "assets/brands/accessories.svg", alt: "Toolbox icon" };
   }
   const map = kind === "brand" ? visualAssets.brands : visualAssets.collections;
   return map[value] ? { src: map[value], alt: `${titleCase(value)} logo`, fullColour: true } : { mark: initial(value) };
