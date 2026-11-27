@@ -3,6 +3,7 @@ const specialCollectionOrder = ["Bond 007 Collection", "Fast & Furious Collectio
 const lastCollectionOrder = ["Korean Collection", "Motorbike Collection", "Qube Carz Collection"];
 const catalogMeta = window.MINI_GT_CATALOG_META || {};
 const statusFilters = new Set(["CANCELLED", "POTENTIAL", "NEW_TOOLING"]);
+const accessoriesBrand = "Accessories";
 const wideLogoAssets = new Set([
   "assets/brands/daihatsu.svg",
   "assets/brands/lancia.png",
@@ -151,18 +152,15 @@ function newToolingCount() {
   return state.models.filter((model) => model.newTooling).length;
 }
 
-function countBy(items, getter) {
-  return items.reduce((counts, item) => {
-    const key = getter(item);
-    counts.set(key, (counts.get(key) || 0) + 1);
-    return counts;
-  }, new Map());
-}
-
 function getBrands() {
-  return [...countBy(activeModels(), (model) => model.brand).entries()]
-    .map(([name, count]) => ({ name, count }))
-    .sort((a, b) => a.name.localeCompare(b.name, "en"));
+  const brands = new Set(activeModels().map((model) => model.brand));
+  const sortedBrands = [...brands]
+    .filter((name) => !isAccessoriesBrand(name))
+    .sort((a, b) => a.localeCompare(b, "en"));
+  return [accessoriesBrand, ...sortedBrands];
+}
+function isAccessoriesBrand(name) {
+  return name.toLowerCase() === accessoriesBrand.toLowerCase();
 }
 function getCollections() {
   const counts = new Map(specialCollectionOrder.map((name) => [name, 0]));
@@ -204,6 +202,7 @@ function filterCount() {
     if (isNewToolingFilter()) return counts.catalogueNewTooling ?? newToolingCount();
     return counts.catalogueCancelled ?? cancelledCount();
   }
+  if (isSelected("brand", accessoriesBrand)) return state.models.filter(matchesCurrentFilter).length;
   const group = state.filter.kind === "brand" ? counts.brands : counts.collections;
   return (group && group[state.filter.value]) ?? getVisibleModels().length;
 }
@@ -213,6 +212,9 @@ function initial(value) {
 function visualFor(kind, value) {
   if (kind === "all") return { src: "assets/mini-gt-logo.png", alt: "MINI GT logo" };
   if (kind === "status") return value === "CANCELLED" ? { mark: "×" } : { none: true };
+  if (kind === "brand" && isAccessoriesBrand(value)) {
+    return { src: "assets/brands/accessories.svg", alt: "Car-hauler trailer icon" };
+  }
   const map = kind === "brand" ? visualAssets.brands : visualAssets.collections;
   return map[value] ? { src: map[value], alt: `${titleCase(value)} logo`, fullColour: true } : { mark: initial(value) };
 }
@@ -239,6 +241,7 @@ function matchesCurrentFilter(model) {
     if (isNewToolingFilter()) return model.newTooling;
     return model.cancelled && !model.seriesOnly;
   }
+  if (isSelected("brand", accessoriesBrand)) return isAccessoriesBrand(model.brand) && !model.potential;
   if (model.cancelled || model.potential) return false;
   if (state.filter.kind === "all") return true;
   if (state.filter.kind === "brand") return model.brand === state.filter.value;
@@ -258,7 +261,7 @@ function renderSidebar() {
   const collections = getCollections();
   const brands = getBrands();
   const collectionItems = collections.map(({ name }) => `<button class="side-filter ${isSelected("collection", name) ? "is-active" : ""}" type="button" data-filter-kind="collection" data-filter-value="${escapeHtml(name)}">${filterLogo("collection", name)}<span class="filter-label">${escapeHtml(titleCase(name.replace(/ Collection$/, "")))}</span></button>`).join("");
-  const brandItems = brands.map(({ name }) => `<button class="brand-filter ${isSelected("brand", name) ? "is-active" : ""}" type="button" data-filter-kind="brand" data-filter-value="${escapeHtml(name)}">${filterLogo("brand", name)}<span class="filter-label ${name.includes(" ") ? "is-multiword" : "is-single-word"}">${escapeHtml(titleCase(name))}</span></button>`).join("");
+  const brandItems = brands.map((name) => `<button class="brand-filter${name === accessoriesBrand ? " accessories-filter" : ""}${isSelected("brand", name) ? " is-active" : ""}" type="button" data-filter-kind="brand" data-filter-value="${escapeHtml(name)}">${filterLogo("brand", name)}<span class="filter-label ${name.includes(" ") ? "is-multiword" : "is-single-word"}">${escapeHtml(titleCase(name))}</span></button>`).join("");
   elements.sidebarNav.innerHTML = `
     <section><button class="archive-all ${isSelected("all", "all") ? "is-active" : ""}" type="button" data-filter-kind="all" data-filter-value="all"><small>EXPLORE THE ARCHIVE</small><span>All models</span><b>VIEW THE COMPLETE CATALOGUE</b></button><button class="side-status new-tooling ${isSelected("status", "NEW_TOOLING") ? "is-active" : ""}" type="button" data-filter-kind="status" data-filter-value="NEW_TOOLING"><span>New Tooling</span><small>NEWLY DEVELOPED CASTINGS</small></button><button class="side-status ${isSelected("status", "CANCELLED") ? "is-active" : ""}" type="button" data-filter-kind="status" data-filter-value="CANCELLED"><span>Cancelled</span><small>ARCHIVED MODELS</small></button><button class="side-status potential ${isSelected("status", "POTENTIAL") ? "is-active" : ""}" type="button" data-filter-kind="status" data-filter-value="POTENTIAL"><span>Potential</span><small>POSSIBLE FUTURE MODELS</small></button></section>
     <section class="filter-group"><p class="filter-group-title">CURATED SERIES</p><div class="collection-list">${collectionItems}</div></section>
@@ -322,7 +325,7 @@ function brandSection(name, models) {
     ? visualFor("collection", "Qube Carz Collection")
     : visualFor("brand", name);
   const orderedModels = [...models].sort((a, b) => Number(Boolean(a.seriesOnly)) - Number(Boolean(b.seriesOnly)));
-  const hasLogo = name.toUpperCase() !== "ACCESSORIES";
+  const hasLogo = !isAccessoriesBrand(name);
   const logo = hasLogo ? (visual.src
     ? `<span class="brand-section-logo"><img src="${escapeHtml(visual.src)}" alt="" /></span>`
     : `<span class="brand-section-logo"><b>${escapeHtml(visual.mark)}</b></span>`) : "";
@@ -361,8 +364,8 @@ function renderCards() {
     map.get(groupName).push(model);
     return map;
   }, new Map()).entries()].sort(([a], [b]) => {
-    if (a.toUpperCase() === "ACCESSORIES") return -1;
-    if (b.toUpperCase() === "ACCESSORIES") return 1;
+    if (isAccessoriesBrand(a)) return -1;
+    if (isAccessoriesBrand(b)) return 1;
     if (a === "Qube Carz") return 1;
     if (b === "Qube Carz") return -1;
     return a.localeCompare(b, "en");
@@ -436,9 +439,10 @@ function applyHash() {
   }
 
   const [kind, ...valueParts] = hash.split("/");
-  const value = valueParts.join("/");
+  const hashValue = valueParts.join("/");
+  const value = kind === "brand" && isAccessoriesBrand(hashValue) ? accessoriesBrand : hashValue;
   const isValid = (kind === "status" && statusFilters.has(value))
-    || (kind === "brand" && getBrands().some((item) => item.name === value))
+    || (kind === "brand" && getBrands().includes(value))
     || (kind === "collection" && getCollections().some((item) => item.name === value));
   if (isValid) state.filter = { kind, value };
 }
