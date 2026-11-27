@@ -42,6 +42,27 @@
     ]
   },
   {
+    "id": "acura-04",
+    "name": "Acura Integra LS (DB8)",
+    "brand": "ACURA",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
+    "collections": [
+      "Fast & Furious Collection"
+    ],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/acura-04-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
     "id": "amc-02",
     "name": "AMC Hornet Yellow",
     "brand": "AMC",
@@ -358,6 +379,27 @@
     ]
   },
   {
+    "id": "aston-martin-15",
+    "name": "Aston Martin Vantage GT3 Evo #44 Magnus Racing 2025 IMSA Watkins Glen 6 Hrs",
+    "brand": "ASTON MARTIN",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
+    "collections": [
+      "IMSA Collection"
+    ],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/aston-martin-15-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
     "id": "bentley-02",
     "name": "Bentley 1929 Blower Ver. 1",
     "brand": "BENTLEY",
@@ -537,8 +579,8 @@
     "id": "bmw-08",
     "name": "BMW Z8 Red",
     "brand": "BMW",
-    "event": "China Toy Expo",
-    "date": "2026-10-01",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -634,8 +676,8 @@
     "id": "bmw-13",
     "name": "BMW M5 G90 Purple",
     "brand": "BMW",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026-05-01",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -791,6 +833,19 @@
         "label": "MINI GT model"
       }
     ]
+  },
+  {
+    "id": "bmw-21",
+    "name": "BMW M4 GT3 EVO #77 Schubert Motorsport 2026 ADAC",
+    "brand": "BMW",
+    "event": "Essen Motorshow",
+    "date": "2026-11-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": []
   },
   {
     "id": "bugatti-02",
@@ -1549,8 +1604,8 @@
     "id": "ferrari-18",
     "name": "Ferrari SF90 Stradale Assetto Fiorano \"Grigio Scuro\"",
     "brand": "FERRARI",
-    "event": "Indonesian Modification Expo",
-    "date": "2026-10-01",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -2244,6 +2299,25 @@
     ]
   },
   {
+    "id": "honda-19",
+    "name": "Honda S660 LB-WORKS ver.2",
+    "brand": "HONDA",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": true,
+    "photos": [
+      {
+        "src": "assets/images/honda-19-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
     "id": "hyundai-02",
     "name": "Hyundai Ioniq 5N Atlas White",
     "brand": "HYUNDAI",
@@ -2625,8 +2699,8 @@
     "id": "lancia-02",
     "name": "Lancia Delta HF Integrale Evoluzione #6 ECR Piancavallo Rally 1993 Winner",
     "brand": "LANCIA",
-    "event": "China Toy Expo",
-    "date": "2026-10-01",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -2889,10 +2963,10 @@
   },
   {
     "id": "lamborghini-10",
-    "name": "Lamborghini Countach 25th Anniversary White (Without Rear Wing)",
+    "name": "Lamborghini Countach 25th Anniversary Yellow",
     "brand": "LAMBORGHINI",
-    "event": "China Toy Expo",
-    "date": "2026-10-01",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -2908,17 +2982,15 @@
   },
   {
     "id": "lamborghini-11",
-    "name": "Lamborghini LM002",
+    "name": "Lamborghini Countach 25th Anniversary Silver",
     "brand": "LAMBORGHINI",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026-05-01",
-    "collections": [
-      "Fast & Furious Collection"
-    ],
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
+    "collections": [],
     "seriesOnly": false,
     "cancelled": false,
     "potential": false,
-    "newTooling": true,
+    "newTooling": false,
     "photos": [
       {
         "src": "assets/images/lamborghini-11-model.png",
@@ -2929,7 +3001,7 @@
   },
   {
     "id": "lamborghini-12",
-    "name": "Lamborghini Revuelto Green",
+    "name": "Lamborghini Countach 25th Anniversary White (Without Rear Wing)",
     "brand": "LAMBORGHINI",
     "event": "China Toy Expo",
     "date": "2026-10-01",
@@ -2948,6 +3020,46 @@
   },
   {
     "id": "lamborghini-13",
+    "name": "Lamborghini LM002",
+    "brand": "LAMBORGHINI",
+    "event": "Malaysia Diecast Expo",
+    "date": "2026-05-01",
+    "collections": [
+      "Fast & Furious Collection"
+    ],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": true,
+    "photos": [
+      {
+        "src": "assets/images/lamborghini-13-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "lamborghini-14",
+    "name": "Lamborghini Revuelto Green",
+    "brand": "LAMBORGHINI",
+    "event": "China Toy Expo",
+    "date": "2026-10-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/lamborghini-14-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "lamborghini-15",
     "name": "Lamborghini SC63 \"Squadra Corse\" 2025",
     "brand": "LAMBORGHINI",
     "event": "Indonesian Modification Expo",
@@ -2961,14 +3073,33 @@
     "newTooling": true,
     "photos": [
       {
-        "src": "assets/images/lamborghini-13-model.png",
+        "src": "assets/images/lamborghini-15-model.png",
         "role": "model",
         "label": "MINI GT model"
       },
       {
-        "src": "assets/images/lamborghini-13-detail.png",
+        "src": "assets/images/lamborghini-15-detail.png",
         "role": "additional",
         "label": "Additional photo"
+      }
+    ]
+  },
+  {
+    "id": "lamborghini-16",
+    "name": "Lamborghini LB-Silhouette WORKS MURCIELAGO GT EVO Candy Green",
+    "brand": "LAMBORGHINI",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/lamborghini-16-model.png",
+        "role": "model",
+        "label": "MINI GT model"
       }
     ]
   },
@@ -2976,8 +3107,8 @@
     "id": "lexus-02",
     "name": "Lexus LBX Morizo RR Drift",
     "brand": "LEXUS",
-    "event": "Australian Diecast Expo",
-    "date": "2026-08-01",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -3012,11 +3143,6 @@
         "src": "assets/images/lotus-02-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/lotus-02-detail.png",
-        "role": "additional",
-        "label": "Additional photo"
       }
     ]
   },
@@ -3024,8 +3150,8 @@
     "id": "lotus-03",
     "name": "Lotus Espirit Turbo Black",
     "brand": "LOTUS",
-    "event": "Australian Diecast Expo",
-    "date": "2026-08-01",
+    "event": "Chengdu Pop Up",
+    "date": "November 2026",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -3062,10 +3188,10 @@
   },
   {
     "id": "lincoln-02",
-    "name": "Lincoln Continental MK.III Convertible 1958",
+    "name": "Lincoln Continental MK.III Convertible 1958 Black",
     "brand": "LINCOLN",
-    "event": "",
-    "date": "2026",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -3076,11 +3202,25 @@
         "src": "assets/images/lincoln-02-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
+      }
+    ]
+  },
+  {
+    "id": "lincoln-03",
+    "name": "Lincoln Continental MK.III Convertible 1958 Red",
+    "brand": "LINCOLN",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
       {
-        "src": "assets/images/lincoln-02-real-car.png",
-        "role": "realCar",
-        "label": "Real Photo"
+        "src": "assets/images/lincoln-03-model.png",
+        "role": "model",
+        "label": "MINI GT model"
       }
     ]
   },
@@ -3271,6 +3411,32 @@
         "src": "assets/images/mazda-07-model.png",
         "role": "model",
         "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "mazda-08",
+    "name": "Mazda RX-8 (SE3P) VeilSide",
+    "brand": "MAZDA",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
+    "collections": [
+      "Fast & Furious Collection"
+    ],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": true,
+    "photos": [
+      {
+        "src": "assets/images/mazda-08-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/mazda-08-real-car.png",
+        "role": "realCar",
+        "label": "Real Photo"
       }
     ]
   },
@@ -3995,8 +4161,8 @@
     "id": "mercedes-19",
     "name": "Mercedes-Benz ML 320 1997 Jurrasic Park \"Santana\"",
     "brand": "MERCEDES",
-    "event": "China Toy Expo",
-    "date": "2026-10-01",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -4014,8 +4180,8 @@
     "id": "mercedes-20",
     "name": "Mercedes-Benz ML 320 1997 Jurrasic Park \"Montana\"",
     "brand": "MERCEDES",
-    "event": "China Toy Expo",
-    "date": "2026-10-01",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -4033,8 +4199,8 @@
     "id": "mercedes-21",
     "name": "Mercedes-Benz ML 320 1997 Jurrasic Park \"Fontana\"",
     "brand": "MERCEDES",
-    "event": "China Toy Expo",
-    "date": "2026-10-01",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -4052,8 +4218,8 @@
     "id": "mercedes-22",
     "name": "Mercedes-AMG GT3 EVO #32 Korthoff Competition Motors 2025 IMSA DAYTONA 24 Hrs",
     "brand": "MERCEDES",
-    "event": "China Toy Expo",
-    "date": "2026-10-01",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
     "collections": [
       "IMSA Collection"
     ],
@@ -4066,11 +4232,6 @@
         "src": "assets/images/mercedes-22-model.png",
         "role": "model",
         "label": "MINI GT model"
-      },
-      {
-        "src": "assets/images/mercedes-22-detail.png",
-        "role": "additional",
-        "label": "Additional photo"
       }
     ]
   },
@@ -4300,10 +4461,10 @@
   },
   {
     "id": "nissan-07",
-    "name": "Nissan Skyline GT-R (R32) VeilSide Combat C-I Black with Gold",
+    "name": "Nissan Skyline (R32) Top Secret Red",
     "brand": "NISSAN",
-    "event": "Malaysia Diecast Expo",
-    "date": "2025-05-01",
+    "event": "Mini GT Pop Up Store Taipei",
+    "date": "2026",
     "collections": [],
     "seriesOnly": false,
     "cancelled": true,
@@ -4319,7 +4480,7 @@
   },
   {
     "id": "nissan-08",
-    "name": "Nissan Skyline (R32) Top Secret Red",
+    "name": "Nissan Skyline (R32) Top Secret Black",
     "brand": "NISSAN",
     "event": "Mini GT Pop Up Store Taipei",
     "date": "2026",
@@ -4338,7 +4499,7 @@
   },
   {
     "id": "nissan-09",
-    "name": "Nissan Skyline (R32) Top Secret Black",
+    "name": "Nissan Skyline GT-R (R34) White With Carbon Hood",
     "brand": "NISSAN",
     "event": "Mini GT Pop Up Store Taipei",
     "date": "2026",
@@ -4357,7 +4518,7 @@
   },
   {
     "id": "nissan-10",
-    "name": "Nissan Skyline GT-R (R34) White With Carbon Hood",
+    "name": "Nissan Skyline GT-R (R34) Red With Carbon Hood",
     "brand": "NISSAN",
     "event": "Mini GT Pop Up Store Taipei",
     "date": "2026",
@@ -4376,10 +4537,10 @@
   },
   {
     "id": "nissan-11",
-    "name": "Nissan Skyline GT-R (R34) Red With Carbon Hood",
+    "name": "Nissan Silvia (S15) D-MAX Black",
     "brand": "NISSAN",
-    "event": "Mini GT Pop Up Store Taipei",
-    "date": "2026",
+    "event": "Malaysia Diecast Expo",
+    "date": "2025-05-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": true,
@@ -4395,10 +4556,10 @@
   },
   {
     "id": "nissan-12",
-    "name": "Nissan Silvia (S15) D-MAX Black",
+    "name": "Nissan LB-Silhouette WORKS 35GT-RR Ver.2 Red",
     "brand": "NISSAN",
-    "event": "Malaysia Diecast Expo",
-    "date": "2025-05-01",
+    "event": "Mini GT Pop Up Store Taipei",
+    "date": "2025-11-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": true,
@@ -4414,13 +4575,13 @@
   },
   {
     "id": "nissan-13",
-    "name": "Nissan LB-Silhouette WORKS 35GT-RR Ver.2 Red",
+    "name": "Nissan Skyline GT-R (R32) VeilSide Combat C-I Black with Gold",
     "brand": "NISSAN",
-    "event": "Mini GT Pop Up Store Taipei",
-    "date": "2025-11-01",
+    "event": "Malaysia Diecast Expo",
+    "date": "2025-05-01",
     "collections": [],
     "seriesOnly": false,
-    "cancelled": true,
+    "cancelled": false,
     "potential": false,
     "newTooling": false,
     "photos": [
@@ -4673,8 +4834,8 @@
     "id": "nissan-25",
     "name": "Nissan S15 SILVIA LB-Super Silhouette #555 Team MINI GT Liberty Walk 2025 Formula Drift W/ Trophy",
     "brand": "NISSAN",
-    "event": "Malaysia Diecast Expo",
-    "date": "2026-05-01",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -5009,10 +5170,10 @@
   },
   {
     "id": "scania-02",
-    "name": "Scania 770S Car Carrier Ver. 1",
+    "name": "Scania 770S Transporter Box Black/Gold",
     "brand": "SCANIA",
-    "event": "Mini GT Pop Up Store Taipei",
-    "date": "2025-11-01",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -5028,6 +5189,25 @@
   },
   {
     "id": "scania-03",
+    "name": "Scania 770S Transporter Box White",
+    "brand": "SCANIA",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/scania-03-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "scania-04",
     "name": "Scania 770S 2x6",
     "brand": "SCANIA",
     "event": "Shizuoka Hobby Show",
@@ -5039,25 +5219,6 @@
     "newTooling": true,
     "photos": [
       {
-        "src": "assets/images/scania-03-model.png",
-        "role": "model",
-        "label": "MINI GT model"
-      }
-    ]
-  },
-  {
-    "id": "scania-04",
-    "name": "Scania 770S Highline 40ft Container \"ONE\" White/Magenta",
-    "brand": "SCANIA",
-    "event": "Indonesian Modification Expo",
-    "date": "2026-10-01",
-    "collections": [],
-    "seriesOnly": false,
-    "cancelled": false,
-    "potential": false,
-    "newTooling": false,
-    "photos": [
-      {
         "src": "assets/images/scania-04-model.png",
         "role": "model",
         "label": "MINI GT model"
@@ -5066,10 +5227,10 @@
   },
   {
     "id": "scania-05",
-    "name": "Scania 770S Highline 40ft Container \"ONE\" Magenta/White",
+    "name": "Scania 770S Highline 40ft Container \"ONE\" White/Magenta",
     "brand": "SCANIA",
-    "event": "China Toy Expo",
-    "date": "2026-10-01",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -5078,6 +5239,25 @@
     "photos": [
       {
         "src": "assets/images/scania-05-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "scania-06",
+    "name": "Scania 770S Highline 40ft Container \"ONE\" Magenta/White",
+    "brand": "SCANIA",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/scania-06-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
@@ -5417,6 +5597,51 @@
     ]
   },
   {
+    "id": "toyota-19",
+    "name": "Toyota Vellfire 40 KUHL Orange Candy",
+    "brand": "TOYOTA",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
+    "collections": [],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/toyota-19-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "toyota-20",
+    "name": "Toyota Supra (JZA80) Slap Jack",
+    "brand": "TOYOTA",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
+    "collections": [
+      "Fast & Furious Collection"
+    ],
+    "seriesOnly": false,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": true,
+    "photos": [
+      {
+        "src": "assets/images/toyota-20-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      },
+      {
+        "src": "assets/images/toyota-20-real-car.png",
+        "role": "realCar",
+        "label": "Real Photo"
+      }
+    ]
+  },
+  {
     "id": "red-bull-02",
     "name": "Red Bull RB19 Monza",
     "brand": "RED BULL",
@@ -5643,8 +5868,8 @@
     "id": "western-star-06",
     "name": "Western Star 49X Blue Michelin",
     "brand": "WESTERN STAR",
-    "event": "China Toy Expo",
-    "date": "2026-10-01",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
     "collections": [],
     "seriesOnly": false,
     "cancelled": false,
@@ -6996,8 +7221,8 @@
     "id": "qube-carz-02",
     "name": "Porsche 911 Carrera RS 2.7 Orange",
     "brand": "PORSCHE",
-    "event": "China Toy Expo",
-    "date": "2026-10-01",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -7332,8 +7557,8 @@
     "id": "qube-carz-18",
     "name": "Datsun Kaido 510 Wagon",
     "brand": "DATSUN",
-    "event": "China Toy Expo",
-    "date": "2026-10-01",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -7353,8 +7578,8 @@
     "id": "qube-carz-19",
     "name": "Datsun Kaido 510 Wagon 4x4",
     "brand": "DATSUN",
-    "event": "China Toy Expo",
-    "date": "2026-10-01",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -7437,8 +7662,8 @@
     "id": "qube-carz-23",
     "name": "Ford Mustang Boss Red",
     "brand": "FORD",
-    "event": "Indonesian Modification Expo",
-    "date": "October 2026",
+    "event": "Chengdu Pop Up",
+    "date": "November 2026",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -7458,8 +7683,8 @@
     "id": "qube-carz-24",
     "name": "Land Rover Defender 90",
     "brand": "LAND ROVER",
-    "event": "China Toy Expo",
-    "date": "2026-10-01",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -7479,8 +7704,8 @@
     "id": "qube-carz-25",
     "name": "Toyota Trueno (AE86) Closed Headlights",
     "brand": "TOYOTA",
-    "event": "China Toy Expo",
-    "date": "2026-10-01",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -7500,8 +7725,8 @@
     "id": "qube-carz-26",
     "name": "Toyota Trueno (AE86) Open Headlights",
     "brand": "TOYOTA",
-    "event": "China Toy Expo",
-    "date": "2026-10-01",
+    "event": "Chengdu Pop Up",
+    "date": "2026-11-01",
     "collections": [
       "Qube Carz Collection"
     ],
@@ -7533,6 +7758,48 @@
     "photos": [
       {
         "src": "assets/images/qube-carz-27-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "qube-carz-28",
+    "name": "Acura Integra LS",
+    "brand": "ACURA",
+    "event": "Essen Motorshow",
+    "date": "2026-11-01",
+    "collections": [
+      "Qube Carz Collection"
+    ],
+    "seriesOnly": true,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": true,
+    "photos": [
+      {
+        "src": "assets/images/qube-carz-28-model.png",
+        "role": "model",
+        "label": "MINI GT model"
+      }
+    ]
+  },
+  {
+    "id": "qube-carz-29",
+    "name": "Nissan Skyline GT-R (BNR32 Gr.A SPEC) HKS",
+    "brand": "NISSAN",
+    "event": "Essen Motorshow",
+    "date": "2026-11-01",
+    "collections": [
+      "Qube Carz Collection"
+    ],
+    "seriesOnly": true,
+    "cancelled": false,
+    "potential": false,
+    "newTooling": false,
+    "photos": [
+      {
+        "src": "assets/images/qube-carz-29-model.png",
         "role": "model",
         "label": "MINI GT model"
       }
